@@ -1,0 +1,1928 @@
+[globals/init_openram]: Initializing OpenRAM...
+[globals/setup_paths]: Temporary files saved in /home/mrg/riscv-sky130/temp/
+[globals/read_config]: Configuration file is /home/mrg/openram/compiler/riscv-sky130-1k.py
+[globals/read_config]: Output saved in /home/mrg/openram/compiler/riscv-sky130/
+[globals/import_tech]: Adding technology path: /home/mrg/openram/technology
+[globals/import_tech]: Adding technology path: /home/mrg/data/skywater-tech
+[globals/init_paths]: Creating temp directory: /home/mrg/riscv-sky130/temp/
+[characterizer/<module>]: Initializing characterizer...
+[characterizer/<module>]: Analytical model enabled.
+[verify/<module>]: Initializing verify...
+[verify/<module>]: Finding DRC/LVS/PEX tools.
+[globals/get_tool]: Using DRC: /bsoe/software/mentor/calibre/aoi_cal_2017.3_29.23/bin/calibre
+[globals/get_tool]: Using LVS: /bsoe/software/mentor/calibre/aoi_cal_2017.3_29.23/bin/calibre
+[globals/get_tool]: Using PEX: /bsoe/software/mentor/calibre/aoi_cal_2017.3_29.23/bin/calibre
+[globals/get_tool]: Using GDS: /usr/local/bin/magic
+[globals/setup_bitcell]: Using bitcell: bitcell_1rw_1r
+|==============================================================================|
+|=========                       OpenRAM v1.1.5                       =========|
+|=========                                                            =========|
+|=========               VLSI Design and Automation Lab               =========|
+|=========        Computer Science and Engineering Department         =========|
+|=========            University of California Santa Cruz             =========|
+|=========                                                            =========|
+|=========          Usage help: openram-user-group@ucsc.edu           =========|
+|=========        Development help: openram-dev-group@ucsc.edu        =========|
+|=========           Temp dir: /home/mrg/riscv-sky130/temp/           =========|
+|=========                See LICENSE for license info                =========|
+|==============================================================================|
+** Start: 07/03/2020 07:02:09
+Technology: sky130
+Total size: 8192 bits
+Word size: 32
+Words: 256
+Banks: 1
+Write size: 8
+RW ports: 1
+R-only ports: 1
+W-only ports: 0
+DRC/LVS/PEX is only run on the top-level design to save run-time (inline_lvsdrc=True to do inline checking).
+Characterization is disabled (using analytical delay models) (analytical_delay=False to simulate).
+[sram_config/recompute_sizes]: Recomputing with words per row: 2
+[sram_config/recompute_sizes]: Rows: 128 Cols: 64
+[sram_config/recompute_sizes]: Row addr size: 7 Col addr size: 1 Bank addr size: 8
+Words per row: 2
+Output files are: 
+/home/mrg/openram/compiler/riscv-sky130/sram_1rw1r_32_256_8_sky130.lvs
+/home/mrg/openram/compiler/riscv-sky130/sram_1rw1r_32_256_8_sky130.sp
+/home/mrg/openram/compiler/riscv-sky130/sram_1rw1r_32_256_8_sky130.v
+/home/mrg/openram/compiler/riscv-sky130/sram_1rw1r_32_256_8_sky130.lib
+/home/mrg/openram/compiler/riscv-sky130/sram_1rw1r_32_256_8_sky130.py
+/home/mrg/openram/compiler/riscv-sky130/sram_1rw1r_32_256_8_sky130.html
+/home/mrg/openram/compiler/riscv-sky130/sram_1rw1r_32_256_8_sky130.log
+/home/mrg/openram/compiler/riscv-sky130/sram_1rw1r_32_256_8_sky130.lef
+/home/mrg/openram/compiler/riscv-sky130/sram_1rw1r_32_256_8_sky130.gds
+[dff_array/__init__]: Creating row_addr_dff rows=7 cols=1
+[dff_array/__init__]: Creating col_addr_dff rows=1 cols=1
+[dff_array/__init__]: Creating data_dff rows=1 cols=32
+[dff_array/__init__]: Creating wmask_dff rows=1 cols=4
+[precharge_array/__init__]: Creating precharge_array
+[sense_amp_array/__init__]: Creating sense_amp_array
+[single_level_column_mux_array/__init__]: Creating single_level_column_mux_array
+[write_driver_array/__init__]: Creating write_driver_array
+[write_mask_and_array/__init__]: Creating write_mask_and_array
+[pand2/__init__]: Creating pand2 pand2
+[pdriver/__init__]: creating pdriver pdriver
+[precharge_array/__init__]: Creating precharge_array_0
+[single_level_column_mux_array/__init__]: Creating single_level_column_mux_array_0
+[and2_dec/__init__]: Creating and2_dec and2_dec
+[and3_dec/__init__]: Creating and3_dec and3_dec
+[wordline_driver_array/__init__]: Creating wordline_driver_array
+[wordline_driver/__init__]: Creating wordline_driver wordline_driver
+[replica_bitcell_array/__init__]: Creating replica_bitcell_array 128 x 64
+[bitcell_base_array/__init__]: Creating bitcell_array 128 x 64
+[bitcell_base_array/__init__]: Creating dummy_array 1 x 64
+[bitcell_base_array/__init__]: Creating col_cap_array 1 x 64
+[bitcell_base_array/__init__]: Creating row_cap_array 132 x 1
+[bitcell_base_array/__init__]: Creating row_cap_array_0 132 x 1
+[pinvbuf/__init__]: creating pinvbuf pinvbuf
+[control_logic/__init__]: Creating control_logic_rw
+[dff_buf/__init__]: Creating dff_buf
+[dff_buf_array/__init__]: Creating dff_buf_array
+[dff_buf/__init__]: Creating dff_buf_0
+[pand2/__init__]: Creating pand2 pand2_0
+[pdriver/__init__]: creating pdriver pdriver_0
+[pbuf/__init__]: creating pbuf with size of 64
+[pdriver/__init__]: creating pdriver pdriver_1
+[pdriver/__init__]: creating pdriver pdriver_2
+[pand3/__init__]: Creating pand3 pand3
+[pdriver/__init__]: creating pdriver pdriver_3
+[pand3/__init__]: Creating pand3 pand3_0
+[pdriver/__init__]: creating pdriver pdriver_4
+[pdriver/__init__]: creating pdriver pdriver_5
+[delay_chain/__init__]: creating delay chain [4, 4, 4, 4, 4, 4, 4, 4, 4]
+[control_logic/__init__]: Creating control_logic_r
+[dff_buf_array/__init__]: Creating dff_buf_array_0
+[pdriver/__init__]: creating pdriver pdriver_6
+** Submodules: 6.6 seconds
+** Placement: 0.0 seconds
+[router_tech/__init__]: Track width: 0.680
+[router_tech/__init__]: Track space: 0.300
+[router_tech/__init__]: Track wire width: 0.380
+*** Init supply router: 134.7 seconds
+[supply_grid_router/route]: Running supply router on vdd and gnd...
+[supply_grid_router/create_routing_grid]: Size: 376.69 x 446.255
+**** Retrieving pins: 0.2 seconds
+**** Analyzing pins: 9.4 seconds
+[router/find_blockages]: Finding blockages.
+**** Finding blockages: 3.6 seconds
+[router/convert_blockages]: Converting blockages.
+**** Converting blockages: 0.2 seconds
+[router/convert_pins]: Converting pins for vdd.
+[router/convert_pins]: Converting pins for gnd.
+**** Converting pins: 10.3 seconds
+[router/separate_adjacent_pin]: Comparing gnd and vdd adjacency
+[router/separate_adjacent_pin]: Removed 274 adjacent grids.
+**** Separating adjacent pins: 14.6 seconds
+[router/enclose_pins]: Enclosing pins for gnd
+[router/enclose_pins]: Enclosing pins for vdd
+**** Enclosing pins: 3.3 seconds
+*** Finding pins and blockages: 41.6 seconds
+[supply_grid_router/route_supply_rails]: Routing supply rail gnd.
+[supply_grid_router/route_supply_rails]: Routing supply rail vdd.
+*** Routing supply rails: 74.7 seconds
+[supply_grid_router/route_simple_overlaps]: Routing simple overlap pins for vdd
+[supply_grid_router/route_simple_overlaps]: Routed 835 simple overlap pins
+[supply_grid_router/route_simple_overlaps]: Routing simple overlap pins for gnd
+[supply_grid_router/route_simple_overlaps]: Routed 993 simple overlap pins
+*** Simple overlap routing: 0.0 seconds
+[supply_grid_router/route_pins_to_rails]: Maze routing vdd with 512 pin components to connect.
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[11, 112, 0]], [v3d[11, 111, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[15, 95, 0]], [v3d[15, 95, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[15, 79, 0]], [v3d[15, 79, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[21, 118, 0]], [v3d[21, 117, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[21, 130, 0]], [v3d[21, 129, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[21, 114, 0]], [v3d[21, 115, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[21, 124, 0]], [v3d[21, 123, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[25, 119, 0]], [v3d[25, 119, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[25, 112, 0]], [v3d[25, 111, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[25, 125, 0]], [v3d[25, 125, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[25, 130, 0]], [v3d[25, 129, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[25, 83, 0]], [v3d[25, 83, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[25, 96, 0]], [v3d[25, 97, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[25, 101, 0]], [v3d[25, 101, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[25, 79, 0]], [v3d[25, 79, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 276, 0]], [v3d[437, 277, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[29, 84, 0]], [v3d[29, 85, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[29, 118, 0]], [v3d[29, 117, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[29, 95, 0]], [v3d[29, 95, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[29, 112, 0]], [v3d[29, 111, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[29, 124, 0]], [v3d[29, 123, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[29, 130, 0]], [v3d[29, 129, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[29, 101, 0]], [v3d[29, 101, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[45, 281, 0]], [v3d[45, 281, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[45, 180, 0]], [v3d[45, 181, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[45, 359, 0]], [v3d[45, 359, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[47, 221, 0]], [v3d[47, 221, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[47, 260, 0]], [v3d[47, 260, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[47, 125, 0]], [v3d[47, 125, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[45, 80, 0]], [v3d[45, 80, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[45, 368, 0]], [v3d[45, 367, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[45, 304, 0]], [v3d[45, 303, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[47, 238, 0]], [v3d[47, 239, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[45, 391, 0]], [v3d[45, 391, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[45, 404, 0]], [v3d[45, 405, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[47, 214, 0]], [v3d[47, 213, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[45, 244, 0]], [v3d[45, 245, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[47, 287, 0]], [v3d[47, 287, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[47, 426, 0]], [v3d[47, 425, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[47, 430, 0]], [v3d[47, 431, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[47, 278, 0]], [v3d[47, 277, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[47, 159, 0]], [v3d[47, 159, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[45, 212, 0]], [v3d[45, 213, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[47, 191, 0]], [v3d[47, 191, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[47, 223, 0]], [v3d[47, 223, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[47, 246, 0]], [v3d[47, 245, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[47, 438, 0]], [v3d[47, 437, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[47, 270, 0]], [v3d[47, 271, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[47, 206, 0]], [v3d[47, 207, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[45, 382, 0]], [v3d[45, 382, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[45, 208, 0]], [v3d[45, 207, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[47, 79, 0]], [v3d[47, 79, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[45, 400, 0]], [v3d[45, 399, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[47, 137, 0]], [v3d[47, 137, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[45, 318, 0]], [v3d[45, 318, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[47, 317, 0]], [v3d[47, 317, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[45, 345, 0]], [v3d[45, 345, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[45, 166, 0]], [v3d[45, 167, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[47, 381, 0]], [v3d[47, 381, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[47, 99, 0]], [v3d[47, 99, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[45, 327, 0]], [v3d[45, 327, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[45, 153, 0]], [v3d[45, 153, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[45, 144, 0]], [v3d[45, 143, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[47, 202, 0]], [v3d[47, 202, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[45, 272, 0]], [v3d[45, 271, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[45, 84, 0]], [v3d[45, 85, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[47, 132, 0]], [v3d[47, 132, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[45, 185, 0]], [v3d[45, 185, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[47, 127, 0]], [v3d[47, 127, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[45, 230, 0]], [v3d[45, 231, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[47, 342, 0]], [v3d[47, 341, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[45, 236, 0]], [v3d[45, 236, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[47, 298, 0]], [v3d[47, 297, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[45, 377, 0]], [v3d[45, 377, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[47, 259, 0]], [v3d[47, 259, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[47, 292, 0]], [v3d[47, 292, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[45, 432, 0]], [v3d[45, 431, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[47, 356, 0]], [v3d[47, 355, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[47, 196, 0]], [v3d[47, 196, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[47, 366, 0]], [v3d[47, 367, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[47, 266, 0]], [v3d[47, 265, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[45, 409, 0]], [v3d[45, 409, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[47, 394, 0]], [v3d[47, 393, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[47, 93, 0]], [v3d[47, 93, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[45, 441, 0]], [v3d[45, 441, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[47, 253, 0]], [v3d[47, 253, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[47, 388, 0]], [v3d[47, 387, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[45, 308, 0]], [v3d[45, 309, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[47, 302, 0]], [v3d[47, 303, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[45, 336, 0]], [v3d[45, 335, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[47, 324, 0]], [v3d[47, 323, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[47, 182, 0]], [v3d[47, 181, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[47, 330, 0]], [v3d[47, 329, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[45, 121, 0]], [v3d[45, 121, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[47, 398, 0]], [v3d[47, 399, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[45, 254, 0]], [v3d[45, 254, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[45, 340, 0]], [v3d[45, 341, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[45, 414, 0]], [v3d[45, 414, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[47, 95, 0]], [v3d[47, 95, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[45, 313, 0]], [v3d[45, 313, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[47, 310, 0]], [v3d[47, 309, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[45, 116, 0]], [v3d[45, 117, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[47, 86, 0]], [v3d[47, 85, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[45, 172, 0]], [v3d[45, 173, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[45, 112, 0]], [v3d[45, 111, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[45, 372, 0]], [v3d[45, 373, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[45, 249, 0]], [v3d[45, 249, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[47, 362, 0]], [v3d[47, 361, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[45, 148, 0]], [v3d[45, 149, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[47, 420, 0]], [v3d[47, 419, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[47, 195, 0]], [v3d[47, 195, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[47, 374, 0]], [v3d[47, 373, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[47, 201, 0]], [v3d[47, 201, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[45, 102, 0]], [v3d[45, 103, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[47, 150, 0]], [v3d[47, 149, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[47, 351, 0]], [v3d[47, 351, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[45, 276, 0]], [v3d[45, 277, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[47, 157, 0]], [v3d[47, 157, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[45, 436, 0]], [v3d[45, 437, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[47, 118, 0]], [v3d[47, 117, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[45, 217, 0]], [v3d[45, 217, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[45, 418, 0]], [v3d[45, 419, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[47, 138, 0]], [v3d[47, 138, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[45, 176, 0]], [v3d[45, 175, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[45, 89, 0]], [v3d[45, 89, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[45, 108, 0]], [v3d[45, 109, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[45, 423, 0]], [v3d[45, 423, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[47, 131, 0]], [v3d[47, 131, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[47, 334, 0]], [v3d[47, 335, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[47, 189, 0]], [v3d[47, 189, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[45, 240, 0]], [v3d[45, 239, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 78, 0]], [v3d[437, 77, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 324, 0]], [v3d[437, 323, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 258, 0]], [v3d[437, 257, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[437, 281, 0]], [v3d[437, 281, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 186, 0]], [v3d[437, 187, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 150, 0]], [v3d[437, 149, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 116, 0]], [v3d[437, 117, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[437, 358, 0]], [v3d[437, 358, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 378, 0]], [v3d[437, 379, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[437, 417, 0]], [v3d[437, 417, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 148, 0]], [v3d[437, 149, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[437, 351, 0]], [v3d[437, 351, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 252, 0]], [v3d[437, 251, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 278, 0]], [v3d[437, 277, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 188, 0]], [v3d[437, 187, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 398, 0]], [v3d[437, 399, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 200, 0]], [v3d[437, 199, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 438, 0]], [v3d[437, 437, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 310, 0]], [v3d[437, 309, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[437, 249, 0]], [v3d[437, 249, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[437, 196, 0]], [v3d[437, 196, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[437, 318, 0]], [v3d[437, 318, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 86, 0]], [v3d[437, 85, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 426, 0]], [v3d[437, 425, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 298, 0]], [v3d[437, 297, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 84, 0]], [v3d[437, 85, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 372, 0]], [v3d[437, 373, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 176, 0]], [v3d[437, 175, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 98, 0]], [v3d[437, 97, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[437, 287, 0]], [v3d[437, 287, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 122, 0]], [v3d[437, 123, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 362, 0]], [v3d[437, 361, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[437, 191, 0]], [v3d[437, 191, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[437, 229, 0]], [v3d[437, 229, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 302, 0]], [v3d[437, 303, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[437, 440, 0]], [v3d[437, 440, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 304, 0]], [v3d[437, 303, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 266, 0]], [v3d[437, 265, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[437, 80, 0]], [v3d[437, 80, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 394, 0]], [v3d[437, 393, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 342, 0]], [v3d[437, 341, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 182, 0]], [v3d[437, 181, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 206, 0]], [v3d[437, 207, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[437, 237, 0]], [v3d[437, 237, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 432, 0]], [v3d[437, 431, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 208, 0]], [v3d[437, 207, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 316, 0]], [v3d[437, 315, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 172, 0]], [v3d[437, 173, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 136, 0]], [v3d[437, 135, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 330, 0]], [v3d[437, 329, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 92, 0]], [v3d[437, 91, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[437, 89, 0]], [v3d[437, 89, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 340, 0]], [v3d[437, 341, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 294, 0]], [v3d[437, 295, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 366, 0]], [v3d[437, 367, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 400, 0]], [v3d[437, 399, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 130, 0]], [v3d[437, 129, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[437, 101, 0]], [v3d[437, 101, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[437, 345, 0]], [v3d[437, 345, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[437, 127, 0]], [v3d[437, 127, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[437, 313, 0]], [v3d[437, 313, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 212, 0]], [v3d[437, 213, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[437, 382, 0]], [v3d[437, 382, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 404, 0]], [v3d[437, 405, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[437, 415, 0]], [v3d[437, 415, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[437, 165, 0]], [v3d[437, 165, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 374, 0]], [v3d[437, 373, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 246, 0]], [v3d[437, 245, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 134, 0]], [v3d[437, 135, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[437, 255, 0]], [v3d[437, 255, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[463, 118, 0]], [v3d[463, 117, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 362, 0]], [v3d[49, 361, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 426, 0]], [v3d[49, 425, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 205, 0]], [v3d[49, 205, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 144, 0]], [v3d[49, 143, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 165, 0]], [v3d[49, 165, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 374, 0]], [v3d[49, 373, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 134, 0]], [v3d[49, 135, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 200, 0]], [v3d[49, 199, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 235, 0]], [v3d[49, 235, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 424, 0]], [v3d[49, 425, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 382, 0]], [v3d[49, 382, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 272, 0]], [v3d[49, 271, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 378, 0]], [v3d[49, 379, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 301, 0]], [v3d[49, 301, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 194, 0]], [v3d[49, 193, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 196, 0]], [v3d[49, 196, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 275, 0]], [v3d[49, 275, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 80, 0]], [v3d[49, 80, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 380, 0]], [v3d[49, 379, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 147, 0]], [v3d[49, 147, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 138, 0]], [v3d[49, 138, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 436, 0]], [v3d[49, 437, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 243, 0]], [v3d[49, 243, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 118, 0]], [v3d[49, 117, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 192, 0]], [v3d[49, 193, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 229, 0]], [v3d[49, 229, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 153, 0]], [v3d[49, 153, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 130, 0]], [v3d[49, 129, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 339, 0]], [v3d[49, 339, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 113, 0]], [v3d[49, 113, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 403, 0]], [v3d[49, 403, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 128, 0]], [v3d[49, 129, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 176, 0]], [v3d[49, 175, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 220, 0]], [v3d[49, 219, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 98, 0]], [v3d[49, 97, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 237, 0]], [v3d[49, 237, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 101, 0]], [v3d[49, 101, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 156, 0]], [v3d[49, 155, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 266, 0]], [v3d[49, 265, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 208, 0]], [v3d[49, 207, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 96, 0]], [v3d[49, 97, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 86, 0]], [v3d[49, 85, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 240, 0]], [v3d[49, 239, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 121, 0]], [v3d[49, 121, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 371, 0]], [v3d[49, 371, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 365, 0]], [v3d[49, 365, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 324, 0]], [v3d[49, 323, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 252, 0]], [v3d[49, 251, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 249, 0]], [v3d[49, 249, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 258, 0]], [v3d[49, 257, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 392, 0]], [v3d[49, 393, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 352, 0]], [v3d[49, 353, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 345, 0]], [v3d[49, 345, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 160, 0]], [v3d[49, 161, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 188, 0]], [v3d[49, 187, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 307, 0]], [v3d[49, 307, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 316, 0]], [v3d[49, 315, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 415, 0]], [v3d[49, 415, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 304, 0]], [v3d[49, 303, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 358, 0]], [v3d[49, 358, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 89, 0]], [v3d[49, 89, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 432, 0]], [v3d[49, 431, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 342, 0]], [v3d[49, 341, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 417, 0]], [v3d[49, 417, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 211, 0]], [v3d[49, 211, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 217, 0]], [v3d[49, 217, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 328, 0]], [v3d[49, 329, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 397, 0]], [v3d[49, 397, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 330, 0]], [v3d[49, 329, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 368, 0]], [v3d[49, 367, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 124, 0]], [v3d[49, 123, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 400, 0]], [v3d[49, 399, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 136, 0]], [v3d[49, 135, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 318, 0]], [v3d[49, 318, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 394, 0]], [v3d[49, 393, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 278, 0]], [v3d[49, 277, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 420, 0]], [v3d[49, 419, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 298, 0]], [v3d[49, 297, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 224, 0]], [v3d[49, 225, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 294, 0]], [v3d[49, 295, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 214, 0]], [v3d[49, 213, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 310, 0]], [v3d[49, 309, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 115, 0]], [v3d[49, 115, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 185, 0]], [v3d[49, 185, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 83, 0]], [v3d[49, 83, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 179, 0]], [v3d[49, 179, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 281, 0]], [v3d[49, 281, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 182, 0]], [v3d[49, 181, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 438, 0]], [v3d[49, 437, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 150, 0]], [v3d[49, 149, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 269, 0]], [v3d[49, 269, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 107, 0]], [v3d[49, 107, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 313, 0]], [v3d[49, 313, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 92, 0]], [v3d[49, 91, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 288, 0]], [v3d[49, 289, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 202, 0]], [v3d[49, 202, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 333, 0]], [v3d[49, 333, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 255, 0]], [v3d[49, 255, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 260, 0]], [v3d[49, 260, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 336, 0]], [v3d[49, 335, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 360, 0]], [v3d[49, 361, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 171, 0]], [v3d[49, 171, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 440, 0]], [v3d[49, 440, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 429, 0]], [v3d[49, 429, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 78, 0]], [v3d[49, 77, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[49, 409, 0]], [v3d[49, 409, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 388, 0]], [v3d[49, 387, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[49, 246, 0]], [v3d[49, 245, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[439, 351, 0]], [v3d[439, 351, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 388, 0]], [v3d[439, 387, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[439, 127, 0]], [v3d[439, 127, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 212, 0]], [v3d[439, 213, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 172, 0]], [v3d[439, 173, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 78, 0]], [v3d[439, 77, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 374, 0]], [v3d[439, 373, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 342, 0]], [v3d[439, 341, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 420, 0]], [v3d[439, 419, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 346, 0]], [v3d[439, 347, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 244, 0]], [v3d[439, 245, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 400, 0]], [v3d[439, 399, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[439, 236, 0]], [v3d[439, 236, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 136, 0]], [v3d[439, 135, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 316, 0]], [v3d[439, 315, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[439, 287, 0]], [v3d[439, 287, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 150, 0]], [v3d[439, 149, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 430, 0]], [v3d[439, 431, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 206, 0]], [v3d[439, 207, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[439, 414, 0]], [v3d[439, 414, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 432, 0]], [v3d[439, 431, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 308, 0]], [v3d[439, 309, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 240, 0]], [v3d[439, 239, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 194, 0]], [v3d[439, 193, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 362, 0]], [v3d[439, 361, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[439, 254, 0]], [v3d[439, 254, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 84, 0]], [v3d[439, 85, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 282, 0]], [v3d[439, 283, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 156, 0]], [v3d[439, 155, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 298, 0]], [v3d[439, 297, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 144, 0]], [v3d[439, 143, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 258, 0]], [v3d[439, 257, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 304, 0]], [v3d[439, 303, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[439, 382, 0]], [v3d[439, 382, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 380, 0]], [v3d[439, 379, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[439, 202, 0]], [v3d[439, 202, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 238, 0]], [v3d[439, 239, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 334, 0]], [v3d[439, 335, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 438, 0]], [v3d[439, 437, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 310, 0]], [v3d[439, 309, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 398, 0]], [v3d[439, 399, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 250, 0]], [v3d[439, 251, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 418, 0]], [v3d[439, 419, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 112, 0]], [v3d[439, 111, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 372, 0]], [v3d[439, 373, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 186, 0]], [v3d[439, 187, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 148, 0]], [v3d[439, 149, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[439, 223, 0]], [v3d[439, 223, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 116, 0]], [v3d[439, 117, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 108, 0]], [v3d[439, 109, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 436, 0]], [v3d[439, 437, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[439, 159, 0]], [v3d[439, 159, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 330, 0]], [v3d[439, 329, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 200, 0]], [v3d[439, 199, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[439, 359, 0]], [v3d[439, 359, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[439, 440, 0]], [v3d[439, 440, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[439, 260, 0]], [v3d[439, 260, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 214, 0]], [v3d[439, 213, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 86, 0]], [v3d[439, 85, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 266, 0]], [v3d[439, 265, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 176, 0]], [v3d[439, 175, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[439, 80, 0]], [v3d[439, 80, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 122, 0]], [v3d[439, 123, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 118, 0]], [v3d[439, 117, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 272, 0]], [v3d[439, 271, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 246, 0]], [v3d[439, 245, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 102, 0]], [v3d[439, 103, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 92, 0]], [v3d[439, 91, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 278, 0]], [v3d[439, 277, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 230, 0]], [v3d[439, 231, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 368, 0]], [v3d[439, 367, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 366, 0]], [v3d[439, 367, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[437, 236, 0]], [v3d[437, 236, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[439, 377, 0]], [v3d[439, 377, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 270, 0]], [v3d[439, 271, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 276, 0]], [v3d[439, 277, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 410, 0]], [v3d[439, 411, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[55, 260, 0]], [v3d[55, 259, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[463, 130, 0]], [v3d[463, 129, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[463, 124, 0]], [v3d[463, 123, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[463, 113, 0]], [v3d[463, 113, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[439, 191, 0]], [v3d[439, 191, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[471, 79, 0]], [v3d[471, 79, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 394, 0]], [v3d[439, 393, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[475, 112, 0]], [v3d[475, 111, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 340, 0]], [v3d[439, 341, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 182, 0]], [v3d[439, 181, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 154, 0]], [v3d[439, 155, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 98, 0]], [v3d[439, 97, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 404, 0]], [v3d[439, 405, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 144, 0]], [v3d[437, 143, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[461, 79, 0]], [v3d[461, 79, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 166, 0]], [v3d[439, 167, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 218, 0]], [v3d[439, 219, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 314, 0]], [v3d[439, 315, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 208, 0]], [v3d[439, 207, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[439, 423, 0]], [v3d[439, 423, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 336, 0]], [v3d[439, 335, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[461, 124, 0]], [v3d[461, 123, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[455, 95, 0]], [v3d[455, 95, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 124, 0]], [v3d[439, 123, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 302, 0]], [v3d[439, 303, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[439, 327, 0]], [v3d[439, 327, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 324, 0]], [v3d[439, 323, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[455, 130, 0]], [v3d[455, 129, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 134, 0]], [v3d[439, 135, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[437, 327, 0]], [v3d[437, 327, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[61, 260, 0]], [v3d[61, 259, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[455, 124, 0]], [v3d[455, 123, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[471, 95, 0]], [v3d[471, 95, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[99, 12, 0]], [v3d[99, 13, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[108, 12, 0]], [v3d[108, 13, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[455, 84, 0]], [v3d[455, 85, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[117, 12, 0]], [v3d[117, 13, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 180, 0]], [v3d[439, 181, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[125, 12, 0]], [v3d[125, 13, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[455, 118, 0]], [v3d[455, 117, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[135, 12, 0]], [v3d[135, 13, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[143, 12, 0]], [v3d[143, 13, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[439, 358, 0]], [v3d[439, 358, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[154, 12, 0]], [v3d[154, 13, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 368, 0]], [v3d[437, 367, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[162, 12, 0]], [v3d[162, 13, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 156, 0]], [v3d[437, 155, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[172, 12, 0]], [v3d[172, 13, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[437, 359, 0]], [v3d[437, 359, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[181, 12, 0]], [v3d[181, 13, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 436, 0]], [v3d[437, 437, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[437, 391, 0]], [v3d[437, 391, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[437, 153, 0]], [v3d[437, 153, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 420, 0]], [v3d[437, 419, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[189, 12, 0]], [v3d[189, 13, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[437, 202, 0]], [v3d[437, 202, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[437, 95, 0]], [v3d[437, 95, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 336, 0]], [v3d[437, 335, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[437, 409, 0]], [v3d[437, 409, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[461, 130, 0]], [v3d[461, 129, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[199, 12, 0]], [v3d[199, 13, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 124, 0]], [v3d[437, 123, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 308, 0]], [v3d[437, 309, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[461, 84, 0]], [v3d[461, 85, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 194, 0]], [v3d[437, 193, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[207, 12, 0]], [v3d[207, 13, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 380, 0]], [v3d[437, 379, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[439, 95, 0]], [v3d[439, 95, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 108, 0]], [v3d[437, 109, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[461, 101, 0]], [v3d[461, 101, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 214, 0]], [v3d[437, 213, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[437, 333, 0]], [v3d[437, 333, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[218, 12, 0]], [v3d[218, 13, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 240, 0]], [v3d[437, 239, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 90, 0]], [v3d[439, 91, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 244, 0]], [v3d[437, 245, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[461, 95, 0]], [v3d[461, 95, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 218, 0]], [v3d[437, 219, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[437, 423, 0]], [v3d[437, 423, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[226, 12, 0]], [v3d[226, 13, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 252, 0]], [v3d[439, 251, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[236, 12, 0]], [v3d[236, 13, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[437, 159, 0]], [v3d[437, 159, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 294, 0]], [v3d[439, 295, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[461, 112, 0]], [v3d[461, 111, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[455, 102, 0]], [v3d[455, 103, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[245, 12, 0]], [v3d[245, 13, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[437, 429, 0]], [v3d[437, 429, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 220, 0]], [v3d[439, 219, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[255, 12, 0]], [v3d[255, 13, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[461, 118, 0]], [v3d[461, 117, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[263, 12, 0]], [v3d[263, 13, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[273, 12, 0]], [v3d[273, 13, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 272, 0]], [v3d[437, 271, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[439, 196, 0]], [v3d[439, 196, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[282, 12, 0]], [v3d[282, 13, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 188, 0]], [v3d[439, 187, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[439, 318, 0]], [v3d[439, 318, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[290, 12, 0]], [v3d[290, 13, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[300, 12, 0]], [v3d[300, 13, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 130, 0]], [v3d[439, 129, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[309, 12, 0]], [v3d[309, 13, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[455, 112, 0]], [v3d[455, 111, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[319, 12, 0]], [v3d[319, 13, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[437, 260, 0]], [v3d[437, 260, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[437, 223, 0]], [v3d[437, 223, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[327, 12, 0]], [v3d[327, 13, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[337, 12, 0]], [v3d[337, 13, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[437, 114, 0]], [v3d[437, 114, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[346, 12, 0]], [v3d[346, 13, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 388, 0]], [v3d[437, 387, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 118, 0]], [v3d[437, 117, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[354, 12, 0]], [v3d[354, 13, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 220, 0]], [v3d[437, 219, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[439, 138, 0]], [v3d[439, 138, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[365, 12, 0]], [v3d[365, 13, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 180, 0]], [v3d[437, 181, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[373, 12, 0]], [v3d[373, 13, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[437, 270, 0]], [v3d[437, 271, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[439, 426, 0]], [v3d[439, 425, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[383, 12, 0]], [v3d[383, 13, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[437, 138, 0]], [v3d[437, 138, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[425, 260, 0]], [v3d[425, 259, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[439, 391, 0]], [v3d[439, 391, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[431, 260, 0]], [v3d[431, 259, 0]]]
+[supply_grid_router/route_pins_to_rails]: Maze routing gnd with 321 pin components to connect.
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 301, 0]], [v3d[434, 300, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 145, 0]], [v3d[434, 146, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[22, 96, 0]], [v3d[22, 96, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[22, 77, 0]], [v3d[22, 76, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[28, 131, 0]], [v3d[28, 132, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[28, 84, 0]], [v3d[28, 84, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[28, 95, 0]], [v3d[28, 94, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[28, 113, 0]], [v3d[28, 114, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[28, 119, 0]], [v3d[28, 120, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[28, 102, 0]], [v3d[28, 102, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[28, 77, 0]], [v3d[28, 76, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[28, 125, 0]], [v3d[28, 126, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 221, 0]], [v3d[434, 222, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 241, 0]], [v3d[434, 242, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 191, 0]], [v3d[434, 190, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 281, 0]], [v3d[434, 280, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 189, 0]], [v3d[434, 190, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[428, 261, 0]], [v3d[428, 262, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 383, 0]], [v3d[434, 384, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[434, 444, 0]], [v3d[434, 444, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[434, 244, 0]], [v3d[434, 244, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 247, 0]], [v3d[434, 248, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 279, 0]], [v3d[434, 280, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[434, 353, 0]], [v3d[434, 353, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 157, 0]], [v3d[434, 158, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 173, 0]], [v3d[434, 172, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 415, 0]], [v3d[434, 416, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[434, 135, 0]], [v3d[434, 135, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[434, 436, 0]], [v3d[434, 436, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 153, 0]], [v3d[434, 152, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[434, 372, 0]], [v3d[434, 372, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 113, 0]], [v3d[434, 114, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 383, 0]], [v3d[52, 384, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 279, 0]], [v3d[52, 280, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 258, 0]], [v3d[52, 258, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 366, 0]], [v3d[52, 366, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 195, 0]], [v3d[52, 195, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 136, 0]], [v3d[52, 136, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 99, 0]], [v3d[52, 100, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 241, 0]], [v3d[52, 242, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 372, 0]], [v3d[52, 372, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 84, 0]], [v3d[52, 84, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 308, 0]], [v3d[52, 308, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 302, 0]], [v3d[52, 302, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 191, 0]], [v3d[52, 190, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 407, 0]], [v3d[52, 407, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 325, 0]], [v3d[52, 326, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 267, 0]], [v3d[52, 268, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 378, 0]], [v3d[52, 378, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 110, 0]], [v3d[52, 110, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 206, 0]], [v3d[52, 206, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 299, 0]], [v3d[52, 300, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 295, 0]], [v3d[52, 294, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 317, 0]], [v3d[52, 317, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 398, 0]], [v3d[52, 398, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 439, 0]], [v3d[52, 439, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 346, 0]], [v3d[52, 346, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 81, 0]], [v3d[52, 82, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 253, 0]], [v3d[52, 254, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 231, 0]], [v3d[52, 231, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 359, 0]], [v3d[52, 358, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 348, 0]], [v3d[52, 348, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 226, 0]], [v3d[52, 226, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 412, 0]], [v3d[52, 412, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 102, 0]], [v3d[52, 102, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 395, 0]], [v3d[52, 396, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 314, 0]], [v3d[52, 314, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 134, 0]], [v3d[52, 134, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 78, 0]], [v3d[52, 78, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 203, 0]], [v3d[52, 204, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 154, 0]], [v3d[52, 154, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 322, 0]], [v3d[52, 322, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 337, 0]], [v3d[52, 338, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 404, 0]], [v3d[52, 404, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 261, 0]], [v3d[52, 262, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 247, 0]], [v3d[52, 248, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 215, 0]], [v3d[52, 216, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 285, 0]], [v3d[52, 285, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 401, 0]], [v3d[52, 402, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 433, 0]], [v3d[52, 434, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 183, 0]], [v3d[52, 184, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 119, 0]], [v3d[52, 120, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 389, 0]], [v3d[52, 390, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 273, 0]], [v3d[52, 274, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 250, 0]], [v3d[52, 250, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 87, 0]], [v3d[52, 88, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 238, 0]], [v3d[52, 238, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 127, 0]], [v3d[52, 126, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 95, 0]], [v3d[52, 94, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 290, 0]], [v3d[52, 290, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 221, 0]], [v3d[52, 222, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 90, 0]], [v3d[52, 90, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 125, 0]], [v3d[52, 126, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 369, 0]], [v3d[52, 370, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 223, 0]], [v3d[52, 222, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 148, 0]], [v3d[52, 148, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 418, 0]], [v3d[52, 418, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 436, 0]], [v3d[52, 436, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 375, 0]], [v3d[52, 376, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 423, 0]], [v3d[52, 422, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 200, 0]], [v3d[52, 200, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 186, 0]], [v3d[52, 186, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 189, 0]], [v3d[52, 190, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 171, 0]], [v3d[52, 172, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 212, 0]], [v3d[52, 212, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 421, 0]], [v3d[52, 422, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 293, 0]], [v3d[52, 294, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 444, 0]], [v3d[52, 444, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 116, 0]], [v3d[52, 116, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 104, 0]], [v3d[52, 104, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 331, 0]], [v3d[52, 332, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 334, 0]], [v3d[52, 334, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 327, 0]], [v3d[52, 326, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 357, 0]], [v3d[52, 358, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 163, 0]], [v3d[52, 163, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 343, 0]], [v3d[52, 344, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 93, 0]], [v3d[52, 94, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 305, 0]], [v3d[52, 306, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 209, 0]], [v3d[52, 210, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 180, 0]], [v3d[52, 180, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 159, 0]], [v3d[52, 158, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 380, 0]], [v3d[52, 380, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 363, 0]], [v3d[52, 364, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 151, 0]], [v3d[52, 152, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 415, 0]], [v3d[52, 416, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 340, 0]], [v3d[52, 340, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 311, 0]], [v3d[52, 312, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 177, 0]], [v3d[52, 178, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 255, 0]], [v3d[52, 254, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 430, 0]], [v3d[52, 430, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 386, 0]], [v3d[52, 386, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 244, 0]], [v3d[52, 244, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 282, 0]], [v3d[52, 282, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 142, 0]], [v3d[52, 142, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 263, 0]], [v3d[52, 262, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 145, 0]], [v3d[52, 146, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 391, 0]], [v3d[52, 390, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 427, 0]], [v3d[52, 428, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 122, 0]], [v3d[52, 122, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 113, 0]], [v3d[52, 114, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 174, 0]], [v3d[52, 174, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 276, 0]], [v3d[52, 276, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 270, 0]], [v3d[52, 270, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 131, 0]], [v3d[52, 132, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 157, 0]], [v3d[52, 158, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 168, 0]], [v3d[52, 168, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 354, 0]], [v3d[52, 354, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[52, 235, 0]], [v3d[52, 236, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[52, 218, 0]], [v3d[52, 218, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 391, 0]], [v3d[434, 390, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 151, 0]], [v3d[434, 152, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 227, 0]], [v3d[434, 228, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 171, 0]], [v3d[434, 172, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 249, 0]], [v3d[434, 248, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 185, 0]], [v3d[434, 184, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 385, 0]], [v3d[434, 384, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 343, 0]], [v3d[434, 344, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 183, 0]], [v3d[434, 184, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 263, 0]], [v3d[434, 262, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 127, 0]], [v3d[434, 126, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[434, 167, 0]], [v3d[434, 167, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 305, 0]], [v3d[434, 306, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 325, 0]], [v3d[434, 326, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 427, 0]], [v3d[434, 428, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 429, 0]], [v3d[434, 428, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 359, 0]], [v3d[434, 358, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[434, 404, 0]], [v3d[434, 404, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[434, 380, 0]], [v3d[434, 380, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 121, 0]], [v3d[434, 120, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 377, 0]], [v3d[434, 376, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 205, 0]], [v3d[434, 204, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 311, 0]], [v3d[434, 312, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[434, 276, 0]], [v3d[434, 276, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 331, 0]], [v3d[434, 332, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 433, 0]], [v3d[434, 434, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 395, 0]], [v3d[434, 396, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 215, 0]], [v3d[434, 216, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 217, 0]], [v3d[434, 216, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 365, 0]], [v3d[434, 364, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 101, 0]], [v3d[434, 100, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 321, 0]], [v3d[434, 320, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 375, 0]], [v3d[434, 376, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 99, 0]], [v3d[434, 100, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 389, 0]], [v3d[434, 390, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 293, 0]], [v3d[434, 294, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 269, 0]], [v3d[434, 268, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 363, 0]], [v3d[434, 364, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[434, 291, 0]], [v3d[434, 291, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[434, 412, 0]], [v3d[434, 412, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 87, 0]], [v3d[434, 88, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[434, 195, 0]], [v3d[434, 195, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[434, 103, 0]], [v3d[434, 103, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 77, 0]], [v3d[434, 76, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 285, 0]], [v3d[434, 286, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[58, 261, 0]], [v3d[58, 262, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 125, 0]], [v3d[434, 126, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 93, 0]], [v3d[434, 94, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 295, 0]], [v3d[434, 294, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 313, 0]], [v3d[434, 312, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[434, 212, 0]], [v3d[434, 212, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 223, 0]], [v3d[434, 222, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[434, 259, 0]], [v3d[434, 259, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[434, 231, 0]], [v3d[434, 231, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 417, 0]], [v3d[434, 416, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 421, 0]], [v3d[434, 422, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[458, 113, 0]], [v3d[458, 114, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[458, 84, 0]], [v3d[458, 84, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[458, 125, 0]], [v3d[458, 126, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[458, 101, 0]], [v3d[458, 100, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[458, 95, 0]], [v3d[458, 94, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[458, 78, 0]], [v3d[458, 78, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[458, 119, 0]], [v3d[458, 120, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[458, 131, 0]], [v3d[458, 132, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[464, 77, 0]], [v3d[464, 76, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[464, 96, 0]], [v3d[464, 96, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 177, 0]], [v3d[434, 178, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 235, 0]], [v3d[434, 236, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[434, 84, 0]], [v3d[434, 84, 1]]]
+[router/run_router]: Found path: cost=5 
+[router/run_router]: [[v3d[487, 515, 0]], [v3d[486, 515, 0]], [v3d[486, 514, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 119, 0]], [v3d[434, 120, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 327, 0]], [v3d[434, 326, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 337, 0]], [v3d[434, 338, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[519, 515, 0]], [v3d[519, 514, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 345, 0]], [v3d[434, 344, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[434, 180, 0]], [v3d[434, 180, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 199, 0]], [v3d[434, 198, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[434, 148, 0]], [v3d[434, 148, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 203, 0]], [v3d[434, 204, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 267, 0]], [v3d[434, 268, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 89, 0]], [v3d[434, 88, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 299, 0]], [v3d[434, 300, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 133, 0]], [v3d[434, 132, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 131, 0]], [v3d[434, 132, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 209, 0]], [v3d[434, 210, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[434, 340, 0]], [v3d[434, 340, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 407, 0]], [v3d[434, 408, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 255, 0]], [v3d[434, 254, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 141, 0]], [v3d[434, 140, 0]]]
+[router/run_router]: Found path: cost=3 
+[router/run_router]: [[v3d[99, 494, 0]], [v3d[100, 494, 0]], [v3d[100, 494, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[100, 41, 0]], [v3d[100, 40, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[108, 494, 0]], [v3d[108, 494, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[108, 41, 0]], [v3d[108, 40, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[118, 493, 0]], [v3d[118, 493, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[118, 41, 0]], [v3d[118, 40, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 95, 0]], [v3d[434, 94, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[126, 493, 0]], [v3d[126, 493, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[126, 41, 0]], [v3d[126, 40, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 401, 0]], [v3d[434, 402, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[136, 494, 0]], [v3d[136, 494, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[136, 41, 0]], [v3d[136, 40, 0]]]
+[router/run_router]: Found path: cost=3 
+[router/run_router]: [[v3d[145, 493, 0]], [v3d[146, 493, 0]], [v3d[146, 493, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[434, 109, 0]], [v3d[434, 109, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[146, 41, 0]], [v3d[146, 40, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[154, 493, 0]], [v3d[154, 493, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[154, 41, 0]], [v3d[154, 40, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[164, 494, 0]], [v3d[164, 494, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[164, 41, 0]], [v3d[164, 40, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[172, 493, 0]], [v3d[172, 493, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[172, 41, 0]], [v3d[172, 40, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 163, 0]], [v3d[434, 164, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[182, 493, 0]], [v3d[182, 493, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[182, 41, 0]], [v3d[182, 40, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 423, 0]], [v3d[434, 422, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[190, 493, 0]], [v3d[190, 493, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[190, 41, 0]], [v3d[190, 40, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[200, 494, 0]], [v3d[200, 494, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[200, 41, 0]], [v3d[200, 40, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[434, 348, 0]], [v3d[434, 348, 1]]]
+[router/run_router]: Found path: cost=3 
+[router/run_router]: [[v3d[209, 493, 0]], [v3d[210, 493, 0]], [v3d[210, 493, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[210, 41, 0]], [v3d[210, 40, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 333, 0]], [v3d[434, 332, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[218, 493, 0]], [v3d[218, 493, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[218, 41, 0]], [v3d[218, 40, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[228, 494, 0]], [v3d[228, 494, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[228, 41, 0]], [v3d[228, 40, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[236, 494, 0]], [v3d[236, 494, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[236, 41, 0]], [v3d[236, 40, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 81, 0]], [v3d[434, 82, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 357, 0]], [v3d[434, 358, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[246, 493, 0]], [v3d[246, 493, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[246, 41, 0]], [v3d[246, 40, 0]]]
+[router/run_router]: Found path: cost=3 
+[router/run_router]: [[v3d[255, 494, 0]], [v3d[256, 494, 0]], [v3d[256, 494, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 159, 0]], [v3d[434, 158, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[256, 41, 0]], [v3d[256, 40, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[264, 494, 0]], [v3d[264, 494, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[264, 41, 0]], [v3d[264, 40, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 273, 0]], [v3d[434, 274, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[274, 493, 0]], [v3d[274, 493, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[274, 41, 0]], [v3d[274, 40, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 261, 0]], [v3d[434, 262, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[282, 493, 0]], [v3d[282, 493, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 397, 0]], [v3d[434, 396, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[282, 41, 0]], [v3d[282, 40, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[292, 494, 0]], [v3d[292, 494, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[292, 41, 0]], [v3d[292, 40, 0]]]
+[router/run_router]: Found path: cost=3 
+[router/run_router]: [[v3d[301, 493, 0]], [v3d[302, 493, 0]], [v3d[302, 493, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[302, 41, 0]], [v3d[302, 40, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[310, 493, 0]], [v3d[310, 493, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 237, 0]], [v3d[434, 236, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[310, 41, 0]], [v3d[310, 40, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 253, 0]], [v3d[434, 254, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[320, 494, 0]], [v3d[320, 494, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[320, 41, 0]], [v3d[320, 40, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[328, 494, 0]], [v3d[328, 494, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[328, 41, 0]], [v3d[328, 40, 0]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[434, 369, 0]], [v3d[434, 370, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[338, 493, 0]], [v3d[338, 493, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[338, 41, 0]], [v3d[338, 40, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[346, 493, 0]], [v3d[346, 493, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[346, 41, 0]], [v3d[346, 40, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[434, 308, 0]], [v3d[434, 308, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[356, 494, 0]], [v3d[356, 494, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[356, 41, 0]], [v3d[356, 40, 0]]]
+[router/run_router]: Found path: cost=3 
+[router/run_router]: [[v3d[365, 493, 0]], [v3d[366, 493, 0]], [v3d[366, 493, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[366, 41, 0]], [v3d[366, 40, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[374, 493, 0]], [v3d[374, 493, 1]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[434, 437, 0]], [v3d[434, 437, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[374, 41, 0]], [v3d[374, 40, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[434, 116, 0]], [v3d[434, 116, 1]]]
+[router/run_router]: Found path: cost=4 
+[router/run_router]: [[v3d[384, 41, 0]], [v3d[384, 40, 0]]]
+[router/run_router]: Found path: cost=2 
+[router/run_router]: [[v3d[434, 317, 0]], [v3d[434, 317, 1]]]
+*** Maze routing supplies: 6225.4 seconds
+** Routing: 6476.9 seconds
+WARNING: file calibre.py: line 227: sram_1rw1r_32_256_8_sky130	Geometries: 3988790	Checks: 1552	Errors: 23
+
+[verify.calibre/run_lvs]: sram_1rw1r_32_256_8_sky130	Summary: 0	Output: 0	Extraction: 0
+** Verification: 55.9 seconds
+** SRAM creation: 6542.3 seconds
+LEF: Writing to /home/mrg/openram/compiler/riscv-sky130/sram_1rw1r_32_256_8_sky130.lef
+** LEF: 28.6 seconds
+GDS: Writing to /home/mrg/openram/compiler/riscv-sky130/sram_1rw1r_32_256_8_sky130.gds
+** GDS: 2.6 seconds
+SP: Writing to /home/mrg/openram/compiler/riscv-sky130/sram_1rw1r_32_256_8_sky130.sp
+** Spice writing: 1.6 seconds
+LVS: Writing to /home/mrg/openram/compiler/riscv-sky130/sram_1rw1r_32_256_8_sky130.lvs
+** LVS writing: 1.6 seconds
+LIB: Characterizing... 
+[characterizer.lib/prepare_tables]: Loads: [  1.7225   6.89    27.56  ]
+[characterizer.lib/prepare_tables]: Slews: [ 0.00125  0.005    0.04   ]
+[characterizer.lib/characterize_corners]: Characterizing corners: [('TT', 1.8, 25), ('FF', 1.8, 25), ('TT', 1.8, 0), ('TT', 1.9, 25), ('TT', 1.7, 25), ('TT', 1.8, 100), ('SS', 1.8, 25)]
+[characterizer.lib/characterize_corners]: Corner: ('TT', 1.8, 25)
+[characterizer.lib/characterize_corners]: Writing to /home/mrg/openram/compiler/riscv-sky130/sram_1rw1r_32_256_8_sky130_TT_1p8V_25C.lib
+[characterizer.delay/analytical_power]: Dynamic Power: 19.03306596796803 mW
+[characterizer.delay/analytical_power]: Leakage Power: 0.009512 mW
+[characterizer.delay/analytical_delay]: Slew, Load, Delay(ns), Slew(ns)
+[characterizer.delay/analytical_delay]: 0.00125, 1.7225, 0.4492121498108118, 0.00167765625
+[characterizer.delay/analytical_delay]: 0.00125, 6.89, 0.4782793373108118, 0.004584374999999999
+[characterizer.delay/analytical_delay]: 0.00125, 27.56, 0.5945480873108118, 0.016211249999999996
+[characterizer.delay/analytical_delay]: 0.005, 1.7225, 0.4492121498108118, 0.00167765625
+[characterizer.delay/analytical_delay]: 0.005, 6.89, 0.4782793373108118, 0.004584374999999999
+[characterizer.delay/analytical_delay]: 0.005, 27.56, 0.5945480873108118, 0.016211249999999996
+[characterizer.delay/analytical_delay]: 0.04, 1.7225, 0.4492121498108118, 0.00167765625
+[characterizer.delay/analytical_delay]: 0.04, 6.89, 0.4782793373108118, 0.004584374999999999
+[characterizer.delay/analytical_delay]: 0.04, 27.56, 0.5945480873108118, 0.016211249999999996
+WARNING: file calibre.py: line 227: sram_1rw1r_32_256_8_sky130	Geometries: 3988790	Checks: 1552	Errors: 23
+
+[verify.calibre/run_lvs]: sram_1rw1r_32_256_8_sky130	Summary: 0	Output: 0	Extraction: 0
+[characterizer.lib/characterize_corners]: Corner: ('FF', 1.8, 25)
+[characterizer.lib/characterize_corners]: Writing to /home/mrg/openram/compiler/riscv-sky130/sram_1rw1r_32_256_8_sky130_FF_1p8V_25C.lib
+[characterizer.delay/analytical_power]: Dynamic Power: 21.147851075519963 mW
+[characterizer.delay/analytical_power]: Leakage Power: 0.009512 mW
+[characterizer.delay/analytical_delay]: Slew, Load, Delay(ns), Slew(ns)
+[characterizer.delay/analytical_delay]: 0.00125, 1.7225, 0.40429093482973066, 0.0015098906249999997
+[characterizer.delay/analytical_delay]: 0.00125, 6.89, 0.43045140357973066, 0.004125937499999999
+[characterizer.delay/analytical_delay]: 0.00125, 27.56, 0.5350932785797307, 0.014590124999999999
+[characterizer.delay/analytical_delay]: 0.005, 1.7225, 0.40429093482973066, 0.0015098906249999997
+[characterizer.delay/analytical_delay]: 0.005, 6.89, 0.43045140357973066, 0.004125937499999999
+[characterizer.delay/analytical_delay]: 0.005, 27.56, 0.5350932785797307, 0.014590124999999999
+[characterizer.delay/analytical_delay]: 0.04, 1.7225, 0.40429093482973066, 0.0015098906249999997
+[characterizer.delay/analytical_delay]: 0.04, 6.89, 0.43045140357973066, 0.004125937499999999
+[characterizer.delay/analytical_delay]: 0.04, 27.56, 0.5350932785797307, 0.014590124999999999
+[characterizer.lib/characterize_corners]: Corner: ('TT', 1.8, 0)
+[characterizer.lib/characterize_corners]: Writing to /home/mrg/openram/compiler/riscv-sky130/sram_1rw1r_32_256_8_sky130_TT_1p8V_0C.lib
+[characterizer.delay/analytical_power]: Dynamic Power: 24.89593003845822 mW
+[characterizer.delay/analytical_power]: Leakage Power: 0.009512 mW
+[characterizer.delay/analytical_delay]: Slew, Load, Delay(ns), Slew(ns)
+[characterizer.delay/analytical_delay]: 0.00125, 1.7225, 0.34342498825126905, 0.0012825767918088736
+[characterizer.delay/analytical_delay]: 0.00125, 6.89, 0.3656470019031462, 0.003504778156996586
+[characterizer.delay/analytical_delay]: 0.00125, 27.56, 0.4545350565106547, 0.012393583617747436
+[characterizer.delay/analytical_delay]: 0.005, 1.7225, 0.34342498825126905, 0.0012825767918088736
+[characterizer.delay/analytical_delay]: 0.005, 6.89, 0.3656470019031462, 0.003504778156996586
+[characterizer.delay/analytical_delay]: 0.005, 27.56, 0.4545350565106547, 0.012393583617747436
+[characterizer.delay/analytical_delay]: 0.04, 1.7225, 0.34342498825126905, 0.0012825767918088736
+[characterizer.delay/analytical_delay]: 0.04, 6.89, 0.3656470019031462, 0.003504778156996586
+[characterizer.delay/analytical_delay]: 0.04, 27.56, 0.4545350565106547, 0.012393583617747436
+[characterizer.lib/characterize_corners]: Corner: ('TT', 1.9, 25)
+[characterizer.lib/characterize_corners]: Writing to /home/mrg/openram/compiler/riscv-sky130/sram_1rw1r_32_256_8_sky130_TT_1p9V_25C.lib
+[characterizer.delay/analytical_power]: Dynamic Power: 21.20659510628534 mW
+[characterizer.delay/analytical_power]: Leakage Power: 0.009512 mW
+[characterizer.delay/analytical_delay]: Slew, Load, Delay(ns), Slew(ns)
+[characterizer.delay/analytical_delay]: 0.00125, 1.7225, 0.4255694050839271, 0.0015893585526315789
+[characterizer.delay/analytical_delay]: 0.00125, 6.89, 0.45310674061024286, 0.0043430921052631565
+[characterizer.delay/analytical_delay]: 0.00125, 27.56, 0.563256082715506, 0.015358026315789471
+[characterizer.delay/analytical_delay]: 0.005, 1.7225, 0.4255694050839271, 0.0015893585526315789
+[characterizer.delay/analytical_delay]: 0.005, 6.89, 0.45310674061024286, 0.0043430921052631565
+[characterizer.delay/analytical_delay]: 0.005, 27.56, 0.563256082715506, 0.015358026315789471
+[characterizer.delay/analytical_delay]: 0.04, 1.7225, 0.4255694050839271, 0.0015893585526315789
+[characterizer.delay/analytical_delay]: 0.04, 6.89, 0.45310674061024286, 0.0043430921052631565
+[characterizer.delay/analytical_delay]: 0.04, 27.56, 0.563256082715506, 0.015358026315789471
+[characterizer.lib/characterize_corners]: Corner: ('TT', 1.7, 25)
+[characterizer.lib/characterize_corners]: Writing to /home/mrg/openram/compiler/riscv-sky130/sram_1rw1r_32_256_8_sky130_TT_1p7V_25C.lib
+[characterizer.delay/analytical_power]: Dynamic Power: 16.977024891181347 mW
+[characterizer.delay/analytical_power]: Leakage Power: 0.009512 mW
+[characterizer.delay/analytical_delay]: Slew, Load, Delay(ns), Slew(ns)
+[characterizer.delay/analytical_delay]: 0.00125, 1.7225, 0.4756363939173301, 0.001776341911764706
+[characterizer.delay/analytical_delay]: 0.00125, 6.89, 0.5064134159761536, 0.004854044117647057
+[characterizer.delay/analytical_delay]: 0.00125, 27.56, 0.6295215042114477, 0.017164852941176468
+[characterizer.delay/analytical_delay]: 0.005, 1.7225, 0.4756363939173301, 0.001776341911764706
+[characterizer.delay/analytical_delay]: 0.005, 6.89, 0.5064134159761536, 0.004854044117647057
+[characterizer.delay/analytical_delay]: 0.005, 27.56, 0.6295215042114477, 0.017164852941176468
+[characterizer.delay/analytical_delay]: 0.04, 1.7225, 0.4756363939173301, 0.001776341911764706
+[characterizer.delay/analytical_delay]: 0.04, 6.89, 0.5064134159761536, 0.004854044117647057
+[characterizer.delay/analytical_delay]: 0.04, 27.56, 0.6295215042114477, 0.017164852941176468
+[characterizer.lib/characterize_corners]: Corner: ('TT', 1.8, 100)
+[characterizer.lib/characterize_corners]: Writing to /home/mrg/openram/compiler/riscv-sky130/sram_1rw1r_32_256_8_sky130_TT_1p8V_100C.lib
+[characterizer.delay/analytical_power]: Dynamic Power: 1.4444737564975685 mW
+[characterizer.delay/analytical_power]: Leakage Power: 0.009512 mW
+[characterizer.delay/analytical_delay]: Slew, Load, Delay(ns), Slew(ns)
+[characterizer.delay/analytical_delay]: 0.00125, 1.7225, 5.919030679860111, 0.02210558823529412
+[characterizer.delay/analytical_delay]: 0.00125, 6.89, 6.302033621036581, 0.060405882352941184
+[characterizer.delay/analytical_delay]: 0.00125, 27.56, 7.8340453857424635, 0.21360705882352943
+[characterizer.delay/analytical_delay]: 0.005, 1.7225, 5.919030679860111, 0.02210558823529412
+[characterizer.delay/analytical_delay]: 0.005, 6.89, 6.302033621036581, 0.060405882352941184
+[characterizer.delay/analytical_delay]: 0.005, 27.56, 7.8340453857424635, 0.21360705882352943
+[characterizer.delay/analytical_delay]: 0.04, 1.7225, 5.919030679860111, 0.02210558823529412
+[characterizer.delay/analytical_delay]: 0.04, 6.89, 6.302033621036581, 0.060405882352941184
+[characterizer.delay/analytical_delay]: 0.04, 27.56, 7.8340453857424635, 0.21360705882352943
+[characterizer.lib/characterize_corners]: Corner: ('SS', 1.8, 25)
+[characterizer.lib/characterize_corners]: Writing to /home/mrg/openram/compiler/riscv-sky130/sram_1rw1r_32_256_8_sky130_SS_1p8V_25C.lib
+[characterizer.delay/analytical_power]: Dynamic Power: 17.30278724360732 mW
+[characterizer.delay/analytical_power]: Leakage Power: 0.009512 mW
+[characterizer.delay/analytical_delay]: Slew, Load, Delay(ns), Slew(ns)
+[characterizer.delay/analytical_delay]: 0.00125, 1.7225, 0.494133364791893, 0.001845421875
+[characterizer.delay/analytical_delay]: 0.00125, 6.89, 0.526107271041893, 0.0050428124999999996
+[characterizer.delay/analytical_delay]: 0.00125, 27.56, 0.654002896041893, 0.017832374999999994
+[characterizer.delay/analytical_delay]: 0.005, 1.7225, 0.494133364791893, 0.001845421875
+[characterizer.delay/analytical_delay]: 0.005, 6.89, 0.526107271041893, 0.0050428124999999996
+[characterizer.delay/analytical_delay]: 0.005, 27.56, 0.654002896041893, 0.017832374999999994
+[characterizer.delay/analytical_delay]: 0.04, 1.7225, 0.494133364791893, 0.001845421875
+[characterizer.delay/analytical_delay]: 0.04, 6.89, 0.526107271041893, 0.0050428124999999996
+[characterizer.delay/analytical_delay]: 0.04, 27.56, 0.654002896041893, 0.017832374999999994
+** Characterization: 90.7 seconds
+Config: Writing to /home/mrg/openram/compiler/riscv-sky130/sram_1rw1r_32_256_8_sky130.py
+** Config: 0.0 seconds
+Datasheet: Writing to /home/mrg/openram/compiler/riscv-sky130/sram_1rw1r_32_256_8_sky130.html
+** Datasheet: 0.0 seconds
+Verilog: Writing to /home/mrg/openram/compiler/riscv-sky130/sram_1rw1r_32_256_8_sky130.v
+** Verilog: 0.0 seconds
+[globals/cleanup_paths]: Preserving temp directory: /home/mrg/riscv-sky130/temp/
+[verify.calibre/print_drc_stats]: DRC runs: 2
+[verify.calibre/print_lvs_stats]: LVS runs: 2
+[verify.calibre/print_pex_stats]: PEX runs: 0
+** End: 6667.5 seconds
