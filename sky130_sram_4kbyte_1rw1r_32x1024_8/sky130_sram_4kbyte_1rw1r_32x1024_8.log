@@ -1,18 +1,21 @@
 [globals/init_openram]: Initializing OpenRAM...
-[globals/setup_paths]: Temporary files saved in /tmp/openram_mk_11207_temp/
-[globals/read_config]: Configuration file is /home/mk/foss/pdks/sky130_fd_bd_sram/macros/configs/sky130_sram_4kbyte_1rw1r_32x1024_8.py
-[globals/read_config]: Output saved in /home/mk/foss/pdks/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/
-[globals/import_tech]: Adding technology path: /home/mk/foss/pdks/sky130_fd_bd_sram/third_party/OpenRAM/technology
-[globals/import_tech]: Adding technology path: /home/mk/foss/pdks/sky130_fd_bd_sram
-[globals/init_paths]: Creating temp directory: /tmp/openram_mk_11207_temp/
+[globals/setup_paths]: Temporary files saved in /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/
+[globals/read_config]: Configuration file is /home/mrg/data/skywater-tech/macros/configs/sky130_sram_4kbyte_1rw1r_32x1024_8.py
+[globals/read_config]: Output saved in /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/
+[globals/import_tech]: Adding technology path: /home/mrg/openram/technology
+[globals/import_tech]: Adding technology path: /home/mrg/data/skywater-tech/tools/openram/technology
+[globals/init_paths]: Creating temp directory: /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/
 [globals/setup_bitcell]: Using bitcell: bitcell_2port
 [characterizer/<module>]: Initializing characterizer...
 [characterizer/<module>]: Analytical model enabled.
 [verify/<module>]: Initializing verify...
-[verify/<module>]: LVS/DRC/PEX disabled.
+[verify/<module>]: Finding DRC/LVS/PEX tools.
+[globals/get_tool]: Using DRC: /home/mrg/data/skywater-tech/env/conda/envs/sky130_fd_bd_sram/bin/magic
+[globals/get_tool]: Using LVS: /home/mrg/data/skywater-tech/env/conda/envs/sky130_fd_bd_sram/bin/netgen
+[globals/get_tool]: Using PEX: /home/mrg/data/skywater-tech/env/conda/envs/sky130_fd_bd_sram/bin/magic
 [globals/setup_bitcell]: Using bitcell: bitcell_2port
 |==============================================================================|
-|=========                       OpenRAM v1.1.6                       =========|
+|=========                      OpenRAM v1.1.13                       =========|
 |=========                                                            =========|
 |=========               VLSI Design and Automation Lab               =========|
 |=========        Computer Science and Engineering Department         =========|
@@ -20,14 +23,12 @@
 |=========                                                            =========|
 |=========          Usage help: openram-user-group@ucsc.edu           =========|
 |=========        Development help: openram-dev-group@ucsc.edu        =========|
-|=========           Temp dir: /tmp/openram_mk_11207_temp/            =========|
+|=========Temp dir: /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/=========|
 |=========                See LICENSE for license info                =========|
 |==============================================================================|
-** Start: 11/19/2020 19:44:54
+** Start: 03/25/2021 11:41:43
 Technology: sky130
 Total size: 32768 bits
-WARNING: file globals.py: line 571: Requesting such a large memory size (32768) will have a large run-time. Consider using multiple smaller banks.
-
 Word size: 32
 Words: 1024
 Banks: 1
@@ -35,9 +36,7 @@ Write size: 8
 RW ports: 1
 R-only ports: 1
 W-only ports: 0
-Design supply routing skipped. Supplies will have multiple must-connect pins. (route_supplies=True to enable supply routing).
 DRC/LVS/PEX is only run on the top-level design to save run-time (inline_lvsdrc=True to do inline checking).
-DRC/LVS/PEX is disabled (check_lvsdrc=True to enable).
 Characterization is disabled (using analytical delay models) (analytical_delay=False to simulate).
 Only generating nominal corner timing.
 [sram_config/recompute_sizes]: Recomputing with words per row: 4
@@ -45,15 +44,17 @@ Only generating nominal corner timing.
 [sram_config/recompute_sizes]: Row addr size: 8 Col addr size: 2 Bank addr size: 10
 Words per row: 4
 Output files are: 
-/home/mk/foss/pdks/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.lvs
-/home/mk/foss/pdks/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.sp
-/home/mk/foss/pdks/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.v
-/home/mk/foss/pdks/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.lib
-/home/mk/foss/pdks/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.py
-/home/mk/foss/pdks/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.html
-/home/mk/foss/pdks/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.log
-/home/mk/foss/pdks/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.lef
-/home/mk/foss/pdks/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.gds
+/home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.lvs
+/home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.sp
+/home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.v
+/home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.lib
+/home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.py
+/home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.html
+/home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.log
+/home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.lef
+/home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.gds
+[sram/__init__]: Changed OPTS wpr=4
+[sram/__init__]: OPTS wpr=4
 [dff_array/__init__]: Creating row_addr_dff rows=8 cols=1
 [dff_array/__init__]: Creating col_addr_dff rows=1 cols=2
 [dff_array/__init__]: Creating data_dff rows=1 cols=32
@@ -63,33 +64,18 @@ Output files are:
 [and4_dec/__init__]: Creating and4_dec and4_dec
 [wordline_driver_array/__init__]: Creating wordline_driver_array
 [wordline_driver/__init__]: Creating wordline_driver wordline_driver
-[pbuf_dec/__init__]: creating pbuf_dec with size of 8
-[bitcell_base_array/__init__]: Creating global_bitcell_array 256 x 128
-[bitcell_base_array/__init__]: Creating local_bitcell_array 256 x 16
-[bitcell_base_array/__init__]: Creating replica_bitcell_array 256 x 16
-[replica_bitcell_array/__init__]: Creating replica_bitcell_array 256 x 16 rbls: [1, 1] left_rbl: [0] right_rbl: []
-[bitcell_base_array/__init__]: Creating bitcell_array 256 x 16
-[bitcell_array/__init__]: Creating bitcell_array 256 x 16
-[bitcell_base_array/__init__]: Creating replica_column 260 x 1
-[bitcell_base_array/__init__]: Creating dummy_array 1 x 16
-[bitcell_base_array/__init__]: Creating col_cap_array 1 x 16
-[bitcell_base_array/__init__]: Creating col_cap_array_0 1 x 16
+[and2_dec/__init__]: Creating and2_dec and2_dec_0
+[bitcell_base_array/__init__]: Creating replica_bitcell_array 256 x 128
+[replica_bitcell_array/__init__]: Creating replica_bitcell_array 256 x 128 rbls: None left_rbl: None right_rbl: None
+[bitcell_base_array/__init__]: Creating bitcell_array 256 x 128
+[bitcell_array/__init__]: Creating bitcell_array 256 x 128
+[bitcell_base_array/__init__]: Creating replica_column 258 x 1
+[bitcell_base_array/__init__]: Creating replica_column_0 258 x 1
+[bitcell_base_array/__init__]: Creating dummy_array 1 x 128
+[bitcell_base_array/__init__]: Creating col_cap_array 1 x 128
+[bitcell_base_array/__init__]: Creating col_cap_array_0 1 x 128
 [bitcell_base_array/__init__]: Creating row_cap_array 258 x 1
 [bitcell_base_array/__init__]: Creating row_cap_array_0 258 x 1
-[wordline_buffer_array/__init__]: Creating wordline_buffer_array
-[bitcell_base_array/__init__]: Creating local_bitcell_array_0 256 x 16
-[bitcell_base_array/__init__]: Creating replica_bitcell_array_0 256 x 16
-[replica_bitcell_array/__init__]: Creating replica_bitcell_array_0 256 x 16 rbls: [1, 1] left_rbl: [] right_rbl: []
-[bitcell_base_array/__init__]: Creating bitcell_array_0 256 x 16
-[bitcell_array/__init__]: Creating bitcell_array_0 256 x 16
-[bitcell_base_array/__init__]: Creating dummy_array_0 1 x 16
-[bitcell_base_array/__init__]: Creating col_cap_array_1 1 x 16
-[bitcell_base_array/__init__]: Creating col_cap_array_2 1 x 16
-[bitcell_base_array/__init__]: Creating row_cap_array_1 258 x 1
-[bitcell_base_array/__init__]: Creating local_bitcell_array_1 256 x 16
-[bitcell_base_array/__init__]: Creating replica_bitcell_array_1 256 x 16
-[replica_bitcell_array/__init__]: Creating replica_bitcell_array_1 256 x 16 rbls: [1, 1] left_rbl: [] right_rbl: [1]
-[bitcell_base_array/__init__]: Creating replica_column_0 260 x 1
 [precharge_array/__init__]: Creating precharge_array
 [sense_amp_array/__init__]: Creating sense_amp_array
 [column_mux_array/__init__]: Creating column_mux_array
@@ -119,43 +105,896 @@ Output files are:
 [control_logic/__init__]: Creating control_logic_r
 [dff_buf_array/__init__]: Creating dff_buf_array_0
 [pdriver/__init__]: creating pdriver pdriver_7
-** Submodules: 23.3 seconds
-** Placement: 0.2 seconds
-** Routing: 0.8 seconds
-** Verification: 0.0 seconds
-** SRAM creation: 24.4 seconds
-GDS: Writing to /home/mk/foss/pdks/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.gds
-** GDS: 12.8 seconds
-LEF: Writing to /home/mk/foss/pdks/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.lef
-** LEF: 356.4 seconds
-SP: Writing to /home/mk/foss/pdks/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.sp
-** Spice writing: 2.2 seconds
-LVS: Writing to /home/mk/foss/pdks/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.lvs.sp
+** Submodules: 14.9 seconds
+** Placement: 0.0 seconds
+[router_tech/__init__]: Minimum track width: 0.680
+[router_tech/__init__]: Minimum track space: 0.300
+[router_tech/__init__]: Minimum track wire width: 0.380
+[router/init_bbox]: Size: 665.4 x 645.315
+[router/init_bbox]: Size: 665.4 x 645.315
+**** Retrieving pins: 0.0 seconds
+**** Analyzing pins: 0.0 seconds
+[router/find_blockages]: Finding blockages.
+**** Finding blockages: 12.8 seconds
+[router/convert_blockages]: Converting blockages.
+**** Converting blockages: 0.8 seconds
+**** Converting pins: 0.3 seconds
+**** Separating adjacent pins: 0.0 seconds
+**** Enclosing pins: 0.1 seconds
+*** Finding pins and blockages: 14.1 seconds
+[signal_escape_router/route_signal]: Escape routing csb1 with scale 5
+[signal_escape_router/route_signal]: Escape routing csb0 with scale 5
+[signal_escape_router/route_signal]: Escape routing web0 with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[0] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[1] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[2] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[3] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[4] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[5] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[6] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[7] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[8] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[9] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[10] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[11] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[12] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[13] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[14] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[15] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[16] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[17] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[18] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[19] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[20] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[21] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[22] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[23] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[24] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[25] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[26] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[27] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[28] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[29] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[30] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[31] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[0] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[1] with scale 5
+[signal_escape_router/route_signal]: Escape routing wmask0[0] with scale 5
+[signal_escape_router/route_signal]: Escape routing wmask0[1] with scale 5
+[signal_escape_router/route_signal]: Escape routing wmask0[2] with scale 5
+[signal_escape_router/route_signal]: Escape routing wmask0[3] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[0] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[1] with scale 5
+[signal_escape_router/route_signal]: Escape routing clk1 with scale 5
+[signal_escape_router/route_signal]: Escape routing clk0 with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[0] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[1] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[2] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[3] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[4] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[5] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[6] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[7] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[8] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[9] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[10] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[11] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[12] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[13] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[14] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[15] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[16] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[17] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[18] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[19] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[20] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[21] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[22] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[23] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[24] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[25] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[26] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[27] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[28] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[29] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[30] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[31] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[9] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[8] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[7] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[6] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[0] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[1] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[2] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[3] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[4] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[5] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[6] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[7] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[8] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[9] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[10] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[11] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[12] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[13] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[14] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[15] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[16] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[17] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[18] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[19] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[20] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[21] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[22] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[23] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[24] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[25] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[26] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[27] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[28] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[29] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[30] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[31] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[2] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[3] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[4] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[5] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[2] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[3] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[4] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[5] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[6] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[7] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[8] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[9] with scale 5
+*** Maze routing pins: 163.0 seconds
+[router_tech/__init__]: Minimum track width: 0.680
+[router_tech/__init__]: Minimum track space: 0.300
+[router_tech/__init__]: Minimum track wire width: 0.380
+[router/init_bbox]: Size: 665.42 x 645.6999999999999
+[supply_tree_router/route]: Running supply router on vdd and gnd...
+[router/init_bbox]: Size: 665.42 x 645.6999999999999
+**** Retrieving pins: 0.2 seconds
+**** Analyzing pins: 15.0 seconds
+[router/find_blockages]: Finding blockages.
+**** Finding blockages: 33.4 seconds
+[router/convert_blockages]: Converting blockages.
+**** Converting blockages: 0.1 seconds
+**** Converting pins: 10.1 seconds
+**** Separating adjacent pins: 25.6 seconds
+**** Enclosing pins: 29.4 seconds
+*** Finding pins and blockages: 113.8 seconds
+[supply_tree_router/route_pins]: Routing vdd with 2399 pins.
+[supply_tree_router/route_pins]: 0 supply segments routed, 2398 remaining.
+[supply_tree_router/route_pins]: 100 supply segments routed, 2298 remaining.
+[supply_tree_router/route_pins]: 200 supply segments routed, 2198 remaining.
+[supply_tree_router/route_pins]: 300 supply segments routed, 2098 remaining.
+[supply_tree_router/route_pins]: 400 supply segments routed, 1998 remaining.
+[supply_tree_router/route_pins]: 500 supply segments routed, 1898 remaining.
+[supply_tree_router/route_pins]: 600 supply segments routed, 1798 remaining.
+[supply_tree_router/route_pins]: 700 supply segments routed, 1698 remaining.
+[supply_tree_router/route_pins]: 800 supply segments routed, 1598 remaining.
+[supply_tree_router/route_pins]: 900 supply segments routed, 1498 remaining.
+[supply_tree_router/route_pins]: 1000 supply segments routed, 1398 remaining.
+[supply_tree_router/route_pins]: 1100 supply segments routed, 1298 remaining.
+[supply_tree_router/route_pins]: 1200 supply segments routed, 1198 remaining.
+[supply_tree_router/route_pins]: 1300 supply segments routed, 1098 remaining.
+[supply_tree_router/route_pins]: 1400 supply segments routed, 998 remaining.
+[supply_tree_router/route_pins]: 1500 supply segments routed, 898 remaining.
+[supply_tree_router/route_pins]: 1600 supply segments routed, 798 remaining.
+[supply_tree_router/route_pins]: 1700 supply segments routed, 698 remaining.
+[supply_tree_router/route_pins]: 1800 supply segments routed, 598 remaining.
+[supply_tree_router/route_pins]: 1900 supply segments routed, 498 remaining.
+[supply_tree_router/route_pins]: 2000 supply segments routed, 398 remaining.
+[supply_tree_router/route_pins]: 2100 supply segments routed, 298 remaining.
+[supply_tree_router/route_pins]: 2200 supply segments routed, 198 remaining.
+[supply_tree_router/route_pins]: 2300 supply segments routed, 98 remaining.
+[supply_tree_router/route_pins]: Routing gnd with 2292 pins.
+[supply_tree_router/route_pins]: 0 supply segments routed, 2291 remaining.
+[supply_tree_router/route_pins]: 100 supply segments routed, 2191 remaining.
+[supply_tree_router/route_pins]: 200 supply segments routed, 2091 remaining.
+[supply_tree_router/route_pins]: 300 supply segments routed, 1991 remaining.
+[supply_tree_router/route_pins]: 400 supply segments routed, 1891 remaining.
+[supply_tree_router/route_pins]: 500 supply segments routed, 1791 remaining.
+[supply_tree_router/route_pins]: 600 supply segments routed, 1691 remaining.
+[supply_tree_router/route_pins]: 700 supply segments routed, 1591 remaining.
+[supply_tree_router/route_pins]: 800 supply segments routed, 1491 remaining.
+[supply_tree_router/route_pins]: 900 supply segments routed, 1391 remaining.
+[supply_tree_router/route_pins]: 1000 supply segments routed, 1291 remaining.
+[supply_tree_router/route_pins]: 1100 supply segments routed, 1191 remaining.
+[supply_tree_router/route_pins]: 1200 supply segments routed, 1091 remaining.
+[supply_tree_router/route_pins]: 1300 supply segments routed, 991 remaining.
+[supply_tree_router/route_pins]: 1400 supply segments routed, 891 remaining.
+[supply_tree_router/route_pins]: 1500 supply segments routed, 791 remaining.
+[supply_tree_router/route_pins]: 1600 supply segments routed, 691 remaining.
+[supply_tree_router/route_pins]: 1700 supply segments routed, 591 remaining.
+[supply_tree_router/route_pins]: 1800 supply segments routed, 491 remaining.
+[supply_tree_router/route_pins]: 1900 supply segments routed, 391 remaining.
+[supply_tree_router/route_pins]: 2000 supply segments routed, 291 remaining.
+[supply_tree_router/route_pins]: 2100 supply segments routed, 191 remaining.
+[supply_tree_router/route_pins]: 2200 supply segments routed, 91 remaining.
+*** Maze routing supplies: 1306.8 seconds
+** Routing: 2920.2 seconds
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (30 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (60 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (90 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (120 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (150 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (180 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (210 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (240 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (270 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (300 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (330 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (360 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (390 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (420 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (450 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (480 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (511 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (541 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (571 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (601 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (631 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (661 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (691 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (721 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (751 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (781 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (811 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (841 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (871 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (901 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (931 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (961 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (991 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1021 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1051 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1081 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1111 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1141 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1171 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1201 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1231 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1261 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1291 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1321 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1351 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1381 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1411 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1441 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1471 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1501 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1531 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1561 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1592 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1622 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1652 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1682 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1712 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1742 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1772 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1802 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1832 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1862 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1892 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1922 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1952 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1982 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2012 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2042 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2072 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2102 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2132 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2162 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2192 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2222 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2252 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2282 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2312 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2342 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2372 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2402 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2432 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2462 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2492 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2522 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2552 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2582 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2612 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2642 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2673 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2703 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2733 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2763 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2793 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2823 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2853 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2883 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2913 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2943 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2973 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3003 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3033 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3063 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3093 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3123 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3153 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3183 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3213 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3243 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3273 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3303 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3333 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3363 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3393 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3423 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3453 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3483 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3513 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3543 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3573 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3603 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3633 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3663 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3693 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3723 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3754 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3784 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3814 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3844 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3874 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3904 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3934 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3964 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3994 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4024 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4054 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4084 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4114 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4144 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4174 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4204 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4234 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4264 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4294 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4324 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4354 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4384 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4414 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4444 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4474 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4504 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4534 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4564 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4594 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4624 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4654 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4684 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4714 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4744 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4774 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4804 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4835 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4865 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4895 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4925 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4955 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4985 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5015 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5045 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5075 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5105 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5135 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5165 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5195 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5225 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5255 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5285 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5315 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5345 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5375 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5405 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5435 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5465 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5495 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5525 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5555 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5585 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5615 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5645 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5675 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5705 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5735 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5765 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5795 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5825 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5855 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5885 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5915 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5946 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5976 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6006 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6036 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6066 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6096 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6126 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6156 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6186 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6216 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6246 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6276 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6306 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6336 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6366 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6396 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6426 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6456 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6486 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6516 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6546 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6576 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6606 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6636 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6666 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6696 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6726 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6756 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6786 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6816 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6846 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6876 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6906 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6936 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6966 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6997 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7027 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7057 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7087 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7117 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7147 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7177 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7207 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7237 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7267 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7297 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7327 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7357 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7387 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7417 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7447 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7477 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7507 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7537 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7567 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7597 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7627 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7657 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7687 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7717 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7747 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7777 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7807 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7837 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7867 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7897 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7927 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7957 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7987 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8017 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8048 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8078 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8108 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8138 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8168 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8198 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8228 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8258 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8288 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8318 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8348 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8378 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8408 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8438 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8468 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8498 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8528 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8558 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8588 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8618 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8648 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8678 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8708 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8738 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8768 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8798 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8828 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8858 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8888 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8918 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8948 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8978 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9008 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9038 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9069 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9099 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9129 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9159 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9189 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9219 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9249 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9279 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9309 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9339 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9369 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9399 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9429 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9459 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9489 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9519 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9549 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9579 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9609 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9639 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9669 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9699 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9729 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9759 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9789 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9819 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9849 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9879 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9909 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9939 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9969 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9999 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10029 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10059 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10089 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10120 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10150 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10180 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10210 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10240 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10270 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10300 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10330 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10360 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10390 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10420 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10450 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10480 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10510 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10540 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10570 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10600 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10630 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10660 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10690 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10720 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10750 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10780 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10810 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10840 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10870 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10900 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10930 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10960 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10990 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11020 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11050 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11080 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11110 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11140 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11171 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11201 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11231 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11261 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11291 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11321 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11351 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11381 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11411 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11441 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11471 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11501 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11531 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11561 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11591 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11621 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11651 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11681 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11711 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11741 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11771 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11801 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11831 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11861 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11891 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11921 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11951 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11981 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12011 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12041 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12071 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12101 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12131 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12161 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12191 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12222 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12252 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12282 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12312 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12342 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12372 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12402 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12432 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12462 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12492 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12522 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12552 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12582 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12612 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12642 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12672 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12702 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12732 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12762 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12792 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12822 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12852 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12882 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12912 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12942 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12972 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13002 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13032 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13062 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13092 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13122 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13152 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13182 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13212 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13242 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13273 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13303 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13333 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13363 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13393 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13423 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13453 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13483 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13513 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13543 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13573 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13603 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13633 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13663 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13693 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13723 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13753 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13783 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13813 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13843 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13873 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13903 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13933 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13963 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13993 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14023 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14053 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14083 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14113 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14143 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14173 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14203 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14233 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14263 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14293 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14323 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14354 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14384 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14414 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14444 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14474 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14504 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14534 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14564 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14594 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14624 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14654 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14684 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14714 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14744 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14774 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14804 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14834 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14864 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14894 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14924 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14954 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14984 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15014 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15044 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15074 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15104 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15134 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15164 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15194 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15224 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15254 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15284 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15314 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15344 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15375 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15405 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15435 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15465 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15495 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15525 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15555 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15585 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15615 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15645 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15675 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15705 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15735 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15765 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15795 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15825 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15855 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15885 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15915 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15945 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15975 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16005 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16035 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16065 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16095 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16125 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16155 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16185 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16215 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16245 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16275 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16305 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16335 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16365 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16395 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16426 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16456 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16486 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16516 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16546 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16576 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16606 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16636 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16666 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16696 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16726 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16756 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16786 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16816 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16846 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16876 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16906 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16936 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16966 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16996 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17026 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17056 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17086 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17116 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17146 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17176 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17206 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17236 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17266 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17296 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17326 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17356 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17386 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17416 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17446 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17477 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17507 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17537 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17567 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17597 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17627 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17657 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17687 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17717 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17747 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17777 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17807 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17837 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17867 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17897 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17927 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17957 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17987 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18017 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18047 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18077 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18107 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18137 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18167 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18197 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18227 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18257 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18287 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18317 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18347 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18377 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18407 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18437 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18467 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18497 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18528 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18558 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18588 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18618 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18648 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18678 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18708 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18738 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18768 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18798 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18828 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18858 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18888 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18918 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18948 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18978 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (19008 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (19038 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (19068 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (19098 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (19128 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (19158 seconds)
+WARNING: file magic.py: line 229: DRC Errors sky130_sram_4kbyte_1rw1r_32x1024_8	3
+
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_lvs.sh (30 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_lvs.sh (60 seconds)
+[verify.magic/run_lvs]: sky130_sram_4kbyte_1rw1r_32x1024_8	LVS matches
+** Verification: 19286.7 seconds
+** SRAM creation: 22221.9 seconds
+SP: Writing to /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.sp
+** Spice writing: 0.9 seconds
+GDS: Writing to /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.gds
+** GDS: 1.4 seconds
+LEF: Writing to /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.lef
+** LEF: 81.9 seconds
+LVS: Writing to /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.lvs.sp
 ** LVS writing: 0.1 seconds
 LIB: Characterizing... 
 [characterizer.lib/prepare_tables]: Loads: [ 1.7225  6.89   27.56  ]
 [characterizer.lib/prepare_tables]: Slews: [0.00125 0.005   0.04   ]
 [characterizer.lib/characterize_corners]: Characterizing corners: [('TT', 1.8, 25)]
 [characterizer.lib/characterize_corners]: Corner: ('TT', 1.8, 25)
-[characterizer.lib/characterize_corners]: Writing to /home/mk/foss/pdks/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8_TT_1p8V_25C.lib
-[characterizer.delay/analytical_power]: Dynamic Power: 88.49456130787235 mW
-[characterizer.delay/analytical_power]: Leakage Power: 0.039776 mW
-[characterizer.delay/analytical_delay]: Slew, Load, Delay(ns), Slew(ns)
-[characterizer.delay/analytical_delay]: 0.00125, 1.7225, 0.3760346451801875, 0.00167765625
-[characterizer.delay/analytical_delay]: 0.00125, 6.89, 0.40510183268018746, 0.004584374999999999
-[characterizer.delay/analytical_delay]: 0.00125, 27.56, 0.5213705826801874, 0.016211249999999996
-[characterizer.delay/analytical_delay]: 0.005, 1.7225, 0.3760346451801875, 0.00167765625
-[characterizer.delay/analytical_delay]: 0.005, 6.89, 0.40510183268018746, 0.004584374999999999
-[characterizer.delay/analytical_delay]: 0.005, 27.56, 0.5213705826801874, 0.016211249999999996
-[characterizer.delay/analytical_delay]: 0.04, 1.7225, 0.3760346451801875, 0.00167765625
-[characterizer.delay/analytical_delay]: 0.04, 6.89, 0.40510183268018746, 0.004584374999999999
-[characterizer.delay/analytical_delay]: 0.04, 27.56, 0.5213705826801874, 0.016211249999999996
-** Characterization: 1.4 seconds
-Config: Writing to /home/mk/foss/pdks/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.py
+[characterizer.lib/characterize_corners]: Writing to /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8_TT_1p8V_25C.lib
+[characterizer.elmore/analytical_power]: Dynamic Power: 25.762152178368076 mW
+[characterizer.elmore/analytical_power]: Leakage Power: 0.035154 mW
+[characterizer.elmore/get_lib_values]: Slew, Load, Delay(ns), Slew(ns)
+[characterizer.elmore/get_lib_values]: 0.00125, 1.7225, 0.3874768671470992, 0.00167765625
+[characterizer.elmore/get_lib_values]: 0.00125, 6.89, 0.4165440546470992, 0.004584374999999999
+[characterizer.elmore/get_lib_values]: 0.00125, 27.56, 0.5328128046470991, 0.016211249999999996
+[characterizer.elmore/get_lib_values]: 0.005, 1.7225, 0.3874768671470992, 0.00167765625
+[characterizer.elmore/get_lib_values]: 0.005, 6.89, 0.4165440546470992, 0.004584374999999999
+[characterizer.elmore/get_lib_values]: 0.005, 27.56, 0.5328128046470991, 0.016211249999999996
+[characterizer.elmore/get_lib_values]: 0.04, 1.7225, 0.3874768671470992, 0.00167765625
+[characterizer.elmore/get_lib_values]: 0.04, 6.89, 0.4165440546470992, 0.004584374999999999
+[characterizer.elmore/get_lib_values]: 0.04, 27.56, 0.5328128046470991, 0.016211249999999996
+** Characterization: 1.0 seconds
+Config: Writing to /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.py
 ** Config: 0.0 seconds
-Datasheet: Writing to /home/mk/foss/pdks/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.html
+Datasheet: Writing to /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.html
 ** Datasheet: 0.0 seconds
-Verilog: Writing to /home/mk/foss/pdks/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.v
+Verilog: Writing to /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.v
 ** Verilog: 0.0 seconds
-[globals/cleanup_paths]: Purging temp directory: /tmp/openram_mk_11207_temp/
-** End: 397.3 seconds
+[globals/cleanup_paths]: Preserving temp directory: /home/mrg/data/skywater-tech/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/
+[verify.magic/print_drc_stats]: DRC runs: 1
+[verify.magic/print_lvs_stats]: LVS runs: 1
+[verify.magic/print_pex_stats]: PEX runs: 0
+** End: 22307.2 seconds

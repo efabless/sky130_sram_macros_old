@@ -1,18 +1,21 @@
 [globals/init_openram]: Initializing OpenRAM...
-[globals/setup_paths]: Temporary files saved in /tmp/openram_mk_11202_temp/
-[globals/read_config]: Configuration file is /home/mk/foss/pdks/sky130_fd_bd_sram/macros/configs/sky130_sram_1kbyte_1rw1r_32x256_8.py
-[globals/read_config]: Output saved in /home/mk/foss/pdks/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_32x256_8/
-[globals/import_tech]: Adding technology path: /home/mk/foss/pdks/sky130_fd_bd_sram/third_party/OpenRAM/technology
-[globals/import_tech]: Adding technology path: /home/mk/foss/pdks/sky130_fd_bd_sram
-[globals/init_paths]: Creating temp directory: /tmp/openram_mk_11202_temp/
+[globals/setup_paths]: Temporary files saved in /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/
+[globals/read_config]: Configuration file is /home/mrg/data/skywater-tech/macros/configs/sky130_sram_1kbyte_1rw1r_32x256_8.py
+[globals/read_config]: Output saved in /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/
+[globals/import_tech]: Adding technology path: /home/mrg/openram/technology
+[globals/import_tech]: Adding technology path: /home/mrg/data/skywater-tech/tools/openram/technology
+[globals/init_paths]: Creating temp directory: /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/
 [globals/setup_bitcell]: Using bitcell: bitcell_2port
 [characterizer/<module>]: Initializing characterizer...
 [characterizer/<module>]: Analytical model enabled.
 [verify/<module>]: Initializing verify...
-[verify/<module>]: LVS/DRC/PEX disabled.
+[verify/<module>]: Finding DRC/LVS/PEX tools.
+[globals/get_tool]: Using DRC: /home/mrg/data/skywater-tech/env/conda/envs/sky130_fd_bd_sram/bin/magic
+[globals/get_tool]: Using LVS: /home/mrg/data/skywater-tech/env/conda/envs/sky130_fd_bd_sram/bin/netgen
+[globals/get_tool]: Using PEX: /home/mrg/data/skywater-tech/env/conda/envs/sky130_fd_bd_sram/bin/magic
 [globals/setup_bitcell]: Using bitcell: bitcell_2port
 |==============================================================================|
-|=========                       OpenRAM v1.1.6                       =========|
+|=========                      OpenRAM v1.1.13                       =========|
 |=========                                                            =========|
 |=========               VLSI Design and Automation Lab               =========|
 |=========        Computer Science and Engineering Department         =========|
@@ -20,10 +23,10 @@
 |=========                                                            =========|
 |=========          Usage help: openram-user-group@ucsc.edu           =========|
 |=========        Development help: openram-dev-group@ucsc.edu        =========|
-|=========           Temp dir: /tmp/openram_mk_11202_temp/            =========|
+|=========Temp dir: /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/=========|
 |=========                See LICENSE for license info                =========|
 |==============================================================================|
-** Start: 11/19/2020 19:44:54
+** Start: 03/25/2021 11:41:43
 Technology: sky130
 Total size: 8192 bits
 Word size: 32
@@ -33,9 +36,7 @@ Write size: 8
 RW ports: 1
 R-only ports: 1
 W-only ports: 0
-Design supply routing skipped. Supplies will have multiple must-connect pins. (route_supplies=True to enable supply routing).
 DRC/LVS/PEX is only run on the top-level design to save run-time (inline_lvsdrc=True to do inline checking).
-DRC/LVS/PEX is disabled (check_lvsdrc=True to enable).
 Characterization is disabled (using analytical delay models) (analytical_delay=False to simulate).
 Only generating nominal corner timing.
 [sram_config/recompute_sizes]: Recomputing with words per row: 2
@@ -43,15 +44,17 @@ Only generating nominal corner timing.
 [sram_config/recompute_sizes]: Row addr size: 7 Col addr size: 1 Bank addr size: 8
 Words per row: 2
 Output files are: 
-/home/mk/foss/pdks/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8.lvs
-/home/mk/foss/pdks/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8.sp
-/home/mk/foss/pdks/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8.v
-/home/mk/foss/pdks/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8.lib
-/home/mk/foss/pdks/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8.py
-/home/mk/foss/pdks/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8.html
-/home/mk/foss/pdks/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8.log
-/home/mk/foss/pdks/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8.lef
-/home/mk/foss/pdks/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8.gds
+/home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8.lvs
+/home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8.sp
+/home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8.v
+/home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8.lib
+/home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8.py
+/home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8.html
+/home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8.log
+/home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8.lef
+/home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8.gds
+[sram/__init__]: Changed OPTS wpr=2
+[sram/__init__]: OPTS wpr=2
 [dff_array/__init__]: Creating row_addr_dff rows=7 cols=1
 [dff_array/__init__]: Creating col_addr_dff rows=1 cols=1
 [dff_array/__init__]: Creating data_dff rows=1 cols=32
@@ -61,33 +64,18 @@ Output files are:
 [and4_dec/__init__]: Creating and4_dec and4_dec
 [wordline_driver_array/__init__]: Creating wordline_driver_array
 [wordline_driver/__init__]: Creating wordline_driver wordline_driver
-[pbuf_dec/__init__]: creating pbuf_dec with size of 4
-[bitcell_base_array/__init__]: Creating global_bitcell_array 128 x 64
-[bitcell_base_array/__init__]: Creating local_bitcell_array 128 x 16
-[bitcell_base_array/__init__]: Creating replica_bitcell_array 128 x 16
-[replica_bitcell_array/__init__]: Creating replica_bitcell_array 128 x 16 rbls: [1, 1] left_rbl: [0] right_rbl: []
-[bitcell_base_array/__init__]: Creating bitcell_array 128 x 16
-[bitcell_array/__init__]: Creating bitcell_array 128 x 16
-[bitcell_base_array/__init__]: Creating replica_column 132 x 1
-[bitcell_base_array/__init__]: Creating dummy_array 1 x 16
-[bitcell_base_array/__init__]: Creating col_cap_array 1 x 16
-[bitcell_base_array/__init__]: Creating col_cap_array_0 1 x 16
+[and2_dec/__init__]: Creating and2_dec and2_dec_0
+[bitcell_base_array/__init__]: Creating replica_bitcell_array 128 x 64
+[replica_bitcell_array/__init__]: Creating replica_bitcell_array 128 x 64 rbls: None left_rbl: None right_rbl: None
+[bitcell_base_array/__init__]: Creating bitcell_array 128 x 64
+[bitcell_array/__init__]: Creating bitcell_array 128 x 64
+[bitcell_base_array/__init__]: Creating replica_column 130 x 1
+[bitcell_base_array/__init__]: Creating replica_column_0 130 x 1
+[bitcell_base_array/__init__]: Creating dummy_array 1 x 64
+[bitcell_base_array/__init__]: Creating col_cap_array 1 x 64
+[bitcell_base_array/__init__]: Creating col_cap_array_0 1 x 64
 [bitcell_base_array/__init__]: Creating row_cap_array 130 x 1
 [bitcell_base_array/__init__]: Creating row_cap_array_0 130 x 1
-[wordline_buffer_array/__init__]: Creating wordline_buffer_array
-[bitcell_base_array/__init__]: Creating local_bitcell_array_0 128 x 16
-[bitcell_base_array/__init__]: Creating replica_bitcell_array_0 128 x 16
-[replica_bitcell_array/__init__]: Creating replica_bitcell_array_0 128 x 16 rbls: [1, 1] left_rbl: [] right_rbl: []
-[bitcell_base_array/__init__]: Creating bitcell_array_0 128 x 16
-[bitcell_array/__init__]: Creating bitcell_array_0 128 x 16
-[bitcell_base_array/__init__]: Creating dummy_array_0 1 x 16
-[bitcell_base_array/__init__]: Creating col_cap_array_1 1 x 16
-[bitcell_base_array/__init__]: Creating col_cap_array_2 1 x 16
-[bitcell_base_array/__init__]: Creating row_cap_array_1 130 x 1
-[bitcell_base_array/__init__]: Creating local_bitcell_array_1 128 x 16
-[bitcell_base_array/__init__]: Creating replica_bitcell_array_1 128 x 16
-[replica_bitcell_array/__init__]: Creating replica_bitcell_array_1 128 x 16 rbls: [1, 1] left_rbl: [] right_rbl: [1]
-[bitcell_base_array/__init__]: Creating replica_column_0 132 x 1
 [precharge_array/__init__]: Creating precharge_array
 [sense_amp_array/__init__]: Creating sense_amp_array
 [column_mux_array/__init__]: Creating column_mux_array
@@ -116,43 +104,270 @@ Output files are:
 [control_logic/__init__]: Creating control_logic_r
 [dff_buf_array/__init__]: Creating dff_buf_array_0
 [pdriver/__init__]: creating pdriver pdriver_6
-** Submodules: 12.6 seconds
-** Placement: 0.2 seconds
-** Routing: 0.6 seconds
-** Verification: 0.0 seconds
-** SRAM creation: 13.4 seconds
-GDS: Writing to /home/mk/foss/pdks/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8.gds
-** GDS: 6.5 seconds
-LEF: Writing to /home/mk/foss/pdks/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8.lef
-** LEF: 106.9 seconds
-SP: Writing to /home/mk/foss/pdks/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8.sp
-** Spice writing: 1.1 seconds
-LVS: Writing to /home/mk/foss/pdks/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8.lvs.sp
+** Submodules: 4.2 seconds
+** Placement: 0.0 seconds
+[router_tech/__init__]: Minimum track width: 0.680
+[router_tech/__init__]: Minimum track space: 0.300
+[router_tech/__init__]: Minimum track wire width: 0.380
+[router/init_bbox]: Size: 451.46 x 374.02500000000003
+[router/init_bbox]: Size: 451.46 x 374.02500000000003
+**** Retrieving pins: 0.0 seconds
+**** Analyzing pins: 0.0 seconds
+[router/find_blockages]: Finding blockages.
+**** Finding blockages: 4.4 seconds
+[router/convert_blockages]: Converting blockages.
+**** Converting blockages: 0.2 seconds
+**** Converting pins: 0.2 seconds
+**** Separating adjacent pins: 0.0 seconds
+**** Enclosing pins: 0.1 seconds
+*** Finding pins and blockages: 4.9 seconds
+[signal_escape_router/route_signal]: Escape routing csb1 with scale 5
+[signal_escape_router/route_signal]: Escape routing csb0 with scale 5
+[signal_escape_router/route_signal]: Escape routing web0 with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[0] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[1] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[2] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[3] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[4] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[5] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[6] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[7] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[8] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[9] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[10] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[11] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[12] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[13] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[14] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[15] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[16] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[17] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[18] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[19] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[20] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[21] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[22] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[23] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[24] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[25] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[26] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[27] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[28] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[29] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[30] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[31] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[0] with scale 5
+[signal_escape_router/route_signal]: Escape routing wmask0[0] with scale 5
+[signal_escape_router/route_signal]: Escape routing wmask0[1] with scale 5
+[signal_escape_router/route_signal]: Escape routing wmask0[2] with scale 5
+[signal_escape_router/route_signal]: Escape routing wmask0[3] with scale 5
+[signal_escape_router/route_signal]: Escape routing clk1 with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[0] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[0] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[1] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[2] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[3] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[4] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[5] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[6] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[7] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[8] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[9] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[10] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[11] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[12] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[13] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[14] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[15] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[16] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[17] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[18] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[19] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[20] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[21] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[22] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[23] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[24] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[25] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[26] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[27] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[28] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[29] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[30] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[31] with scale 5
+[signal_escape_router/route_signal]: Escape routing clk0 with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[7] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[6] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[5] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[0] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[1] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[2] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[3] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[4] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[5] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[6] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[7] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[8] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[9] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[10] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[11] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[12] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[13] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[14] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[15] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[16] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[17] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[18] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[19] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[20] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[21] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[22] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[23] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[24] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[25] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[26] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[27] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[28] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[29] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[30] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[31] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[4] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[1] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[2] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[3] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[1] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[2] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[3] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[4] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[5] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[6] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[7] with scale 5
+*** Maze routing pins: 81.6 seconds
+[router_tech/__init__]: Minimum track width: 0.680
+[router_tech/__init__]: Minimum track space: 0.300
+[router_tech/__init__]: Minimum track wire width: 0.380
+[router/init_bbox]: Size: 451.90000000000003 x 374.38
+[supply_tree_router/route]: Running supply router on vdd and gnd...
+[router/init_bbox]: Size: 451.90000000000003 x 374.38
+**** Retrieving pins: 0.1 seconds
+**** Analyzing pins: 3.0 seconds
+[router/find_blockages]: Finding blockages.
+**** Finding blockages: 13.6 seconds
+[router/convert_blockages]: Converting blockages.
+**** Converting blockages: 0.1 seconds
+**** Converting pins: 4.7 seconds
+**** Separating adjacent pins: 7.8 seconds
+**** Enclosing pins: 9.7 seconds
+*** Finding pins and blockages: 39.0 seconds
+[supply_tree_router/route_pins]: Routing vdd with 1351 pins.
+[supply_tree_router/route_pins]: 0 supply segments routed, 1350 remaining.
+[supply_tree_router/route_pins]: 100 supply segments routed, 1250 remaining.
+[supply_tree_router/route_pins]: 200 supply segments routed, 1150 remaining.
+[supply_tree_router/route_pins]: 300 supply segments routed, 1050 remaining.
+[supply_tree_router/route_pins]: 400 supply segments routed, 950 remaining.
+[supply_tree_router/route_pins]: 500 supply segments routed, 850 remaining.
+[supply_tree_router/route_pins]: 600 supply segments routed, 750 remaining.
+[supply_tree_router/route_pins]: 700 supply segments routed, 650 remaining.
+[supply_tree_router/route_pins]: 800 supply segments routed, 550 remaining.
+[supply_tree_router/route_pins]: 900 supply segments routed, 450 remaining.
+[supply_tree_router/route_pins]: 1000 supply segments routed, 350 remaining.
+[supply_tree_router/route_pins]: 1100 supply segments routed, 250 remaining.
+[supply_tree_router/route_pins]: 1200 supply segments routed, 150 remaining.
+[supply_tree_router/route_pins]: 1300 supply segments routed, 50 remaining.
+[supply_tree_router/route_pins]: Routing gnd with 1312 pins.
+[supply_tree_router/route_pins]: 0 supply segments routed, 1311 remaining.
+[supply_tree_router/route_pins]: 100 supply segments routed, 1211 remaining.
+[supply_tree_router/route_pins]: 200 supply segments routed, 1111 remaining.
+[supply_tree_router/route_pins]: 300 supply segments routed, 1011 remaining.
+[supply_tree_router/route_pins]: 400 supply segments routed, 911 remaining.
+[supply_tree_router/route_pins]: 500 supply segments routed, 811 remaining.
+[supply_tree_router/route_pins]: 600 supply segments routed, 711 remaining.
+[supply_tree_router/route_pins]: 700 supply segments routed, 611 remaining.
+[supply_tree_router/route_pins]: 800 supply segments routed, 511 remaining.
+[supply_tree_router/route_pins]: 900 supply segments routed, 411 remaining.
+[supply_tree_router/route_pins]: 1000 supply segments routed, 311 remaining.
+[supply_tree_router/route_pins]: 1100 supply segments routed, 211 remaining.
+[supply_tree_router/route_pins]: 1200 supply segments routed, 111 remaining.
+[supply_tree_router/route_pins]: 1300 supply segments routed, 11 remaining.
+*** Maze routing supplies: 399.8 seconds
+** Routing: 886.8 seconds
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (30 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (60 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (90 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (120 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (150 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (180 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (210 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (240 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (270 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (300 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (330 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (360 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (390 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (420 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (450 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (480 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (510 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (541 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (571 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (601 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (631 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (661 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (691 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (721 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (751 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (781 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (811 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (841 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (871 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (901 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (931 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (961 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (991 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (1021 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (1051 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (1081 seconds)
+[run_script/run_script]: Still running /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (1111 seconds)
+WARNING: file magic.py: line 229: DRC Errors sky130_sram_1kbyte_1rw1r_32x256_8	4
+
+[verify.magic/run_lvs]: sky130_sram_1kbyte_1rw1r_32x256_8	LVS matches
+** Verification: 1138.2 seconds
+** SRAM creation: 2029.3 seconds
+SP: Writing to /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8.sp
+** Spice writing: 0.4 seconds
+GDS: Writing to /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8.gds
+** GDS: 0.6 seconds
+LEF: Writing to /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8.lef
+** LEF: 22.8 seconds
+LVS: Writing to /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8.lvs.sp
 ** LVS writing: 0.0 seconds
 LIB: Characterizing... 
 [characterizer.lib/prepare_tables]: Loads: [ 1.7225  6.89   27.56  ]
 [characterizer.lib/prepare_tables]: Slews: [0.00125 0.005   0.04   ]
 [characterizer.lib/characterize_corners]: Characterizing corners: [('TT', 1.8, 25)]
 [characterizer.lib/characterize_corners]: Corner: ('TT', 1.8, 25)
-[characterizer.lib/characterize_corners]: Writing to /home/mk/foss/pdks/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8_TT_1p8V_25C.lib
-[characterizer.delay/analytical_power]: Dynamic Power: 25.89923425852797 mW
-[characterizer.delay/analytical_power]: Leakage Power: 0.010802 mW
-[characterizer.delay/analytical_delay]: Slew, Load, Delay(ns), Slew(ns)
-[characterizer.delay/analytical_delay]: 0.00125, 1.7225, 0.36084974019962, 0.00167765625
-[characterizer.delay/analytical_delay]: 0.00125, 6.89, 0.38991692769962005, 0.004584374999999999
-[characterizer.delay/analytical_delay]: 0.00125, 27.56, 0.50618567769962, 0.016211249999999996
-[characterizer.delay/analytical_delay]: 0.005, 1.7225, 0.36084974019962, 0.00167765625
-[characterizer.delay/analytical_delay]: 0.005, 6.89, 0.38991692769962005, 0.004584374999999999
-[characterizer.delay/analytical_delay]: 0.005, 27.56, 0.50618567769962, 0.016211249999999996
-[characterizer.delay/analytical_delay]: 0.04, 1.7225, 0.36084974019962, 0.00167765625
-[characterizer.delay/analytical_delay]: 0.04, 6.89, 0.38991692769962005, 0.004584374999999999
-[characterizer.delay/analytical_delay]: 0.04, 27.56, 0.50618567769962, 0.016211249999999996
-** Characterization: 0.7 seconds
-Config: Writing to /home/mk/foss/pdks/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8.py
+[characterizer.lib/characterize_corners]: Writing to /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8_TT_1p8V_25C.lib
+[characterizer.elmore/analytical_power]: Dynamic Power: 9.589465848384007 mW
+[characterizer.elmore/analytical_power]: Leakage Power: 0.009516 mW
+[characterizer.elmore/get_lib_values]: Slew, Load, Delay(ns), Slew(ns)
+[characterizer.elmore/get_lib_values]: 0.00125, 1.7225, 0.3386031104757828, 0.00167765625
+[characterizer.elmore/get_lib_values]: 0.00125, 6.89, 0.36767029797578277, 0.004584374999999999
+[characterizer.elmore/get_lib_values]: 0.00125, 27.56, 0.48393904797578274, 0.016211249999999996
+[characterizer.elmore/get_lib_values]: 0.005, 1.7225, 0.3386031104757828, 0.00167765625
+[characterizer.elmore/get_lib_values]: 0.005, 6.89, 0.36767029797578277, 0.004584374999999999
+[characterizer.elmore/get_lib_values]: 0.005, 27.56, 0.48393904797578274, 0.016211249999999996
+[characterizer.elmore/get_lib_values]: 0.04, 1.7225, 0.3386031104757828, 0.00167765625
+[characterizer.elmore/get_lib_values]: 0.04, 6.89, 0.36767029797578277, 0.004584374999999999
+[characterizer.elmore/get_lib_values]: 0.04, 27.56, 0.48393904797578274, 0.016211249999999996
+** Characterization: 0.4 seconds
+Config: Writing to /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8.py
 ** Config: 0.0 seconds
-Datasheet: Writing to /home/mk/foss/pdks/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8.html
+Datasheet: Writing to /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8.html
 ** Datasheet: 0.0 seconds
-Verilog: Writing to /home/mk/foss/pdks/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8.v
+Verilog: Writing to /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8.v
 ** Verilog: 0.0 seconds
-[globals/cleanup_paths]: Purging temp directory: /tmp/openram_mk_11202_temp/
-** End: 128.6 seconds
+[globals/cleanup_paths]: Preserving temp directory: /home/mrg/data/skywater-tech/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/
+[verify.magic/print_drc_stats]: DRC runs: 1
+[verify.magic/print_lvs_stats]: LVS runs: 1
+[verify.magic/print_pex_stats]: PEX runs: 0
+** End: 2053.5 seconds
