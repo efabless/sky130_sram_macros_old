@@ -4,6 +4,8 @@
 * Data bits: 32
 * Banks: 1
 * Column mux: 2:1
+* Trimmed: False
+* LVS: False
 **************************************************
 * Copyright 2020 The SkyWater PDK Authors
 *

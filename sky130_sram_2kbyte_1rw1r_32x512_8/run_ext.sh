@@ -1,8 +1,8 @@
 #!/bin/sh
-export OPENRAM_TECH="/home/mrg/openram//technology:/home/mrg/data/skywater-tech/tools/openram/technology"
-echo "$(date): Starting GDS to MAG using Magic /home/mrg/data/skywater-tech/env/conda/envs/sky130_fd_bd_sram/bin/magic"
+export OPENRAM_TECH="/home/mrg/data/sky130_fd_bd_sram/third_party/OpenRAM//technology:/home/mrg/data/sky130_fd_bd_sram/tools/openram/technology"
+echo "$(date): Starting GDS to MAG using Magic /home/mrg/data/sky130_fd_bd_sram/env/conda/envs/sky130_fd_bd_sram/bin/magic"
 
-/home/mrg/data/skywater-tech/env/conda/envs/sky130_fd_bd_sram/bin/magic -dnull -noconsole << EOF
+/home/mrg/data/sky130_fd_bd_sram/env/conda/envs/sky130_fd_bd_sram/bin/magic -dnull -noconsole << EOF
 drc off
 gds polygon subcell true
 gds warning default
@@ -35,5 +35,5 @@ puts "Finished ext2spice"
 quit -noprompt
 EOF
 magic_retcode=$?
-echo "$(date): Finished ($magic_retcode) GDS to MAG using Magic /home/mrg/data/skywater-tech/env/conda/envs/sky130_fd_bd_sram/bin/magic"
+echo "$(date): Finished ($magic_retcode) GDS to MAG using Magic /home/mrg/data/sky130_fd_bd_sram/env/conda/envs/sky130_fd_bd_sram/bin/magic"
 exit $magic_retcode
