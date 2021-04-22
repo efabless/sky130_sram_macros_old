@@ -1,0 +1,1446 @@
+[globals/init_openram]: Initializing OpenRAM...
+[globals/setup_paths]: Temporary files saved in /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/
+[globals/read_config]: Configuration file is /home/mrg/data/sky130_fd_bd_sram/macros/configs/sky130_sram_4kbyte_1rw1r_32x1024_8.py
+[globals/read_config]: Output saved in /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/
+[globals/import_tech]: Adding technology path: /home/mrg/data/sky130_fd_bd_sram/third_party/OpenRAM/technology
+[globals/import_tech]: Adding technology path: /home/mrg/data/sky130_fd_bd_sram/tools/openram/technology
+[globals/init_paths]: Creating temp directory: /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/
+[globals/setup_bitcell]: Using bitcell: bitcell_2port
+[characterizer/<module>]: Initializing characterizer...
+[characterizer/<module>]: Analytical model enabled.
+[verify/<module>]: Initializing verify...
+[verify/<module>]: Finding DRC/LVS/PEX tools.
+[globals/get_tool]: Using DRC: /home/mrg/data/sky130_fd_bd_sram/env/conda/envs/sky130_fd_bd_sram/bin/magic
+[globals/get_tool]: Using LVS: /home/mrg/data/sky130_fd_bd_sram/env/conda/envs/sky130_fd_bd_sram/bin/netgen
+[globals/get_tool]: Using PEX: /home/mrg/data/sky130_fd_bd_sram/env/conda/envs/sky130_fd_bd_sram/bin/magic
+[globals/setup_bitcell]: Using bitcell: bitcell_2port
+|==============================================================================|
+|=========                      OpenRAM v1.1.15                       =========|
+|=========                                                            =========|
+|=========               VLSI Design and Automation Lab               =========|
+|=========        Computer Science and Engineering Department         =========|
+|=========            University of California Santa Cruz             =========|
+|=========                                                            =========|
+|=========          Usage help: openram-user-group@ucsc.edu           =========|
+|=========        Development help: openram-dev-group@ucsc.edu        =========|
+|=========Temp dir: /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/=========|
+|=========                See LICENSE for license info                =========|
+|==============================================================================|
+** Start: 04/21/2021 14:01:16
+Technology: sky130
+Total size: 32768 bits
+Word size: 32
+Words: 1024
+Banks: 1
+Write size: 8
+RW ports: 1
+R-only ports: 1
+W-only ports: 0
+DRC/LVS/PEX is only run on the top-level design to save run-time (inline_lvsdrc=True to do inline checking).
+Characterization is disabled (using analytical delay models) (analytical_delay=False to simulate).
+Only generating nominal corner timing.
+[sram_config/recompute_sizes]: Recomputing with words per row: 4
+[sram_config/recompute_sizes]: Rows: 256 Cols: 128
+[sram_config/recompute_sizes]: Row addr size: 8 Col addr size: 2 Bank addr size: 10
+Words per row: 4
+Output files are: 
+/home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.lvs
+/home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.sp
+/home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.v
+/home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.lib
+/home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.py
+/home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.html
+/home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.log
+/home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.lef
+/home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.gds
+[sram/__init__]: Changed OPTS wpr=4
+[sram/__init__]: OPTS wpr=4
+[dff_array/__init__]: Creating row_addr_dff rows=8 cols=1
+[dff_array/__init__]: Creating col_addr_dff rows=1 cols=2
+[dff_array/__init__]: Creating data_dff rows=1 cols=32
+[dff_array/__init__]: Creating wmask_dff rows=1 cols=4
+[and2_dec/__init__]: Creating and2_dec and2_dec
+[and3_dec/__init__]: Creating and3_dec and3_dec
+[and4_dec/__init__]: Creating and4_dec and4_dec
+[wordline_driver_array/__init__]: Creating wordline_driver_array
+[wordline_driver/__init__]: Creating wordline_driver wordline_driver
+[and2_dec/__init__]: Creating and2_dec and2_dec_0
+[bitcell_base_array/__init__]: Creating replica_bitcell_array 256 x 128
+[replica_bitcell_array/__init__]: Creating replica_bitcell_array 256 x 128 rbls: None left_rbl: None right_rbl: None
+[bitcell_base_array/__init__]: Creating bitcell_array 256 x 128
+[bitcell_array/__init__]: Creating bitcell_array 256 x 128
+[bitcell_base_array/__init__]: Creating replica_column 258 x 1
+[bitcell_base_array/__init__]: Creating replica_column_0 258 x 1
+[bitcell_base_array/__init__]: Creating dummy_array 1 x 128
+[bitcell_base_array/__init__]: Creating col_cap_array 1 x 128
+[bitcell_base_array/__init__]: Creating col_cap_array_0 1 x 128
+[bitcell_base_array/__init__]: Creating row_cap_array 258 x 1
+[bitcell_base_array/__init__]: Creating row_cap_array_0 258 x 1
+[precharge_array/__init__]: Creating precharge_array
+[sense_amp_array/__init__]: Creating sense_amp_array
+[column_mux_array/__init__]: Creating column_mux_array
+[write_driver_array/__init__]: Creating write_driver_array
+[write_mask_and_array/__init__]: Creating write_mask_and_array
+[pand2/__init__]: Creating pand2 pand2
+[pdriver/__init__]: creating pdriver pdriver
+[precharge_array/__init__]: Creating precharge_array_0
+[column_mux_array/__init__]: Creating column_mux_array_0
+[pand2/__init__]: Creating pand2 pand2_0
+[pdriver/__init__]: creating pdriver pdriver_0
+[control_logic/__init__]: Creating control_logic_rw
+[dff_buf/__init__]: Creating dff_buf
+[dff_buf_array/__init__]: Creating dff_buf_array
+[dff_buf/__init__]: Creating dff_buf_0
+[pand2/__init__]: Creating pand2 pand2_1
+[pdriver/__init__]: creating pdriver pdriver_1
+[pbuf/__init__]: creating pbuf with size of 128
+[pdriver/__init__]: creating pdriver pdriver_2
+[pdriver/__init__]: creating pdriver pdriver_3
+[pand3/__init__]: Creating pand3 pand3
+[pdriver/__init__]: creating pdriver pdriver_4
+[pand3/__init__]: Creating pand3 pand3_0
+[pdriver/__init__]: creating pdriver pdriver_5
+[pdriver/__init__]: creating pdriver pdriver_6
+[delay_chain/__init__]: creating delay chain [4, 4, 4, 4, 4, 4, 4, 4, 4]
+[control_logic/__init__]: Creating control_logic_r
+[dff_buf_array/__init__]: Creating dff_buf_array_0
+[pdriver/__init__]: creating pdriver pdriver_7
+** Submodules: 23.9 seconds
+** Placement: 0.1 seconds
+[router_tech/__init__]: Minimum track width: 0.680
+[router_tech/__init__]: Minimum track space: 0.300
+[router_tech/__init__]: Minimum track wire width: 0.380
+[router/init_bbox]: Size: 665.4 x 645.315 with perimeter margin 2.48
+[router/init_bbox]: Size: 670.36 x 650.2750000000001 with perimeter margin 2.48
+**** Retrieving pins: 0.0 seconds
+**** Analyzing pins: 0.0 seconds
+[router/find_blockages]: Finding blockages.
+**** Finding blockages: 15.4 seconds
+[router/convert_blockages]: Converting blockages.
+**** Converting blockages: 0.5 seconds
+**** Converting pins: 0.5 seconds
+**** Separating adjacent pins: 0.1 seconds
+**** Enclosing pins: 0.1 seconds
+*** Finding pins and blockages: 16.5 seconds
+[signal_escape_router/route_signal]: Escape routing csb1 with scale 5
+[signal_escape_router/route_signal]: Escape routing csb0 with scale 5
+[signal_escape_router/route_signal]: Escape routing web0 with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[0] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[1] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[2] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[3] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[4] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[5] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[6] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[7] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[8] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[9] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[10] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[11] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[12] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[13] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[14] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[15] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[16] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[17] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[18] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[19] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[20] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[21] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[22] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[23] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[24] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[25] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[26] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[27] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[28] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[29] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[30] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[31] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[0] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[1] with scale 5
+[signal_escape_router/route_signal]: Escape routing wmask0[0] with scale 5
+[signal_escape_router/route_signal]: Escape routing wmask0[1] with scale 5
+[signal_escape_router/route_signal]: Escape routing wmask0[2] with scale 5
+[signal_escape_router/route_signal]: Escape routing wmask0[3] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[0] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[1] with scale 5
+[signal_escape_router/route_signal]: Escape routing clk1 with scale 5
+[signal_escape_router/route_signal]: Escape routing clk0 with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[0] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[1] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[2] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[3] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[4] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[5] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[6] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[7] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[8] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[9] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[10] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[11] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[12] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[13] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[14] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[15] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[16] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[17] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[18] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[19] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[20] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[21] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[22] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[23] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[24] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[25] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[26] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[27] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[28] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[29] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[30] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[31] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[9] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[8] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[7] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[6] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[0] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[1] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[2] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[3] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[4] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[5] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[6] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[7] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[8] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[9] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[10] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[11] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[12] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[13] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[14] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[15] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[16] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[17] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[18] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[19] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[20] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[21] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[22] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[23] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[24] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[25] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[26] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[27] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[28] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[29] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[30] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[31] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[2] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[3] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[4] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[5] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[2] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[3] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[4] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[5] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[6] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[7] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[8] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[9] with scale 5
+*** Maze routing pins: 254.3 seconds
+[router_tech/__init__]: Minimum track width: 0.680
+[router_tech/__init__]: Minimum track space: 0.300
+[router_tech/__init__]: Minimum track wire width: 0.380
+[router/init_bbox]: Size: 670.86 x 651.14 with perimeter margin 1
+[supply_tree_router/route]: Running supply router on vdd and gnd...
+[router/init_bbox]: Size: 672.86 x 653.14 with perimeter margin 1
+**** Retrieving pins: 0.3 seconds
+**** Analyzing pins: 22.2 seconds
+[router/find_blockages]: Finding blockages.
+**** Finding blockages: 46.2 seconds
+[router/convert_blockages]: Converting blockages.
+**** Converting blockages: 0.2 seconds
+**** Converting pins: 16.0 seconds
+**** Separating adjacent pins: 43.0 seconds
+**** Enclosing pins: 44.5 seconds
+*** Finding pins and blockages: 172.3 seconds
+[supply_tree_router/route_pins]: Routing vdd with 2399 pins.
+[supply_tree_router/route_pins]: 0 supply segments routed, 2398 remaining.
+[supply_tree_router/route_pins]: 100 supply segments routed, 2298 remaining.
+[supply_tree_router/route_pins]: 200 supply segments routed, 2198 remaining.
+[supply_tree_router/route_pins]: 300 supply segments routed, 2098 remaining.
+[supply_tree_router/route_pins]: 400 supply segments routed, 1998 remaining.
+[supply_tree_router/route_pins]: 500 supply segments routed, 1898 remaining.
+[supply_tree_router/route_pins]: 600 supply segments routed, 1798 remaining.
+[supply_tree_router/route_pins]: 700 supply segments routed, 1698 remaining.
+[supply_tree_router/route_pins]: 800 supply segments routed, 1598 remaining.
+[supply_tree_router/route_pins]: 900 supply segments routed, 1498 remaining.
+[supply_tree_router/route_pins]: 1000 supply segments routed, 1398 remaining.
+[supply_tree_router/route_pins]: 1100 supply segments routed, 1298 remaining.
+[supply_tree_router/route_pins]: 1200 supply segments routed, 1198 remaining.
+[supply_tree_router/route_pins]: 1300 supply segments routed, 1098 remaining.
+[supply_tree_router/route_pins]: 1400 supply segments routed, 998 remaining.
+[supply_tree_router/route_pins]: 1500 supply segments routed, 898 remaining.
+[supply_tree_router/route_pins]: 1600 supply segments routed, 798 remaining.
+[supply_tree_router/route_pins]: 1700 supply segments routed, 698 remaining.
+[supply_tree_router/route_pins]: 1800 supply segments routed, 598 remaining.
+[supply_tree_router/route_pins]: 1900 supply segments routed, 498 remaining.
+[supply_tree_router/route_pins]: 2000 supply segments routed, 398 remaining.
+[supply_tree_router/route_pins]: 2100 supply segments routed, 298 remaining.
+[supply_tree_router/route_pins]: 2200 supply segments routed, 198 remaining.
+[supply_tree_router/route_pins]: 2300 supply segments routed, 98 remaining.
+[supply_tree_router/route_pins]: Routing gnd with 2292 pins.
+[supply_tree_router/route_pins]: 0 supply segments routed, 2291 remaining.
+[supply_tree_router/route_pins]: 100 supply segments routed, 2191 remaining.
+[supply_tree_router/route_pins]: 200 supply segments routed, 2091 remaining.
+[supply_tree_router/route_pins]: 300 supply segments routed, 1991 remaining.
+[supply_tree_router/route_pins]: 400 supply segments routed, 1891 remaining.
+[supply_tree_router/route_pins]: 500 supply segments routed, 1791 remaining.
+[supply_tree_router/route_pins]: 600 supply segments routed, 1691 remaining.
+[supply_tree_router/route_pins]: 700 supply segments routed, 1591 remaining.
+[supply_tree_router/route_pins]: 800 supply segments routed, 1491 remaining.
+[supply_tree_router/route_pins]: 900 supply segments routed, 1391 remaining.
+[supply_tree_router/route_pins]: 1000 supply segments routed, 1291 remaining.
+[supply_tree_router/route_pins]: 1100 supply segments routed, 1191 remaining.
+[supply_tree_router/route_pins]: 1200 supply segments routed, 1091 remaining.
+[supply_tree_router/route_pins]: 1300 supply segments routed, 991 remaining.
+[supply_tree_router/route_pins]: 1400 supply segments routed, 891 remaining.
+[supply_tree_router/route_pins]: 1500 supply segments routed, 791 remaining.
+[supply_tree_router/route_pins]: 1600 supply segments routed, 691 remaining.
+[supply_tree_router/route_pins]: 1700 supply segments routed, 591 remaining.
+[supply_tree_router/route_pins]: 1800 supply segments routed, 491 remaining.
+[supply_tree_router/route_pins]: 1900 supply segments routed, 391 remaining.
+[supply_tree_router/route_pins]: 2000 supply segments routed, 291 remaining.
+[supply_tree_router/route_pins]: 2100 supply segments routed, 191 remaining.
+[supply_tree_router/route_pins]: 2200 supply segments routed, 91 remaining.
+*** Maze routing supplies: 1636.4 seconds
+** Routing: 3318.7 seconds
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (30 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (60 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (90 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (120 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (150 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (180 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (210 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (240 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (270 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (300 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (331 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (361 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (391 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (421 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (451 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (481 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (511 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (541 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (571 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (601 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (631 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (661 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (691 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (721 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (751 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (781 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (811 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (841 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (871 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (901 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (931 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (961 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (991 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1021 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1051 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1081 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1111 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1141 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1171 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1201 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1232 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1262 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1292 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1322 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1352 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1382 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1412 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1442 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1472 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1502 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1532 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1562 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1592 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1622 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1652 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1682 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1712 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1742 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1772 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1802 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1832 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1862 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1892 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1922 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1952 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (1982 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2012 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2042 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2072 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2102 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2133 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2163 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2193 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2223 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2253 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2283 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2313 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2343 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2373 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2403 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2433 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2463 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2493 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2523 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2553 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2583 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2613 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2643 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2673 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2703 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2733 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2763 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2793 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2823 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2853 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2883 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2913 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2943 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (2973 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3003 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3034 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3064 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3094 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3124 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3154 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3184 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3214 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3244 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3274 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3304 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3334 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3364 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3394 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3424 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3454 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3484 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3514 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3544 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3574 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3604 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3634 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3664 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3694 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3724 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3754 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3784 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3814 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3844 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3874 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3904 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3935 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3965 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (3995 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4025 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4055 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4085 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4115 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4145 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4175 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4205 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4235 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4265 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4295 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4325 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4355 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4385 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4415 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4445 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4475 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4505 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4535 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4565 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4595 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4625 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4655 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4685 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4715 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4745 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4775 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4805 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4836 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4866 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4896 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4926 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4956 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (4986 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5016 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5046 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5076 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5106 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5136 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5166 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5196 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5226 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5256 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5286 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5316 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5346 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5376 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5406 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5436 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5466 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5496 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5526 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5556 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5586 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5616 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5646 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5676 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5706 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5737 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5767 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5797 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5827 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5857 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5887 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5917 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5947 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (5977 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6007 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6037 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6067 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6097 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6127 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6157 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6187 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6217 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6247 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6277 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6307 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6337 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6367 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6397 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6427 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6457 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6487 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6517 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6547 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6577 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6607 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6638 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6668 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6698 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6728 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6758 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6788 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6818 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6848 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6878 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6908 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6938 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6968 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (6998 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7028 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7058 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7088 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7118 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7148 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7178 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7208 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7238 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7268 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7298 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7328 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7358 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7388 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7418 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7448 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7478 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7508 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7539 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7569 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7599 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7629 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7659 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7689 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7719 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7749 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7779 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7809 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7839 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7869 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7899 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7929 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7959 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (7989 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8019 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8049 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8079 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8109 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8139 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8169 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8199 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8229 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8259 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8289 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8319 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8349 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8379 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8410 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8440 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8470 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8500 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8530 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8560 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8590 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8620 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8650 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8680 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8710 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8740 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8770 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8800 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8830 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8860 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8890 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8920 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8950 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (8980 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9010 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9040 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9070 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9100 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9130 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9160 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9190 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9220 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9251 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9281 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9311 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9341 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9371 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9401 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9431 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9461 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9491 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9521 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9551 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9581 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9611 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9641 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9671 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9701 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9731 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9761 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9791 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9821 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9851 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9881 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9911 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9941 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (9971 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10001 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10031 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10061 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10091 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10121 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10152 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10182 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10212 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10242 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10272 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10302 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10332 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10362 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10392 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10422 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10452 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10482 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10512 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10542 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10572 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10602 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10632 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10662 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10692 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10722 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10752 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10782 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10812 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10842 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10872 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10902 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10932 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10962 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (10992 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11022 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11053 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11083 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11113 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11143 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11173 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11203 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11233 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11263 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11293 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11323 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11353 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11383 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11413 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11443 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11473 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11503 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11533 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11563 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11593 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11623 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11653 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11683 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11713 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11743 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11773 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11803 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11833 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11863 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11893 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11923 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11953 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (11984 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12014 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12044 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12074 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12104 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12134 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12164 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12194 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12224 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12254 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12284 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12314 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12344 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12374 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12404 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12434 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12464 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12494 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12524 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12554 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12584 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12614 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12644 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12674 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12704 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12734 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12764 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12794 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12824 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12854 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12885 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12915 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12945 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (12975 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13005 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13035 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13065 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13095 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13125 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13155 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13185 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13215 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13245 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13275 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13305 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13335 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13365 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13395 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13425 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13455 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13485 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13515 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13545 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13575 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13605 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13635 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13665 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13695 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13725 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13755 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13786 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13816 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13846 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13876 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13906 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13936 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13966 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (13996 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14026 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14056 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14086 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14116 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14146 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14176 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14206 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14236 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14266 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14296 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14326 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14356 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14386 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14416 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14446 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14476 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14506 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14536 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14566 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14596 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14626 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14656 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14687 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14717 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14747 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14777 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14807 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14837 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14867 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14897 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14927 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14957 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (14987 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15017 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15047 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15077 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15107 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15137 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15167 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15197 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15227 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15257 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15287 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15317 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15347 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15377 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15407 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15437 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15467 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15497 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15527 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15557 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15587 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15618 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15648 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15678 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15708 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15738 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15768 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15798 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15828 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15858 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15888 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15918 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15948 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (15978 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16008 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16038 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16068 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16098 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16128 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16158 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16188 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16218 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16248 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16278 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16308 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16338 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16368 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16398 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16428 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16458 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16488 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16519 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16549 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16579 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16609 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16639 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16669 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16699 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16729 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16759 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16789 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16819 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16849 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16879 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16909 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16939 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16969 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (16999 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17029 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17059 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17089 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17119 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17149 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17179 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17209 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17239 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17269 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17299 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17329 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17359 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17389 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17419 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17450 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17480 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17510 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17540 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17570 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17600 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17630 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17660 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17690 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17720 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17750 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17780 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17810 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17840 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17870 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17900 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17930 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17960 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (17990 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18020 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18050 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18080 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18110 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18140 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18170 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18200 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18230 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18260 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18290 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18320 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18351 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18381 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18411 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18441 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18471 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18501 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18531 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18561 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18591 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18621 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18651 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18681 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18711 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18741 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18771 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18801 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18831 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18861 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18891 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18921 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18951 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (18981 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (19011 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (19041 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (19071 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (19101 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (19131 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (19161 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (19191 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (19221 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (19252 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (19282 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (19312 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (19342 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (19372 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (19402 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (19432 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (19462 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (19492 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (19522 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (19552 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (19582 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (19612 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (19642 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (19672 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (19702 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (19732 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (19762 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (19792 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (19822 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (19852 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (19882 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (19912 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (19942 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (19972 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (20002 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (20032 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (20062 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (20092 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (20122 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (20153 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (20183 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (20213 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (20243 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (20273 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (20303 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (20333 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (20363 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (20393 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (20423 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (20453 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (20483 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (20513 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (20543 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (20573 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (20603 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (20633 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (20663 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (20693 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (20723 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (20753 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (20783 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (20813 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (20843 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (20873 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (20903 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (20933 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (20963 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (20993 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (21023 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (21053 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (21084 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (21114 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (21144 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (21174 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (21204 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (21234 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (21264 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (21294 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (21324 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (21354 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (21384 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (21414 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (21444 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (21474 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (21504 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (21534 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (21564 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (21594 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (21624 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (21654 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (21684 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (21714 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (21744 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (21774 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (21804 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (21834 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (21864 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (21894 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (21924 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (21954 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (21985 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (22015 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (22045 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (22075 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (22105 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (22135 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (22165 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (22195 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (22225 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (22255 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (22285 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (22315 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (22345 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (22375 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (22405 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (22435 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (22465 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (22495 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (22525 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (22555 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (22585 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (22615 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (22645 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (22675 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (22705 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (22735 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (22765 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (22795 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (22825 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (22855 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (22886 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (22916 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (22946 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (22976 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (23006 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (23036 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (23066 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (23096 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (23126 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (23156 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (23186 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (23216 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (23246 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (23276 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (23306 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (23336 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (23366 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (23396 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (23426 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (23456 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (23486 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (23516 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (23546 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (23576 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (23606 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (23636 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (23666 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (23696 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (23726 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (23756 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (23786 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (23817 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (23847 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (23877 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (23907 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (23937 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (23967 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (23997 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (24027 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (24057 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (24087 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (24117 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (24147 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (24177 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (24207 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (24237 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (24267 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (24297 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (24327 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (24357 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (24387 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (24417 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (24447 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (24477 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (24507 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (24537 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (24567 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (24597 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (24627 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (24657 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (24687 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (24718 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (24748 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (24778 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (24808 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (24838 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (24868 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (24898 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (24928 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (24958 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (24988 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (25018 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (25048 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (25078 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (25108 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (25138 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (25168 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (25198 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (25228 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (25258 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (25288 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (25318 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (25348 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (25378 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (25408 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (25438 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (25468 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (25498 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (25528 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (25558 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (25588 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (25618 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (25649 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (25679 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (25709 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (25739 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (25769 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (25799 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (25829 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (25859 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (25889 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (25919 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (25949 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (25979 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (26009 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (26039 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (26069 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (26099 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (26129 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (26159 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (26189 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (26219 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (26249 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (26279 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (26309 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (26339 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (26369 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (26399 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (26429 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (26459 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (26489 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (26519 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (26550 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (26580 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (26610 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (26640 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (26670 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (26700 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (26730 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (26760 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (26790 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (26820 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (26850 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (26880 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (26910 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (26940 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (26970 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (27000 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (27030 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (27060 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (27090 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (27120 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (27150 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (27180 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (27210 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (27240 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (27270 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (27300 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (27330 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (27360 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (27390 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (27420 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (27451 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (27481 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (27511 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (27541 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (27571 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (27601 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (27631 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (27661 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (27691 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (27721 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (27751 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (27781 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (27811 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (27841 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (27871 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (27901 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (27931 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (27961 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (27991 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (28021 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (28051 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (28081 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (28111 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (28141 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (28171 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (28201 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (28231 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (28261 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (28291 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (28321 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (28351 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (28382 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (28412 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (28442 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (28472 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (28502 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (28532 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (28562 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (28592 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (28622 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (28652 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (28682 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (28712 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (28742 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (28772 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (28802 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (28832 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (28862 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (28892 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (28922 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (28952 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (28982 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (29012 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (29042 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (29072 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (29102 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (29132 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (29162 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (29192 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (29222 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (29252 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (29283 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (29313 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (29343 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (29373 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (29403 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (29433 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (29463 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (29493 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (29523 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (29553 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (29583 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (29613 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (29643 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (29673 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (29703 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (29733 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (29763 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (29793 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (29823 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (29853 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (29883 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (29913 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (29943 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (29973 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (30003 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (30033 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (30063 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (30093 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (30123 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (30153 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (30183 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (30214 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (30244 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (30274 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (30304 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (30334 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (30364 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (30394 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (30424 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (30454 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (30484 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (30514 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (30544 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (30574 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (30604 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (30634 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (30664 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (30694 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (30724 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (30754 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (30784 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (30814 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (30844 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (30874 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (30904 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (30934 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (30964 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (30994 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (31024 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (31054 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (31084 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (31115 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (31145 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (31175 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (31205 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (31235 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (31265 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (31295 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (31325 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (31355 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (31385 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (31415 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (31445 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (31475 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (31505 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (31535 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (31565 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (31595 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (31625 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (31655 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (31685 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (31715 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (31745 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (31775 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (31805 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (31835 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (31865 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (31895 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (31925 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (31955 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (31985 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (32016 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (32046 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (32076 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (32106 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (32136 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (32166 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (32196 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (32226 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (32256 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (32286 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (32316 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (32346 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (32376 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (32406 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_ext.sh (32436 seconds)
+WARNING: file magic.py: line 229: DRC Errors sky130_sram_4kbyte_1rw1r_32x1024_8	9
+
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_lvs.sh (30 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_lvs.sh (60 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_lvs.sh (90 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_lvs.sh (120 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_lvs.sh (150 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/run_lvs.sh (180 seconds)
+[verify.magic/run_lvs]: sky130_sram_4kbyte_1rw1r_32x1024_8	LVS matches
+** Verification: 32680.6 seconds
+** SRAM creation: 36023.6 seconds
+SP: Writing to /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.sp
+** Spice writing: 1.6 seconds
+GDS: Writing to /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.gds
+** GDS: 2.8 seconds
+LEF: Writing to /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.lef
+** LEF: 0.0 seconds
+LVS: Writing to /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.lvs.sp
+** LVS writing: 0.1 seconds
+LIB: Characterizing... 
+[characterizer.lib/prepare_tables]: Loads: [ 1.7225  6.89   27.56  ]
+[characterizer.lib/prepare_tables]: Slews: [0.00125 0.005   0.04   ]
+[characterizer.lib/characterize_corners]: Characterizing corners: [('TT', 1.8, 25)]
+[characterizer.lib/characterize_corners]: Corner: ('TT', 1.8, 25)
+[characterizer.lib/characterize_corners]: Writing to /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8_TT_1p8V_25C.lib
+[characterizer.elmore/analytical_power]: Dynamic Power: 25.762152178368076 mW
+[characterizer.elmore/analytical_power]: Leakage Power: 0.035154 mW
+[characterizer.elmore/get_lib_values]: Slew, Load, Delay(ns), Slew(ns)
+[characterizer.elmore/get_lib_values]: 0.00125, 1.7225, 0.3874768671470992, 0.00167765625
+[characterizer.elmore/get_lib_values]: 0.00125, 6.89, 0.4165440546470992, 0.004584374999999999
+[characterizer.elmore/get_lib_values]: 0.00125, 27.56, 0.5328128046470991, 0.016211249999999996
+[characterizer.elmore/get_lib_values]: 0.005, 1.7225, 0.3874768671470992, 0.00167765625
+[characterizer.elmore/get_lib_values]: 0.005, 6.89, 0.4165440546470992, 0.004584374999999999
+[characterizer.elmore/get_lib_values]: 0.005, 27.56, 0.5328128046470991, 0.016211249999999996
+[characterizer.elmore/get_lib_values]: 0.04, 1.7225, 0.3874768671470992, 0.00167765625
+[characterizer.elmore/get_lib_values]: 0.04, 6.89, 0.4165440546470992, 0.004584374999999999
+[characterizer.elmore/get_lib_values]: 0.04, 27.56, 0.5328128046470991, 0.016211249999999996
+** Characterization: 1.7 seconds
+Config: Writing to /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.py
+** Config: 0.0 seconds
+Datasheet: Writing to /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.html
+** Datasheet: 0.0 seconds
+Verilog: Writing to /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/sky130_sram_4kbyte_1rw1r_32x1024_8.v
+** Verilog: 0.0 seconds
+[globals/cleanup_paths]: Preserving temp directory: /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_32x1024_8/tmp/
+[verify.magic/print_drc_stats]: DRC runs: 1
+[verify.magic/print_lvs_stats]: LVS runs: 1
+[verify.magic/print_pex_stats]: PEX runs: 0
+** End: 36029.9 seconds
