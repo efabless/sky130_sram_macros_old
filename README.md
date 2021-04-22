@@ -1,1 +1,0 @@
-# sky130_sram_macros
