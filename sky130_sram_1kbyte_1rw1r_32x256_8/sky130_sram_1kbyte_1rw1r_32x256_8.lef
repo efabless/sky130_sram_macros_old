@@ -1017,5 +1017,5 @@ MACRO sky130_sram_1kbyte_1rw1r_32x256_8
       RECT  316.88 379.14 322.7 379.2 ;
       RECT  323.68 379.14 385.26 379.2 ;
    END
-   END    sky130_sram_1kbyte_1rw1r_32x256_8
+END    sky130_sram_1kbyte_1rw1r_32x256_8
 END    LIBRARY
