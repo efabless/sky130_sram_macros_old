@@ -98,7 +98,7 @@ configs: | $(OPENRAM_COMPILER) $(SKY130_FD_PR)
 .PHONY: configs
 
 update-gitignore:
-	rm .gitignore; touch .gitignore
+	rm .gitignore; echo "sky130*/tmp" >> .gitignore
 	for L in $(STAMPS); do echo $$L; done >> .gitignore
 	for D in $(DIRS); do echo $$D; done >> .gitignore
 
