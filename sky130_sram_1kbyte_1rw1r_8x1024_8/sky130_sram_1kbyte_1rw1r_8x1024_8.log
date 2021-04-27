@@ -26,7 +26,7 @@
 |=========Temp dir: /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/=========|
 |=========                See LICENSE for license info                =========|
 |==============================================================================|
-** Start: 04/22/2021 16:12:42
+** Start: 04/27/2021 14:56:51
 ERROR: file globals.py: line 617: Write size needs to be between 1 bit and 8 bits/2.
 
 Technology: sky130
@@ -106,7 +106,7 @@ Output files are:
 [control_logic/__init__]: Creating control_logic_r
 [dff_buf_array/__init__]: Creating dff_buf_array_0
 [pdriver/__init__]: creating pdriver pdriver_7
-** Submodules: 6.2 seconds
+** Submodules: 6.1 seconds
 ** Placement: 0.0 seconds
 [router_tech/__init__]: Minimum track width: 0.680
 [router_tech/__init__]: Minimum track space: 0.300
@@ -116,13 +116,13 @@ Output files are:
 **** Retrieving pins: 0.0 seconds
 **** Analyzing pins: 0.0 seconds
 [router/find_blockages]: Finding blockages.
-**** Finding blockages: 4.0 seconds
+**** Finding blockages: 4.1 seconds
 [router/convert_blockages]: Converting blockages.
 **** Converting blockages: 0.2 seconds
 **** Converting pins: 0.1 seconds
 **** Separating adjacent pins: 0.0 seconds
 **** Enclosing pins: 0.0 seconds
-*** Finding pins and blockages: 4.4 seconds
+*** Finding pins and blockages: 4.5 seconds
 [signal_escape_router/route_signal]: Escape routing csb1 with scale 5
 [signal_escape_router/route_signal]: Escape routing csb0 with scale 5
 [signal_escape_router/route_signal]: Escape routing web0 with scale 5
@@ -173,7 +173,7 @@ Output files are:
 [signal_escape_router/route_signal]: Escape routing dout0[5] with scale 5
 [signal_escape_router/route_signal]: Escape routing dout0[6] with scale 5
 [signal_escape_router/route_signal]: Escape routing dout0[7] with scale 5
-*** Maze routing pins: 68.1 seconds
+*** Maze routing pins: 67.3 seconds
 [router_tech/__init__]: Minimum track width: 0.680
 [router_tech/__init__]: Minimum track space: 0.300
 [router_tech/__init__]: Minimum track wire width: 0.380
@@ -181,15 +181,15 @@ Output files are:
 [supply_tree_router/route]: Running supply router on vdd and gnd...
 [router/init_bbox]: Size: 434.86 x 429.42 with perimeter margin 1
 **** Retrieving pins: 0.1 seconds
-**** Analyzing pins: 3.1 seconds
+**** Analyzing pins: 3.0 seconds
 [router/find_blockages]: Finding blockages.
-**** Finding blockages: 11.2 seconds
+**** Finding blockages: 11.1 seconds
 [router/convert_blockages]: Converting blockages.
 **** Converting blockages: 0.1 seconds
 **** Converting pins: 5.7 seconds
-**** Separating adjacent pins: 10.4 seconds
+**** Separating adjacent pins: 10.0 seconds
 **** Enclosing pins: 11.6 seconds
-*** Finding pins and blockages: 42.2 seconds
+*** Finding pins and blockages: 41.8 seconds
 [supply_tree_router/route_pins]: Routing vdd with 1198 pins.
 [supply_tree_router/route_pins]: 0 supply segments routed, 1197 remaining.
 [supply_tree_router/route_pins]: 100 supply segments routed, 1097 remaining.
@@ -216,8 +216,8 @@ Output files are:
 [supply_tree_router/route_pins]: 900 supply segments routed, 236 remaining.
 [supply_tree_router/route_pins]: 1000 supply segments routed, 136 remaining.
 [supply_tree_router/route_pins]: 1100 supply segments routed, 36 remaining.
-*** Maze routing supplies: 377.4 seconds
-** Routing: 817.8 seconds
+*** Maze routing supplies: 370.7 seconds
+** Routing: 809.5 seconds
 [run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_ext.sh (30 seconds)
 [run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_ext.sh (60 seconds)
 [run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_ext.sh (90 seconds)
@@ -262,7 +262,7 @@ Output files are:
 [run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_ext.sh (1261 seconds)
 [run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_ext.sh (1291 seconds)
 [run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_ext.sh (1321 seconds)
-[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_ext.sh (1352 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_ext.sh (1351 seconds)
 [run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_ext.sh (1382 seconds)
 [run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_ext.sh (1412 seconds)
 [run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_ext.sh (1442 seconds)
@@ -273,8 +273,8 @@ Output files are:
 [run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_ext.sh (1592 seconds)
 [verify.magic/run_drc]: DRC Errors sky130_sram_1kbyte_1rw1r_8x1024_8	0
 [verify.magic/run_lvs]: sky130_sram_1kbyte_1rw1r_8x1024_8	LVS matches
-** Verification: 1622.0 seconds
-** SRAM creation: 2446.1 seconds
+** Verification: 1629.9 seconds
+** SRAM creation: 2445.7 seconds
 SP: Writing to /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/sky130_sram_1kbyte_1rw1r_8x1024_8.sp
 ** Spice writing: 0.5 seconds
 GDS: Writing to /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/sky130_sram_1kbyte_1rw1r_8x1024_8.gds
@@ -301,7 +301,7 @@ LIB: Characterizing...
 [characterizer.elmore/get_lib_values]: 0.04, 1.7225, 0.3631146505837912, 0.00167765625
 [characterizer.elmore/get_lib_values]: 0.04, 6.89, 0.3921818380837912, 0.004584374999999999
 [characterizer.elmore/get_lib_values]: 0.04, 27.56, 0.5084505880837912, 0.016211249999999996
-** Characterization: 0.5 seconds
+** Characterization: 0.6 seconds
 Config: Writing to /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/sky130_sram_1kbyte_1rw1r_8x1024_8.py
 ** Config: 0.0 seconds
 Datasheet: Writing to /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/sky130_sram_1kbyte_1rw1r_8x1024_8.html
@@ -312,4 +312,4 @@ Verilog: Writing to /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1
 [verify.magic/print_drc_stats]: DRC runs: 1
 [verify.magic/print_lvs_stats]: LVS runs: 1
 [verify.magic/print_pex_stats]: PEX runs: 0
-** End: 2448.2 seconds
+** End: 2447.9 seconds

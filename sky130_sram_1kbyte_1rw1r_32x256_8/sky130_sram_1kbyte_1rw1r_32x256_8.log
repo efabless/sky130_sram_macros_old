@@ -2,7 +2,7 @@
 [globals/setup_paths]: Temporary files saved in /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/
 [globals/read_config]: Configuration file is /home/mrg/data/sky130_fd_bd_sram/macros/configs/sky130_sram_1kbyte_1rw1r_32x256_8.py
 [globals/read_config]: Output saved in /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_32x256_8/
-[globals/import_tech]: Adding technology path: /home/mrg/data/sky130_fd_bd_sram/third_party/OpenRAM/technology
+[globals/import_tech]: Adding technology path: /home/mrg/openram/technology
 [globals/import_tech]: Adding technology path: /home/mrg/data/sky130_fd_bd_sram/tools/openram/technology
 [globals/init_paths]: Creating temp directory: /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/
 [globals/setup_bitcell]: Using bitcell: bitcell_2port
@@ -26,7 +26,7 @@
 |=========Temp dir: /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/=========|
 |=========                See LICENSE for license info                =========|
 |==============================================================================|
-** Start: 04/21/2021 14:01:16
+** Start: 04/27/2021 14:56:51
 Technology: sky130
 Total size: 8192 bits
 Word size: 32
@@ -114,13 +114,13 @@ Output files are:
 **** Retrieving pins: 0.0 seconds
 **** Analyzing pins: 0.0 seconds
 [router/find_blockages]: Finding blockages.
-**** Finding blockages: 5.3 seconds
+**** Finding blockages: 5.4 seconds
 [router/convert_blockages]: Converting blockages.
 **** Converting blockages: 0.3 seconds
 **** Converting pins: 0.3 seconds
 **** Separating adjacent pins: 0.1 seconds
 **** Enclosing pins: 0.1 seconds
-*** Finding pins and blockages: 6.0 seconds
+*** Finding pins and blockages: 6.2 seconds
 [signal_escape_router/route_signal]: Escape routing csb0 with scale 5
 [signal_escape_router/route_signal]: Escape routing web0 with scale 5
 [signal_escape_router/route_signal]: Escape routing csb1 with scale 5
@@ -242,7 +242,7 @@ Output files are:
 [signal_escape_router/route_signal]: Escape routing addr0[5] with scale 5
 [signal_escape_router/route_signal]: Escape routing addr0[6] with scale 5
 [signal_escape_router/route_signal]: Escape routing addr0[7] with scale 5
-*** Maze routing pins: 138.1 seconds
+*** Maze routing pins: 132.5 seconds
 [router_tech/__init__]: Minimum track width: 0.680
 [router_tech/__init__]: Minimum track space: 0.300
 [router_tech/__init__]: Minimum track wire width: 0.380
@@ -252,13 +252,13 @@ Output files are:
 **** Retrieving pins: 0.1 seconds
 **** Analyzing pins: 4.3 seconds
 [router/find_blockages]: Finding blockages.
-**** Finding blockages: 17.8 seconds
+**** Finding blockages: 18.8 seconds
 [router/convert_blockages]: Converting blockages.
 **** Converting blockages: 0.1 seconds
-**** Converting pins: 6.8 seconds
+**** Converting pins: 7.0 seconds
 **** Separating adjacent pins: 12.9 seconds
-**** Enclosing pins: 15.6 seconds
-*** Finding pins and blockages: 57.7 seconds
+**** Enclosing pins: 15.3 seconds
+*** Finding pins and blockages: 58.5 seconds
 [supply_tree_router/route_pins]: Routing vdd with 1351 pins.
 [supply_tree_router/route_pins]: 0 supply segments routed, 1350 remaining.
 [supply_tree_router/route_pins]: 100 supply segments routed, 1250 remaining.
@@ -289,8 +289,8 @@ Output files are:
 [supply_tree_router/route_pins]: 1100 supply segments routed, 211 remaining.
 [supply_tree_router/route_pins]: 1200 supply segments routed, 111 remaining.
 [supply_tree_router/route_pins]: 1300 supply segments routed, 11 remaining.
-*** Maze routing supplies: 517.3 seconds
-** Routing: 1053.5 seconds
+*** Maze routing supplies: 501.4 seconds
+** Routing: 1026.7 seconds
 [run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (30 seconds)
 [run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (60 seconds)
 [run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (90 seconds)
@@ -344,15 +344,11 @@ Output files are:
 [run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (1532 seconds)
 [run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (1562 seconds)
 [run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (1592 seconds)
-[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (1622 seconds)
-[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (1652 seconds)
-[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (1682 seconds)
-[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_32x256_8/tmp/run_ext.sh (1712 seconds)
 WARNING: file magic.py: line 229: DRC Errors sky130_sram_1kbyte_1rw1r_32x256_8	4
 
 [verify.magic/run_lvs]: sky130_sram_1kbyte_1rw1r_32x256_8	LVS matches
-** Verification: 1737.9 seconds
-** SRAM creation: 2798.0 seconds
+** Verification: 1621.7 seconds
+** SRAM creation: 2655.0 seconds
 SP: Writing to /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8.sp
 ** Spice writing: 0.6 seconds
 GDS: Writing to /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8.gds
@@ -390,4 +386,4 @@ Verilog: Writing to /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1
 [verify.magic/print_drc_stats]: DRC runs: 1
 [verify.magic/print_lvs_stats]: LVS runs: 1
 [verify.magic/print_pex_stats]: PEX runs: 0
-** End: 2800.3 seconds
+** End: 2657.4 seconds
