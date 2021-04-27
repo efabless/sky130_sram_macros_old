@@ -1,3 +1,4 @@
 # Ignore the tmp directory output
 sky130*/tmp
 *.ok
+__pycache__
