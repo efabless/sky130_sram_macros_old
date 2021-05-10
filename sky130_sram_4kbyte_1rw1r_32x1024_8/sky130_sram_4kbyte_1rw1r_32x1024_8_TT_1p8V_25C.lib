@@ -89,7 +89,7 @@ cell (sky130_sram_4kbyte_1rw1r_32x1024_8){
     dont_use  : true;
     map_only   : true;
     dont_touch : true;
-    area : 436823.7804;
+    area : 442220.31480000005;
 
     pg_pin(vdd) {
          voltage_name : VDD;

@@ -1,5 +1,5 @@
 #!/bin/sh
-export OPENRAM_TECH="/home/mrg/data/sky130_fd_bd_sram/third_party/OpenRAM//technology:/home/mrg/data/sky130_fd_bd_sram/tools/openram/technology"
+export OPENRAM_TECH="/home/mrg/openram//technology:/home/mrg/data/sky130_fd_bd_sram/tools/openram/technology"
 cp /home/mrg/data/sky130_fd_bd_sram/tools/openram/technology/sky130/maglef_lib/sky130_fd_bd_sram__openram_dp_cell.mag .
 cp /home/mrg/data/sky130_fd_bd_sram/tools/openram/technology/sky130/maglef_lib/sky130_fd_bd_sram__openram_dp_cell_dummy.mag .
 cp /home/mrg/data/sky130_fd_bd_sram/tools/openram/technology/sky130/maglef_lib/sky130_fd_bd_sram__openram_dp_cell_replica.mag .

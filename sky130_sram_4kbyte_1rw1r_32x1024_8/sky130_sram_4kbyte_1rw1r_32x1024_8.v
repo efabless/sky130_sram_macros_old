@@ -4,6 +4,10 @@
 // Write size: 8
 
 module sky130_sram_4kbyte_1rw1r_32x1024_8(
+`ifdef USE_POWER_PINS
+    vdd,
+    gnd,
+`endif
 // Port 0: RW
     clk0,csb0,web0,wmask0,addr0,din0,dout0,
 // Port 1: R
@@ -19,6 +23,10 @@ module sky130_sram_4kbyte_1rw1r_32x1024_8(
   parameter VERBOSE = 1 ; //Set to 0 to only display warnings
   parameter T_HOLD = 1 ; //Delay to hold dout value after posedge. Value is arbitrary
 
+`ifdef USE_POWER_PINS
+    inout vdd;
+    inout gnd;
+`endif
   input  clk0; // clock
   input   csb0; // active low chip select
   input  web0; // active low write control

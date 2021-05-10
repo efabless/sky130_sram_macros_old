@@ -1,5 +1,5 @@
 #!/bin/sh
-export OPENRAM_TECH="/home/mrg/data/sky130_fd_bd_sram/third_party/OpenRAM//technology:/home/mrg/data/sky130_fd_bd_sram/tools/openram/technology"
+export OPENRAM_TECH="/home/mrg/openram//technology:/home/mrg/data/sky130_fd_bd_sram/tools/openram/technology"
 echo "$(date): Starting GDS to MAG using Magic /home/mrg/data/sky130_fd_bd_sram/env/conda/envs/sky130_fd_bd_sram/bin/magic"
 
 /home/mrg/data/sky130_fd_bd_sram/env/conda/envs/sky130_fd_bd_sram/bin/magic -dnull -noconsole << EOF
