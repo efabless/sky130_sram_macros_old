@@ -5,8 +5,8 @@
 
 module sky130_sram_4kbyte_1rw1r_32x1024_8(
 `ifdef USE_POWER_PINS
-    vdd,
-    gnd,
+    vccd1,
+    vssd1,
 `endif
 // Port 0: RW
     clk0,csb0,web0,wmask0,addr0,din0,dout0,
@@ -24,8 +24,8 @@ module sky130_sram_4kbyte_1rw1r_32x1024_8(
   parameter T_HOLD = 1 ; //Delay to hold dout value after posedge. Value is arbitrary
 
 `ifdef USE_POWER_PINS
-    inout vdd;
-    inout gnd;
+    inout vccd1;
+    inout vssd1;
 `endif
   input  clk0; // clock
   input   csb0; // active low chip select

@@ -35,8 +35,8 @@ library (sky130_sram_1kbyte_1rw1r_32x256_8_TT_1p8V_25C_lib){
     default_max_fanout   : 4.0 ;
     default_connection_class : universal ;
 
-    voltage_map ( VDD, 1.8 );
-    voltage_map ( GND, 0 );
+    voltage_map ( VCCD1, 1.8 );
+    voltage_map ( VSSD1, 0 );
 
     lu_table_template(CELL_TABLE){
         variable_1 : input_net_transition;
@@ -89,15 +89,15 @@ cell (sky130_sram_1kbyte_1rw1r_32x256_8){
     dont_use  : true;
     map_only   : true;
     dont_touch : true;
-    area : 177085.96200000003;
+    area : 187796.846;
 
-    pg_pin(vdd) {
-         voltage_name : VDD;
+    pg_pin(vccd1) {
+         voltage_name : VCCD1;
          pg_type : primary_power;
     }
 
-    pg_pin(gnd) {
-         voltage_name : GND;
+    pg_pin(vssd1) {
+         voltage_name : VSSD1;
          pg_type : primary_ground;
     }
 

@@ -14003,8 +14003,8 @@ Xnand_p_en_bar gated_clk_buf rbl_bl_delay p_en_bar_unbuf vdd gnd pnand2_1
 Xbuf_p_en_bar p_en_bar_unbuf p_en_bar vdd gnd pdriver_6
 .ENDS control_logic_r
 
-.SUBCKT sky130_sram_1kbyte_1rw1r_8x1024_8 din0[0] din0[1] din0[2] din0[3] din0[4] din0[5] din0[6] din0[7] addr0[0] addr0[1] addr0[2] addr0[3] addr0[4] addr0[5] addr0[6] addr0[7] addr0[8] addr0[9] addr1[0] addr1[1] addr1[2] addr1[3] addr1[4] addr1[5] addr1[6] addr1[7] addr1[8] addr1[9] csb0 csb1 web0 clk0 clk1 wmask0[0] dout0[0] dout0[1] dout0[2] dout0[3] dout0[4] dout0[5] dout0[6] dout0[7] dout1[0] dout1[1] dout1[2] dout1[3] dout1[4] dout1[5] dout1[6] dout1[7] vdd gnd
-*.PININFO din0[0]:I din0[1]:I din0[2]:I din0[3]:I din0[4]:I din0[5]:I din0[6]:I din0[7]:I addr0[0]:I addr0[1]:I addr0[2]:I addr0[3]:I addr0[4]:I addr0[5]:I addr0[6]:I addr0[7]:I addr0[8]:I addr0[9]:I addr1[0]:I addr1[1]:I addr1[2]:I addr1[3]:I addr1[4]:I addr1[5]:I addr1[6]:I addr1[7]:I addr1[8]:I addr1[9]:I csb0:I csb1:I web0:I clk0:I clk1:I wmask0[0]:I dout0[0]:O dout0[1]:O dout0[2]:O dout0[3]:O dout0[4]:O dout0[5]:O dout0[6]:O dout0[7]:O dout1[0]:O dout1[1]:O dout1[2]:O dout1[3]:O dout1[4]:O dout1[5]:O dout1[6]:O dout1[7]:O vdd:B gnd:B
+.SUBCKT sky130_sram_1kbyte_1rw1r_8x1024_8 din0[0] din0[1] din0[2] din0[3] din0[4] din0[5] din0[6] din0[7] addr0[0] addr0[1] addr0[2] addr0[3] addr0[4] addr0[5] addr0[6] addr0[7] addr0[8] addr0[9] addr1[0] addr1[1] addr1[2] addr1[3] addr1[4] addr1[5] addr1[6] addr1[7] addr1[8] addr1[9] csb0 csb1 web0 clk0 clk1 wmask0[0] dout0[0] dout0[1] dout0[2] dout0[3] dout0[4] dout0[5] dout0[6] dout0[7] dout1[0] dout1[1] dout1[2] dout1[3] dout1[4] dout1[5] dout1[6] dout1[7] vccd1 vssd1
+*.PININFO din0[0]:I din0[1]:I din0[2]:I din0[3]:I din0[4]:I din0[5]:I din0[6]:I din0[7]:I addr0[0]:I addr0[1]:I addr0[2]:I addr0[3]:I addr0[4]:I addr0[5]:I addr0[6]:I addr0[7]:I addr0[8]:I addr0[9]:I addr1[0]:I addr1[1]:I addr1[2]:I addr1[3]:I addr1[4]:I addr1[5]:I addr1[6]:I addr1[7]:I addr1[8]:I addr1[9]:I csb0:I csb1:I web0:I clk0:I clk1:I wmask0[0]:I dout0[0]:O dout0[1]:O dout0[2]:O dout0[3]:O dout0[4]:O dout0[5]:O dout0[6]:O dout0[7]:O dout1[0]:O dout1[1]:O dout1[2]:O dout1[3]:O dout1[4]:O dout1[5]:O dout1[6]:O dout1[7]:O vccd1:B vssd1:B
 * INPUT : din0[0] 
 * INPUT : din0[1] 
 * INPUT : din0[2] 
@@ -14055,15 +14055,15 @@ Xbuf_p_en_bar p_en_bar_unbuf p_en_bar vdd gnd pdriver_6
 * OUTPUT: dout1[5] 
 * OUTPUT: dout1[6] 
 * OUTPUT: dout1[7] 
-* POWER : vdd 
-* GROUND: gnd 
-Xbank0 dout0[0] dout0[1] dout0[2] dout0[3] dout0[4] dout0[5] dout0[6] dout0[7] dout1[0] dout1[1] dout1[2] dout1[3] dout1[4] dout1[5] dout1[6] dout1[7] rbl_bl0 rbl_bl1 bank_din0[0] bank_din0[1] bank_din0[2] bank_din0[3] bank_din0[4] bank_din0[5] bank_din0[6] bank_din0[7] a0[0] a0[1] a0[2] a0[3] a0[4] a0[5] a0[6] a0[7] a0[8] a0[9] a1[0] a1[1] a1[2] a1[3] a1[4] a1[5] a1[6] a1[7] a1[8] a1[9] s_en0 s_en1 p_en_bar0 p_en_bar1 w_en0 bank_wmask0[0] wl_en0 wl_en1 vdd gnd bank
-Xcontrol0 csb0 web0 clk0 rbl_bl0 s_en0 w_en0 p_en_bar0 wl_en0 clk_buf0 vdd gnd control_logic_rw
-Xcontrol1 csb1 clk1 rbl_bl1 s_en1 p_en_bar1 wl_en1 clk_buf1 vdd gnd control_logic_r
-Xrow_address0 addr0[3] addr0[4] addr0[5] addr0[6] addr0[7] addr0[8] addr0[9] a0[3] a0[4] a0[5] a0[6] a0[7] a0[8] a0[9] clk_buf0 vdd gnd row_addr_dff
-Xrow_address1 addr1[3] addr1[4] addr1[5] addr1[6] addr1[7] addr1[8] addr1[9] a1[3] a1[4] a1[5] a1[6] a1[7] a1[8] a1[9] clk_buf1 vdd gnd row_addr_dff
-Xcol_address0 addr0[0] addr0[1] addr0[2] a0[0] a0[1] a0[2] clk_buf0 vdd gnd col_addr_dff
-Xcol_address1 addr1[0] addr1[1] addr1[2] a1[0] a1[1] a1[2] clk_buf1 vdd gnd col_addr_dff
-Xwmask_dff0 wmask0[0] bank_wmask0[0] clk_buf0 vdd gnd wmask_dff
-Xdata_dff0 din0[0] din0[1] din0[2] din0[3] din0[4] din0[5] din0[6] din0[7] bank_din0[0] bank_din0[1] bank_din0[2] bank_din0[3] bank_din0[4] bank_din0[5] bank_din0[6] bank_din0[7] clk_buf0 vdd gnd data_dff
+* POWER : vccd1 
+* GROUND: vssd1 
+Xbank0 dout0[0] dout0[1] dout0[2] dout0[3] dout0[4] dout0[5] dout0[6] dout0[7] dout1[0] dout1[1] dout1[2] dout1[3] dout1[4] dout1[5] dout1[6] dout1[7] rbl_bl0 rbl_bl1 bank_din0[0] bank_din0[1] bank_din0[2] bank_din0[3] bank_din0[4] bank_din0[5] bank_din0[6] bank_din0[7] a0[0] a0[1] a0[2] a0[3] a0[4] a0[5] a0[6] a0[7] a0[8] a0[9] a1[0] a1[1] a1[2] a1[3] a1[4] a1[5] a1[6] a1[7] a1[8] a1[9] s_en0 s_en1 p_en_bar0 p_en_bar1 w_en0 bank_wmask0[0] wl_en0 wl_en1 vccd1 vssd1 bank
+Xcontrol0 csb0 web0 clk0 rbl_bl0 s_en0 w_en0 p_en_bar0 wl_en0 clk_buf0 vccd1 vssd1 control_logic_rw
+Xcontrol1 csb1 clk1 rbl_bl1 s_en1 p_en_bar1 wl_en1 clk_buf1 vccd1 vssd1 control_logic_r
+Xrow_address0 addr0[3] addr0[4] addr0[5] addr0[6] addr0[7] addr0[8] addr0[9] a0[3] a0[4] a0[5] a0[6] a0[7] a0[8] a0[9] clk_buf0 vccd1 vssd1 row_addr_dff
+Xrow_address1 addr1[3] addr1[4] addr1[5] addr1[6] addr1[7] addr1[8] addr1[9] a1[3] a1[4] a1[5] a1[6] a1[7] a1[8] a1[9] clk_buf1 vccd1 vssd1 row_addr_dff
+Xcol_address0 addr0[0] addr0[1] addr0[2] a0[0] a0[1] a0[2] clk_buf0 vccd1 vssd1 col_addr_dff
+Xcol_address1 addr1[0] addr1[1] addr1[2] a1[0] a1[1] a1[2] clk_buf1 vccd1 vssd1 col_addr_dff
+Xwmask_dff0 wmask0[0] bank_wmask0[0] clk_buf0 vccd1 vssd1 wmask_dff
+Xdata_dff0 din0[0] din0[1] din0[2] din0[3] din0[4] din0[5] din0[6] din0[7] bank_din0[0] bank_din0[1] bank_din0[2] bank_din0[3] bank_din0[4] bank_din0[5] bank_din0[6] bank_din0[7] clk_buf0 vccd1 vssd1 data_dff
 .ENDS sky130_sram_1kbyte_1rw1r_8x1024_8
