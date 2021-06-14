@@ -1,4 +1,5 @@
 # Ignore the tmp directory output
 sky130*/tmp
+sky130*/.magicrc
 *.ok
 __pycache__

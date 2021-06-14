@@ -6,6 +6,9 @@ permute default
 property default
 property parallel none
 
+# Allow override of default #columns in the output format.
+catch {format $env(NETGEN_COLUMNS)}
+
 #---------------------------------------------------------------
 # For the following, get the cell lists from
 # circuit1 and circuit2.
@@ -24,7 +27,6 @@ set cells2 [cells list -all -circuit2]
 
 set devices {}
 lappend devices sky130_fd_pr__res_iso_pw
-lappend devices sky130_fd_pr__res_generic_po
 lappend devices sky130_fd_pr__res_high_po_0p35
 lappend devices sky130_fd_pr__res_high_po_0p69
 lappend devices sky130_fd_pr__res_high_po_1p41
@@ -39,6 +41,8 @@ lappend devices sky130_fd_pr__res_xhigh_po_5p73
 lappend devices sky130_fd_pr__res_xhigh_po
 lappend devices sky130_fd_pr__res_generic_nd
 lappend devices sky130_fd_pr__res_generic_pd
+lappend devices sky130_fd_pr__res_generic_nd__hv
+lappend devices sky130_fd_pr__res_generic_pd__hv
 lappend devices mrdn_hv mrdp_hv
 
 foreach dev $devices {
@@ -71,10 +75,11 @@ foreach dev $devices {
 }
 
 #-------------------------------------------
-# MRM (metal) resistors
+# MRM (metal) resistors and poly resistor
 #-------------------------------------------
 
 set devices {}
+lappend devices sky130_fd_pr__res_generic_po
 lappend devices sky130_fd_pr__res_generic_l1
 lappend devices sky130_fd_pr__res_generic_m1
 lappend devices sky130_fd_pr__res_generic_m2
@@ -84,7 +89,7 @@ lappend devices sky130_fd_pr__res_generic_m5
 
 foreach dev $devices {
     if {[lsearch $cells1 $dev] >= 0} {
-	permute "-circuit1 $dev" 1 2
+	permute "-circuit1 $dev" end_a end_b
 	property "-circuit1 $dev" series enable
 	property "-circuit1 $dev" series {w critical}
 	property "-circuit1 $dev" series {l add}
@@ -97,7 +102,7 @@ foreach dev $devices {
 	property "-circuit1 $dev" delete mult
     }
     if {[lsearch $cells2 $dev] >= 0} {
-	permute "-circuit2 $dev" 1 2
+	permute "-circuit2 $dev" end_a end_b
 	property "-circuit2 $dev" series enable
 	property "-circuit2 $dev" series {w critical}
 	property "-circuit2 $dev" series {l add}
@@ -119,18 +124,22 @@ set devices {}
 lappend devices sky130_fd_pr__nfet_01v8
 lappend devices sky130_fd_pr__nfet_01v8_lvt
 lappend devices sky130_fd_bs_flash__special_sonosfet_star
-lappend devices sky130_fd_pr__nfet_g5v9d10v5
+lappend devices sky130_fd_pr__nfet_g5v0d10v5
+lappend devices sky130_fd_pr__nfet_05v0_nvt
 lappend devices sky130_fd_pr__pfet_01v8
 lappend devices sky130_fd_pr__pfet_01v8_lvt
 lappend devices sky130_fd_pr__pfet_01v8_mvt
 lappend devices sky130_fd_pr__pfet_01v8_hvt
-lappend devices sky130_fd_pr__pfet_g5v9d10v5
+lappend devices sky130_fd_pr__pfet_g5v0d10v5
 lappend devices sky130_fd_pr__special_pfet_pass
 lappend devices sky130_fd_pr__special_nfet_pass
 lappend devices sky130_fd_pr__special_nfet_latch
 lappend devices sky130_fd_pr__cap_var_lvt
 lappend devices sky130_fd_pr__cap_var_hvt
 lappend devices sky130_fd_pr__cap_var
+lappend devices sky130_fd_pr__nfet_20v0_nvt
+lappend devices sky130_fd_pr__nfet_20v0
+lappend devices sky130_fd_pr__pfet_20v0
 
 foreach dev $devices {
     if {[lsearch $cells1 $dev] >= 0} {
@@ -223,8 +232,11 @@ foreach dev $devices {
 set devices {}
 lappend devices sky130_fd_pr__npn_05v5_W1p00L1p00
 lappend devices sky130_fd_pr__npn_05v5_W1p00L2p00
-lappend devices sky130_fd_pr__php_05v5_W0p68L0p68
-lappend devices sky130_fd_pr__php_05v5_W3p40L3p40
+lappend devices sky130_fd_pr__pnp_05v5_W0p68L0p68
+lappend devices sky130_fd_pr__pnp_05v5_W3p40L3p40
+lappend devices sky130_fd_pr__npn_05v5
+lappend devices sky130_fd_pr__pnp_05v5
+lappend devices sky130_fd_pr__npn_11v0
 
 lappend devices sky130_fd_pr__cap_vpp_11p5x11p7_lim5_shield
 lappend devices sky130_fd_pr__cap_vpp_11p5x11p7_m3_lim5_shield
@@ -259,26 +271,94 @@ foreach dev $devices {
 }
 
 #---------------------------------------------------------------
+# Schematic cells which are not extractable
+#---------------------------------------------------------------
+
+set devices {sky130_fd_io__condiode sky130_fd_io__tap_1}
+
+foreach dev $devices {
+    if {[lsearch $cells1 $dev] >= 0} {
+    	ignore class "-circuit1 $dev"
+    }
+    if {[lsearch $cells2 $dev] >= 0} {
+	ignore class "-circuit2 $dev"
+    }
+}
+
+#---------------------------------------------------------------
 # Digital cells (ignore decap, fill, and tap cells)
 # Make a separate list for each supported library
 #---------------------------------------------------------------
-# e.g., ignore class "-circuit2 sky130_fc_sc_hd_decap_3"
+# e.g., ignore class "-circuit2 sky130_fc_sc_hd__decap_3"
+#---------------------------------------------------------------
+
+if { [info exist ::env(MAGIC_EXT_USE_GDS)] && $::env(MAGIC_EXT_USE_GDS) } {
+    foreach cell $cells1 {
+#        if {[regexp {sky130_fd_sc_[^_]+__decap_[[:digit:]]+} $cell match]} {
+#            ignore class "-circuit1 $cell"
+#        }
+        if {[regexp {sky130_fd_sc_[^_]+__fill_[[:digit:]]+} $cell match]} {
+            ignore class "-circuit1 $cell"
+        }
+        if {[regexp {sky130_fd_sc_[^_]+__tapvpwrvgnd_[[:digit:]]+} $cell match]} {
+            ignore class "-circuit1 $cell"
+        }
+    }
+    foreach cell $cells2 {
+#        if {[regexp {sky130_fd_sc_[^_]+__decap_[[:digit:]]+} $cell match]} {
+#            ignore class "-circuit2 $cell"
+#        }
+        if {[regexp {sky130_fd_sc_[^_]+__fill_[[:digit:]]+} $cell match]} {
+            ignore class "-circuit2 $cell"
+        }
+        if {[regexp {sky130_fd_sc_[^_]+__tapvpwrvgnd_[[:digit:]]+} $cell match]} {
+            ignore class "-circuit2 $cell"
+        }
+    }
+}
+
+#---------------------------------------------------------------
+# Allow the fill, decap, etc., cells to be parallelized
 #---------------------------------------------------------------
 
 foreach cell $cells1 {
-    if {[regexp {sky130_fd_sc_\w\w__decap_[[:digit:]]+} $cell match]} {
-        ignore class "-circuit1 $cell"
+    if {[regexp {sky130_fd_sc_[^_]+__decap_[[:digit:]]+} $cell match]} {
+	property "-circuit1 $cell" parallel enable
     }
-    if {[regexp {sky130_fd_sc_\w\w__fill_[[:digit:]]+} $cell match]} {
-        ignore class "-circuit1 $cell"
+    if {[regexp {sky130_fd_sc_[^_]+__fill_[[:digit:]]+} $cell match]} {
+	property "-circuit1 $cell" parallel enable
+    }
+    if {[regexp {sky130_fd_sc_[^_]+__tapvpwrvgnd_[[:digit:]]+} $cell match]} {
+	property "-circuit1 $cell" parallel enable
+    }
+    if {[regexp {sky130_fd_sc_[^_]+__diode_[[:digit:]]+} $cell match]} {
+	property "-circuit1 $cell" parallel enable
+    }
+    if {[regexp {sky130_fd_sc_[^_]+__fill_diode_[[:digit:]]+} $cell match]} {
+	property "-circuit1 $cell" parallel enable
+    }
+    if {[regexp {sky130_ef_sc_[^_]+__fakediode_[[:digit:]]+} $cell match]} {
+	property "-circuit1 $cell" parallel enable
     }
 }
 foreach cell $cells2 {
-    if {[regexp {sky130_fd_sc_\w\w__decap_[[:digit:]]+} $cell match]} {
-        ignore class "-circuit2 $cell"
+    if {[regexp {sky130_fd_sc_[^_]+__decap_[[:digit:]]+} $cell match]} {
+	property "-circuit2 $cell" parallel enable
     }
-    if {[regexp {sky130_fd_sc_\w\w__fill_[[:digit:]]+} $cell match]} {
-        ignore class "-circuit2 $cell"
+    if {[regexp {sky130_fd_sc_[^_]+__fill_[[:digit:]]+} $cell match]} {
+	property "-circuit2 $cell" parallel enable
+    }
+    if {[regexp {sky130_fd_sc_[^_]+__tapvpwrvgnd_[[:digit:]]+} $cell match]} {
+	property "-circuit2 $cell" parallel enable
+    }
+    if {[regexp {sky130_fd_sc_[^_]+__diode_[[:digit:]]+} $cell match]} {
+	property "-circuit2 $cell" parallel enable
+    }
+    if {[regexp {sky130_fd_sc_[^_]+__fill_diode_[[:digit:]]+} $cell match]} {
+	property "-circuit2 $cell" parallel enable
+    }
+    if {[regexp {sky130_ef_sc_[^_]+__fakediode_[[:digit:]]+} $cell match]} {
+	property "-circuit2 $cell" parallel enable
     }
 }
 
@@ -331,7 +411,3 @@ if {[model blackbox]} {
 }
 
 #---------------------------------------------------------------
-# We must flatten these because the ports are disconnected
-flatten class {-circuit1 sky130_fd_bd_sram__openram_dp_cell_dummy}
-flatten class {-circuit1 sky130_fd_bd_sram__openram_sp_cell_opt1_dummy}
-flatten class {-circuit1 sky130_fd_bd_sram__openram_sp_cell_opt1a_dummy}

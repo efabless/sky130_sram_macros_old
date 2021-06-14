@@ -1,0 +1,587 @@
+[globals/init_openram]: Initializing OpenRAM...
+[globals/setup_paths]: Temporary files saved in /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_128x256_128/tmp/
+[globals/read_config]: Configuration file is /home/mrg/data/sky130_fd_bd_sram/macros/configs/sky130_sram_4kbyte_1rw1r_128x256_128.py
+[globals/read_config]: Output saved in /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_128x256_128/
+[globals/import_tech]: Adding technology path: /home/mrg/openram/technology
+[globals/import_tech]: Adding technology path: /home/mrg/data/sky130_fd_bd_sram/tools/openram/technology
+[globals/init_paths]: Creating temp directory: /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_128x256_128/tmp/
+[globals/setup_bitcell]: Using bitcell: bitcell_2port
+[characterizer/<module>]: Initializing characterizer...
+[characterizer/<module>]: Analytical model enabled.
+[verify/<module>]: Initializing verify...
+[verify/<module>]: Finding DRC/LVS/PEX tools.
+[globals/get_tool]: Using DRC: /home/mrg/data/sky130_fd_bd_sram/env/conda/envs/sky130_fd_bd_sram/bin/magic
+[globals/get_tool]: Using LVS: /home/mrg/data/sky130_fd_bd_sram/env/conda/envs/sky130_fd_bd_sram/bin/netgen
+[globals/get_tool]: Using PEX: /home/mrg/data/sky130_fd_bd_sram/env/conda/envs/sky130_fd_bd_sram/bin/magic
+[globals/setup_bitcell]: Using bitcell: bitcell_2port
+|==============================================================================|
+|=========                      OpenRAM v1.1.15                       =========|
+|=========                                                            =========|
+|=========               VLSI Design and Automation Lab               =========|
+|=========        Computer Science and Engineering Department         =========|
+|=========            University of California Santa Cruz             =========|
+|=========                                                            =========|
+|=========          Usage help: openram-user-group@ucsc.edu           =========|
+|=========        Development help: openram-dev-group@ucsc.edu        =========|
+|=========Temp dir: /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_128x256_128/tmp/=========|
+|=========                See LICENSE for license info                =========|
+|==============================================================================|
+** Start: 06/13/2021 15:37:17
+Technology: sky130
+Total size: 32768 bits
+Word size: 128
+Words: 256
+Banks: 1
+RW ports: 1
+R-only ports: 1
+W-only ports: 0
+DRC/LVS/PEX is only run on the top-level design to save run-time (inline_lvsdrc=True to do inline checking).
+Characterization is disabled (using analytical delay models) (analytical_delay=False to simulate).
+Only generating nominal corner timing.
+[sram_config/recompute_sizes]: Recomputing with words per row: 1
+[sram_config/recompute_sizes]: Rows: 256 Cols: 128
+[sram_config/recompute_sizes]: Row addr size: 8 Col addr size: 0 Bank addr size: 8
+[sram_config/compute_sizes]: Set SRAM Words Per Row=1
+Words per row: 1
+Output files are: 
+/home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_128x256_128/sky130_sram_4kbyte_1rw1r_128x256_128.lvs
+/home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_128x256_128/sky130_sram_4kbyte_1rw1r_128x256_128.sp
+/home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_128x256_128/sky130_sram_4kbyte_1rw1r_128x256_128.v
+/home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_128x256_128/sky130_sram_4kbyte_1rw1r_128x256_128.lib
+/home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_128x256_128/sky130_sram_4kbyte_1rw1r_128x256_128.py
+/home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_128x256_128/sky130_sram_4kbyte_1rw1r_128x256_128.html
+/home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_128x256_128/sky130_sram_4kbyte_1rw1r_128x256_128.log
+/home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_128x256_128/sky130_sram_4kbyte_1rw1r_128x256_128.lef
+/home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw1r_128x256_128/sky130_sram_4kbyte_1rw1r_128x256_128.gds
+[bitcell_base_array/__init__]: Creating replica_bitcell_array 256 x 128
+[replica_bitcell_array/__init__]: Creating replica_bitcell_array 256 x 128 rbls: None left_rbl: None right_rbl: None
+[bitcell_base_array/__init__]: Creating bitcell_array 256 x 128
+[bitcell_array/__init__]: Creating bitcell_array 256 x 128
+[bitcell_base_array/__init__]: Creating replica_column 258 x 1
+[bitcell_base_array/__init__]: Creating replica_column_0 258 x 1
+[bitcell_base_array/__init__]: Creating dummy_array 1 x 128
+[bitcell_base_array/__init__]: Creating col_cap_array 1 x 128
+[bitcell_base_array/__init__]: Creating col_cap_array_0 1 x 128
+[bitcell_base_array/__init__]: Creating row_cap_array 258 x 1
+[bitcell_base_array/__init__]: Creating row_cap_array_0 258 x 1
+[and2_dec/__init__]: Creating and2_dec and2_dec
+[and3_dec/__init__]: Creating and3_dec and3_dec
+[and4_dec/__init__]: Creating and4_dec and4_dec
+[wordline_driver_array/__init__]: Creating wordline_driver_array
+[wordline_driver/__init__]: Creating wordline_driver wordline_driver
+[and2_dec/__init__]: Creating and2_dec and2_dec_0
+[precharge_array/__init__]: Creating precharge_array
+[sense_amp_array/__init__]: Creating sense_amp_array
+[write_driver_array/__init__]: Creating write_driver_array
+[write_mask_and_array/__init__]: Creating write_mask_and_array
+[pand2/__init__]: Creating pand2 pand2
+[pdriver/__init__]: creating pdriver pdriver
+[precharge_array/__init__]: Creating precharge_array_0
+[dff_array/__init__]: Creating row_addr_dff rows=8 cols=1
+[dff_array/__init__]: Creating data_dff rows=1 cols=128
+[dff_array/__init__]: Creating wmask_dff rows=1 cols=1
+[control_logic/__init__]: Creating control_logic_rw
+[dff_buf/__init__]: Creating dff_buf
+[dff_buf_array/__init__]: Creating dff_buf_array
+[dff_buf/__init__]: Creating dff_buf_0
+[pand2/__init__]: Creating pand2 pand2_0
+[pdriver/__init__]: creating pdriver pdriver_0
+[pbuf/__init__]: creating pbuf with size of 128
+[pdriver/__init__]: creating pdriver pdriver_1
+[pdriver/__init__]: creating pdriver pdriver_2
+[pand3/__init__]: Creating pand3 pand3
+[pdriver/__init__]: creating pdriver pdriver_3
+[pand3/__init__]: Creating pand3 pand3_0
+[pdriver/__init__]: creating pdriver pdriver_4
+[pdriver/__init__]: creating pdriver pdriver_5
+[delay_chain/__init__]: creating delay chain [4, 4, 4, 4, 4, 4, 4, 4, 4]
+[control_logic/__init__]: Creating control_logic_r
+[dff_buf_array/__init__]: Creating dff_buf_array_0
+[pdriver/__init__]: creating pdriver pdriver_6
+** Submodules: 25.3 seconds
+** Placement: 0.3 seconds
+[router_tech/__init__]: Minimum track width: 0.680
+[router_tech/__init__]: Minimum track space: 0.300
+[router_tech/__init__]: Minimum track wire width: 0.380
+[hierarchy_layout/get_bbox]: Size: 902.9 x 672.1 with perimeter big margin 0.6799999999999999 little margin 0
+[hierarchy_layout/get_bbox]: Size: 902.9 x 672.1 with perimeter big margin 8.16 little margin 1.3599999999999999
+[router_tech/__init__]: Minimum track width: 0.680
+[router_tech/__init__]: Minimum track space: 0.300
+[router_tech/__init__]: Minimum track wire width: 0.380
+[grid/__init__]: BBOX coords: ll=v[-148.78,-83.81] ur=v[770.4399999999999,604.61]
+[grid/__init__]: BBOX grids: ll=v3d[-219, -123, 0.0] ur=v3d[1133, 889, 0.0]
+**** Retrieving pins: 0.0 seconds
+**** Analyzing pins: 0.0 seconds
+[router/find_blockages]: Finding blockages.
+**** Finding blockages: 25.7 seconds
+[router/convert_blockages]: Converting blockages.
+**** Converting blockages: 0.7 seconds
+WARNING: file pin_group.py: line 656:   Expanding conversion (addr1[6] layer=m3 ll=v[545.9350000000001,-5.545] ur=v[546.4250000000001,-5.055])
+
+WARNING: file pin_group.py: line 656:   Expanding conversion (addr1[7] layer=m3 ll=v[545.9350000000001,-14.045] ur=v[546.4250000000001,-13.555])
+
+**** Converting pins: 2.5 seconds
+**** Separating adjacent pins: 0.9 seconds
+**** Enclosing pins: 0.5 seconds
+*** Finding pins and blockages: 282.6 seconds
+[signal_escape_router/route_signal]: Escape routing csb0 with scale 5
+[signal_escape_router/route_signal]: Escape routing web0 with scale 5
+[signal_escape_router/route_signal]: Escape routing csb1 with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[0] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[1] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[2] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[3] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[4] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[5] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[6] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[7] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[8] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[9] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[10] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[11] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[12] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[13] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[14] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[15] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[16] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[17] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[18] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[19] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[20] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[21] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[22] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[23] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[24] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[25] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[26] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[27] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[28] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[29] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[30] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[31] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[32] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[33] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[34] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[35] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[36] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[37] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[38] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[39] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[40] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[41] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[42] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[43] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[44] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[45] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[46] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[47] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[48] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[49] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[50] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[51] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[52] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[53] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[54] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[55] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[56] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[57] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[58] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[59] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[60] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[61] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[62] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[63] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[64] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[65] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[66] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[67] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[68] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[69] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[70] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[71] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[72] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[73] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[74] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[75] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[76] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[77] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[78] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[79] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[80] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[81] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[82] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[83] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[84] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[85] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[86] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[87] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[88] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[89] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[90] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[91] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[92] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[93] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[94] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[95] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[96] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[97] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[98] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[99] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[100] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[101] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[102] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[103] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[104] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[105] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[106] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[107] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[108] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[109] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[110] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[111] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[112] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[113] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[114] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[115] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[116] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[117] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[118] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[119] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[120] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[121] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[122] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[123] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[124] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[125] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[126] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[127] with scale 5
+[signal_escape_router/route_signal]: Escape routing wmask0[0] with scale 5
+[signal_escape_router/route_signal]: Escape routing clk1 with scale 5
+[signal_escape_router/route_signal]: Escape routing clk0 with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[0] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[1] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[2] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[3] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[4] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[5] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[6] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[7] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[8] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[9] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[10] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[11] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[12] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[13] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[14] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[15] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[16] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[17] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[18] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[19] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[20] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[21] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[22] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[23] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[24] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[25] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[26] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[27] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[28] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[29] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[30] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[31] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[32] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[33] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[34] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[35] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[36] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[37] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[38] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[39] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[40] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[41] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[42] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[43] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[44] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[45] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[46] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[47] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[48] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[49] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[50] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[51] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[52] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[53] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[54] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[55] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[56] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[57] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[58] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[59] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[60] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[61] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[62] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[63] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[64] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[65] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[66] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[67] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[68] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[69] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[70] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[71] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[72] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[73] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[74] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[75] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[76] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[77] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[78] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[79] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[80] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[81] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[82] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[83] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[84] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[85] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[86] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[87] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[88] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[89] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[90] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[91] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[92] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[93] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[94] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[95] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[96] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[97] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[98] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[99] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[100] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[101] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[102] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[103] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[104] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[105] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[106] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[107] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[108] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[109] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[110] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[111] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[112] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[113] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[114] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[115] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[116] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[117] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[118] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[119] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[120] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[121] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[122] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[123] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[124] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[125] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[126] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[127] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[7] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[6] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[5] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[4] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[3] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[0] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[1] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[2] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[3] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[4] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[5] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[6] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[7] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[8] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[9] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[10] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[11] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[12] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[13] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[14] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[15] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[16] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[17] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[18] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[19] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[20] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[21] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[22] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[23] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[24] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[25] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[26] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[27] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[28] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[29] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[30] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[31] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[32] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[33] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[34] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[35] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[36] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[37] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[38] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[39] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[40] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[41] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[42] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[43] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[44] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[45] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[46] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[47] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[48] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[49] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[50] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[51] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[52] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[53] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[54] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[55] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[56] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[57] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[58] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[59] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[60] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[61] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[62] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[63] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[64] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[65] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[66] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[67] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[68] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[69] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[70] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[71] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[72] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[73] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[74] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[75] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[76] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[77] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[78] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[79] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[80] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[81] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[82] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[83] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[84] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[85] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[86] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[87] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[88] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[89] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[90] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[91] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[92] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[93] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[94] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[95] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[96] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[97] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[98] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[99] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[100] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[101] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[102] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[103] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[104] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[105] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[106] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[107] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[108] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[109] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[110] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[111] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[112] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[113] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[114] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[115] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[116] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[117] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[118] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[119] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[120] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[121] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[122] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[123] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[124] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[125] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[126] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[127] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[2] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[1] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[0] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[0] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[1] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[2] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[3] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[4] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[5] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[6] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[7] with scale 5
+*** Maze routing pins: 1931.6 seconds
+[router_tech/__init__]: Minimum track width: 0.680
+[router_tech/__init__]: Minimum track space: 0.300
+[router_tech/__init__]: Minimum track wire width: 0.380
+[supply_tree_router/route]: Running supply router on vdd and gnd...
+[grid/__init__]: BBOX coords: ll=v[-141.3,-76.33000000000001] ur=v[762.9599999999999,597.13]
+[grid/__init__]: BBOX grids: ll=v3d[-208, -112, 0.0] ur=v3d[1122, 878, 0.0]
+**** Retrieving pins: 0.4 seconds
+**** Analyzing pins: 38.5 seconds
+[router/find_blockages]: Finding blockages.
+**** Finding blockages: 104.9 seconds
+[router/convert_blockages]: Converting blockages.
+**** Converting blockages: 0.4 seconds
+WARNING: file pin_group.py: line 656:   Expanding conversion (vdd layer=m3 ll=v[543.865,-9.795] ur=v[544.355,-9.305])
+
+WARNING: file pin_group.py: line 656:   Expanding conversion (gnd layer=m3 ll=v[543.865,-16.865000000000002] ur=v[544.355,-16.375])
+
+**** Converting pins: 39.7 seconds
+**** Separating adjacent pins: 73.9 seconds
+**** Enclosing pins: 80.7 seconds
+*** Finding pins and blockages: 647.0 seconds
+[supply_tree_router/route_pins]: Routing vdd with 3431 pins.
+[supply_tree_router/route_pins]: 0 supply segments routed, 3430 remaining.
+[supply_tree_router/route_pins]: 100 supply segments routed, 3330 remaining.
+[supply_tree_router/route_pins]: 200 supply segments routed, 3230 remaining.
+[supply_tree_router/route_pins]: 300 supply segments routed, 3130 remaining.
+[supply_tree_router/route_pins]: 400 supply segments routed, 3030 remaining.
+[supply_tree_router/route_pins]: 500 supply segments routed, 2930 remaining.
+[supply_tree_router/route_pins]: 600 supply segments routed, 2830 remaining.
+[supply_tree_router/route_pins]: 700 supply segments routed, 2730 remaining.
+[supply_tree_router/route_pins]: 800 supply segments routed, 2630 remaining.
+[supply_tree_router/route_pins]: 900 supply segments routed, 2530 remaining.
+[supply_tree_router/route_pins]: 1000 supply segments routed, 2430 remaining.
+[supply_tree_router/route_pins]: 1100 supply segments routed, 2330 remaining.
+[supply_tree_router/route_pins]: 1200 supply segments routed, 2230 remaining.
+[supply_tree_router/route_pins]: 1300 supply segments routed, 2130 remaining.
+[supply_tree_router/route_pins]: 1400 supply segments routed, 2030 remaining.
+[supply_tree_router/route_pins]: 1500 supply segments routed, 1930 remaining.
+[supply_tree_router/route_pins]: 1600 supply segments routed, 1830 remaining.
+[supply_tree_router/route_pins]: 1700 supply segments routed, 1730 remaining.
+[supply_tree_router/route_pins]: 1800 supply segments routed, 1630 remaining.
+[supply_tree_router/route_pins]: 1900 supply segments routed, 1530 remaining.
+[supply_tree_router/route_pins]: 2000 supply segments routed, 1430 remaining.
+[supply_tree_router/route_pins]: 2100 supply segments routed, 1330 remaining.
+[supply_tree_router/route_pins]: 2200 supply segments routed, 1230 remaining.
+[supply_tree_router/route_pins]: 2300 supply segments routed, 1130 remaining.
+[supply_tree_router/route_pins]: 2400 supply segments routed, 1030 remaining.
+[supply_tree_router/route_pins]: 2500 supply segments routed, 930 remaining.
+[supply_tree_router/route_pins]: 2600 supply segments routed, 830 remaining.
+[supply_tree_router/route_pins]: 2700 supply segments routed, 730 remaining.
+[supply_tree_router/route_pins]: 2800 supply segments routed, 630 remaining.
+[supply_tree_router/route_pins]: 2900 supply segments routed, 530 remaining.
+[supply_tree_router/route_pins]: 3000 supply segments routed, 430 remaining.
+[supply_tree_router/route_pins]: 3100 supply segments routed, 330 remaining.
+[supply_tree_router/route_pins]: 3200 supply segments routed, 230 remaining.

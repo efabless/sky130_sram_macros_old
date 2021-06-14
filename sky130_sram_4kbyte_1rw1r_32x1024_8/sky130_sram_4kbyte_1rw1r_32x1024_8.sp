@@ -23,2342 +23,6 @@
 *
 * SPDX-License-Identifier: Apache-2.0
 
-* SPICE3 file created from sky130_fd_bd_sram__openram_dff.ext - technology: EFS8A
-
-.subckt sky130_fd_bd_sram__openram_dff D Q CLK VDD GND
-X1000 a_511_725# a_n8_115# VDD VDD sky130_fd_pr__pfet_01v8 W=3 L=0.15
-X1001 a_353_115# CLK a_11_624# GND sky130_fd_pr__nfet_01v8 W=1 L=0.15
-X1002 a_353_725# a_203_89# a_11_624# VDD sky130_fd_pr__pfet_01v8 W=3 L=0.15
-X1003 a_11_624# a_203_89# a_161_115# GND sky130_fd_pr__nfet_01v8 W=1 L=0.15
-X1004 a_11_624# CLK a_161_725# VDD sky130_fd_pr__pfet_01v8 W=3 L=0.15
-X1005 GND Q a_703_115# GND sky130_fd_pr__nfet_01v8 W=1 L=0.15
-X1006 VDD Q a_703_725# VDD sky130_fd_pr__pfet_01v8 W=3 L=0.15
-X1007 a_203_89# CLK GND GND sky130_fd_pr__nfet_01v8 W=1 L=0.15
-X1008 a_203_89# CLK VDD VDD sky130_fd_pr__pfet_01v8 W=3 L=0.15
-X1009 a_161_115# D GND GND sky130_fd_pr__nfet_01v8 W=1 L=0.15
-X1010 a_161_725# D VDD VDD sky130_fd_pr__pfet_01v8 W=3 L=0.15
-X1011 GND a_11_624# a_n8_115# GND sky130_fd_pr__nfet_01v8 W=1 L=0.15
-X1012 a_703_115# a_203_89# ON GND sky130_fd_pr__nfet_01v8 W=1 L=0.15
-X1013 VDD a_11_624# a_n8_115# VDD sky130_fd_pr__pfet_01v8 W=3 L=0.15
-X1014 a_703_725# CLK ON VDD sky130_fd_pr__pfet_01v8 W=3 L=0.15
-X1015 Q ON VDD VDD sky130_fd_pr__pfet_01v8 W=3 L=0.15
-X1016 Q ON GND GND sky130_fd_pr__nfet_01v8 W=1 L=0.15
-X1017 ON a_203_89# a_511_725# VDD sky130_fd_pr__pfet_01v8 W=3 L=0.15
-X1018 ON CLK a_511_115# GND sky130_fd_pr__nfet_01v8 W=1 L=0.15
-X1019 GND a_n8_115# a_353_115# GND sky130_fd_pr__nfet_01v8 W=1 L=0.15
-X1020 VDD a_n8_115# a_353_725# VDD sky130_fd_pr__pfet_01v8 W=3 L=0.15
-X1021 a_511_115# a_n8_115# GND GND sky130_fd_pr__nfet_01v8 W=1 L=0.15
-.ends
-
-.SUBCKT row_addr_dff din_0 din_1 din_2 din_3 din_4 din_5 din_6 din_7 dout_0 dout_1 dout_2 dout_3 dout_4 dout_5 dout_6 dout_7 clk vdd gnd
-*.PININFO din_0:I din_1:I din_2:I din_3:I din_4:I din_5:I din_6:I din_7:I dout_0:O dout_1:O dout_2:O dout_3:O dout_4:O dout_5:O dout_6:O dout_7:O clk:I vdd:B gnd:B
-* INPUT : din_0 
-* INPUT : din_1 
-* INPUT : din_2 
-* INPUT : din_3 
-* INPUT : din_4 
-* INPUT : din_5 
-* INPUT : din_6 
-* INPUT : din_7 
-* OUTPUT: dout_0 
-* OUTPUT: dout_1 
-* OUTPUT: dout_2 
-* OUTPUT: dout_3 
-* OUTPUT: dout_4 
-* OUTPUT: dout_5 
-* OUTPUT: dout_6 
-* OUTPUT: dout_7 
-* INPUT : clk 
-* POWER : vdd 
-* GROUND: gnd 
-* rows: 8 cols: 1
-Xdff_r0_c0 din_0 dout_0 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r1_c0 din_1 dout_1 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r2_c0 din_2 dout_2 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r3_c0 din_3 dout_3 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r4_c0 din_4 dout_4 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r5_c0 din_5 dout_5 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r6_c0 din_6 dout_6 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r7_c0 din_7 dout_7 CLK VDD GND sky130_fd_bd_sram__openram_dff
-.ENDS row_addr_dff
-
-.SUBCKT col_addr_dff din_0 din_1 dout_0 dout_1 clk vdd gnd
-*.PININFO din_0:I din_1:I dout_0:O dout_1:O clk:I vdd:B gnd:B
-* INPUT : din_0 
-* INPUT : din_1 
-* OUTPUT: dout_0 
-* OUTPUT: dout_1 
-* INPUT : clk 
-* POWER : vdd 
-* GROUND: gnd 
-* rows: 1 cols: 2
-Xdff_r0_c0 din_0 dout_0 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r0_c1 din_1 dout_1 CLK VDD GND sky130_fd_bd_sram__openram_dff
-.ENDS col_addr_dff
-
-.SUBCKT data_dff din_0 din_1 din_2 din_3 din_4 din_5 din_6 din_7 din_8 din_9 din_10 din_11 din_12 din_13 din_14 din_15 din_16 din_17 din_18 din_19 din_20 din_21 din_22 din_23 din_24 din_25 din_26 din_27 din_28 din_29 din_30 din_31 dout_0 dout_1 dout_2 dout_3 dout_4 dout_5 dout_6 dout_7 dout_8 dout_9 dout_10 dout_11 dout_12 dout_13 dout_14 dout_15 dout_16 dout_17 dout_18 dout_19 dout_20 dout_21 dout_22 dout_23 dout_24 dout_25 dout_26 dout_27 dout_28 dout_29 dout_30 dout_31 clk vdd gnd
-*.PININFO din_0:I din_1:I din_2:I din_3:I din_4:I din_5:I din_6:I din_7:I din_8:I din_9:I din_10:I din_11:I din_12:I din_13:I din_14:I din_15:I din_16:I din_17:I din_18:I din_19:I din_20:I din_21:I din_22:I din_23:I din_24:I din_25:I din_26:I din_27:I din_28:I din_29:I din_30:I din_31:I dout_0:O dout_1:O dout_2:O dout_3:O dout_4:O dout_5:O dout_6:O dout_7:O dout_8:O dout_9:O dout_10:O dout_11:O dout_12:O dout_13:O dout_14:O dout_15:O dout_16:O dout_17:O dout_18:O dout_19:O dout_20:O dout_21:O dout_22:O dout_23:O dout_24:O dout_25:O dout_26:O dout_27:O dout_28:O dout_29:O dout_30:O dout_31:O clk:I vdd:B gnd:B
-* INPUT : din_0 
-* INPUT : din_1 
-* INPUT : din_2 
-* INPUT : din_3 
-* INPUT : din_4 
-* INPUT : din_5 
-* INPUT : din_6 
-* INPUT : din_7 
-* INPUT : din_8 
-* INPUT : din_9 
-* INPUT : din_10 
-* INPUT : din_11 
-* INPUT : din_12 
-* INPUT : din_13 
-* INPUT : din_14 
-* INPUT : din_15 
-* INPUT : din_16 
-* INPUT : din_17 
-* INPUT : din_18 
-* INPUT : din_19 
-* INPUT : din_20 
-* INPUT : din_21 
-* INPUT : din_22 
-* INPUT : din_23 
-* INPUT : din_24 
-* INPUT : din_25 
-* INPUT : din_26 
-* INPUT : din_27 
-* INPUT : din_28 
-* INPUT : din_29 
-* INPUT : din_30 
-* INPUT : din_31 
-* OUTPUT: dout_0 
-* OUTPUT: dout_1 
-* OUTPUT: dout_2 
-* OUTPUT: dout_3 
-* OUTPUT: dout_4 
-* OUTPUT: dout_5 
-* OUTPUT: dout_6 
-* OUTPUT: dout_7 
-* OUTPUT: dout_8 
-* OUTPUT: dout_9 
-* OUTPUT: dout_10 
-* OUTPUT: dout_11 
-* OUTPUT: dout_12 
-* OUTPUT: dout_13 
-* OUTPUT: dout_14 
-* OUTPUT: dout_15 
-* OUTPUT: dout_16 
-* OUTPUT: dout_17 
-* OUTPUT: dout_18 
-* OUTPUT: dout_19 
-* OUTPUT: dout_20 
-* OUTPUT: dout_21 
-* OUTPUT: dout_22 
-* OUTPUT: dout_23 
-* OUTPUT: dout_24 
-* OUTPUT: dout_25 
-* OUTPUT: dout_26 
-* OUTPUT: dout_27 
-* OUTPUT: dout_28 
-* OUTPUT: dout_29 
-* OUTPUT: dout_30 
-* OUTPUT: dout_31 
-* INPUT : clk 
-* POWER : vdd 
-* GROUND: gnd 
-* rows: 1 cols: 32
-Xdff_r0_c0 din_0 dout_0 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r0_c1 din_1 dout_1 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r0_c2 din_2 dout_2 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r0_c3 din_3 dout_3 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r0_c4 din_4 dout_4 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r0_c5 din_5 dout_5 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r0_c6 din_6 dout_6 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r0_c7 din_7 dout_7 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r0_c8 din_8 dout_8 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r0_c9 din_9 dout_9 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r0_c10 din_10 dout_10 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r0_c11 din_11 dout_11 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r0_c12 din_12 dout_12 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r0_c13 din_13 dout_13 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r0_c14 din_14 dout_14 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r0_c15 din_15 dout_15 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r0_c16 din_16 dout_16 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r0_c17 din_17 dout_17 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r0_c18 din_18 dout_18 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r0_c19 din_19 dout_19 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r0_c20 din_20 dout_20 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r0_c21 din_21 dout_21 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r0_c22 din_22 dout_22 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r0_c23 din_23 dout_23 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r0_c24 din_24 dout_24 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r0_c25 din_25 dout_25 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r0_c26 din_26 dout_26 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r0_c27 din_27 dout_27 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r0_c28 din_28 dout_28 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r0_c29 din_29 dout_29 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r0_c30 din_30 dout_30 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r0_c31 din_31 dout_31 CLK VDD GND sky130_fd_bd_sram__openram_dff
-.ENDS data_dff
-
-.SUBCKT wmask_dff din_0 din_1 din_2 din_3 dout_0 dout_1 dout_2 dout_3 clk vdd gnd
-*.PININFO din_0:I din_1:I din_2:I din_3:I dout_0:O dout_1:O dout_2:O dout_3:O clk:I vdd:B gnd:B
-* INPUT : din_0 
-* INPUT : din_1 
-* INPUT : din_2 
-* INPUT : din_3 
-* OUTPUT: dout_0 
-* OUTPUT: dout_1 
-* OUTPUT: dout_2 
-* OUTPUT: dout_3 
-* INPUT : clk 
-* POWER : vdd 
-* GROUND: gnd 
-* rows: 1 cols: 4
-Xdff_r0_c0 din_0 dout_0 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r0_c1 din_1 dout_1 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r0_c2 din_2 dout_2 CLK VDD GND sky130_fd_bd_sram__openram_dff
-Xdff_r0_c3 din_3 dout_3 CLK VDD GND sky130_fd_bd_sram__openram_dff
-.ENDS wmask_dff
-* Copyright 2020 The SkyWater PDK Authors
-*
-* Licensed under the Apache License, Version 2.0 (the "License");
-* you may not use this file except in compliance with the License.
-* You may obtain a copy of the License at
-*
-*     https://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing, software
-* distributed under the License is distributed on an "AS IS" BASIS,
-* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-* See the License for the specific language governing permissions and
-* limitations under the License.
-*
-* SPDX-License-Identifier: Apache-2.0
-
-* NGSPICE file created from sky130_fd_bd_sram__openram_dp_nand2_dec.ext - technology: EFS8A
-
-
-* Top level circuit sky130_fd_bd_sram__openram_dp_nand2_dec
-.subckt sky130_fd_bd_sram__openram_dp_nand2_dec A B Z VDD GND
-
-X1001 Z B VDD VDD sky130_fd_pr__pfet_01v8 W=1.12 L=0.15
-X1002 VDD A Z VDD sky130_fd_pr__pfet_01v8 W=1.12 L=0.15
-X1000 Z A a_n722_276# GND sky130_fd_pr__nfet_01v8 W=0.74 L=0.15
-X1003 a_n722_276# B GND GND sky130_fd_pr__nfet_01v8 W=0.74 L=0.15
-.ends
-
-
-* spice ptx X{0} {1} sky130_fd_pr__nfet_01v8 m=1 w=0.36 l=0.15 pd=1.02 ps=1.02 as=0.14u ad=0.14u
-
-* spice ptx X{0} {1} sky130_fd_pr__pfet_01v8 m=1 w=1.12 l=0.15 pd=2.54 ps=2.54 as=0.42u ad=0.42u
-
-.SUBCKT pinv_dec A Z vdd gnd
-*.PININFO A:I Z:O vdd:B gnd:B
-* INPUT : A 
-* OUTPUT: Z 
-* POWER : vdd 
-* GROUND: gnd 
-Xpinv_pmos Z A vdd vdd sky130_fd_pr__pfet_01v8 m=1 w=1.12 l=0.15 pd=2.54 ps=2.54 as=0.42u ad=0.42u
-Xpinv_nmos Z A gnd gnd sky130_fd_pr__nfet_01v8 m=1 w=0.36 l=0.15 pd=1.02 ps=1.02 as=0.14u ad=0.14u
-.ENDS pinv_dec
-
-.SUBCKT and2_dec A B Z vdd gnd
-*.PININFO A:I B:I Z:O vdd:B gnd:B
-* INPUT : A 
-* INPUT : B 
-* OUTPUT: Z 
-* POWER : vdd 
-* GROUND: gnd 
-* size: 1
-Xpand2_dec_nand A B zb_int vdd gnd sky130_fd_bd_sram__openram_dp_nand2_dec
-Xpand2_dec_inv zb_int Z vdd gnd pinv_dec
-.ENDS and2_dec
-* Copyright 2020 The SkyWater PDK Authors
-*
-* Licensed under the Apache License, Version 2.0 (the "License");
-* you may not use this file except in compliance with the License.
-* You may obtain a copy of the License at
-*
-*     https://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing, software
-* distributed under the License is distributed on an "AS IS" BASIS,
-* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-* See the License for the specific language governing permissions and
-* limitations under the License.
-*
-* SPDX-License-Identifier: Apache-2.0
-
-* NGSPICE file created from sky130_fd_bd_sram__openram_dp_nand3_dec.ext - technology: EFS8A
-
-
-* Top level circuit sky130_fd_bd_sram__openram_dp_nand3_dec
-.subckt sky130_fd_bd_sram__openram_dp_nand3_dec A B C Z VDD GND
-
-X1001 Z A a_n346_328# GND sky130_fd_pr__nfet_01v8 W=0.74 L=0.15
-X1002 a_n346_256# C GND GND sky130_fd_pr__nfet_01v8 W=0.74 L=0.15
-X1003 a_n346_328# B a_n346_256# GND sky130_fd_pr__nfet_01v8 W=0.74 L=0.15
-X1000 Z B VDD VDD sky130_fd_pr__pfet_01v8 W=1.12 L=0.15
-X1004 Z A VDD VDD sky130_fd_pr__pfet_01v8 W=1.12 L=0.15
-X1005 Z C VDD VDD sky130_fd_pr__pfet_01v8 W=1.12 L=0.15
-.ends
-
-
-.SUBCKT and3_dec A B C Z vdd gnd
-*.PININFO A:I B:I C:I Z:O vdd:B gnd:B
-* INPUT : A 
-* INPUT : B 
-* INPUT : C 
-* OUTPUT: Z 
-* POWER : vdd 
-* GROUND: gnd 
-* size: 1
-Xpand3_dec_nand A B C zb_int vdd gnd sky130_fd_bd_sram__openram_dp_nand3_dec
-Xpand3_dec_inv zb_int Z vdd gnd pinv_dec
-.ENDS and3_dec
-
-.SUBCKT hierarchical_predecode2x4 in_0 in_1 out_0 out_1 out_2 out_3 vdd gnd
-*.PININFO in_0:I in_1:I out_0:O out_1:O out_2:O out_3:O vdd:B gnd:B
-* INPUT : in_0 
-* INPUT : in_1 
-* OUTPUT: out_0 
-* OUTPUT: out_1 
-* OUTPUT: out_2 
-* OUTPUT: out_3 
-* POWER : vdd 
-* GROUND: gnd 
-Xpre_inv_0 in_0 inbar_0 vdd gnd pinv_dec
-Xpre_inv_1 in_1 inbar_1 vdd gnd pinv_dec
-XXpre2x4_and_0 inbar_0 inbar_1 out_0 vdd gnd and2_dec
-XXpre2x4_and_1 in_0 inbar_1 out_1 vdd gnd and2_dec
-XXpre2x4_and_2 inbar_0 in_1 out_2 vdd gnd and2_dec
-XXpre2x4_and_3 in_0 in_1 out_3 vdd gnd and2_dec
-.ENDS hierarchical_predecode2x4
-
-.SUBCKT hierarchical_predecode3x8 in_0 in_1 in_2 out_0 out_1 out_2 out_3 out_4 out_5 out_6 out_7 vdd gnd
-*.PININFO in_0:I in_1:I in_2:I out_0:O out_1:O out_2:O out_3:O out_4:O out_5:O out_6:O out_7:O vdd:B gnd:B
-* INPUT : in_0 
-* INPUT : in_1 
-* INPUT : in_2 
-* OUTPUT: out_0 
-* OUTPUT: out_1 
-* OUTPUT: out_2 
-* OUTPUT: out_3 
-* OUTPUT: out_4 
-* OUTPUT: out_5 
-* OUTPUT: out_6 
-* OUTPUT: out_7 
-* POWER : vdd 
-* GROUND: gnd 
-Xpre_inv_0 in_0 inbar_0 vdd gnd pinv_dec
-Xpre_inv_1 in_1 inbar_1 vdd gnd pinv_dec
-Xpre_inv_2 in_2 inbar_2 vdd gnd pinv_dec
-XXpre3x8_and_0 inbar_0 inbar_1 inbar_2 out_0 vdd gnd and3_dec
-XXpre3x8_and_1 in_0 inbar_1 inbar_2 out_1 vdd gnd and3_dec
-XXpre3x8_and_2 inbar_0 in_1 inbar_2 out_2 vdd gnd and3_dec
-XXpre3x8_and_3 in_0 in_1 inbar_2 out_3 vdd gnd and3_dec
-XXpre3x8_and_4 inbar_0 inbar_1 in_2 out_4 vdd gnd and3_dec
-XXpre3x8_and_5 in_0 inbar_1 in_2 out_5 vdd gnd and3_dec
-XXpre3x8_and_6 inbar_0 in_1 in_2 out_6 vdd gnd and3_dec
-XXpre3x8_and_7 in_0 in_1 in_2 out_7 vdd gnd and3_dec
-.ENDS hierarchical_predecode3x8
-* Copyright 2020 The SkyWater PDK Authors
-*
-* Licensed under the Apache License, Version 2.0 (the "License");
-* you may not use this file except in compliance with the License.
-* You may obtain a copy of the License at
-*
-*     https://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing, software
-* distributed under the License is distributed on an "AS IS" BASIS,
-* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-* See the License for the specific language governing permissions and
-* limitations under the License.
-*
-* SPDX-License-Identifier: Apache-2.0
-
-* NGSPICE file created from sky130_fd_bd_sram__openram_dp_nand4_dec.ext - technology: EFS8A
-
-.subckt sky130_fd_bd_sram__openram_dp_nand4_dec A B C D Z VDD GND
-X1000 Z A a_406_334# GND sky130_fd_pr__nfet_01v8 W=0.74 L=0.15
-X1004 a_406_190# D GND GND sky130_fd_pr__nfet_01v8 W=0.74 L=0.15
-X1005 a_406_262# C a_406_190# GND sky130_fd_pr__nfet_01v8 W=0.74 L=0.15
-X1007 a_406_334# B a_406_262# GND sky130_fd_pr__nfet_01v8 W=0.74 L=0.15
-X1001 Z A VDD VDD sky130_fd_pr__pfet_01v8 W=1.12 L=0.15
-X1002 VDD C Z VDD sky130_fd_pr__pfet_01v8 W=1.12 L=0.15
-X1003 VDD D Z VDD sky130_fd_pr__pfet_01v8 W=1.12 L=0.15
-X1006 Z B VDD VDD sky130_fd_pr__pfet_01v8 W=1.12 L=0.15
-.ends
-
-
-.SUBCKT and4_dec A B C D Z vdd gnd
-*.PININFO A:I B:I C:I D:I Z:O vdd:B gnd:B
-* INPUT : A 
-* INPUT : B 
-* INPUT : C 
-* INPUT : D 
-* OUTPUT: Z 
-* POWER : vdd 
-* GROUND: gnd 
-* size: 1
-Xpand4_dec_nand A B C D zb_int vdd gnd sky130_fd_bd_sram__openram_dp_nand4_dec
-Xpand4_dec_inv zb_int Z vdd gnd pinv_dec
-.ENDS and4_dec
-
-.SUBCKT hierarchical_predecode4x16 in_0 in_1 in_2 in_3 out_0 out_1 out_2 out_3 out_4 out_5 out_6 out_7 out_8 out_9 out_10 out_11 out_12 out_13 out_14 out_15 vdd gnd
-*.PININFO in_0:I in_1:I in_2:I in_3:I out_0:O out_1:O out_2:O out_3:O out_4:O out_5:O out_6:O out_7:O out_8:O out_9:O out_10:O out_11:O out_12:O out_13:O out_14:O out_15:O vdd:B gnd:B
-* INPUT : in_0 
-* INPUT : in_1 
-* INPUT : in_2 
-* INPUT : in_3 
-* OUTPUT: out_0 
-* OUTPUT: out_1 
-* OUTPUT: out_2 
-* OUTPUT: out_3 
-* OUTPUT: out_4 
-* OUTPUT: out_5 
-* OUTPUT: out_6 
-* OUTPUT: out_7 
-* OUTPUT: out_8 
-* OUTPUT: out_9 
-* OUTPUT: out_10 
-* OUTPUT: out_11 
-* OUTPUT: out_12 
-* OUTPUT: out_13 
-* OUTPUT: out_14 
-* OUTPUT: out_15 
-* POWER : vdd 
-* GROUND: gnd 
-Xpre_inv_0 in_0 inbar_0 vdd gnd pinv_dec
-Xpre_inv_1 in_1 inbar_1 vdd gnd pinv_dec
-Xpre_inv_2 in_2 inbar_2 vdd gnd pinv_dec
-Xpre_inv_3 in_3 inbar_3 vdd gnd pinv_dec
-XXpre4x16_and_0 inbar_0 inbar_1 inbar_2 inbar_3 out_0 vdd gnd and4_dec
-XXpre4x16_and_1 in_0 inbar_1 inbar_2 inbar_3 out_1 vdd gnd and4_dec
-XXpre4x16_and_2 inbar_0 in_1 inbar_2 inbar_3 out_2 vdd gnd and4_dec
-XXpre4x16_and_3 in_0 in_1 inbar_2 inbar_3 out_3 vdd gnd and4_dec
-XXpre4x16_and_4 inbar_0 inbar_1 in_2 inbar_3 out_4 vdd gnd and4_dec
-XXpre4x16_and_5 in_0 inbar_1 in_2 inbar_3 out_5 vdd gnd and4_dec
-XXpre4x16_and_6 inbar_0 in_1 in_2 inbar_3 out_6 vdd gnd and4_dec
-XXpre4x16_and_7 in_0 in_1 in_2 inbar_3 out_7 vdd gnd and4_dec
-XXpre4x16_and_8 inbar_0 inbar_1 inbar_2 in_3 out_8 vdd gnd and4_dec
-XXpre4x16_and_9 in_0 inbar_1 inbar_2 in_3 out_9 vdd gnd and4_dec
-XXpre4x16_and_10 inbar_0 in_1 inbar_2 in_3 out_10 vdd gnd and4_dec
-XXpre4x16_and_11 in_0 in_1 inbar_2 in_3 out_11 vdd gnd and4_dec
-XXpre4x16_and_12 inbar_0 inbar_1 in_2 in_3 out_12 vdd gnd and4_dec
-XXpre4x16_and_13 in_0 inbar_1 in_2 in_3 out_13 vdd gnd and4_dec
-XXpre4x16_and_14 inbar_0 in_1 in_2 in_3 out_14 vdd gnd and4_dec
-XXpre4x16_and_15 in_0 in_1 in_2 in_3 out_15 vdd gnd and4_dec
-.ENDS hierarchical_predecode4x16
-
-.SUBCKT hierarchical_decoder addr_0 addr_1 addr_2 addr_3 addr_4 addr_5 addr_6 addr_7 decode_0 decode_1 decode_2 decode_3 decode_4 decode_5 decode_6 decode_7 decode_8 decode_9 decode_10 decode_11 decode_12 decode_13 decode_14 decode_15 decode_16 decode_17 decode_18 decode_19 decode_20 decode_21 decode_22 decode_23 decode_24 decode_25 decode_26 decode_27 decode_28 decode_29 decode_30 decode_31 decode_32 decode_33 decode_34 decode_35 decode_36 decode_37 decode_38 decode_39 decode_40 decode_41 decode_42 decode_43 decode_44 decode_45 decode_46 decode_47 decode_48 decode_49 decode_50 decode_51 decode_52 decode_53 decode_54 decode_55 decode_56 decode_57 decode_58 decode_59 decode_60 decode_61 decode_62 decode_63 decode_64 decode_65 decode_66 decode_67 decode_68 decode_69 decode_70 decode_71 decode_72 decode_73 decode_74 decode_75 decode_76 decode_77 decode_78 decode_79 decode_80 decode_81 decode_82 decode_83 decode_84 decode_85 decode_86 decode_87 decode_88 decode_89 decode_90 decode_91 decode_92 decode_93 decode_94 decode_95 decode_96 decode_97 decode_98 decode_99 decode_100 decode_101 decode_102 decode_103 decode_104 decode_105 decode_106 decode_107 decode_108 decode_109 decode_110 decode_111 decode_112 decode_113 decode_114 decode_115 decode_116 decode_117 decode_118 decode_119 decode_120 decode_121 decode_122 decode_123 decode_124 decode_125 decode_126 decode_127 decode_128 decode_129 decode_130 decode_131 decode_132 decode_133 decode_134 decode_135 decode_136 decode_137 decode_138 decode_139 decode_140 decode_141 decode_142 decode_143 decode_144 decode_145 decode_146 decode_147 decode_148 decode_149 decode_150 decode_151 decode_152 decode_153 decode_154 decode_155 decode_156 decode_157 decode_158 decode_159 decode_160 decode_161 decode_162 decode_163 decode_164 decode_165 decode_166 decode_167 decode_168 decode_169 decode_170 decode_171 decode_172 decode_173 decode_174 decode_175 decode_176 decode_177 decode_178 decode_179 decode_180 decode_181 decode_182 decode_183 decode_184 decode_185 decode_186 decode_187 decode_188 decode_189 decode_190 decode_191 decode_192 decode_193 decode_194 decode_195 decode_196 decode_197 decode_198 decode_199 decode_200 decode_201 decode_202 decode_203 decode_204 decode_205 decode_206 decode_207 decode_208 decode_209 decode_210 decode_211 decode_212 decode_213 decode_214 decode_215 decode_216 decode_217 decode_218 decode_219 decode_220 decode_221 decode_222 decode_223 decode_224 decode_225 decode_226 decode_227 decode_228 decode_229 decode_230 decode_231 decode_232 decode_233 decode_234 decode_235 decode_236 decode_237 decode_238 decode_239 decode_240 decode_241 decode_242 decode_243 decode_244 decode_245 decode_246 decode_247 decode_248 decode_249 decode_250 decode_251 decode_252 decode_253 decode_254 decode_255 vdd gnd
-*.PININFO addr_0:I addr_1:I addr_2:I addr_3:I addr_4:I addr_5:I addr_6:I addr_7:I decode_0:O decode_1:O decode_2:O decode_3:O decode_4:O decode_5:O decode_6:O decode_7:O decode_8:O decode_9:O decode_10:O decode_11:O decode_12:O decode_13:O decode_14:O decode_15:O decode_16:O decode_17:O decode_18:O decode_19:O decode_20:O decode_21:O decode_22:O decode_23:O decode_24:O decode_25:O decode_26:O decode_27:O decode_28:O decode_29:O decode_30:O decode_31:O decode_32:O decode_33:O decode_34:O decode_35:O decode_36:O decode_37:O decode_38:O decode_39:O decode_40:O decode_41:O decode_42:O decode_43:O decode_44:O decode_45:O decode_46:O decode_47:O decode_48:O decode_49:O decode_50:O decode_51:O decode_52:O decode_53:O decode_54:O decode_55:O decode_56:O decode_57:O decode_58:O decode_59:O decode_60:O decode_61:O decode_62:O decode_63:O decode_64:O decode_65:O decode_66:O decode_67:O decode_68:O decode_69:O decode_70:O decode_71:O decode_72:O decode_73:O decode_74:O decode_75:O decode_76:O decode_77:O decode_78:O decode_79:O decode_80:O decode_81:O decode_82:O decode_83:O decode_84:O decode_85:O decode_86:O decode_87:O decode_88:O decode_89:O decode_90:O decode_91:O decode_92:O decode_93:O decode_94:O decode_95:O decode_96:O decode_97:O decode_98:O decode_99:O decode_100:O decode_101:O decode_102:O decode_103:O decode_104:O decode_105:O decode_106:O decode_107:O decode_108:O decode_109:O decode_110:O decode_111:O decode_112:O decode_113:O decode_114:O decode_115:O decode_116:O decode_117:O decode_118:O decode_119:O decode_120:O decode_121:O decode_122:O decode_123:O decode_124:O decode_125:O decode_126:O decode_127:O decode_128:O decode_129:O decode_130:O decode_131:O decode_132:O decode_133:O decode_134:O decode_135:O decode_136:O decode_137:O decode_138:O decode_139:O decode_140:O decode_141:O decode_142:O decode_143:O decode_144:O decode_145:O decode_146:O decode_147:O decode_148:O decode_149:O decode_150:O decode_151:O decode_152:O decode_153:O decode_154:O decode_155:O decode_156:O decode_157:O decode_158:O decode_159:O decode_160:O decode_161:O decode_162:O decode_163:O decode_164:O decode_165:O decode_166:O decode_167:O decode_168:O decode_169:O decode_170:O decode_171:O decode_172:O decode_173:O decode_174:O decode_175:O decode_176:O decode_177:O decode_178:O decode_179:O decode_180:O decode_181:O decode_182:O decode_183:O decode_184:O decode_185:O decode_186:O decode_187:O decode_188:O decode_189:O decode_190:O decode_191:O decode_192:O decode_193:O decode_194:O decode_195:O decode_196:O decode_197:O decode_198:O decode_199:O decode_200:O decode_201:O decode_202:O decode_203:O decode_204:O decode_205:O decode_206:O decode_207:O decode_208:O decode_209:O decode_210:O decode_211:O decode_212:O decode_213:O decode_214:O decode_215:O decode_216:O decode_217:O decode_218:O decode_219:O decode_220:O decode_221:O decode_222:O decode_223:O decode_224:O decode_225:O decode_226:O decode_227:O decode_228:O decode_229:O decode_230:O decode_231:O decode_232:O decode_233:O decode_234:O decode_235:O decode_236:O decode_237:O decode_238:O decode_239:O decode_240:O decode_241:O decode_242:O decode_243:O decode_244:O decode_245:O decode_246:O decode_247:O decode_248:O decode_249:O decode_250:O decode_251:O decode_252:O decode_253:O decode_254:O decode_255:O vdd:B gnd:B
-* INPUT : addr_0 
-* INPUT : addr_1 
-* INPUT : addr_2 
-* INPUT : addr_3 
-* INPUT : addr_4 
-* INPUT : addr_5 
-* INPUT : addr_6 
-* INPUT : addr_7 
-* OUTPUT: decode_0 
-* OUTPUT: decode_1 
-* OUTPUT: decode_2 
-* OUTPUT: decode_3 
-* OUTPUT: decode_4 
-* OUTPUT: decode_5 
-* OUTPUT: decode_6 
-* OUTPUT: decode_7 
-* OUTPUT: decode_8 
-* OUTPUT: decode_9 
-* OUTPUT: decode_10 
-* OUTPUT: decode_11 
-* OUTPUT: decode_12 
-* OUTPUT: decode_13 
-* OUTPUT: decode_14 
-* OUTPUT: decode_15 
-* OUTPUT: decode_16 
-* OUTPUT: decode_17 
-* OUTPUT: decode_18 
-* OUTPUT: decode_19 
-* OUTPUT: decode_20 
-* OUTPUT: decode_21 
-* OUTPUT: decode_22 
-* OUTPUT: decode_23 
-* OUTPUT: decode_24 
-* OUTPUT: decode_25 
-* OUTPUT: decode_26 
-* OUTPUT: decode_27 
-* OUTPUT: decode_28 
-* OUTPUT: decode_29 
-* OUTPUT: decode_30 
-* OUTPUT: decode_31 
-* OUTPUT: decode_32 
-* OUTPUT: decode_33 
-* OUTPUT: decode_34 
-* OUTPUT: decode_35 
-* OUTPUT: decode_36 
-* OUTPUT: decode_37 
-* OUTPUT: decode_38 
-* OUTPUT: decode_39 
-* OUTPUT: decode_40 
-* OUTPUT: decode_41 
-* OUTPUT: decode_42 
-* OUTPUT: decode_43 
-* OUTPUT: decode_44 
-* OUTPUT: decode_45 
-* OUTPUT: decode_46 
-* OUTPUT: decode_47 
-* OUTPUT: decode_48 
-* OUTPUT: decode_49 
-* OUTPUT: decode_50 
-* OUTPUT: decode_51 
-* OUTPUT: decode_52 
-* OUTPUT: decode_53 
-* OUTPUT: decode_54 
-* OUTPUT: decode_55 
-* OUTPUT: decode_56 
-* OUTPUT: decode_57 
-* OUTPUT: decode_58 
-* OUTPUT: decode_59 
-* OUTPUT: decode_60 
-* OUTPUT: decode_61 
-* OUTPUT: decode_62 
-* OUTPUT: decode_63 
-* OUTPUT: decode_64 
-* OUTPUT: decode_65 
-* OUTPUT: decode_66 
-* OUTPUT: decode_67 
-* OUTPUT: decode_68 
-* OUTPUT: decode_69 
-* OUTPUT: decode_70 
-* OUTPUT: decode_71 
-* OUTPUT: decode_72 
-* OUTPUT: decode_73 
-* OUTPUT: decode_74 
-* OUTPUT: decode_75 
-* OUTPUT: decode_76 
-* OUTPUT: decode_77 
-* OUTPUT: decode_78 
-* OUTPUT: decode_79 
-* OUTPUT: decode_80 
-* OUTPUT: decode_81 
-* OUTPUT: decode_82 
-* OUTPUT: decode_83 
-* OUTPUT: decode_84 
-* OUTPUT: decode_85 
-* OUTPUT: decode_86 
-* OUTPUT: decode_87 
-* OUTPUT: decode_88 
-* OUTPUT: decode_89 
-* OUTPUT: decode_90 
-* OUTPUT: decode_91 
-* OUTPUT: decode_92 
-* OUTPUT: decode_93 
-* OUTPUT: decode_94 
-* OUTPUT: decode_95 
-* OUTPUT: decode_96 
-* OUTPUT: decode_97 
-* OUTPUT: decode_98 
-* OUTPUT: decode_99 
-* OUTPUT: decode_100 
-* OUTPUT: decode_101 
-* OUTPUT: decode_102 
-* OUTPUT: decode_103 
-* OUTPUT: decode_104 
-* OUTPUT: decode_105 
-* OUTPUT: decode_106 
-* OUTPUT: decode_107 
-* OUTPUT: decode_108 
-* OUTPUT: decode_109 
-* OUTPUT: decode_110 
-* OUTPUT: decode_111 
-* OUTPUT: decode_112 
-* OUTPUT: decode_113 
-* OUTPUT: decode_114 
-* OUTPUT: decode_115 
-* OUTPUT: decode_116 
-* OUTPUT: decode_117 
-* OUTPUT: decode_118 
-* OUTPUT: decode_119 
-* OUTPUT: decode_120 
-* OUTPUT: decode_121 
-* OUTPUT: decode_122 
-* OUTPUT: decode_123 
-* OUTPUT: decode_124 
-* OUTPUT: decode_125 
-* OUTPUT: decode_126 
-* OUTPUT: decode_127 
-* OUTPUT: decode_128 
-* OUTPUT: decode_129 
-* OUTPUT: decode_130 
-* OUTPUT: decode_131 
-* OUTPUT: decode_132 
-* OUTPUT: decode_133 
-* OUTPUT: decode_134 
-* OUTPUT: decode_135 
-* OUTPUT: decode_136 
-* OUTPUT: decode_137 
-* OUTPUT: decode_138 
-* OUTPUT: decode_139 
-* OUTPUT: decode_140 
-* OUTPUT: decode_141 
-* OUTPUT: decode_142 
-* OUTPUT: decode_143 
-* OUTPUT: decode_144 
-* OUTPUT: decode_145 
-* OUTPUT: decode_146 
-* OUTPUT: decode_147 
-* OUTPUT: decode_148 
-* OUTPUT: decode_149 
-* OUTPUT: decode_150 
-* OUTPUT: decode_151 
-* OUTPUT: decode_152 
-* OUTPUT: decode_153 
-* OUTPUT: decode_154 
-* OUTPUT: decode_155 
-* OUTPUT: decode_156 
-* OUTPUT: decode_157 
-* OUTPUT: decode_158 
-* OUTPUT: decode_159 
-* OUTPUT: decode_160 
-* OUTPUT: decode_161 
-* OUTPUT: decode_162 
-* OUTPUT: decode_163 
-* OUTPUT: decode_164 
-* OUTPUT: decode_165 
-* OUTPUT: decode_166 
-* OUTPUT: decode_167 
-* OUTPUT: decode_168 
-* OUTPUT: decode_169 
-* OUTPUT: decode_170 
-* OUTPUT: decode_171 
-* OUTPUT: decode_172 
-* OUTPUT: decode_173 
-* OUTPUT: decode_174 
-* OUTPUT: decode_175 
-* OUTPUT: decode_176 
-* OUTPUT: decode_177 
-* OUTPUT: decode_178 
-* OUTPUT: decode_179 
-* OUTPUT: decode_180 
-* OUTPUT: decode_181 
-* OUTPUT: decode_182 
-* OUTPUT: decode_183 
-* OUTPUT: decode_184 
-* OUTPUT: decode_185 
-* OUTPUT: decode_186 
-* OUTPUT: decode_187 
-* OUTPUT: decode_188 
-* OUTPUT: decode_189 
-* OUTPUT: decode_190 
-* OUTPUT: decode_191 
-* OUTPUT: decode_192 
-* OUTPUT: decode_193 
-* OUTPUT: decode_194 
-* OUTPUT: decode_195 
-* OUTPUT: decode_196 
-* OUTPUT: decode_197 
-* OUTPUT: decode_198 
-* OUTPUT: decode_199 
-* OUTPUT: decode_200 
-* OUTPUT: decode_201 
-* OUTPUT: decode_202 
-* OUTPUT: decode_203 
-* OUTPUT: decode_204 
-* OUTPUT: decode_205 
-* OUTPUT: decode_206 
-* OUTPUT: decode_207 
-* OUTPUT: decode_208 
-* OUTPUT: decode_209 
-* OUTPUT: decode_210 
-* OUTPUT: decode_211 
-* OUTPUT: decode_212 
-* OUTPUT: decode_213 
-* OUTPUT: decode_214 
-* OUTPUT: decode_215 
-* OUTPUT: decode_216 
-* OUTPUT: decode_217 
-* OUTPUT: decode_218 
-* OUTPUT: decode_219 
-* OUTPUT: decode_220 
-* OUTPUT: decode_221 
-* OUTPUT: decode_222 
-* OUTPUT: decode_223 
-* OUTPUT: decode_224 
-* OUTPUT: decode_225 
-* OUTPUT: decode_226 
-* OUTPUT: decode_227 
-* OUTPUT: decode_228 
-* OUTPUT: decode_229 
-* OUTPUT: decode_230 
-* OUTPUT: decode_231 
-* OUTPUT: decode_232 
-* OUTPUT: decode_233 
-* OUTPUT: decode_234 
-* OUTPUT: decode_235 
-* OUTPUT: decode_236 
-* OUTPUT: decode_237 
-* OUTPUT: decode_238 
-* OUTPUT: decode_239 
-* OUTPUT: decode_240 
-* OUTPUT: decode_241 
-* OUTPUT: decode_242 
-* OUTPUT: decode_243 
-* OUTPUT: decode_244 
-* OUTPUT: decode_245 
-* OUTPUT: decode_246 
-* OUTPUT: decode_247 
-* OUTPUT: decode_248 
-* OUTPUT: decode_249 
-* OUTPUT: decode_250 
-* OUTPUT: decode_251 
-* OUTPUT: decode_252 
-* OUTPUT: decode_253 
-* OUTPUT: decode_254 
-* OUTPUT: decode_255 
-* POWER : vdd 
-* GROUND: gnd 
-Xpre_0 addr_0 addr_1 out_0 out_1 out_2 out_3 vdd gnd hierarchical_predecode2x4
-Xpre3x8_0 addr_2 addr_3 addr_4 out_4 out_5 out_6 out_7 out_8 out_9 out_10 out_11 vdd gnd hierarchical_predecode3x8
-Xpre3x8_1 addr_5 addr_6 addr_7 out_12 out_13 out_14 out_15 out_16 out_17 out_18 out_19 vdd gnd hierarchical_predecode3x8
-XDEC_AND_0 out_0 out_4 out_12 decode_0 vdd gnd and3_dec
-XDEC_AND_32 out_0 out_4 out_13 decode_32 vdd gnd and3_dec
-XDEC_AND_64 out_0 out_4 out_14 decode_64 vdd gnd and3_dec
-XDEC_AND_96 out_0 out_4 out_15 decode_96 vdd gnd and3_dec
-XDEC_AND_128 out_0 out_4 out_16 decode_128 vdd gnd and3_dec
-XDEC_AND_160 out_0 out_4 out_17 decode_160 vdd gnd and3_dec
-XDEC_AND_192 out_0 out_4 out_18 decode_192 vdd gnd and3_dec
-XDEC_AND_224 out_0 out_4 out_19 decode_224 vdd gnd and3_dec
-XDEC_AND_4 out_0 out_5 out_12 decode_4 vdd gnd and3_dec
-XDEC_AND_36 out_0 out_5 out_13 decode_36 vdd gnd and3_dec
-XDEC_AND_68 out_0 out_5 out_14 decode_68 vdd gnd and3_dec
-XDEC_AND_100 out_0 out_5 out_15 decode_100 vdd gnd and3_dec
-XDEC_AND_132 out_0 out_5 out_16 decode_132 vdd gnd and3_dec
-XDEC_AND_164 out_0 out_5 out_17 decode_164 vdd gnd and3_dec
-XDEC_AND_196 out_0 out_5 out_18 decode_196 vdd gnd and3_dec
-XDEC_AND_228 out_0 out_5 out_19 decode_228 vdd gnd and3_dec
-XDEC_AND_8 out_0 out_6 out_12 decode_8 vdd gnd and3_dec
-XDEC_AND_40 out_0 out_6 out_13 decode_40 vdd gnd and3_dec
-XDEC_AND_72 out_0 out_6 out_14 decode_72 vdd gnd and3_dec
-XDEC_AND_104 out_0 out_6 out_15 decode_104 vdd gnd and3_dec
-XDEC_AND_136 out_0 out_6 out_16 decode_136 vdd gnd and3_dec
-XDEC_AND_168 out_0 out_6 out_17 decode_168 vdd gnd and3_dec
-XDEC_AND_200 out_0 out_6 out_18 decode_200 vdd gnd and3_dec
-XDEC_AND_232 out_0 out_6 out_19 decode_232 vdd gnd and3_dec
-XDEC_AND_12 out_0 out_7 out_12 decode_12 vdd gnd and3_dec
-XDEC_AND_44 out_0 out_7 out_13 decode_44 vdd gnd and3_dec
-XDEC_AND_76 out_0 out_7 out_14 decode_76 vdd gnd and3_dec
-XDEC_AND_108 out_0 out_7 out_15 decode_108 vdd gnd and3_dec
-XDEC_AND_140 out_0 out_7 out_16 decode_140 vdd gnd and3_dec
-XDEC_AND_172 out_0 out_7 out_17 decode_172 vdd gnd and3_dec
-XDEC_AND_204 out_0 out_7 out_18 decode_204 vdd gnd and3_dec
-XDEC_AND_236 out_0 out_7 out_19 decode_236 vdd gnd and3_dec
-XDEC_AND_16 out_0 out_8 out_12 decode_16 vdd gnd and3_dec
-XDEC_AND_48 out_0 out_8 out_13 decode_48 vdd gnd and3_dec
-XDEC_AND_80 out_0 out_8 out_14 decode_80 vdd gnd and3_dec
-XDEC_AND_112 out_0 out_8 out_15 decode_112 vdd gnd and3_dec
-XDEC_AND_144 out_0 out_8 out_16 decode_144 vdd gnd and3_dec
-XDEC_AND_176 out_0 out_8 out_17 decode_176 vdd gnd and3_dec
-XDEC_AND_208 out_0 out_8 out_18 decode_208 vdd gnd and3_dec
-XDEC_AND_240 out_0 out_8 out_19 decode_240 vdd gnd and3_dec
-XDEC_AND_20 out_0 out_9 out_12 decode_20 vdd gnd and3_dec
-XDEC_AND_52 out_0 out_9 out_13 decode_52 vdd gnd and3_dec
-XDEC_AND_84 out_0 out_9 out_14 decode_84 vdd gnd and3_dec
-XDEC_AND_116 out_0 out_9 out_15 decode_116 vdd gnd and3_dec
-XDEC_AND_148 out_0 out_9 out_16 decode_148 vdd gnd and3_dec
-XDEC_AND_180 out_0 out_9 out_17 decode_180 vdd gnd and3_dec
-XDEC_AND_212 out_0 out_9 out_18 decode_212 vdd gnd and3_dec
-XDEC_AND_244 out_0 out_9 out_19 decode_244 vdd gnd and3_dec
-XDEC_AND_24 out_0 out_10 out_12 decode_24 vdd gnd and3_dec
-XDEC_AND_56 out_0 out_10 out_13 decode_56 vdd gnd and3_dec
-XDEC_AND_88 out_0 out_10 out_14 decode_88 vdd gnd and3_dec
-XDEC_AND_120 out_0 out_10 out_15 decode_120 vdd gnd and3_dec
-XDEC_AND_152 out_0 out_10 out_16 decode_152 vdd gnd and3_dec
-XDEC_AND_184 out_0 out_10 out_17 decode_184 vdd gnd and3_dec
-XDEC_AND_216 out_0 out_10 out_18 decode_216 vdd gnd and3_dec
-XDEC_AND_248 out_0 out_10 out_19 decode_248 vdd gnd and3_dec
-XDEC_AND_28 out_0 out_11 out_12 decode_28 vdd gnd and3_dec
-XDEC_AND_60 out_0 out_11 out_13 decode_60 vdd gnd and3_dec
-XDEC_AND_92 out_0 out_11 out_14 decode_92 vdd gnd and3_dec
-XDEC_AND_124 out_0 out_11 out_15 decode_124 vdd gnd and3_dec
-XDEC_AND_156 out_0 out_11 out_16 decode_156 vdd gnd and3_dec
-XDEC_AND_188 out_0 out_11 out_17 decode_188 vdd gnd and3_dec
-XDEC_AND_220 out_0 out_11 out_18 decode_220 vdd gnd and3_dec
-XDEC_AND_252 out_0 out_11 out_19 decode_252 vdd gnd and3_dec
-XDEC_AND_1 out_1 out_4 out_12 decode_1 vdd gnd and3_dec
-XDEC_AND_33 out_1 out_4 out_13 decode_33 vdd gnd and3_dec
-XDEC_AND_65 out_1 out_4 out_14 decode_65 vdd gnd and3_dec
-XDEC_AND_97 out_1 out_4 out_15 decode_97 vdd gnd and3_dec
-XDEC_AND_129 out_1 out_4 out_16 decode_129 vdd gnd and3_dec
-XDEC_AND_161 out_1 out_4 out_17 decode_161 vdd gnd and3_dec
-XDEC_AND_193 out_1 out_4 out_18 decode_193 vdd gnd and3_dec
-XDEC_AND_225 out_1 out_4 out_19 decode_225 vdd gnd and3_dec
-XDEC_AND_5 out_1 out_5 out_12 decode_5 vdd gnd and3_dec
-XDEC_AND_37 out_1 out_5 out_13 decode_37 vdd gnd and3_dec
-XDEC_AND_69 out_1 out_5 out_14 decode_69 vdd gnd and3_dec
-XDEC_AND_101 out_1 out_5 out_15 decode_101 vdd gnd and3_dec
-XDEC_AND_133 out_1 out_5 out_16 decode_133 vdd gnd and3_dec
-XDEC_AND_165 out_1 out_5 out_17 decode_165 vdd gnd and3_dec
-XDEC_AND_197 out_1 out_5 out_18 decode_197 vdd gnd and3_dec
-XDEC_AND_229 out_1 out_5 out_19 decode_229 vdd gnd and3_dec
-XDEC_AND_9 out_1 out_6 out_12 decode_9 vdd gnd and3_dec
-XDEC_AND_41 out_1 out_6 out_13 decode_41 vdd gnd and3_dec
-XDEC_AND_73 out_1 out_6 out_14 decode_73 vdd gnd and3_dec
-XDEC_AND_105 out_1 out_6 out_15 decode_105 vdd gnd and3_dec
-XDEC_AND_137 out_1 out_6 out_16 decode_137 vdd gnd and3_dec
-XDEC_AND_169 out_1 out_6 out_17 decode_169 vdd gnd and3_dec
-XDEC_AND_201 out_1 out_6 out_18 decode_201 vdd gnd and3_dec
-XDEC_AND_233 out_1 out_6 out_19 decode_233 vdd gnd and3_dec
-XDEC_AND_13 out_1 out_7 out_12 decode_13 vdd gnd and3_dec
-XDEC_AND_45 out_1 out_7 out_13 decode_45 vdd gnd and3_dec
-XDEC_AND_77 out_1 out_7 out_14 decode_77 vdd gnd and3_dec
-XDEC_AND_109 out_1 out_7 out_15 decode_109 vdd gnd and3_dec
-XDEC_AND_141 out_1 out_7 out_16 decode_141 vdd gnd and3_dec
-XDEC_AND_173 out_1 out_7 out_17 decode_173 vdd gnd and3_dec
-XDEC_AND_205 out_1 out_7 out_18 decode_205 vdd gnd and3_dec
-XDEC_AND_237 out_1 out_7 out_19 decode_237 vdd gnd and3_dec
-XDEC_AND_17 out_1 out_8 out_12 decode_17 vdd gnd and3_dec
-XDEC_AND_49 out_1 out_8 out_13 decode_49 vdd gnd and3_dec
-XDEC_AND_81 out_1 out_8 out_14 decode_81 vdd gnd and3_dec
-XDEC_AND_113 out_1 out_8 out_15 decode_113 vdd gnd and3_dec
-XDEC_AND_145 out_1 out_8 out_16 decode_145 vdd gnd and3_dec
-XDEC_AND_177 out_1 out_8 out_17 decode_177 vdd gnd and3_dec
-XDEC_AND_209 out_1 out_8 out_18 decode_209 vdd gnd and3_dec
-XDEC_AND_241 out_1 out_8 out_19 decode_241 vdd gnd and3_dec
-XDEC_AND_21 out_1 out_9 out_12 decode_21 vdd gnd and3_dec
-XDEC_AND_53 out_1 out_9 out_13 decode_53 vdd gnd and3_dec
-XDEC_AND_85 out_1 out_9 out_14 decode_85 vdd gnd and3_dec
-XDEC_AND_117 out_1 out_9 out_15 decode_117 vdd gnd and3_dec
-XDEC_AND_149 out_1 out_9 out_16 decode_149 vdd gnd and3_dec
-XDEC_AND_181 out_1 out_9 out_17 decode_181 vdd gnd and3_dec
-XDEC_AND_213 out_1 out_9 out_18 decode_213 vdd gnd and3_dec
-XDEC_AND_245 out_1 out_9 out_19 decode_245 vdd gnd and3_dec
-XDEC_AND_25 out_1 out_10 out_12 decode_25 vdd gnd and3_dec
-XDEC_AND_57 out_1 out_10 out_13 decode_57 vdd gnd and3_dec
-XDEC_AND_89 out_1 out_10 out_14 decode_89 vdd gnd and3_dec
-XDEC_AND_121 out_1 out_10 out_15 decode_121 vdd gnd and3_dec
-XDEC_AND_153 out_1 out_10 out_16 decode_153 vdd gnd and3_dec
-XDEC_AND_185 out_1 out_10 out_17 decode_185 vdd gnd and3_dec
-XDEC_AND_217 out_1 out_10 out_18 decode_217 vdd gnd and3_dec
-XDEC_AND_249 out_1 out_10 out_19 decode_249 vdd gnd and3_dec
-XDEC_AND_29 out_1 out_11 out_12 decode_29 vdd gnd and3_dec
-XDEC_AND_61 out_1 out_11 out_13 decode_61 vdd gnd and3_dec
-XDEC_AND_93 out_1 out_11 out_14 decode_93 vdd gnd and3_dec
-XDEC_AND_125 out_1 out_11 out_15 decode_125 vdd gnd and3_dec
-XDEC_AND_157 out_1 out_11 out_16 decode_157 vdd gnd and3_dec
-XDEC_AND_189 out_1 out_11 out_17 decode_189 vdd gnd and3_dec
-XDEC_AND_221 out_1 out_11 out_18 decode_221 vdd gnd and3_dec
-XDEC_AND_253 out_1 out_11 out_19 decode_253 vdd gnd and3_dec
-XDEC_AND_2 out_2 out_4 out_12 decode_2 vdd gnd and3_dec
-XDEC_AND_34 out_2 out_4 out_13 decode_34 vdd gnd and3_dec
-XDEC_AND_66 out_2 out_4 out_14 decode_66 vdd gnd and3_dec
-XDEC_AND_98 out_2 out_4 out_15 decode_98 vdd gnd and3_dec
-XDEC_AND_130 out_2 out_4 out_16 decode_130 vdd gnd and3_dec
-XDEC_AND_162 out_2 out_4 out_17 decode_162 vdd gnd and3_dec
-XDEC_AND_194 out_2 out_4 out_18 decode_194 vdd gnd and3_dec
-XDEC_AND_226 out_2 out_4 out_19 decode_226 vdd gnd and3_dec
-XDEC_AND_6 out_2 out_5 out_12 decode_6 vdd gnd and3_dec
-XDEC_AND_38 out_2 out_5 out_13 decode_38 vdd gnd and3_dec
-XDEC_AND_70 out_2 out_5 out_14 decode_70 vdd gnd and3_dec
-XDEC_AND_102 out_2 out_5 out_15 decode_102 vdd gnd and3_dec
-XDEC_AND_134 out_2 out_5 out_16 decode_134 vdd gnd and3_dec
-XDEC_AND_166 out_2 out_5 out_17 decode_166 vdd gnd and3_dec
-XDEC_AND_198 out_2 out_5 out_18 decode_198 vdd gnd and3_dec
-XDEC_AND_230 out_2 out_5 out_19 decode_230 vdd gnd and3_dec
-XDEC_AND_10 out_2 out_6 out_12 decode_10 vdd gnd and3_dec
-XDEC_AND_42 out_2 out_6 out_13 decode_42 vdd gnd and3_dec
-XDEC_AND_74 out_2 out_6 out_14 decode_74 vdd gnd and3_dec
-XDEC_AND_106 out_2 out_6 out_15 decode_106 vdd gnd and3_dec
-XDEC_AND_138 out_2 out_6 out_16 decode_138 vdd gnd and3_dec
-XDEC_AND_170 out_2 out_6 out_17 decode_170 vdd gnd and3_dec
-XDEC_AND_202 out_2 out_6 out_18 decode_202 vdd gnd and3_dec
-XDEC_AND_234 out_2 out_6 out_19 decode_234 vdd gnd and3_dec
-XDEC_AND_14 out_2 out_7 out_12 decode_14 vdd gnd and3_dec
-XDEC_AND_46 out_2 out_7 out_13 decode_46 vdd gnd and3_dec
-XDEC_AND_78 out_2 out_7 out_14 decode_78 vdd gnd and3_dec
-XDEC_AND_110 out_2 out_7 out_15 decode_110 vdd gnd and3_dec
-XDEC_AND_142 out_2 out_7 out_16 decode_142 vdd gnd and3_dec
-XDEC_AND_174 out_2 out_7 out_17 decode_174 vdd gnd and3_dec
-XDEC_AND_206 out_2 out_7 out_18 decode_206 vdd gnd and3_dec
-XDEC_AND_238 out_2 out_7 out_19 decode_238 vdd gnd and3_dec
-XDEC_AND_18 out_2 out_8 out_12 decode_18 vdd gnd and3_dec
-XDEC_AND_50 out_2 out_8 out_13 decode_50 vdd gnd and3_dec
-XDEC_AND_82 out_2 out_8 out_14 decode_82 vdd gnd and3_dec
-XDEC_AND_114 out_2 out_8 out_15 decode_114 vdd gnd and3_dec
-XDEC_AND_146 out_2 out_8 out_16 decode_146 vdd gnd and3_dec
-XDEC_AND_178 out_2 out_8 out_17 decode_178 vdd gnd and3_dec
-XDEC_AND_210 out_2 out_8 out_18 decode_210 vdd gnd and3_dec
-XDEC_AND_242 out_2 out_8 out_19 decode_242 vdd gnd and3_dec
-XDEC_AND_22 out_2 out_9 out_12 decode_22 vdd gnd and3_dec
-XDEC_AND_54 out_2 out_9 out_13 decode_54 vdd gnd and3_dec
-XDEC_AND_86 out_2 out_9 out_14 decode_86 vdd gnd and3_dec
-XDEC_AND_118 out_2 out_9 out_15 decode_118 vdd gnd and3_dec
-XDEC_AND_150 out_2 out_9 out_16 decode_150 vdd gnd and3_dec
-XDEC_AND_182 out_2 out_9 out_17 decode_182 vdd gnd and3_dec
-XDEC_AND_214 out_2 out_9 out_18 decode_214 vdd gnd and3_dec
-XDEC_AND_246 out_2 out_9 out_19 decode_246 vdd gnd and3_dec
-XDEC_AND_26 out_2 out_10 out_12 decode_26 vdd gnd and3_dec
-XDEC_AND_58 out_2 out_10 out_13 decode_58 vdd gnd and3_dec
-XDEC_AND_90 out_2 out_10 out_14 decode_90 vdd gnd and3_dec
-XDEC_AND_122 out_2 out_10 out_15 decode_122 vdd gnd and3_dec
-XDEC_AND_154 out_2 out_10 out_16 decode_154 vdd gnd and3_dec
-XDEC_AND_186 out_2 out_10 out_17 decode_186 vdd gnd and3_dec
-XDEC_AND_218 out_2 out_10 out_18 decode_218 vdd gnd and3_dec
-XDEC_AND_250 out_2 out_10 out_19 decode_250 vdd gnd and3_dec
-XDEC_AND_30 out_2 out_11 out_12 decode_30 vdd gnd and3_dec
-XDEC_AND_62 out_2 out_11 out_13 decode_62 vdd gnd and3_dec
-XDEC_AND_94 out_2 out_11 out_14 decode_94 vdd gnd and3_dec
-XDEC_AND_126 out_2 out_11 out_15 decode_126 vdd gnd and3_dec
-XDEC_AND_158 out_2 out_11 out_16 decode_158 vdd gnd and3_dec
-XDEC_AND_190 out_2 out_11 out_17 decode_190 vdd gnd and3_dec
-XDEC_AND_222 out_2 out_11 out_18 decode_222 vdd gnd and3_dec
-XDEC_AND_254 out_2 out_11 out_19 decode_254 vdd gnd and3_dec
-XDEC_AND_3 out_3 out_4 out_12 decode_3 vdd gnd and3_dec
-XDEC_AND_35 out_3 out_4 out_13 decode_35 vdd gnd and3_dec
-XDEC_AND_67 out_3 out_4 out_14 decode_67 vdd gnd and3_dec
-XDEC_AND_99 out_3 out_4 out_15 decode_99 vdd gnd and3_dec
-XDEC_AND_131 out_3 out_4 out_16 decode_131 vdd gnd and3_dec
-XDEC_AND_163 out_3 out_4 out_17 decode_163 vdd gnd and3_dec
-XDEC_AND_195 out_3 out_4 out_18 decode_195 vdd gnd and3_dec
-XDEC_AND_227 out_3 out_4 out_19 decode_227 vdd gnd and3_dec
-XDEC_AND_7 out_3 out_5 out_12 decode_7 vdd gnd and3_dec
-XDEC_AND_39 out_3 out_5 out_13 decode_39 vdd gnd and3_dec
-XDEC_AND_71 out_3 out_5 out_14 decode_71 vdd gnd and3_dec
-XDEC_AND_103 out_3 out_5 out_15 decode_103 vdd gnd and3_dec
-XDEC_AND_135 out_3 out_5 out_16 decode_135 vdd gnd and3_dec
-XDEC_AND_167 out_3 out_5 out_17 decode_167 vdd gnd and3_dec
-XDEC_AND_199 out_3 out_5 out_18 decode_199 vdd gnd and3_dec
-XDEC_AND_231 out_3 out_5 out_19 decode_231 vdd gnd and3_dec
-XDEC_AND_11 out_3 out_6 out_12 decode_11 vdd gnd and3_dec
-XDEC_AND_43 out_3 out_6 out_13 decode_43 vdd gnd and3_dec
-XDEC_AND_75 out_3 out_6 out_14 decode_75 vdd gnd and3_dec
-XDEC_AND_107 out_3 out_6 out_15 decode_107 vdd gnd and3_dec
-XDEC_AND_139 out_3 out_6 out_16 decode_139 vdd gnd and3_dec
-XDEC_AND_171 out_3 out_6 out_17 decode_171 vdd gnd and3_dec
-XDEC_AND_203 out_3 out_6 out_18 decode_203 vdd gnd and3_dec
-XDEC_AND_235 out_3 out_6 out_19 decode_235 vdd gnd and3_dec
-XDEC_AND_15 out_3 out_7 out_12 decode_15 vdd gnd and3_dec
-XDEC_AND_47 out_3 out_7 out_13 decode_47 vdd gnd and3_dec
-XDEC_AND_79 out_3 out_7 out_14 decode_79 vdd gnd and3_dec
-XDEC_AND_111 out_3 out_7 out_15 decode_111 vdd gnd and3_dec
-XDEC_AND_143 out_3 out_7 out_16 decode_143 vdd gnd and3_dec
-XDEC_AND_175 out_3 out_7 out_17 decode_175 vdd gnd and3_dec
-XDEC_AND_207 out_3 out_7 out_18 decode_207 vdd gnd and3_dec
-XDEC_AND_239 out_3 out_7 out_19 decode_239 vdd gnd and3_dec
-XDEC_AND_19 out_3 out_8 out_12 decode_19 vdd gnd and3_dec
-XDEC_AND_51 out_3 out_8 out_13 decode_51 vdd gnd and3_dec
-XDEC_AND_83 out_3 out_8 out_14 decode_83 vdd gnd and3_dec
-XDEC_AND_115 out_3 out_8 out_15 decode_115 vdd gnd and3_dec
-XDEC_AND_147 out_3 out_8 out_16 decode_147 vdd gnd and3_dec
-XDEC_AND_179 out_3 out_8 out_17 decode_179 vdd gnd and3_dec
-XDEC_AND_211 out_3 out_8 out_18 decode_211 vdd gnd and3_dec
-XDEC_AND_243 out_3 out_8 out_19 decode_243 vdd gnd and3_dec
-XDEC_AND_23 out_3 out_9 out_12 decode_23 vdd gnd and3_dec
-XDEC_AND_55 out_3 out_9 out_13 decode_55 vdd gnd and3_dec
-XDEC_AND_87 out_3 out_9 out_14 decode_87 vdd gnd and3_dec
-XDEC_AND_119 out_3 out_9 out_15 decode_119 vdd gnd and3_dec
-XDEC_AND_151 out_3 out_9 out_16 decode_151 vdd gnd and3_dec
-XDEC_AND_183 out_3 out_9 out_17 decode_183 vdd gnd and3_dec
-XDEC_AND_215 out_3 out_9 out_18 decode_215 vdd gnd and3_dec
-XDEC_AND_247 out_3 out_9 out_19 decode_247 vdd gnd and3_dec
-XDEC_AND_27 out_3 out_10 out_12 decode_27 vdd gnd and3_dec
-XDEC_AND_59 out_3 out_10 out_13 decode_59 vdd gnd and3_dec
-XDEC_AND_91 out_3 out_10 out_14 decode_91 vdd gnd and3_dec
-XDEC_AND_123 out_3 out_10 out_15 decode_123 vdd gnd and3_dec
-XDEC_AND_155 out_3 out_10 out_16 decode_155 vdd gnd and3_dec
-XDEC_AND_187 out_3 out_10 out_17 decode_187 vdd gnd and3_dec
-XDEC_AND_219 out_3 out_10 out_18 decode_219 vdd gnd and3_dec
-XDEC_AND_251 out_3 out_10 out_19 decode_251 vdd gnd and3_dec
-XDEC_AND_31 out_3 out_11 out_12 decode_31 vdd gnd and3_dec
-XDEC_AND_63 out_3 out_11 out_13 decode_63 vdd gnd and3_dec
-XDEC_AND_95 out_3 out_11 out_14 decode_95 vdd gnd and3_dec
-XDEC_AND_127 out_3 out_11 out_15 decode_127 vdd gnd and3_dec
-XDEC_AND_159 out_3 out_11 out_16 decode_159 vdd gnd and3_dec
-XDEC_AND_191 out_3 out_11 out_17 decode_191 vdd gnd and3_dec
-XDEC_AND_223 out_3 out_11 out_18 decode_223 vdd gnd and3_dec
-XDEC_AND_255 out_3 out_11 out_19 decode_255 vdd gnd and3_dec
-.ENDS hierarchical_decoder
-
-* spice ptx X{0} {1} sky130_fd_pr__nfet_01v8 m=1 w=7.0 l=0.15 pd=14.30 ps=14.30 as=2.62u ad=2.62u
-
-* spice ptx X{0} {1} sky130_fd_pr__pfet_01v8 m=1 w=7.0 l=0.15 pd=14.30 ps=14.30 as=2.62u ad=2.62u
-
-.SUBCKT pinv_dec_0 A Z vdd gnd
-*.PININFO A:I Z:O vdd:B gnd:B
-* INPUT : A 
-* OUTPUT: Z 
-* POWER : vdd 
-* GROUND: gnd 
-Xpinv_pmos Z A vdd vdd sky130_fd_pr__pfet_01v8 m=1 w=7.0 l=0.15 pd=14.30 ps=14.30 as=2.62u ad=2.62u
-Xpinv_nmos Z A gnd gnd sky130_fd_pr__nfet_01v8 m=1 w=7.0 l=0.15 pd=14.30 ps=14.30 as=2.62u ad=2.62u
-.ENDS pinv_dec_0
-
-.SUBCKT wordline_driver A B Z vdd gnd
-*.PININFO A:I B:I Z:O vdd:B gnd:B
-* INPUT : A 
-* INPUT : B 
-* OUTPUT: Z 
-* POWER : vdd 
-* GROUND: gnd 
-Xwld_nand A B zb_int vdd gnd sky130_fd_bd_sram__openram_dp_nand2_dec
-Xwl_driver zb_int Z vdd gnd pinv_dec_0
-.ENDS wordline_driver
-
-.SUBCKT wordline_driver_array in_0 in_1 in_2 in_3 in_4 in_5 in_6 in_7 in_8 in_9 in_10 in_11 in_12 in_13 in_14 in_15 in_16 in_17 in_18 in_19 in_20 in_21 in_22 in_23 in_24 in_25 in_26 in_27 in_28 in_29 in_30 in_31 in_32 in_33 in_34 in_35 in_36 in_37 in_38 in_39 in_40 in_41 in_42 in_43 in_44 in_45 in_46 in_47 in_48 in_49 in_50 in_51 in_52 in_53 in_54 in_55 in_56 in_57 in_58 in_59 in_60 in_61 in_62 in_63 in_64 in_65 in_66 in_67 in_68 in_69 in_70 in_71 in_72 in_73 in_74 in_75 in_76 in_77 in_78 in_79 in_80 in_81 in_82 in_83 in_84 in_85 in_86 in_87 in_88 in_89 in_90 in_91 in_92 in_93 in_94 in_95 in_96 in_97 in_98 in_99 in_100 in_101 in_102 in_103 in_104 in_105 in_106 in_107 in_108 in_109 in_110 in_111 in_112 in_113 in_114 in_115 in_116 in_117 in_118 in_119 in_120 in_121 in_122 in_123 in_124 in_125 in_126 in_127 in_128 in_129 in_130 in_131 in_132 in_133 in_134 in_135 in_136 in_137 in_138 in_139 in_140 in_141 in_142 in_143 in_144 in_145 in_146 in_147 in_148 in_149 in_150 in_151 in_152 in_153 in_154 in_155 in_156 in_157 in_158 in_159 in_160 in_161 in_162 in_163 in_164 in_165 in_166 in_167 in_168 in_169 in_170 in_171 in_172 in_173 in_174 in_175 in_176 in_177 in_178 in_179 in_180 in_181 in_182 in_183 in_184 in_185 in_186 in_187 in_188 in_189 in_190 in_191 in_192 in_193 in_194 in_195 in_196 in_197 in_198 in_199 in_200 in_201 in_202 in_203 in_204 in_205 in_206 in_207 in_208 in_209 in_210 in_211 in_212 in_213 in_214 in_215 in_216 in_217 in_218 in_219 in_220 in_221 in_222 in_223 in_224 in_225 in_226 in_227 in_228 in_229 in_230 in_231 in_232 in_233 in_234 in_235 in_236 in_237 in_238 in_239 in_240 in_241 in_242 in_243 in_244 in_245 in_246 in_247 in_248 in_249 in_250 in_251 in_252 in_253 in_254 in_255 wl_0 wl_1 wl_2 wl_3 wl_4 wl_5 wl_6 wl_7 wl_8 wl_9 wl_10 wl_11 wl_12 wl_13 wl_14 wl_15 wl_16 wl_17 wl_18 wl_19 wl_20 wl_21 wl_22 wl_23 wl_24 wl_25 wl_26 wl_27 wl_28 wl_29 wl_30 wl_31 wl_32 wl_33 wl_34 wl_35 wl_36 wl_37 wl_38 wl_39 wl_40 wl_41 wl_42 wl_43 wl_44 wl_45 wl_46 wl_47 wl_48 wl_49 wl_50 wl_51 wl_52 wl_53 wl_54 wl_55 wl_56 wl_57 wl_58 wl_59 wl_60 wl_61 wl_62 wl_63 wl_64 wl_65 wl_66 wl_67 wl_68 wl_69 wl_70 wl_71 wl_72 wl_73 wl_74 wl_75 wl_76 wl_77 wl_78 wl_79 wl_80 wl_81 wl_82 wl_83 wl_84 wl_85 wl_86 wl_87 wl_88 wl_89 wl_90 wl_91 wl_92 wl_93 wl_94 wl_95 wl_96 wl_97 wl_98 wl_99 wl_100 wl_101 wl_102 wl_103 wl_104 wl_105 wl_106 wl_107 wl_108 wl_109 wl_110 wl_111 wl_112 wl_113 wl_114 wl_115 wl_116 wl_117 wl_118 wl_119 wl_120 wl_121 wl_122 wl_123 wl_124 wl_125 wl_126 wl_127 wl_128 wl_129 wl_130 wl_131 wl_132 wl_133 wl_134 wl_135 wl_136 wl_137 wl_138 wl_139 wl_140 wl_141 wl_142 wl_143 wl_144 wl_145 wl_146 wl_147 wl_148 wl_149 wl_150 wl_151 wl_152 wl_153 wl_154 wl_155 wl_156 wl_157 wl_158 wl_159 wl_160 wl_161 wl_162 wl_163 wl_164 wl_165 wl_166 wl_167 wl_168 wl_169 wl_170 wl_171 wl_172 wl_173 wl_174 wl_175 wl_176 wl_177 wl_178 wl_179 wl_180 wl_181 wl_182 wl_183 wl_184 wl_185 wl_186 wl_187 wl_188 wl_189 wl_190 wl_191 wl_192 wl_193 wl_194 wl_195 wl_196 wl_197 wl_198 wl_199 wl_200 wl_201 wl_202 wl_203 wl_204 wl_205 wl_206 wl_207 wl_208 wl_209 wl_210 wl_211 wl_212 wl_213 wl_214 wl_215 wl_216 wl_217 wl_218 wl_219 wl_220 wl_221 wl_222 wl_223 wl_224 wl_225 wl_226 wl_227 wl_228 wl_229 wl_230 wl_231 wl_232 wl_233 wl_234 wl_235 wl_236 wl_237 wl_238 wl_239 wl_240 wl_241 wl_242 wl_243 wl_244 wl_245 wl_246 wl_247 wl_248 wl_249 wl_250 wl_251 wl_252 wl_253 wl_254 wl_255 en vdd gnd
-*.PININFO in_0:I in_1:I in_2:I in_3:I in_4:I in_5:I in_6:I in_7:I in_8:I in_9:I in_10:I in_11:I in_12:I in_13:I in_14:I in_15:I in_16:I in_17:I in_18:I in_19:I in_20:I in_21:I in_22:I in_23:I in_24:I in_25:I in_26:I in_27:I in_28:I in_29:I in_30:I in_31:I in_32:I in_33:I in_34:I in_35:I in_36:I in_37:I in_38:I in_39:I in_40:I in_41:I in_42:I in_43:I in_44:I in_45:I in_46:I in_47:I in_48:I in_49:I in_50:I in_51:I in_52:I in_53:I in_54:I in_55:I in_56:I in_57:I in_58:I in_59:I in_60:I in_61:I in_62:I in_63:I in_64:I in_65:I in_66:I in_67:I in_68:I in_69:I in_70:I in_71:I in_72:I in_73:I in_74:I in_75:I in_76:I in_77:I in_78:I in_79:I in_80:I in_81:I in_82:I in_83:I in_84:I in_85:I in_86:I in_87:I in_88:I in_89:I in_90:I in_91:I in_92:I in_93:I in_94:I in_95:I in_96:I in_97:I in_98:I in_99:I in_100:I in_101:I in_102:I in_103:I in_104:I in_105:I in_106:I in_107:I in_108:I in_109:I in_110:I in_111:I in_112:I in_113:I in_114:I in_115:I in_116:I in_117:I in_118:I in_119:I in_120:I in_121:I in_122:I in_123:I in_124:I in_125:I in_126:I in_127:I in_128:I in_129:I in_130:I in_131:I in_132:I in_133:I in_134:I in_135:I in_136:I in_137:I in_138:I in_139:I in_140:I in_141:I in_142:I in_143:I in_144:I in_145:I in_146:I in_147:I in_148:I in_149:I in_150:I in_151:I in_152:I in_153:I in_154:I in_155:I in_156:I in_157:I in_158:I in_159:I in_160:I in_161:I in_162:I in_163:I in_164:I in_165:I in_166:I in_167:I in_168:I in_169:I in_170:I in_171:I in_172:I in_173:I in_174:I in_175:I in_176:I in_177:I in_178:I in_179:I in_180:I in_181:I in_182:I in_183:I in_184:I in_185:I in_186:I in_187:I in_188:I in_189:I in_190:I in_191:I in_192:I in_193:I in_194:I in_195:I in_196:I in_197:I in_198:I in_199:I in_200:I in_201:I in_202:I in_203:I in_204:I in_205:I in_206:I in_207:I in_208:I in_209:I in_210:I in_211:I in_212:I in_213:I in_214:I in_215:I in_216:I in_217:I in_218:I in_219:I in_220:I in_221:I in_222:I in_223:I in_224:I in_225:I in_226:I in_227:I in_228:I in_229:I in_230:I in_231:I in_232:I in_233:I in_234:I in_235:I in_236:I in_237:I in_238:I in_239:I in_240:I in_241:I in_242:I in_243:I in_244:I in_245:I in_246:I in_247:I in_248:I in_249:I in_250:I in_251:I in_252:I in_253:I in_254:I in_255:I wl_0:O wl_1:O wl_2:O wl_3:O wl_4:O wl_5:O wl_6:O wl_7:O wl_8:O wl_9:O wl_10:O wl_11:O wl_12:O wl_13:O wl_14:O wl_15:O wl_16:O wl_17:O wl_18:O wl_19:O wl_20:O wl_21:O wl_22:O wl_23:O wl_24:O wl_25:O wl_26:O wl_27:O wl_28:O wl_29:O wl_30:O wl_31:O wl_32:O wl_33:O wl_34:O wl_35:O wl_36:O wl_37:O wl_38:O wl_39:O wl_40:O wl_41:O wl_42:O wl_43:O wl_44:O wl_45:O wl_46:O wl_47:O wl_48:O wl_49:O wl_50:O wl_51:O wl_52:O wl_53:O wl_54:O wl_55:O wl_56:O wl_57:O wl_58:O wl_59:O wl_60:O wl_61:O wl_62:O wl_63:O wl_64:O wl_65:O wl_66:O wl_67:O wl_68:O wl_69:O wl_70:O wl_71:O wl_72:O wl_73:O wl_74:O wl_75:O wl_76:O wl_77:O wl_78:O wl_79:O wl_80:O wl_81:O wl_82:O wl_83:O wl_84:O wl_85:O wl_86:O wl_87:O wl_88:O wl_89:O wl_90:O wl_91:O wl_92:O wl_93:O wl_94:O wl_95:O wl_96:O wl_97:O wl_98:O wl_99:O wl_100:O wl_101:O wl_102:O wl_103:O wl_104:O wl_105:O wl_106:O wl_107:O wl_108:O wl_109:O wl_110:O wl_111:O wl_112:O wl_113:O wl_114:O wl_115:O wl_116:O wl_117:O wl_118:O wl_119:O wl_120:O wl_121:O wl_122:O wl_123:O wl_124:O wl_125:O wl_126:O wl_127:O wl_128:O wl_129:O wl_130:O wl_131:O wl_132:O wl_133:O wl_134:O wl_135:O wl_136:O wl_137:O wl_138:O wl_139:O wl_140:O wl_141:O wl_142:O wl_143:O wl_144:O wl_145:O wl_146:O wl_147:O wl_148:O wl_149:O wl_150:O wl_151:O wl_152:O wl_153:O wl_154:O wl_155:O wl_156:O wl_157:O wl_158:O wl_159:O wl_160:O wl_161:O wl_162:O wl_163:O wl_164:O wl_165:O wl_166:O wl_167:O wl_168:O wl_169:O wl_170:O wl_171:O wl_172:O wl_173:O wl_174:O wl_175:O wl_176:O wl_177:O wl_178:O wl_179:O wl_180:O wl_181:O wl_182:O wl_183:O wl_184:O wl_185:O wl_186:O wl_187:O wl_188:O wl_189:O wl_190:O wl_191:O wl_192:O wl_193:O wl_194:O wl_195:O wl_196:O wl_197:O wl_198:O wl_199:O wl_200:O wl_201:O wl_202:O wl_203:O wl_204:O wl_205:O wl_206:O wl_207:O wl_208:O wl_209:O wl_210:O wl_211:O wl_212:O wl_213:O wl_214:O wl_215:O wl_216:O wl_217:O wl_218:O wl_219:O wl_220:O wl_221:O wl_222:O wl_223:O wl_224:O wl_225:O wl_226:O wl_227:O wl_228:O wl_229:O wl_230:O wl_231:O wl_232:O wl_233:O wl_234:O wl_235:O wl_236:O wl_237:O wl_238:O wl_239:O wl_240:O wl_241:O wl_242:O wl_243:O wl_244:O wl_245:O wl_246:O wl_247:O wl_248:O wl_249:O wl_250:O wl_251:O wl_252:O wl_253:O wl_254:O wl_255:O en:I vdd:B gnd:B
-* INPUT : in_0 
-* INPUT : in_1 
-* INPUT : in_2 
-* INPUT : in_3 
-* INPUT : in_4 
-* INPUT : in_5 
-* INPUT : in_6 
-* INPUT : in_7 
-* INPUT : in_8 
-* INPUT : in_9 
-* INPUT : in_10 
-* INPUT : in_11 
-* INPUT : in_12 
-* INPUT : in_13 
-* INPUT : in_14 
-* INPUT : in_15 
-* INPUT : in_16 
-* INPUT : in_17 
-* INPUT : in_18 
-* INPUT : in_19 
-* INPUT : in_20 
-* INPUT : in_21 
-* INPUT : in_22 
-* INPUT : in_23 
-* INPUT : in_24 
-* INPUT : in_25 
-* INPUT : in_26 
-* INPUT : in_27 
-* INPUT : in_28 
-* INPUT : in_29 
-* INPUT : in_30 
-* INPUT : in_31 
-* INPUT : in_32 
-* INPUT : in_33 
-* INPUT : in_34 
-* INPUT : in_35 
-* INPUT : in_36 
-* INPUT : in_37 
-* INPUT : in_38 
-* INPUT : in_39 
-* INPUT : in_40 
-* INPUT : in_41 
-* INPUT : in_42 
-* INPUT : in_43 
-* INPUT : in_44 
-* INPUT : in_45 
-* INPUT : in_46 
-* INPUT : in_47 
-* INPUT : in_48 
-* INPUT : in_49 
-* INPUT : in_50 
-* INPUT : in_51 
-* INPUT : in_52 
-* INPUT : in_53 
-* INPUT : in_54 
-* INPUT : in_55 
-* INPUT : in_56 
-* INPUT : in_57 
-* INPUT : in_58 
-* INPUT : in_59 
-* INPUT : in_60 
-* INPUT : in_61 
-* INPUT : in_62 
-* INPUT : in_63 
-* INPUT : in_64 
-* INPUT : in_65 
-* INPUT : in_66 
-* INPUT : in_67 
-* INPUT : in_68 
-* INPUT : in_69 
-* INPUT : in_70 
-* INPUT : in_71 
-* INPUT : in_72 
-* INPUT : in_73 
-* INPUT : in_74 
-* INPUT : in_75 
-* INPUT : in_76 
-* INPUT : in_77 
-* INPUT : in_78 
-* INPUT : in_79 
-* INPUT : in_80 
-* INPUT : in_81 
-* INPUT : in_82 
-* INPUT : in_83 
-* INPUT : in_84 
-* INPUT : in_85 
-* INPUT : in_86 
-* INPUT : in_87 
-* INPUT : in_88 
-* INPUT : in_89 
-* INPUT : in_90 
-* INPUT : in_91 
-* INPUT : in_92 
-* INPUT : in_93 
-* INPUT : in_94 
-* INPUT : in_95 
-* INPUT : in_96 
-* INPUT : in_97 
-* INPUT : in_98 
-* INPUT : in_99 
-* INPUT : in_100 
-* INPUT : in_101 
-* INPUT : in_102 
-* INPUT : in_103 
-* INPUT : in_104 
-* INPUT : in_105 
-* INPUT : in_106 
-* INPUT : in_107 
-* INPUT : in_108 
-* INPUT : in_109 
-* INPUT : in_110 
-* INPUT : in_111 
-* INPUT : in_112 
-* INPUT : in_113 
-* INPUT : in_114 
-* INPUT : in_115 
-* INPUT : in_116 
-* INPUT : in_117 
-* INPUT : in_118 
-* INPUT : in_119 
-* INPUT : in_120 
-* INPUT : in_121 
-* INPUT : in_122 
-* INPUT : in_123 
-* INPUT : in_124 
-* INPUT : in_125 
-* INPUT : in_126 
-* INPUT : in_127 
-* INPUT : in_128 
-* INPUT : in_129 
-* INPUT : in_130 
-* INPUT : in_131 
-* INPUT : in_132 
-* INPUT : in_133 
-* INPUT : in_134 
-* INPUT : in_135 
-* INPUT : in_136 
-* INPUT : in_137 
-* INPUT : in_138 
-* INPUT : in_139 
-* INPUT : in_140 
-* INPUT : in_141 
-* INPUT : in_142 
-* INPUT : in_143 
-* INPUT : in_144 
-* INPUT : in_145 
-* INPUT : in_146 
-* INPUT : in_147 
-* INPUT : in_148 
-* INPUT : in_149 
-* INPUT : in_150 
-* INPUT : in_151 
-* INPUT : in_152 
-* INPUT : in_153 
-* INPUT : in_154 
-* INPUT : in_155 
-* INPUT : in_156 
-* INPUT : in_157 
-* INPUT : in_158 
-* INPUT : in_159 
-* INPUT : in_160 
-* INPUT : in_161 
-* INPUT : in_162 
-* INPUT : in_163 
-* INPUT : in_164 
-* INPUT : in_165 
-* INPUT : in_166 
-* INPUT : in_167 
-* INPUT : in_168 
-* INPUT : in_169 
-* INPUT : in_170 
-* INPUT : in_171 
-* INPUT : in_172 
-* INPUT : in_173 
-* INPUT : in_174 
-* INPUT : in_175 
-* INPUT : in_176 
-* INPUT : in_177 
-* INPUT : in_178 
-* INPUT : in_179 
-* INPUT : in_180 
-* INPUT : in_181 
-* INPUT : in_182 
-* INPUT : in_183 
-* INPUT : in_184 
-* INPUT : in_185 
-* INPUT : in_186 
-* INPUT : in_187 
-* INPUT : in_188 
-* INPUT : in_189 
-* INPUT : in_190 
-* INPUT : in_191 
-* INPUT : in_192 
-* INPUT : in_193 
-* INPUT : in_194 
-* INPUT : in_195 
-* INPUT : in_196 
-* INPUT : in_197 
-* INPUT : in_198 
-* INPUT : in_199 
-* INPUT : in_200 
-* INPUT : in_201 
-* INPUT : in_202 
-* INPUT : in_203 
-* INPUT : in_204 
-* INPUT : in_205 
-* INPUT : in_206 
-* INPUT : in_207 
-* INPUT : in_208 
-* INPUT : in_209 
-* INPUT : in_210 
-* INPUT : in_211 
-* INPUT : in_212 
-* INPUT : in_213 
-* INPUT : in_214 
-* INPUT : in_215 
-* INPUT : in_216 
-* INPUT : in_217 
-* INPUT : in_218 
-* INPUT : in_219 
-* INPUT : in_220 
-* INPUT : in_221 
-* INPUT : in_222 
-* INPUT : in_223 
-* INPUT : in_224 
-* INPUT : in_225 
-* INPUT : in_226 
-* INPUT : in_227 
-* INPUT : in_228 
-* INPUT : in_229 
-* INPUT : in_230 
-* INPUT : in_231 
-* INPUT : in_232 
-* INPUT : in_233 
-* INPUT : in_234 
-* INPUT : in_235 
-* INPUT : in_236 
-* INPUT : in_237 
-* INPUT : in_238 
-* INPUT : in_239 
-* INPUT : in_240 
-* INPUT : in_241 
-* INPUT : in_242 
-* INPUT : in_243 
-* INPUT : in_244 
-* INPUT : in_245 
-* INPUT : in_246 
-* INPUT : in_247 
-* INPUT : in_248 
-* INPUT : in_249 
-* INPUT : in_250 
-* INPUT : in_251 
-* INPUT : in_252 
-* INPUT : in_253 
-* INPUT : in_254 
-* INPUT : in_255 
-* OUTPUT: wl_0 
-* OUTPUT: wl_1 
-* OUTPUT: wl_2 
-* OUTPUT: wl_3 
-* OUTPUT: wl_4 
-* OUTPUT: wl_5 
-* OUTPUT: wl_6 
-* OUTPUT: wl_7 
-* OUTPUT: wl_8 
-* OUTPUT: wl_9 
-* OUTPUT: wl_10 
-* OUTPUT: wl_11 
-* OUTPUT: wl_12 
-* OUTPUT: wl_13 
-* OUTPUT: wl_14 
-* OUTPUT: wl_15 
-* OUTPUT: wl_16 
-* OUTPUT: wl_17 
-* OUTPUT: wl_18 
-* OUTPUT: wl_19 
-* OUTPUT: wl_20 
-* OUTPUT: wl_21 
-* OUTPUT: wl_22 
-* OUTPUT: wl_23 
-* OUTPUT: wl_24 
-* OUTPUT: wl_25 
-* OUTPUT: wl_26 
-* OUTPUT: wl_27 
-* OUTPUT: wl_28 
-* OUTPUT: wl_29 
-* OUTPUT: wl_30 
-* OUTPUT: wl_31 
-* OUTPUT: wl_32 
-* OUTPUT: wl_33 
-* OUTPUT: wl_34 
-* OUTPUT: wl_35 
-* OUTPUT: wl_36 
-* OUTPUT: wl_37 
-* OUTPUT: wl_38 
-* OUTPUT: wl_39 
-* OUTPUT: wl_40 
-* OUTPUT: wl_41 
-* OUTPUT: wl_42 
-* OUTPUT: wl_43 
-* OUTPUT: wl_44 
-* OUTPUT: wl_45 
-* OUTPUT: wl_46 
-* OUTPUT: wl_47 
-* OUTPUT: wl_48 
-* OUTPUT: wl_49 
-* OUTPUT: wl_50 
-* OUTPUT: wl_51 
-* OUTPUT: wl_52 
-* OUTPUT: wl_53 
-* OUTPUT: wl_54 
-* OUTPUT: wl_55 
-* OUTPUT: wl_56 
-* OUTPUT: wl_57 
-* OUTPUT: wl_58 
-* OUTPUT: wl_59 
-* OUTPUT: wl_60 
-* OUTPUT: wl_61 
-* OUTPUT: wl_62 
-* OUTPUT: wl_63 
-* OUTPUT: wl_64 
-* OUTPUT: wl_65 
-* OUTPUT: wl_66 
-* OUTPUT: wl_67 
-* OUTPUT: wl_68 
-* OUTPUT: wl_69 
-* OUTPUT: wl_70 
-* OUTPUT: wl_71 
-* OUTPUT: wl_72 
-* OUTPUT: wl_73 
-* OUTPUT: wl_74 
-* OUTPUT: wl_75 
-* OUTPUT: wl_76 
-* OUTPUT: wl_77 
-* OUTPUT: wl_78 
-* OUTPUT: wl_79 
-* OUTPUT: wl_80 
-* OUTPUT: wl_81 
-* OUTPUT: wl_82 
-* OUTPUT: wl_83 
-* OUTPUT: wl_84 
-* OUTPUT: wl_85 
-* OUTPUT: wl_86 
-* OUTPUT: wl_87 
-* OUTPUT: wl_88 
-* OUTPUT: wl_89 
-* OUTPUT: wl_90 
-* OUTPUT: wl_91 
-* OUTPUT: wl_92 
-* OUTPUT: wl_93 
-* OUTPUT: wl_94 
-* OUTPUT: wl_95 
-* OUTPUT: wl_96 
-* OUTPUT: wl_97 
-* OUTPUT: wl_98 
-* OUTPUT: wl_99 
-* OUTPUT: wl_100 
-* OUTPUT: wl_101 
-* OUTPUT: wl_102 
-* OUTPUT: wl_103 
-* OUTPUT: wl_104 
-* OUTPUT: wl_105 
-* OUTPUT: wl_106 
-* OUTPUT: wl_107 
-* OUTPUT: wl_108 
-* OUTPUT: wl_109 
-* OUTPUT: wl_110 
-* OUTPUT: wl_111 
-* OUTPUT: wl_112 
-* OUTPUT: wl_113 
-* OUTPUT: wl_114 
-* OUTPUT: wl_115 
-* OUTPUT: wl_116 
-* OUTPUT: wl_117 
-* OUTPUT: wl_118 
-* OUTPUT: wl_119 
-* OUTPUT: wl_120 
-* OUTPUT: wl_121 
-* OUTPUT: wl_122 
-* OUTPUT: wl_123 
-* OUTPUT: wl_124 
-* OUTPUT: wl_125 
-* OUTPUT: wl_126 
-* OUTPUT: wl_127 
-* OUTPUT: wl_128 
-* OUTPUT: wl_129 
-* OUTPUT: wl_130 
-* OUTPUT: wl_131 
-* OUTPUT: wl_132 
-* OUTPUT: wl_133 
-* OUTPUT: wl_134 
-* OUTPUT: wl_135 
-* OUTPUT: wl_136 
-* OUTPUT: wl_137 
-* OUTPUT: wl_138 
-* OUTPUT: wl_139 
-* OUTPUT: wl_140 
-* OUTPUT: wl_141 
-* OUTPUT: wl_142 
-* OUTPUT: wl_143 
-* OUTPUT: wl_144 
-* OUTPUT: wl_145 
-* OUTPUT: wl_146 
-* OUTPUT: wl_147 
-* OUTPUT: wl_148 
-* OUTPUT: wl_149 
-* OUTPUT: wl_150 
-* OUTPUT: wl_151 
-* OUTPUT: wl_152 
-* OUTPUT: wl_153 
-* OUTPUT: wl_154 
-* OUTPUT: wl_155 
-* OUTPUT: wl_156 
-* OUTPUT: wl_157 
-* OUTPUT: wl_158 
-* OUTPUT: wl_159 
-* OUTPUT: wl_160 
-* OUTPUT: wl_161 
-* OUTPUT: wl_162 
-* OUTPUT: wl_163 
-* OUTPUT: wl_164 
-* OUTPUT: wl_165 
-* OUTPUT: wl_166 
-* OUTPUT: wl_167 
-* OUTPUT: wl_168 
-* OUTPUT: wl_169 
-* OUTPUT: wl_170 
-* OUTPUT: wl_171 
-* OUTPUT: wl_172 
-* OUTPUT: wl_173 
-* OUTPUT: wl_174 
-* OUTPUT: wl_175 
-* OUTPUT: wl_176 
-* OUTPUT: wl_177 
-* OUTPUT: wl_178 
-* OUTPUT: wl_179 
-* OUTPUT: wl_180 
-* OUTPUT: wl_181 
-* OUTPUT: wl_182 
-* OUTPUT: wl_183 
-* OUTPUT: wl_184 
-* OUTPUT: wl_185 
-* OUTPUT: wl_186 
-* OUTPUT: wl_187 
-* OUTPUT: wl_188 
-* OUTPUT: wl_189 
-* OUTPUT: wl_190 
-* OUTPUT: wl_191 
-* OUTPUT: wl_192 
-* OUTPUT: wl_193 
-* OUTPUT: wl_194 
-* OUTPUT: wl_195 
-* OUTPUT: wl_196 
-* OUTPUT: wl_197 
-* OUTPUT: wl_198 
-* OUTPUT: wl_199 
-* OUTPUT: wl_200 
-* OUTPUT: wl_201 
-* OUTPUT: wl_202 
-* OUTPUT: wl_203 
-* OUTPUT: wl_204 
-* OUTPUT: wl_205 
-* OUTPUT: wl_206 
-* OUTPUT: wl_207 
-* OUTPUT: wl_208 
-* OUTPUT: wl_209 
-* OUTPUT: wl_210 
-* OUTPUT: wl_211 
-* OUTPUT: wl_212 
-* OUTPUT: wl_213 
-* OUTPUT: wl_214 
-* OUTPUT: wl_215 
-* OUTPUT: wl_216 
-* OUTPUT: wl_217 
-* OUTPUT: wl_218 
-* OUTPUT: wl_219 
-* OUTPUT: wl_220 
-* OUTPUT: wl_221 
-* OUTPUT: wl_222 
-* OUTPUT: wl_223 
-* OUTPUT: wl_224 
-* OUTPUT: wl_225 
-* OUTPUT: wl_226 
-* OUTPUT: wl_227 
-* OUTPUT: wl_228 
-* OUTPUT: wl_229 
-* OUTPUT: wl_230 
-* OUTPUT: wl_231 
-* OUTPUT: wl_232 
-* OUTPUT: wl_233 
-* OUTPUT: wl_234 
-* OUTPUT: wl_235 
-* OUTPUT: wl_236 
-* OUTPUT: wl_237 
-* OUTPUT: wl_238 
-* OUTPUT: wl_239 
-* OUTPUT: wl_240 
-* OUTPUT: wl_241 
-* OUTPUT: wl_242 
-* OUTPUT: wl_243 
-* OUTPUT: wl_244 
-* OUTPUT: wl_245 
-* OUTPUT: wl_246 
-* OUTPUT: wl_247 
-* OUTPUT: wl_248 
-* OUTPUT: wl_249 
-* OUTPUT: wl_250 
-* OUTPUT: wl_251 
-* OUTPUT: wl_252 
-* OUTPUT: wl_253 
-* OUTPUT: wl_254 
-* OUTPUT: wl_255 
-* INPUT : en 
-* POWER : vdd 
-* GROUND: gnd 
-* rows: 256 cols: 128
-Xwl_driver_and0 in_0 en wl_0 vdd gnd wordline_driver
-Xwl_driver_and1 in_1 en wl_1 vdd gnd wordline_driver
-Xwl_driver_and2 in_2 en wl_2 vdd gnd wordline_driver
-Xwl_driver_and3 in_3 en wl_3 vdd gnd wordline_driver
-Xwl_driver_and4 in_4 en wl_4 vdd gnd wordline_driver
-Xwl_driver_and5 in_5 en wl_5 vdd gnd wordline_driver
-Xwl_driver_and6 in_6 en wl_6 vdd gnd wordline_driver
-Xwl_driver_and7 in_7 en wl_7 vdd gnd wordline_driver
-Xwl_driver_and8 in_8 en wl_8 vdd gnd wordline_driver
-Xwl_driver_and9 in_9 en wl_9 vdd gnd wordline_driver
-Xwl_driver_and10 in_10 en wl_10 vdd gnd wordline_driver
-Xwl_driver_and11 in_11 en wl_11 vdd gnd wordline_driver
-Xwl_driver_and12 in_12 en wl_12 vdd gnd wordline_driver
-Xwl_driver_and13 in_13 en wl_13 vdd gnd wordline_driver
-Xwl_driver_and14 in_14 en wl_14 vdd gnd wordline_driver
-Xwl_driver_and15 in_15 en wl_15 vdd gnd wordline_driver
-Xwl_driver_and16 in_16 en wl_16 vdd gnd wordline_driver
-Xwl_driver_and17 in_17 en wl_17 vdd gnd wordline_driver
-Xwl_driver_and18 in_18 en wl_18 vdd gnd wordline_driver
-Xwl_driver_and19 in_19 en wl_19 vdd gnd wordline_driver
-Xwl_driver_and20 in_20 en wl_20 vdd gnd wordline_driver
-Xwl_driver_and21 in_21 en wl_21 vdd gnd wordline_driver
-Xwl_driver_and22 in_22 en wl_22 vdd gnd wordline_driver
-Xwl_driver_and23 in_23 en wl_23 vdd gnd wordline_driver
-Xwl_driver_and24 in_24 en wl_24 vdd gnd wordline_driver
-Xwl_driver_and25 in_25 en wl_25 vdd gnd wordline_driver
-Xwl_driver_and26 in_26 en wl_26 vdd gnd wordline_driver
-Xwl_driver_and27 in_27 en wl_27 vdd gnd wordline_driver
-Xwl_driver_and28 in_28 en wl_28 vdd gnd wordline_driver
-Xwl_driver_and29 in_29 en wl_29 vdd gnd wordline_driver
-Xwl_driver_and30 in_30 en wl_30 vdd gnd wordline_driver
-Xwl_driver_and31 in_31 en wl_31 vdd gnd wordline_driver
-Xwl_driver_and32 in_32 en wl_32 vdd gnd wordline_driver
-Xwl_driver_and33 in_33 en wl_33 vdd gnd wordline_driver
-Xwl_driver_and34 in_34 en wl_34 vdd gnd wordline_driver
-Xwl_driver_and35 in_35 en wl_35 vdd gnd wordline_driver
-Xwl_driver_and36 in_36 en wl_36 vdd gnd wordline_driver
-Xwl_driver_and37 in_37 en wl_37 vdd gnd wordline_driver
-Xwl_driver_and38 in_38 en wl_38 vdd gnd wordline_driver
-Xwl_driver_and39 in_39 en wl_39 vdd gnd wordline_driver
-Xwl_driver_and40 in_40 en wl_40 vdd gnd wordline_driver
-Xwl_driver_and41 in_41 en wl_41 vdd gnd wordline_driver
-Xwl_driver_and42 in_42 en wl_42 vdd gnd wordline_driver
-Xwl_driver_and43 in_43 en wl_43 vdd gnd wordline_driver
-Xwl_driver_and44 in_44 en wl_44 vdd gnd wordline_driver
-Xwl_driver_and45 in_45 en wl_45 vdd gnd wordline_driver
-Xwl_driver_and46 in_46 en wl_46 vdd gnd wordline_driver
-Xwl_driver_and47 in_47 en wl_47 vdd gnd wordline_driver
-Xwl_driver_and48 in_48 en wl_48 vdd gnd wordline_driver
-Xwl_driver_and49 in_49 en wl_49 vdd gnd wordline_driver
-Xwl_driver_and50 in_50 en wl_50 vdd gnd wordline_driver
-Xwl_driver_and51 in_51 en wl_51 vdd gnd wordline_driver
-Xwl_driver_and52 in_52 en wl_52 vdd gnd wordline_driver
-Xwl_driver_and53 in_53 en wl_53 vdd gnd wordline_driver
-Xwl_driver_and54 in_54 en wl_54 vdd gnd wordline_driver
-Xwl_driver_and55 in_55 en wl_55 vdd gnd wordline_driver
-Xwl_driver_and56 in_56 en wl_56 vdd gnd wordline_driver
-Xwl_driver_and57 in_57 en wl_57 vdd gnd wordline_driver
-Xwl_driver_and58 in_58 en wl_58 vdd gnd wordline_driver
-Xwl_driver_and59 in_59 en wl_59 vdd gnd wordline_driver
-Xwl_driver_and60 in_60 en wl_60 vdd gnd wordline_driver
-Xwl_driver_and61 in_61 en wl_61 vdd gnd wordline_driver
-Xwl_driver_and62 in_62 en wl_62 vdd gnd wordline_driver
-Xwl_driver_and63 in_63 en wl_63 vdd gnd wordline_driver
-Xwl_driver_and64 in_64 en wl_64 vdd gnd wordline_driver
-Xwl_driver_and65 in_65 en wl_65 vdd gnd wordline_driver
-Xwl_driver_and66 in_66 en wl_66 vdd gnd wordline_driver
-Xwl_driver_and67 in_67 en wl_67 vdd gnd wordline_driver
-Xwl_driver_and68 in_68 en wl_68 vdd gnd wordline_driver
-Xwl_driver_and69 in_69 en wl_69 vdd gnd wordline_driver
-Xwl_driver_and70 in_70 en wl_70 vdd gnd wordline_driver
-Xwl_driver_and71 in_71 en wl_71 vdd gnd wordline_driver
-Xwl_driver_and72 in_72 en wl_72 vdd gnd wordline_driver
-Xwl_driver_and73 in_73 en wl_73 vdd gnd wordline_driver
-Xwl_driver_and74 in_74 en wl_74 vdd gnd wordline_driver
-Xwl_driver_and75 in_75 en wl_75 vdd gnd wordline_driver
-Xwl_driver_and76 in_76 en wl_76 vdd gnd wordline_driver
-Xwl_driver_and77 in_77 en wl_77 vdd gnd wordline_driver
-Xwl_driver_and78 in_78 en wl_78 vdd gnd wordline_driver
-Xwl_driver_and79 in_79 en wl_79 vdd gnd wordline_driver
-Xwl_driver_and80 in_80 en wl_80 vdd gnd wordline_driver
-Xwl_driver_and81 in_81 en wl_81 vdd gnd wordline_driver
-Xwl_driver_and82 in_82 en wl_82 vdd gnd wordline_driver
-Xwl_driver_and83 in_83 en wl_83 vdd gnd wordline_driver
-Xwl_driver_and84 in_84 en wl_84 vdd gnd wordline_driver
-Xwl_driver_and85 in_85 en wl_85 vdd gnd wordline_driver
-Xwl_driver_and86 in_86 en wl_86 vdd gnd wordline_driver
-Xwl_driver_and87 in_87 en wl_87 vdd gnd wordline_driver
-Xwl_driver_and88 in_88 en wl_88 vdd gnd wordline_driver
-Xwl_driver_and89 in_89 en wl_89 vdd gnd wordline_driver
-Xwl_driver_and90 in_90 en wl_90 vdd gnd wordline_driver
-Xwl_driver_and91 in_91 en wl_91 vdd gnd wordline_driver
-Xwl_driver_and92 in_92 en wl_92 vdd gnd wordline_driver
-Xwl_driver_and93 in_93 en wl_93 vdd gnd wordline_driver
-Xwl_driver_and94 in_94 en wl_94 vdd gnd wordline_driver
-Xwl_driver_and95 in_95 en wl_95 vdd gnd wordline_driver
-Xwl_driver_and96 in_96 en wl_96 vdd gnd wordline_driver
-Xwl_driver_and97 in_97 en wl_97 vdd gnd wordline_driver
-Xwl_driver_and98 in_98 en wl_98 vdd gnd wordline_driver
-Xwl_driver_and99 in_99 en wl_99 vdd gnd wordline_driver
-Xwl_driver_and100 in_100 en wl_100 vdd gnd wordline_driver
-Xwl_driver_and101 in_101 en wl_101 vdd gnd wordline_driver
-Xwl_driver_and102 in_102 en wl_102 vdd gnd wordline_driver
-Xwl_driver_and103 in_103 en wl_103 vdd gnd wordline_driver
-Xwl_driver_and104 in_104 en wl_104 vdd gnd wordline_driver
-Xwl_driver_and105 in_105 en wl_105 vdd gnd wordline_driver
-Xwl_driver_and106 in_106 en wl_106 vdd gnd wordline_driver
-Xwl_driver_and107 in_107 en wl_107 vdd gnd wordline_driver
-Xwl_driver_and108 in_108 en wl_108 vdd gnd wordline_driver
-Xwl_driver_and109 in_109 en wl_109 vdd gnd wordline_driver
-Xwl_driver_and110 in_110 en wl_110 vdd gnd wordline_driver
-Xwl_driver_and111 in_111 en wl_111 vdd gnd wordline_driver
-Xwl_driver_and112 in_112 en wl_112 vdd gnd wordline_driver
-Xwl_driver_and113 in_113 en wl_113 vdd gnd wordline_driver
-Xwl_driver_and114 in_114 en wl_114 vdd gnd wordline_driver
-Xwl_driver_and115 in_115 en wl_115 vdd gnd wordline_driver
-Xwl_driver_and116 in_116 en wl_116 vdd gnd wordline_driver
-Xwl_driver_and117 in_117 en wl_117 vdd gnd wordline_driver
-Xwl_driver_and118 in_118 en wl_118 vdd gnd wordline_driver
-Xwl_driver_and119 in_119 en wl_119 vdd gnd wordline_driver
-Xwl_driver_and120 in_120 en wl_120 vdd gnd wordline_driver
-Xwl_driver_and121 in_121 en wl_121 vdd gnd wordline_driver
-Xwl_driver_and122 in_122 en wl_122 vdd gnd wordline_driver
-Xwl_driver_and123 in_123 en wl_123 vdd gnd wordline_driver
-Xwl_driver_and124 in_124 en wl_124 vdd gnd wordline_driver
-Xwl_driver_and125 in_125 en wl_125 vdd gnd wordline_driver
-Xwl_driver_and126 in_126 en wl_126 vdd gnd wordline_driver
-Xwl_driver_and127 in_127 en wl_127 vdd gnd wordline_driver
-Xwl_driver_and128 in_128 en wl_128 vdd gnd wordline_driver
-Xwl_driver_and129 in_129 en wl_129 vdd gnd wordline_driver
-Xwl_driver_and130 in_130 en wl_130 vdd gnd wordline_driver
-Xwl_driver_and131 in_131 en wl_131 vdd gnd wordline_driver
-Xwl_driver_and132 in_132 en wl_132 vdd gnd wordline_driver
-Xwl_driver_and133 in_133 en wl_133 vdd gnd wordline_driver
-Xwl_driver_and134 in_134 en wl_134 vdd gnd wordline_driver
-Xwl_driver_and135 in_135 en wl_135 vdd gnd wordline_driver
-Xwl_driver_and136 in_136 en wl_136 vdd gnd wordline_driver
-Xwl_driver_and137 in_137 en wl_137 vdd gnd wordline_driver
-Xwl_driver_and138 in_138 en wl_138 vdd gnd wordline_driver
-Xwl_driver_and139 in_139 en wl_139 vdd gnd wordline_driver
-Xwl_driver_and140 in_140 en wl_140 vdd gnd wordline_driver
-Xwl_driver_and141 in_141 en wl_141 vdd gnd wordline_driver
-Xwl_driver_and142 in_142 en wl_142 vdd gnd wordline_driver
-Xwl_driver_and143 in_143 en wl_143 vdd gnd wordline_driver
-Xwl_driver_and144 in_144 en wl_144 vdd gnd wordline_driver
-Xwl_driver_and145 in_145 en wl_145 vdd gnd wordline_driver
-Xwl_driver_and146 in_146 en wl_146 vdd gnd wordline_driver
-Xwl_driver_and147 in_147 en wl_147 vdd gnd wordline_driver
-Xwl_driver_and148 in_148 en wl_148 vdd gnd wordline_driver
-Xwl_driver_and149 in_149 en wl_149 vdd gnd wordline_driver
-Xwl_driver_and150 in_150 en wl_150 vdd gnd wordline_driver
-Xwl_driver_and151 in_151 en wl_151 vdd gnd wordline_driver
-Xwl_driver_and152 in_152 en wl_152 vdd gnd wordline_driver
-Xwl_driver_and153 in_153 en wl_153 vdd gnd wordline_driver
-Xwl_driver_and154 in_154 en wl_154 vdd gnd wordline_driver
-Xwl_driver_and155 in_155 en wl_155 vdd gnd wordline_driver
-Xwl_driver_and156 in_156 en wl_156 vdd gnd wordline_driver
-Xwl_driver_and157 in_157 en wl_157 vdd gnd wordline_driver
-Xwl_driver_and158 in_158 en wl_158 vdd gnd wordline_driver
-Xwl_driver_and159 in_159 en wl_159 vdd gnd wordline_driver
-Xwl_driver_and160 in_160 en wl_160 vdd gnd wordline_driver
-Xwl_driver_and161 in_161 en wl_161 vdd gnd wordline_driver
-Xwl_driver_and162 in_162 en wl_162 vdd gnd wordline_driver
-Xwl_driver_and163 in_163 en wl_163 vdd gnd wordline_driver
-Xwl_driver_and164 in_164 en wl_164 vdd gnd wordline_driver
-Xwl_driver_and165 in_165 en wl_165 vdd gnd wordline_driver
-Xwl_driver_and166 in_166 en wl_166 vdd gnd wordline_driver
-Xwl_driver_and167 in_167 en wl_167 vdd gnd wordline_driver
-Xwl_driver_and168 in_168 en wl_168 vdd gnd wordline_driver
-Xwl_driver_and169 in_169 en wl_169 vdd gnd wordline_driver
-Xwl_driver_and170 in_170 en wl_170 vdd gnd wordline_driver
-Xwl_driver_and171 in_171 en wl_171 vdd gnd wordline_driver
-Xwl_driver_and172 in_172 en wl_172 vdd gnd wordline_driver
-Xwl_driver_and173 in_173 en wl_173 vdd gnd wordline_driver
-Xwl_driver_and174 in_174 en wl_174 vdd gnd wordline_driver
-Xwl_driver_and175 in_175 en wl_175 vdd gnd wordline_driver
-Xwl_driver_and176 in_176 en wl_176 vdd gnd wordline_driver
-Xwl_driver_and177 in_177 en wl_177 vdd gnd wordline_driver
-Xwl_driver_and178 in_178 en wl_178 vdd gnd wordline_driver
-Xwl_driver_and179 in_179 en wl_179 vdd gnd wordline_driver
-Xwl_driver_and180 in_180 en wl_180 vdd gnd wordline_driver
-Xwl_driver_and181 in_181 en wl_181 vdd gnd wordline_driver
-Xwl_driver_and182 in_182 en wl_182 vdd gnd wordline_driver
-Xwl_driver_and183 in_183 en wl_183 vdd gnd wordline_driver
-Xwl_driver_and184 in_184 en wl_184 vdd gnd wordline_driver
-Xwl_driver_and185 in_185 en wl_185 vdd gnd wordline_driver
-Xwl_driver_and186 in_186 en wl_186 vdd gnd wordline_driver
-Xwl_driver_and187 in_187 en wl_187 vdd gnd wordline_driver
-Xwl_driver_and188 in_188 en wl_188 vdd gnd wordline_driver
-Xwl_driver_and189 in_189 en wl_189 vdd gnd wordline_driver
-Xwl_driver_and190 in_190 en wl_190 vdd gnd wordline_driver
-Xwl_driver_and191 in_191 en wl_191 vdd gnd wordline_driver
-Xwl_driver_and192 in_192 en wl_192 vdd gnd wordline_driver
-Xwl_driver_and193 in_193 en wl_193 vdd gnd wordline_driver
-Xwl_driver_and194 in_194 en wl_194 vdd gnd wordline_driver
-Xwl_driver_and195 in_195 en wl_195 vdd gnd wordline_driver
-Xwl_driver_and196 in_196 en wl_196 vdd gnd wordline_driver
-Xwl_driver_and197 in_197 en wl_197 vdd gnd wordline_driver
-Xwl_driver_and198 in_198 en wl_198 vdd gnd wordline_driver
-Xwl_driver_and199 in_199 en wl_199 vdd gnd wordline_driver
-Xwl_driver_and200 in_200 en wl_200 vdd gnd wordline_driver
-Xwl_driver_and201 in_201 en wl_201 vdd gnd wordline_driver
-Xwl_driver_and202 in_202 en wl_202 vdd gnd wordline_driver
-Xwl_driver_and203 in_203 en wl_203 vdd gnd wordline_driver
-Xwl_driver_and204 in_204 en wl_204 vdd gnd wordline_driver
-Xwl_driver_and205 in_205 en wl_205 vdd gnd wordline_driver
-Xwl_driver_and206 in_206 en wl_206 vdd gnd wordline_driver
-Xwl_driver_and207 in_207 en wl_207 vdd gnd wordline_driver
-Xwl_driver_and208 in_208 en wl_208 vdd gnd wordline_driver
-Xwl_driver_and209 in_209 en wl_209 vdd gnd wordline_driver
-Xwl_driver_and210 in_210 en wl_210 vdd gnd wordline_driver
-Xwl_driver_and211 in_211 en wl_211 vdd gnd wordline_driver
-Xwl_driver_and212 in_212 en wl_212 vdd gnd wordline_driver
-Xwl_driver_and213 in_213 en wl_213 vdd gnd wordline_driver
-Xwl_driver_and214 in_214 en wl_214 vdd gnd wordline_driver
-Xwl_driver_and215 in_215 en wl_215 vdd gnd wordline_driver
-Xwl_driver_and216 in_216 en wl_216 vdd gnd wordline_driver
-Xwl_driver_and217 in_217 en wl_217 vdd gnd wordline_driver
-Xwl_driver_and218 in_218 en wl_218 vdd gnd wordline_driver
-Xwl_driver_and219 in_219 en wl_219 vdd gnd wordline_driver
-Xwl_driver_and220 in_220 en wl_220 vdd gnd wordline_driver
-Xwl_driver_and221 in_221 en wl_221 vdd gnd wordline_driver
-Xwl_driver_and222 in_222 en wl_222 vdd gnd wordline_driver
-Xwl_driver_and223 in_223 en wl_223 vdd gnd wordline_driver
-Xwl_driver_and224 in_224 en wl_224 vdd gnd wordline_driver
-Xwl_driver_and225 in_225 en wl_225 vdd gnd wordline_driver
-Xwl_driver_and226 in_226 en wl_226 vdd gnd wordline_driver
-Xwl_driver_and227 in_227 en wl_227 vdd gnd wordline_driver
-Xwl_driver_and228 in_228 en wl_228 vdd gnd wordline_driver
-Xwl_driver_and229 in_229 en wl_229 vdd gnd wordline_driver
-Xwl_driver_and230 in_230 en wl_230 vdd gnd wordline_driver
-Xwl_driver_and231 in_231 en wl_231 vdd gnd wordline_driver
-Xwl_driver_and232 in_232 en wl_232 vdd gnd wordline_driver
-Xwl_driver_and233 in_233 en wl_233 vdd gnd wordline_driver
-Xwl_driver_and234 in_234 en wl_234 vdd gnd wordline_driver
-Xwl_driver_and235 in_235 en wl_235 vdd gnd wordline_driver
-Xwl_driver_and236 in_236 en wl_236 vdd gnd wordline_driver
-Xwl_driver_and237 in_237 en wl_237 vdd gnd wordline_driver
-Xwl_driver_and238 in_238 en wl_238 vdd gnd wordline_driver
-Xwl_driver_and239 in_239 en wl_239 vdd gnd wordline_driver
-Xwl_driver_and240 in_240 en wl_240 vdd gnd wordline_driver
-Xwl_driver_and241 in_241 en wl_241 vdd gnd wordline_driver
-Xwl_driver_and242 in_242 en wl_242 vdd gnd wordline_driver
-Xwl_driver_and243 in_243 en wl_243 vdd gnd wordline_driver
-Xwl_driver_and244 in_244 en wl_244 vdd gnd wordline_driver
-Xwl_driver_and245 in_245 en wl_245 vdd gnd wordline_driver
-Xwl_driver_and246 in_246 en wl_246 vdd gnd wordline_driver
-Xwl_driver_and247 in_247 en wl_247 vdd gnd wordline_driver
-Xwl_driver_and248 in_248 en wl_248 vdd gnd wordline_driver
-Xwl_driver_and249 in_249 en wl_249 vdd gnd wordline_driver
-Xwl_driver_and250 in_250 en wl_250 vdd gnd wordline_driver
-Xwl_driver_and251 in_251 en wl_251 vdd gnd wordline_driver
-Xwl_driver_and252 in_252 en wl_252 vdd gnd wordline_driver
-Xwl_driver_and253 in_253 en wl_253 vdd gnd wordline_driver
-Xwl_driver_and254 in_254 en wl_254 vdd gnd wordline_driver
-Xwl_driver_and255 in_255 en wl_255 vdd gnd wordline_driver
-.ENDS wordline_driver_array
-
-.SUBCKT and2_dec_0 A B Z vdd gnd
-*.PININFO A:I B:I Z:O vdd:B gnd:B
-* INPUT : A 
-* INPUT : B 
-* OUTPUT: Z 
-* POWER : vdd 
-* GROUND: gnd 
-* size: 32
-Xpand2_dec_nand A B zb_int vdd gnd sky130_fd_bd_sram__openram_dp_nand2_dec
-Xpand2_dec_inv zb_int Z vdd gnd pinv_dec_0
-.ENDS and2_dec_0
-
-.SUBCKT port_address addr_0 addr_1 addr_2 addr_3 addr_4 addr_5 addr_6 addr_7 wl_en wl_0 wl_1 wl_2 wl_3 wl_4 wl_5 wl_6 wl_7 wl_8 wl_9 wl_10 wl_11 wl_12 wl_13 wl_14 wl_15 wl_16 wl_17 wl_18 wl_19 wl_20 wl_21 wl_22 wl_23 wl_24 wl_25 wl_26 wl_27 wl_28 wl_29 wl_30 wl_31 wl_32 wl_33 wl_34 wl_35 wl_36 wl_37 wl_38 wl_39 wl_40 wl_41 wl_42 wl_43 wl_44 wl_45 wl_46 wl_47 wl_48 wl_49 wl_50 wl_51 wl_52 wl_53 wl_54 wl_55 wl_56 wl_57 wl_58 wl_59 wl_60 wl_61 wl_62 wl_63 wl_64 wl_65 wl_66 wl_67 wl_68 wl_69 wl_70 wl_71 wl_72 wl_73 wl_74 wl_75 wl_76 wl_77 wl_78 wl_79 wl_80 wl_81 wl_82 wl_83 wl_84 wl_85 wl_86 wl_87 wl_88 wl_89 wl_90 wl_91 wl_92 wl_93 wl_94 wl_95 wl_96 wl_97 wl_98 wl_99 wl_100 wl_101 wl_102 wl_103 wl_104 wl_105 wl_106 wl_107 wl_108 wl_109 wl_110 wl_111 wl_112 wl_113 wl_114 wl_115 wl_116 wl_117 wl_118 wl_119 wl_120 wl_121 wl_122 wl_123 wl_124 wl_125 wl_126 wl_127 wl_128 wl_129 wl_130 wl_131 wl_132 wl_133 wl_134 wl_135 wl_136 wl_137 wl_138 wl_139 wl_140 wl_141 wl_142 wl_143 wl_144 wl_145 wl_146 wl_147 wl_148 wl_149 wl_150 wl_151 wl_152 wl_153 wl_154 wl_155 wl_156 wl_157 wl_158 wl_159 wl_160 wl_161 wl_162 wl_163 wl_164 wl_165 wl_166 wl_167 wl_168 wl_169 wl_170 wl_171 wl_172 wl_173 wl_174 wl_175 wl_176 wl_177 wl_178 wl_179 wl_180 wl_181 wl_182 wl_183 wl_184 wl_185 wl_186 wl_187 wl_188 wl_189 wl_190 wl_191 wl_192 wl_193 wl_194 wl_195 wl_196 wl_197 wl_198 wl_199 wl_200 wl_201 wl_202 wl_203 wl_204 wl_205 wl_206 wl_207 wl_208 wl_209 wl_210 wl_211 wl_212 wl_213 wl_214 wl_215 wl_216 wl_217 wl_218 wl_219 wl_220 wl_221 wl_222 wl_223 wl_224 wl_225 wl_226 wl_227 wl_228 wl_229 wl_230 wl_231 wl_232 wl_233 wl_234 wl_235 wl_236 wl_237 wl_238 wl_239 wl_240 wl_241 wl_242 wl_243 wl_244 wl_245 wl_246 wl_247 wl_248 wl_249 wl_250 wl_251 wl_252 wl_253 wl_254 wl_255 rbl_wl vdd gnd
-*.PININFO addr_0:I addr_1:I addr_2:I addr_3:I addr_4:I addr_5:I addr_6:I addr_7:I wl_en:I wl_0:O wl_1:O wl_2:O wl_3:O wl_4:O wl_5:O wl_6:O wl_7:O wl_8:O wl_9:O wl_10:O wl_11:O wl_12:O wl_13:O wl_14:O wl_15:O wl_16:O wl_17:O wl_18:O wl_19:O wl_20:O wl_21:O wl_22:O wl_23:O wl_24:O wl_25:O wl_26:O wl_27:O wl_28:O wl_29:O wl_30:O wl_31:O wl_32:O wl_33:O wl_34:O wl_35:O wl_36:O wl_37:O wl_38:O wl_39:O wl_40:O wl_41:O wl_42:O wl_43:O wl_44:O wl_45:O wl_46:O wl_47:O wl_48:O wl_49:O wl_50:O wl_51:O wl_52:O wl_53:O wl_54:O wl_55:O wl_56:O wl_57:O wl_58:O wl_59:O wl_60:O wl_61:O wl_62:O wl_63:O wl_64:O wl_65:O wl_66:O wl_67:O wl_68:O wl_69:O wl_70:O wl_71:O wl_72:O wl_73:O wl_74:O wl_75:O wl_76:O wl_77:O wl_78:O wl_79:O wl_80:O wl_81:O wl_82:O wl_83:O wl_84:O wl_85:O wl_86:O wl_87:O wl_88:O wl_89:O wl_90:O wl_91:O wl_92:O wl_93:O wl_94:O wl_95:O wl_96:O wl_97:O wl_98:O wl_99:O wl_100:O wl_101:O wl_102:O wl_103:O wl_104:O wl_105:O wl_106:O wl_107:O wl_108:O wl_109:O wl_110:O wl_111:O wl_112:O wl_113:O wl_114:O wl_115:O wl_116:O wl_117:O wl_118:O wl_119:O wl_120:O wl_121:O wl_122:O wl_123:O wl_124:O wl_125:O wl_126:O wl_127:O wl_128:O wl_129:O wl_130:O wl_131:O wl_132:O wl_133:O wl_134:O wl_135:O wl_136:O wl_137:O wl_138:O wl_139:O wl_140:O wl_141:O wl_142:O wl_143:O wl_144:O wl_145:O wl_146:O wl_147:O wl_148:O wl_149:O wl_150:O wl_151:O wl_152:O wl_153:O wl_154:O wl_155:O wl_156:O wl_157:O wl_158:O wl_159:O wl_160:O wl_161:O wl_162:O wl_163:O wl_164:O wl_165:O wl_166:O wl_167:O wl_168:O wl_169:O wl_170:O wl_171:O wl_172:O wl_173:O wl_174:O wl_175:O wl_176:O wl_177:O wl_178:O wl_179:O wl_180:O wl_181:O wl_182:O wl_183:O wl_184:O wl_185:O wl_186:O wl_187:O wl_188:O wl_189:O wl_190:O wl_191:O wl_192:O wl_193:O wl_194:O wl_195:O wl_196:O wl_197:O wl_198:O wl_199:O wl_200:O wl_201:O wl_202:O wl_203:O wl_204:O wl_205:O wl_206:O wl_207:O wl_208:O wl_209:O wl_210:O wl_211:O wl_212:O wl_213:O wl_214:O wl_215:O wl_216:O wl_217:O wl_218:O wl_219:O wl_220:O wl_221:O wl_222:O wl_223:O wl_224:O wl_225:O wl_226:O wl_227:O wl_228:O wl_229:O wl_230:O wl_231:O wl_232:O wl_233:O wl_234:O wl_235:O wl_236:O wl_237:O wl_238:O wl_239:O wl_240:O wl_241:O wl_242:O wl_243:O wl_244:O wl_245:O wl_246:O wl_247:O wl_248:O wl_249:O wl_250:O wl_251:O wl_252:O wl_253:O wl_254:O wl_255:O rbl_wl:O vdd:B gnd:B
-* INPUT : addr_0 
-* INPUT : addr_1 
-* INPUT : addr_2 
-* INPUT : addr_3 
-* INPUT : addr_4 
-* INPUT : addr_5 
-* INPUT : addr_6 
-* INPUT : addr_7 
-* INPUT : wl_en 
-* OUTPUT: wl_0 
-* OUTPUT: wl_1 
-* OUTPUT: wl_2 
-* OUTPUT: wl_3 
-* OUTPUT: wl_4 
-* OUTPUT: wl_5 
-* OUTPUT: wl_6 
-* OUTPUT: wl_7 
-* OUTPUT: wl_8 
-* OUTPUT: wl_9 
-* OUTPUT: wl_10 
-* OUTPUT: wl_11 
-* OUTPUT: wl_12 
-* OUTPUT: wl_13 
-* OUTPUT: wl_14 
-* OUTPUT: wl_15 
-* OUTPUT: wl_16 
-* OUTPUT: wl_17 
-* OUTPUT: wl_18 
-* OUTPUT: wl_19 
-* OUTPUT: wl_20 
-* OUTPUT: wl_21 
-* OUTPUT: wl_22 
-* OUTPUT: wl_23 
-* OUTPUT: wl_24 
-* OUTPUT: wl_25 
-* OUTPUT: wl_26 
-* OUTPUT: wl_27 
-* OUTPUT: wl_28 
-* OUTPUT: wl_29 
-* OUTPUT: wl_30 
-* OUTPUT: wl_31 
-* OUTPUT: wl_32 
-* OUTPUT: wl_33 
-* OUTPUT: wl_34 
-* OUTPUT: wl_35 
-* OUTPUT: wl_36 
-* OUTPUT: wl_37 
-* OUTPUT: wl_38 
-* OUTPUT: wl_39 
-* OUTPUT: wl_40 
-* OUTPUT: wl_41 
-* OUTPUT: wl_42 
-* OUTPUT: wl_43 
-* OUTPUT: wl_44 
-* OUTPUT: wl_45 
-* OUTPUT: wl_46 
-* OUTPUT: wl_47 
-* OUTPUT: wl_48 
-* OUTPUT: wl_49 
-* OUTPUT: wl_50 
-* OUTPUT: wl_51 
-* OUTPUT: wl_52 
-* OUTPUT: wl_53 
-* OUTPUT: wl_54 
-* OUTPUT: wl_55 
-* OUTPUT: wl_56 
-* OUTPUT: wl_57 
-* OUTPUT: wl_58 
-* OUTPUT: wl_59 
-* OUTPUT: wl_60 
-* OUTPUT: wl_61 
-* OUTPUT: wl_62 
-* OUTPUT: wl_63 
-* OUTPUT: wl_64 
-* OUTPUT: wl_65 
-* OUTPUT: wl_66 
-* OUTPUT: wl_67 
-* OUTPUT: wl_68 
-* OUTPUT: wl_69 
-* OUTPUT: wl_70 
-* OUTPUT: wl_71 
-* OUTPUT: wl_72 
-* OUTPUT: wl_73 
-* OUTPUT: wl_74 
-* OUTPUT: wl_75 
-* OUTPUT: wl_76 
-* OUTPUT: wl_77 
-* OUTPUT: wl_78 
-* OUTPUT: wl_79 
-* OUTPUT: wl_80 
-* OUTPUT: wl_81 
-* OUTPUT: wl_82 
-* OUTPUT: wl_83 
-* OUTPUT: wl_84 
-* OUTPUT: wl_85 
-* OUTPUT: wl_86 
-* OUTPUT: wl_87 
-* OUTPUT: wl_88 
-* OUTPUT: wl_89 
-* OUTPUT: wl_90 
-* OUTPUT: wl_91 
-* OUTPUT: wl_92 
-* OUTPUT: wl_93 
-* OUTPUT: wl_94 
-* OUTPUT: wl_95 
-* OUTPUT: wl_96 
-* OUTPUT: wl_97 
-* OUTPUT: wl_98 
-* OUTPUT: wl_99 
-* OUTPUT: wl_100 
-* OUTPUT: wl_101 
-* OUTPUT: wl_102 
-* OUTPUT: wl_103 
-* OUTPUT: wl_104 
-* OUTPUT: wl_105 
-* OUTPUT: wl_106 
-* OUTPUT: wl_107 
-* OUTPUT: wl_108 
-* OUTPUT: wl_109 
-* OUTPUT: wl_110 
-* OUTPUT: wl_111 
-* OUTPUT: wl_112 
-* OUTPUT: wl_113 
-* OUTPUT: wl_114 
-* OUTPUT: wl_115 
-* OUTPUT: wl_116 
-* OUTPUT: wl_117 
-* OUTPUT: wl_118 
-* OUTPUT: wl_119 
-* OUTPUT: wl_120 
-* OUTPUT: wl_121 
-* OUTPUT: wl_122 
-* OUTPUT: wl_123 
-* OUTPUT: wl_124 
-* OUTPUT: wl_125 
-* OUTPUT: wl_126 
-* OUTPUT: wl_127 
-* OUTPUT: wl_128 
-* OUTPUT: wl_129 
-* OUTPUT: wl_130 
-* OUTPUT: wl_131 
-* OUTPUT: wl_132 
-* OUTPUT: wl_133 
-* OUTPUT: wl_134 
-* OUTPUT: wl_135 
-* OUTPUT: wl_136 
-* OUTPUT: wl_137 
-* OUTPUT: wl_138 
-* OUTPUT: wl_139 
-* OUTPUT: wl_140 
-* OUTPUT: wl_141 
-* OUTPUT: wl_142 
-* OUTPUT: wl_143 
-* OUTPUT: wl_144 
-* OUTPUT: wl_145 
-* OUTPUT: wl_146 
-* OUTPUT: wl_147 
-* OUTPUT: wl_148 
-* OUTPUT: wl_149 
-* OUTPUT: wl_150 
-* OUTPUT: wl_151 
-* OUTPUT: wl_152 
-* OUTPUT: wl_153 
-* OUTPUT: wl_154 
-* OUTPUT: wl_155 
-* OUTPUT: wl_156 
-* OUTPUT: wl_157 
-* OUTPUT: wl_158 
-* OUTPUT: wl_159 
-* OUTPUT: wl_160 
-* OUTPUT: wl_161 
-* OUTPUT: wl_162 
-* OUTPUT: wl_163 
-* OUTPUT: wl_164 
-* OUTPUT: wl_165 
-* OUTPUT: wl_166 
-* OUTPUT: wl_167 
-* OUTPUT: wl_168 
-* OUTPUT: wl_169 
-* OUTPUT: wl_170 
-* OUTPUT: wl_171 
-* OUTPUT: wl_172 
-* OUTPUT: wl_173 
-* OUTPUT: wl_174 
-* OUTPUT: wl_175 
-* OUTPUT: wl_176 
-* OUTPUT: wl_177 
-* OUTPUT: wl_178 
-* OUTPUT: wl_179 
-* OUTPUT: wl_180 
-* OUTPUT: wl_181 
-* OUTPUT: wl_182 
-* OUTPUT: wl_183 
-* OUTPUT: wl_184 
-* OUTPUT: wl_185 
-* OUTPUT: wl_186 
-* OUTPUT: wl_187 
-* OUTPUT: wl_188 
-* OUTPUT: wl_189 
-* OUTPUT: wl_190 
-* OUTPUT: wl_191 
-* OUTPUT: wl_192 
-* OUTPUT: wl_193 
-* OUTPUT: wl_194 
-* OUTPUT: wl_195 
-* OUTPUT: wl_196 
-* OUTPUT: wl_197 
-* OUTPUT: wl_198 
-* OUTPUT: wl_199 
-* OUTPUT: wl_200 
-* OUTPUT: wl_201 
-* OUTPUT: wl_202 
-* OUTPUT: wl_203 
-* OUTPUT: wl_204 
-* OUTPUT: wl_205 
-* OUTPUT: wl_206 
-* OUTPUT: wl_207 
-* OUTPUT: wl_208 
-* OUTPUT: wl_209 
-* OUTPUT: wl_210 
-* OUTPUT: wl_211 
-* OUTPUT: wl_212 
-* OUTPUT: wl_213 
-* OUTPUT: wl_214 
-* OUTPUT: wl_215 
-* OUTPUT: wl_216 
-* OUTPUT: wl_217 
-* OUTPUT: wl_218 
-* OUTPUT: wl_219 
-* OUTPUT: wl_220 
-* OUTPUT: wl_221 
-* OUTPUT: wl_222 
-* OUTPUT: wl_223 
-* OUTPUT: wl_224 
-* OUTPUT: wl_225 
-* OUTPUT: wl_226 
-* OUTPUT: wl_227 
-* OUTPUT: wl_228 
-* OUTPUT: wl_229 
-* OUTPUT: wl_230 
-* OUTPUT: wl_231 
-* OUTPUT: wl_232 
-* OUTPUT: wl_233 
-* OUTPUT: wl_234 
-* OUTPUT: wl_235 
-* OUTPUT: wl_236 
-* OUTPUT: wl_237 
-* OUTPUT: wl_238 
-* OUTPUT: wl_239 
-* OUTPUT: wl_240 
-* OUTPUT: wl_241 
-* OUTPUT: wl_242 
-* OUTPUT: wl_243 
-* OUTPUT: wl_244 
-* OUTPUT: wl_245 
-* OUTPUT: wl_246 
-* OUTPUT: wl_247 
-* OUTPUT: wl_248 
-* OUTPUT: wl_249 
-* OUTPUT: wl_250 
-* OUTPUT: wl_251 
-* OUTPUT: wl_252 
-* OUTPUT: wl_253 
-* OUTPUT: wl_254 
-* OUTPUT: wl_255 
-* OUTPUT: rbl_wl 
-* POWER : vdd 
-* GROUND: gnd 
-Xrow_decoder addr_0 addr_1 addr_2 addr_3 addr_4 addr_5 addr_6 addr_7 dec_out_0 dec_out_1 dec_out_2 dec_out_3 dec_out_4 dec_out_5 dec_out_6 dec_out_7 dec_out_8 dec_out_9 dec_out_10 dec_out_11 dec_out_12 dec_out_13 dec_out_14 dec_out_15 dec_out_16 dec_out_17 dec_out_18 dec_out_19 dec_out_20 dec_out_21 dec_out_22 dec_out_23 dec_out_24 dec_out_25 dec_out_26 dec_out_27 dec_out_28 dec_out_29 dec_out_30 dec_out_31 dec_out_32 dec_out_33 dec_out_34 dec_out_35 dec_out_36 dec_out_37 dec_out_38 dec_out_39 dec_out_40 dec_out_41 dec_out_42 dec_out_43 dec_out_44 dec_out_45 dec_out_46 dec_out_47 dec_out_48 dec_out_49 dec_out_50 dec_out_51 dec_out_52 dec_out_53 dec_out_54 dec_out_55 dec_out_56 dec_out_57 dec_out_58 dec_out_59 dec_out_60 dec_out_61 dec_out_62 dec_out_63 dec_out_64 dec_out_65 dec_out_66 dec_out_67 dec_out_68 dec_out_69 dec_out_70 dec_out_71 dec_out_72 dec_out_73 dec_out_74 dec_out_75 dec_out_76 dec_out_77 dec_out_78 dec_out_79 dec_out_80 dec_out_81 dec_out_82 dec_out_83 dec_out_84 dec_out_85 dec_out_86 dec_out_87 dec_out_88 dec_out_89 dec_out_90 dec_out_91 dec_out_92 dec_out_93 dec_out_94 dec_out_95 dec_out_96 dec_out_97 dec_out_98 dec_out_99 dec_out_100 dec_out_101 dec_out_102 dec_out_103 dec_out_104 dec_out_105 dec_out_106 dec_out_107 dec_out_108 dec_out_109 dec_out_110 dec_out_111 dec_out_112 dec_out_113 dec_out_114 dec_out_115 dec_out_116 dec_out_117 dec_out_118 dec_out_119 dec_out_120 dec_out_121 dec_out_122 dec_out_123 dec_out_124 dec_out_125 dec_out_126 dec_out_127 dec_out_128 dec_out_129 dec_out_130 dec_out_131 dec_out_132 dec_out_133 dec_out_134 dec_out_135 dec_out_136 dec_out_137 dec_out_138 dec_out_139 dec_out_140 dec_out_141 dec_out_142 dec_out_143 dec_out_144 dec_out_145 dec_out_146 dec_out_147 dec_out_148 dec_out_149 dec_out_150 dec_out_151 dec_out_152 dec_out_153 dec_out_154 dec_out_155 dec_out_156 dec_out_157 dec_out_158 dec_out_159 dec_out_160 dec_out_161 dec_out_162 dec_out_163 dec_out_164 dec_out_165 dec_out_166 dec_out_167 dec_out_168 dec_out_169 dec_out_170 dec_out_171 dec_out_172 dec_out_173 dec_out_174 dec_out_175 dec_out_176 dec_out_177 dec_out_178 dec_out_179 dec_out_180 dec_out_181 dec_out_182 dec_out_183 dec_out_184 dec_out_185 dec_out_186 dec_out_187 dec_out_188 dec_out_189 dec_out_190 dec_out_191 dec_out_192 dec_out_193 dec_out_194 dec_out_195 dec_out_196 dec_out_197 dec_out_198 dec_out_199 dec_out_200 dec_out_201 dec_out_202 dec_out_203 dec_out_204 dec_out_205 dec_out_206 dec_out_207 dec_out_208 dec_out_209 dec_out_210 dec_out_211 dec_out_212 dec_out_213 dec_out_214 dec_out_215 dec_out_216 dec_out_217 dec_out_218 dec_out_219 dec_out_220 dec_out_221 dec_out_222 dec_out_223 dec_out_224 dec_out_225 dec_out_226 dec_out_227 dec_out_228 dec_out_229 dec_out_230 dec_out_231 dec_out_232 dec_out_233 dec_out_234 dec_out_235 dec_out_236 dec_out_237 dec_out_238 dec_out_239 dec_out_240 dec_out_241 dec_out_242 dec_out_243 dec_out_244 dec_out_245 dec_out_246 dec_out_247 dec_out_248 dec_out_249 dec_out_250 dec_out_251 dec_out_252 dec_out_253 dec_out_254 dec_out_255 vdd gnd hierarchical_decoder
-Xwordline_driver dec_out_0 dec_out_1 dec_out_2 dec_out_3 dec_out_4 dec_out_5 dec_out_6 dec_out_7 dec_out_8 dec_out_9 dec_out_10 dec_out_11 dec_out_12 dec_out_13 dec_out_14 dec_out_15 dec_out_16 dec_out_17 dec_out_18 dec_out_19 dec_out_20 dec_out_21 dec_out_22 dec_out_23 dec_out_24 dec_out_25 dec_out_26 dec_out_27 dec_out_28 dec_out_29 dec_out_30 dec_out_31 dec_out_32 dec_out_33 dec_out_34 dec_out_35 dec_out_36 dec_out_37 dec_out_38 dec_out_39 dec_out_40 dec_out_41 dec_out_42 dec_out_43 dec_out_44 dec_out_45 dec_out_46 dec_out_47 dec_out_48 dec_out_49 dec_out_50 dec_out_51 dec_out_52 dec_out_53 dec_out_54 dec_out_55 dec_out_56 dec_out_57 dec_out_58 dec_out_59 dec_out_60 dec_out_61 dec_out_62 dec_out_63 dec_out_64 dec_out_65 dec_out_66 dec_out_67 dec_out_68 dec_out_69 dec_out_70 dec_out_71 dec_out_72 dec_out_73 dec_out_74 dec_out_75 dec_out_76 dec_out_77 dec_out_78 dec_out_79 dec_out_80 dec_out_81 dec_out_82 dec_out_83 dec_out_84 dec_out_85 dec_out_86 dec_out_87 dec_out_88 dec_out_89 dec_out_90 dec_out_91 dec_out_92 dec_out_93 dec_out_94 dec_out_95 dec_out_96 dec_out_97 dec_out_98 dec_out_99 dec_out_100 dec_out_101 dec_out_102 dec_out_103 dec_out_104 dec_out_105 dec_out_106 dec_out_107 dec_out_108 dec_out_109 dec_out_110 dec_out_111 dec_out_112 dec_out_113 dec_out_114 dec_out_115 dec_out_116 dec_out_117 dec_out_118 dec_out_119 dec_out_120 dec_out_121 dec_out_122 dec_out_123 dec_out_124 dec_out_125 dec_out_126 dec_out_127 dec_out_128 dec_out_129 dec_out_130 dec_out_131 dec_out_132 dec_out_133 dec_out_134 dec_out_135 dec_out_136 dec_out_137 dec_out_138 dec_out_139 dec_out_140 dec_out_141 dec_out_142 dec_out_143 dec_out_144 dec_out_145 dec_out_146 dec_out_147 dec_out_148 dec_out_149 dec_out_150 dec_out_151 dec_out_152 dec_out_153 dec_out_154 dec_out_155 dec_out_156 dec_out_157 dec_out_158 dec_out_159 dec_out_160 dec_out_161 dec_out_162 dec_out_163 dec_out_164 dec_out_165 dec_out_166 dec_out_167 dec_out_168 dec_out_169 dec_out_170 dec_out_171 dec_out_172 dec_out_173 dec_out_174 dec_out_175 dec_out_176 dec_out_177 dec_out_178 dec_out_179 dec_out_180 dec_out_181 dec_out_182 dec_out_183 dec_out_184 dec_out_185 dec_out_186 dec_out_187 dec_out_188 dec_out_189 dec_out_190 dec_out_191 dec_out_192 dec_out_193 dec_out_194 dec_out_195 dec_out_196 dec_out_197 dec_out_198 dec_out_199 dec_out_200 dec_out_201 dec_out_202 dec_out_203 dec_out_204 dec_out_205 dec_out_206 dec_out_207 dec_out_208 dec_out_209 dec_out_210 dec_out_211 dec_out_212 dec_out_213 dec_out_214 dec_out_215 dec_out_216 dec_out_217 dec_out_218 dec_out_219 dec_out_220 dec_out_221 dec_out_222 dec_out_223 dec_out_224 dec_out_225 dec_out_226 dec_out_227 dec_out_228 dec_out_229 dec_out_230 dec_out_231 dec_out_232 dec_out_233 dec_out_234 dec_out_235 dec_out_236 dec_out_237 dec_out_238 dec_out_239 dec_out_240 dec_out_241 dec_out_242 dec_out_243 dec_out_244 dec_out_245 dec_out_246 dec_out_247 dec_out_248 dec_out_249 dec_out_250 dec_out_251 dec_out_252 dec_out_253 dec_out_254 dec_out_255 wl_0 wl_1 wl_2 wl_3 wl_4 wl_5 wl_6 wl_7 wl_8 wl_9 wl_10 wl_11 wl_12 wl_13 wl_14 wl_15 wl_16 wl_17 wl_18 wl_19 wl_20 wl_21 wl_22 wl_23 wl_24 wl_25 wl_26 wl_27 wl_28 wl_29 wl_30 wl_31 wl_32 wl_33 wl_34 wl_35 wl_36 wl_37 wl_38 wl_39 wl_40 wl_41 wl_42 wl_43 wl_44 wl_45 wl_46 wl_47 wl_48 wl_49 wl_50 wl_51 wl_52 wl_53 wl_54 wl_55 wl_56 wl_57 wl_58 wl_59 wl_60 wl_61 wl_62 wl_63 wl_64 wl_65 wl_66 wl_67 wl_68 wl_69 wl_70 wl_71 wl_72 wl_73 wl_74 wl_75 wl_76 wl_77 wl_78 wl_79 wl_80 wl_81 wl_82 wl_83 wl_84 wl_85 wl_86 wl_87 wl_88 wl_89 wl_90 wl_91 wl_92 wl_93 wl_94 wl_95 wl_96 wl_97 wl_98 wl_99 wl_100 wl_101 wl_102 wl_103 wl_104 wl_105 wl_106 wl_107 wl_108 wl_109 wl_110 wl_111 wl_112 wl_113 wl_114 wl_115 wl_116 wl_117 wl_118 wl_119 wl_120 wl_121 wl_122 wl_123 wl_124 wl_125 wl_126 wl_127 wl_128 wl_129 wl_130 wl_131 wl_132 wl_133 wl_134 wl_135 wl_136 wl_137 wl_138 wl_139 wl_140 wl_141 wl_142 wl_143 wl_144 wl_145 wl_146 wl_147 wl_148 wl_149 wl_150 wl_151 wl_152 wl_153 wl_154 wl_155 wl_156 wl_157 wl_158 wl_159 wl_160 wl_161 wl_162 wl_163 wl_164 wl_165 wl_166 wl_167 wl_168 wl_169 wl_170 wl_171 wl_172 wl_173 wl_174 wl_175 wl_176 wl_177 wl_178 wl_179 wl_180 wl_181 wl_182 wl_183 wl_184 wl_185 wl_186 wl_187 wl_188 wl_189 wl_190 wl_191 wl_192 wl_193 wl_194 wl_195 wl_196 wl_197 wl_198 wl_199 wl_200 wl_201 wl_202 wl_203 wl_204 wl_205 wl_206 wl_207 wl_208 wl_209 wl_210 wl_211 wl_212 wl_213 wl_214 wl_215 wl_216 wl_217 wl_218 wl_219 wl_220 wl_221 wl_222 wl_223 wl_224 wl_225 wl_226 wl_227 wl_228 wl_229 wl_230 wl_231 wl_232 wl_233 wl_234 wl_235 wl_236 wl_237 wl_238 wl_239 wl_240 wl_241 wl_242 wl_243 wl_244 wl_245 wl_246 wl_247 wl_248 wl_249 wl_250 wl_251 wl_252 wl_253 wl_254 wl_255 wl_en vdd gnd wordline_driver_array
-Xrbl_driver wl_en vdd rbl_wl vdd gnd and2_dec_0
-.ENDS port_address
-
-.SUBCKT port_address_0 addr_0 addr_1 addr_2 addr_3 addr_4 addr_5 addr_6 addr_7 wl_en wl_0 wl_1 wl_2 wl_3 wl_4 wl_5 wl_6 wl_7 wl_8 wl_9 wl_10 wl_11 wl_12 wl_13 wl_14 wl_15 wl_16 wl_17 wl_18 wl_19 wl_20 wl_21 wl_22 wl_23 wl_24 wl_25 wl_26 wl_27 wl_28 wl_29 wl_30 wl_31 wl_32 wl_33 wl_34 wl_35 wl_36 wl_37 wl_38 wl_39 wl_40 wl_41 wl_42 wl_43 wl_44 wl_45 wl_46 wl_47 wl_48 wl_49 wl_50 wl_51 wl_52 wl_53 wl_54 wl_55 wl_56 wl_57 wl_58 wl_59 wl_60 wl_61 wl_62 wl_63 wl_64 wl_65 wl_66 wl_67 wl_68 wl_69 wl_70 wl_71 wl_72 wl_73 wl_74 wl_75 wl_76 wl_77 wl_78 wl_79 wl_80 wl_81 wl_82 wl_83 wl_84 wl_85 wl_86 wl_87 wl_88 wl_89 wl_90 wl_91 wl_92 wl_93 wl_94 wl_95 wl_96 wl_97 wl_98 wl_99 wl_100 wl_101 wl_102 wl_103 wl_104 wl_105 wl_106 wl_107 wl_108 wl_109 wl_110 wl_111 wl_112 wl_113 wl_114 wl_115 wl_116 wl_117 wl_118 wl_119 wl_120 wl_121 wl_122 wl_123 wl_124 wl_125 wl_126 wl_127 wl_128 wl_129 wl_130 wl_131 wl_132 wl_133 wl_134 wl_135 wl_136 wl_137 wl_138 wl_139 wl_140 wl_141 wl_142 wl_143 wl_144 wl_145 wl_146 wl_147 wl_148 wl_149 wl_150 wl_151 wl_152 wl_153 wl_154 wl_155 wl_156 wl_157 wl_158 wl_159 wl_160 wl_161 wl_162 wl_163 wl_164 wl_165 wl_166 wl_167 wl_168 wl_169 wl_170 wl_171 wl_172 wl_173 wl_174 wl_175 wl_176 wl_177 wl_178 wl_179 wl_180 wl_181 wl_182 wl_183 wl_184 wl_185 wl_186 wl_187 wl_188 wl_189 wl_190 wl_191 wl_192 wl_193 wl_194 wl_195 wl_196 wl_197 wl_198 wl_199 wl_200 wl_201 wl_202 wl_203 wl_204 wl_205 wl_206 wl_207 wl_208 wl_209 wl_210 wl_211 wl_212 wl_213 wl_214 wl_215 wl_216 wl_217 wl_218 wl_219 wl_220 wl_221 wl_222 wl_223 wl_224 wl_225 wl_226 wl_227 wl_228 wl_229 wl_230 wl_231 wl_232 wl_233 wl_234 wl_235 wl_236 wl_237 wl_238 wl_239 wl_240 wl_241 wl_242 wl_243 wl_244 wl_245 wl_246 wl_247 wl_248 wl_249 wl_250 wl_251 wl_252 wl_253 wl_254 wl_255 rbl_wl vdd gnd
-*.PININFO addr_0:I addr_1:I addr_2:I addr_3:I addr_4:I addr_5:I addr_6:I addr_7:I wl_en:I wl_0:O wl_1:O wl_2:O wl_3:O wl_4:O wl_5:O wl_6:O wl_7:O wl_8:O wl_9:O wl_10:O wl_11:O wl_12:O wl_13:O wl_14:O wl_15:O wl_16:O wl_17:O wl_18:O wl_19:O wl_20:O wl_21:O wl_22:O wl_23:O wl_24:O wl_25:O wl_26:O wl_27:O wl_28:O wl_29:O wl_30:O wl_31:O wl_32:O wl_33:O wl_34:O wl_35:O wl_36:O wl_37:O wl_38:O wl_39:O wl_40:O wl_41:O wl_42:O wl_43:O wl_44:O wl_45:O wl_46:O wl_47:O wl_48:O wl_49:O wl_50:O wl_51:O wl_52:O wl_53:O wl_54:O wl_55:O wl_56:O wl_57:O wl_58:O wl_59:O wl_60:O wl_61:O wl_62:O wl_63:O wl_64:O wl_65:O wl_66:O wl_67:O wl_68:O wl_69:O wl_70:O wl_71:O wl_72:O wl_73:O wl_74:O wl_75:O wl_76:O wl_77:O wl_78:O wl_79:O wl_80:O wl_81:O wl_82:O wl_83:O wl_84:O wl_85:O wl_86:O wl_87:O wl_88:O wl_89:O wl_90:O wl_91:O wl_92:O wl_93:O wl_94:O wl_95:O wl_96:O wl_97:O wl_98:O wl_99:O wl_100:O wl_101:O wl_102:O wl_103:O wl_104:O wl_105:O wl_106:O wl_107:O wl_108:O wl_109:O wl_110:O wl_111:O wl_112:O wl_113:O wl_114:O wl_115:O wl_116:O wl_117:O wl_118:O wl_119:O wl_120:O wl_121:O wl_122:O wl_123:O wl_124:O wl_125:O wl_126:O wl_127:O wl_128:O wl_129:O wl_130:O wl_131:O wl_132:O wl_133:O wl_134:O wl_135:O wl_136:O wl_137:O wl_138:O wl_139:O wl_140:O wl_141:O wl_142:O wl_143:O wl_144:O wl_145:O wl_146:O wl_147:O wl_148:O wl_149:O wl_150:O wl_151:O wl_152:O wl_153:O wl_154:O wl_155:O wl_156:O wl_157:O wl_158:O wl_159:O wl_160:O wl_161:O wl_162:O wl_163:O wl_164:O wl_165:O wl_166:O wl_167:O wl_168:O wl_169:O wl_170:O wl_171:O wl_172:O wl_173:O wl_174:O wl_175:O wl_176:O wl_177:O wl_178:O wl_179:O wl_180:O wl_181:O wl_182:O wl_183:O wl_184:O wl_185:O wl_186:O wl_187:O wl_188:O wl_189:O wl_190:O wl_191:O wl_192:O wl_193:O wl_194:O wl_195:O wl_196:O wl_197:O wl_198:O wl_199:O wl_200:O wl_201:O wl_202:O wl_203:O wl_204:O wl_205:O wl_206:O wl_207:O wl_208:O wl_209:O wl_210:O wl_211:O wl_212:O wl_213:O wl_214:O wl_215:O wl_216:O wl_217:O wl_218:O wl_219:O wl_220:O wl_221:O wl_222:O wl_223:O wl_224:O wl_225:O wl_226:O wl_227:O wl_228:O wl_229:O wl_230:O wl_231:O wl_232:O wl_233:O wl_234:O wl_235:O wl_236:O wl_237:O wl_238:O wl_239:O wl_240:O wl_241:O wl_242:O wl_243:O wl_244:O wl_245:O wl_246:O wl_247:O wl_248:O wl_249:O wl_250:O wl_251:O wl_252:O wl_253:O wl_254:O wl_255:O rbl_wl:O vdd:B gnd:B
-* INPUT : addr_0 
-* INPUT : addr_1 
-* INPUT : addr_2 
-* INPUT : addr_3 
-* INPUT : addr_4 
-* INPUT : addr_5 
-* INPUT : addr_6 
-* INPUT : addr_7 
-* INPUT : wl_en 
-* OUTPUT: wl_0 
-* OUTPUT: wl_1 
-* OUTPUT: wl_2 
-* OUTPUT: wl_3 
-* OUTPUT: wl_4 
-* OUTPUT: wl_5 
-* OUTPUT: wl_6 
-* OUTPUT: wl_7 
-* OUTPUT: wl_8 
-* OUTPUT: wl_9 
-* OUTPUT: wl_10 
-* OUTPUT: wl_11 
-* OUTPUT: wl_12 
-* OUTPUT: wl_13 
-* OUTPUT: wl_14 
-* OUTPUT: wl_15 
-* OUTPUT: wl_16 
-* OUTPUT: wl_17 
-* OUTPUT: wl_18 
-* OUTPUT: wl_19 
-* OUTPUT: wl_20 
-* OUTPUT: wl_21 
-* OUTPUT: wl_22 
-* OUTPUT: wl_23 
-* OUTPUT: wl_24 
-* OUTPUT: wl_25 
-* OUTPUT: wl_26 
-* OUTPUT: wl_27 
-* OUTPUT: wl_28 
-* OUTPUT: wl_29 
-* OUTPUT: wl_30 
-* OUTPUT: wl_31 
-* OUTPUT: wl_32 
-* OUTPUT: wl_33 
-* OUTPUT: wl_34 
-* OUTPUT: wl_35 
-* OUTPUT: wl_36 
-* OUTPUT: wl_37 
-* OUTPUT: wl_38 
-* OUTPUT: wl_39 
-* OUTPUT: wl_40 
-* OUTPUT: wl_41 
-* OUTPUT: wl_42 
-* OUTPUT: wl_43 
-* OUTPUT: wl_44 
-* OUTPUT: wl_45 
-* OUTPUT: wl_46 
-* OUTPUT: wl_47 
-* OUTPUT: wl_48 
-* OUTPUT: wl_49 
-* OUTPUT: wl_50 
-* OUTPUT: wl_51 
-* OUTPUT: wl_52 
-* OUTPUT: wl_53 
-* OUTPUT: wl_54 
-* OUTPUT: wl_55 
-* OUTPUT: wl_56 
-* OUTPUT: wl_57 
-* OUTPUT: wl_58 
-* OUTPUT: wl_59 
-* OUTPUT: wl_60 
-* OUTPUT: wl_61 
-* OUTPUT: wl_62 
-* OUTPUT: wl_63 
-* OUTPUT: wl_64 
-* OUTPUT: wl_65 
-* OUTPUT: wl_66 
-* OUTPUT: wl_67 
-* OUTPUT: wl_68 
-* OUTPUT: wl_69 
-* OUTPUT: wl_70 
-* OUTPUT: wl_71 
-* OUTPUT: wl_72 
-* OUTPUT: wl_73 
-* OUTPUT: wl_74 
-* OUTPUT: wl_75 
-* OUTPUT: wl_76 
-* OUTPUT: wl_77 
-* OUTPUT: wl_78 
-* OUTPUT: wl_79 
-* OUTPUT: wl_80 
-* OUTPUT: wl_81 
-* OUTPUT: wl_82 
-* OUTPUT: wl_83 
-* OUTPUT: wl_84 
-* OUTPUT: wl_85 
-* OUTPUT: wl_86 
-* OUTPUT: wl_87 
-* OUTPUT: wl_88 
-* OUTPUT: wl_89 
-* OUTPUT: wl_90 
-* OUTPUT: wl_91 
-* OUTPUT: wl_92 
-* OUTPUT: wl_93 
-* OUTPUT: wl_94 
-* OUTPUT: wl_95 
-* OUTPUT: wl_96 
-* OUTPUT: wl_97 
-* OUTPUT: wl_98 
-* OUTPUT: wl_99 
-* OUTPUT: wl_100 
-* OUTPUT: wl_101 
-* OUTPUT: wl_102 
-* OUTPUT: wl_103 
-* OUTPUT: wl_104 
-* OUTPUT: wl_105 
-* OUTPUT: wl_106 
-* OUTPUT: wl_107 
-* OUTPUT: wl_108 
-* OUTPUT: wl_109 
-* OUTPUT: wl_110 
-* OUTPUT: wl_111 
-* OUTPUT: wl_112 
-* OUTPUT: wl_113 
-* OUTPUT: wl_114 
-* OUTPUT: wl_115 
-* OUTPUT: wl_116 
-* OUTPUT: wl_117 
-* OUTPUT: wl_118 
-* OUTPUT: wl_119 
-* OUTPUT: wl_120 
-* OUTPUT: wl_121 
-* OUTPUT: wl_122 
-* OUTPUT: wl_123 
-* OUTPUT: wl_124 
-* OUTPUT: wl_125 
-* OUTPUT: wl_126 
-* OUTPUT: wl_127 
-* OUTPUT: wl_128 
-* OUTPUT: wl_129 
-* OUTPUT: wl_130 
-* OUTPUT: wl_131 
-* OUTPUT: wl_132 
-* OUTPUT: wl_133 
-* OUTPUT: wl_134 
-* OUTPUT: wl_135 
-* OUTPUT: wl_136 
-* OUTPUT: wl_137 
-* OUTPUT: wl_138 
-* OUTPUT: wl_139 
-* OUTPUT: wl_140 
-* OUTPUT: wl_141 
-* OUTPUT: wl_142 
-* OUTPUT: wl_143 
-* OUTPUT: wl_144 
-* OUTPUT: wl_145 
-* OUTPUT: wl_146 
-* OUTPUT: wl_147 
-* OUTPUT: wl_148 
-* OUTPUT: wl_149 
-* OUTPUT: wl_150 
-* OUTPUT: wl_151 
-* OUTPUT: wl_152 
-* OUTPUT: wl_153 
-* OUTPUT: wl_154 
-* OUTPUT: wl_155 
-* OUTPUT: wl_156 
-* OUTPUT: wl_157 
-* OUTPUT: wl_158 
-* OUTPUT: wl_159 
-* OUTPUT: wl_160 
-* OUTPUT: wl_161 
-* OUTPUT: wl_162 
-* OUTPUT: wl_163 
-* OUTPUT: wl_164 
-* OUTPUT: wl_165 
-* OUTPUT: wl_166 
-* OUTPUT: wl_167 
-* OUTPUT: wl_168 
-* OUTPUT: wl_169 
-* OUTPUT: wl_170 
-* OUTPUT: wl_171 
-* OUTPUT: wl_172 
-* OUTPUT: wl_173 
-* OUTPUT: wl_174 
-* OUTPUT: wl_175 
-* OUTPUT: wl_176 
-* OUTPUT: wl_177 
-* OUTPUT: wl_178 
-* OUTPUT: wl_179 
-* OUTPUT: wl_180 
-* OUTPUT: wl_181 
-* OUTPUT: wl_182 
-* OUTPUT: wl_183 
-* OUTPUT: wl_184 
-* OUTPUT: wl_185 
-* OUTPUT: wl_186 
-* OUTPUT: wl_187 
-* OUTPUT: wl_188 
-* OUTPUT: wl_189 
-* OUTPUT: wl_190 
-* OUTPUT: wl_191 
-* OUTPUT: wl_192 
-* OUTPUT: wl_193 
-* OUTPUT: wl_194 
-* OUTPUT: wl_195 
-* OUTPUT: wl_196 
-* OUTPUT: wl_197 
-* OUTPUT: wl_198 
-* OUTPUT: wl_199 
-* OUTPUT: wl_200 
-* OUTPUT: wl_201 
-* OUTPUT: wl_202 
-* OUTPUT: wl_203 
-* OUTPUT: wl_204 
-* OUTPUT: wl_205 
-* OUTPUT: wl_206 
-* OUTPUT: wl_207 
-* OUTPUT: wl_208 
-* OUTPUT: wl_209 
-* OUTPUT: wl_210 
-* OUTPUT: wl_211 
-* OUTPUT: wl_212 
-* OUTPUT: wl_213 
-* OUTPUT: wl_214 
-* OUTPUT: wl_215 
-* OUTPUT: wl_216 
-* OUTPUT: wl_217 
-* OUTPUT: wl_218 
-* OUTPUT: wl_219 
-* OUTPUT: wl_220 
-* OUTPUT: wl_221 
-* OUTPUT: wl_222 
-* OUTPUT: wl_223 
-* OUTPUT: wl_224 
-* OUTPUT: wl_225 
-* OUTPUT: wl_226 
-* OUTPUT: wl_227 
-* OUTPUT: wl_228 
-* OUTPUT: wl_229 
-* OUTPUT: wl_230 
-* OUTPUT: wl_231 
-* OUTPUT: wl_232 
-* OUTPUT: wl_233 
-* OUTPUT: wl_234 
-* OUTPUT: wl_235 
-* OUTPUT: wl_236 
-* OUTPUT: wl_237 
-* OUTPUT: wl_238 
-* OUTPUT: wl_239 
-* OUTPUT: wl_240 
-* OUTPUT: wl_241 
-* OUTPUT: wl_242 
-* OUTPUT: wl_243 
-* OUTPUT: wl_244 
-* OUTPUT: wl_245 
-* OUTPUT: wl_246 
-* OUTPUT: wl_247 
-* OUTPUT: wl_248 
-* OUTPUT: wl_249 
-* OUTPUT: wl_250 
-* OUTPUT: wl_251 
-* OUTPUT: wl_252 
-* OUTPUT: wl_253 
-* OUTPUT: wl_254 
-* OUTPUT: wl_255 
-* OUTPUT: rbl_wl 
-* POWER : vdd 
-* GROUND: gnd 
-Xrow_decoder addr_0 addr_1 addr_2 addr_3 addr_4 addr_5 addr_6 addr_7 dec_out_0 dec_out_1 dec_out_2 dec_out_3 dec_out_4 dec_out_5 dec_out_6 dec_out_7 dec_out_8 dec_out_9 dec_out_10 dec_out_11 dec_out_12 dec_out_13 dec_out_14 dec_out_15 dec_out_16 dec_out_17 dec_out_18 dec_out_19 dec_out_20 dec_out_21 dec_out_22 dec_out_23 dec_out_24 dec_out_25 dec_out_26 dec_out_27 dec_out_28 dec_out_29 dec_out_30 dec_out_31 dec_out_32 dec_out_33 dec_out_34 dec_out_35 dec_out_36 dec_out_37 dec_out_38 dec_out_39 dec_out_40 dec_out_41 dec_out_42 dec_out_43 dec_out_44 dec_out_45 dec_out_46 dec_out_47 dec_out_48 dec_out_49 dec_out_50 dec_out_51 dec_out_52 dec_out_53 dec_out_54 dec_out_55 dec_out_56 dec_out_57 dec_out_58 dec_out_59 dec_out_60 dec_out_61 dec_out_62 dec_out_63 dec_out_64 dec_out_65 dec_out_66 dec_out_67 dec_out_68 dec_out_69 dec_out_70 dec_out_71 dec_out_72 dec_out_73 dec_out_74 dec_out_75 dec_out_76 dec_out_77 dec_out_78 dec_out_79 dec_out_80 dec_out_81 dec_out_82 dec_out_83 dec_out_84 dec_out_85 dec_out_86 dec_out_87 dec_out_88 dec_out_89 dec_out_90 dec_out_91 dec_out_92 dec_out_93 dec_out_94 dec_out_95 dec_out_96 dec_out_97 dec_out_98 dec_out_99 dec_out_100 dec_out_101 dec_out_102 dec_out_103 dec_out_104 dec_out_105 dec_out_106 dec_out_107 dec_out_108 dec_out_109 dec_out_110 dec_out_111 dec_out_112 dec_out_113 dec_out_114 dec_out_115 dec_out_116 dec_out_117 dec_out_118 dec_out_119 dec_out_120 dec_out_121 dec_out_122 dec_out_123 dec_out_124 dec_out_125 dec_out_126 dec_out_127 dec_out_128 dec_out_129 dec_out_130 dec_out_131 dec_out_132 dec_out_133 dec_out_134 dec_out_135 dec_out_136 dec_out_137 dec_out_138 dec_out_139 dec_out_140 dec_out_141 dec_out_142 dec_out_143 dec_out_144 dec_out_145 dec_out_146 dec_out_147 dec_out_148 dec_out_149 dec_out_150 dec_out_151 dec_out_152 dec_out_153 dec_out_154 dec_out_155 dec_out_156 dec_out_157 dec_out_158 dec_out_159 dec_out_160 dec_out_161 dec_out_162 dec_out_163 dec_out_164 dec_out_165 dec_out_166 dec_out_167 dec_out_168 dec_out_169 dec_out_170 dec_out_171 dec_out_172 dec_out_173 dec_out_174 dec_out_175 dec_out_176 dec_out_177 dec_out_178 dec_out_179 dec_out_180 dec_out_181 dec_out_182 dec_out_183 dec_out_184 dec_out_185 dec_out_186 dec_out_187 dec_out_188 dec_out_189 dec_out_190 dec_out_191 dec_out_192 dec_out_193 dec_out_194 dec_out_195 dec_out_196 dec_out_197 dec_out_198 dec_out_199 dec_out_200 dec_out_201 dec_out_202 dec_out_203 dec_out_204 dec_out_205 dec_out_206 dec_out_207 dec_out_208 dec_out_209 dec_out_210 dec_out_211 dec_out_212 dec_out_213 dec_out_214 dec_out_215 dec_out_216 dec_out_217 dec_out_218 dec_out_219 dec_out_220 dec_out_221 dec_out_222 dec_out_223 dec_out_224 dec_out_225 dec_out_226 dec_out_227 dec_out_228 dec_out_229 dec_out_230 dec_out_231 dec_out_232 dec_out_233 dec_out_234 dec_out_235 dec_out_236 dec_out_237 dec_out_238 dec_out_239 dec_out_240 dec_out_241 dec_out_242 dec_out_243 dec_out_244 dec_out_245 dec_out_246 dec_out_247 dec_out_248 dec_out_249 dec_out_250 dec_out_251 dec_out_252 dec_out_253 dec_out_254 dec_out_255 vdd gnd hierarchical_decoder
-Xwordline_driver dec_out_0 dec_out_1 dec_out_2 dec_out_3 dec_out_4 dec_out_5 dec_out_6 dec_out_7 dec_out_8 dec_out_9 dec_out_10 dec_out_11 dec_out_12 dec_out_13 dec_out_14 dec_out_15 dec_out_16 dec_out_17 dec_out_18 dec_out_19 dec_out_20 dec_out_21 dec_out_22 dec_out_23 dec_out_24 dec_out_25 dec_out_26 dec_out_27 dec_out_28 dec_out_29 dec_out_30 dec_out_31 dec_out_32 dec_out_33 dec_out_34 dec_out_35 dec_out_36 dec_out_37 dec_out_38 dec_out_39 dec_out_40 dec_out_41 dec_out_42 dec_out_43 dec_out_44 dec_out_45 dec_out_46 dec_out_47 dec_out_48 dec_out_49 dec_out_50 dec_out_51 dec_out_52 dec_out_53 dec_out_54 dec_out_55 dec_out_56 dec_out_57 dec_out_58 dec_out_59 dec_out_60 dec_out_61 dec_out_62 dec_out_63 dec_out_64 dec_out_65 dec_out_66 dec_out_67 dec_out_68 dec_out_69 dec_out_70 dec_out_71 dec_out_72 dec_out_73 dec_out_74 dec_out_75 dec_out_76 dec_out_77 dec_out_78 dec_out_79 dec_out_80 dec_out_81 dec_out_82 dec_out_83 dec_out_84 dec_out_85 dec_out_86 dec_out_87 dec_out_88 dec_out_89 dec_out_90 dec_out_91 dec_out_92 dec_out_93 dec_out_94 dec_out_95 dec_out_96 dec_out_97 dec_out_98 dec_out_99 dec_out_100 dec_out_101 dec_out_102 dec_out_103 dec_out_104 dec_out_105 dec_out_106 dec_out_107 dec_out_108 dec_out_109 dec_out_110 dec_out_111 dec_out_112 dec_out_113 dec_out_114 dec_out_115 dec_out_116 dec_out_117 dec_out_118 dec_out_119 dec_out_120 dec_out_121 dec_out_122 dec_out_123 dec_out_124 dec_out_125 dec_out_126 dec_out_127 dec_out_128 dec_out_129 dec_out_130 dec_out_131 dec_out_132 dec_out_133 dec_out_134 dec_out_135 dec_out_136 dec_out_137 dec_out_138 dec_out_139 dec_out_140 dec_out_141 dec_out_142 dec_out_143 dec_out_144 dec_out_145 dec_out_146 dec_out_147 dec_out_148 dec_out_149 dec_out_150 dec_out_151 dec_out_152 dec_out_153 dec_out_154 dec_out_155 dec_out_156 dec_out_157 dec_out_158 dec_out_159 dec_out_160 dec_out_161 dec_out_162 dec_out_163 dec_out_164 dec_out_165 dec_out_166 dec_out_167 dec_out_168 dec_out_169 dec_out_170 dec_out_171 dec_out_172 dec_out_173 dec_out_174 dec_out_175 dec_out_176 dec_out_177 dec_out_178 dec_out_179 dec_out_180 dec_out_181 dec_out_182 dec_out_183 dec_out_184 dec_out_185 dec_out_186 dec_out_187 dec_out_188 dec_out_189 dec_out_190 dec_out_191 dec_out_192 dec_out_193 dec_out_194 dec_out_195 dec_out_196 dec_out_197 dec_out_198 dec_out_199 dec_out_200 dec_out_201 dec_out_202 dec_out_203 dec_out_204 dec_out_205 dec_out_206 dec_out_207 dec_out_208 dec_out_209 dec_out_210 dec_out_211 dec_out_212 dec_out_213 dec_out_214 dec_out_215 dec_out_216 dec_out_217 dec_out_218 dec_out_219 dec_out_220 dec_out_221 dec_out_222 dec_out_223 dec_out_224 dec_out_225 dec_out_226 dec_out_227 dec_out_228 dec_out_229 dec_out_230 dec_out_231 dec_out_232 dec_out_233 dec_out_234 dec_out_235 dec_out_236 dec_out_237 dec_out_238 dec_out_239 dec_out_240 dec_out_241 dec_out_242 dec_out_243 dec_out_244 dec_out_245 dec_out_246 dec_out_247 dec_out_248 dec_out_249 dec_out_250 dec_out_251 dec_out_252 dec_out_253 dec_out_254 dec_out_255 wl_0 wl_1 wl_2 wl_3 wl_4 wl_5 wl_6 wl_7 wl_8 wl_9 wl_10 wl_11 wl_12 wl_13 wl_14 wl_15 wl_16 wl_17 wl_18 wl_19 wl_20 wl_21 wl_22 wl_23 wl_24 wl_25 wl_26 wl_27 wl_28 wl_29 wl_30 wl_31 wl_32 wl_33 wl_34 wl_35 wl_36 wl_37 wl_38 wl_39 wl_40 wl_41 wl_42 wl_43 wl_44 wl_45 wl_46 wl_47 wl_48 wl_49 wl_50 wl_51 wl_52 wl_53 wl_54 wl_55 wl_56 wl_57 wl_58 wl_59 wl_60 wl_61 wl_62 wl_63 wl_64 wl_65 wl_66 wl_67 wl_68 wl_69 wl_70 wl_71 wl_72 wl_73 wl_74 wl_75 wl_76 wl_77 wl_78 wl_79 wl_80 wl_81 wl_82 wl_83 wl_84 wl_85 wl_86 wl_87 wl_88 wl_89 wl_90 wl_91 wl_92 wl_93 wl_94 wl_95 wl_96 wl_97 wl_98 wl_99 wl_100 wl_101 wl_102 wl_103 wl_104 wl_105 wl_106 wl_107 wl_108 wl_109 wl_110 wl_111 wl_112 wl_113 wl_114 wl_115 wl_116 wl_117 wl_118 wl_119 wl_120 wl_121 wl_122 wl_123 wl_124 wl_125 wl_126 wl_127 wl_128 wl_129 wl_130 wl_131 wl_132 wl_133 wl_134 wl_135 wl_136 wl_137 wl_138 wl_139 wl_140 wl_141 wl_142 wl_143 wl_144 wl_145 wl_146 wl_147 wl_148 wl_149 wl_150 wl_151 wl_152 wl_153 wl_154 wl_155 wl_156 wl_157 wl_158 wl_159 wl_160 wl_161 wl_162 wl_163 wl_164 wl_165 wl_166 wl_167 wl_168 wl_169 wl_170 wl_171 wl_172 wl_173 wl_174 wl_175 wl_176 wl_177 wl_178 wl_179 wl_180 wl_181 wl_182 wl_183 wl_184 wl_185 wl_186 wl_187 wl_188 wl_189 wl_190 wl_191 wl_192 wl_193 wl_194 wl_195 wl_196 wl_197 wl_198 wl_199 wl_200 wl_201 wl_202 wl_203 wl_204 wl_205 wl_206 wl_207 wl_208 wl_209 wl_210 wl_211 wl_212 wl_213 wl_214 wl_215 wl_216 wl_217 wl_218 wl_219 wl_220 wl_221 wl_222 wl_223 wl_224 wl_225 wl_226 wl_227 wl_228 wl_229 wl_230 wl_231 wl_232 wl_233 wl_234 wl_235 wl_236 wl_237 wl_238 wl_239 wl_240 wl_241 wl_242 wl_243 wl_244 wl_245 wl_246 wl_247 wl_248 wl_249 wl_250 wl_251 wl_252 wl_253 wl_254 wl_255 wl_en vdd gnd wordline_driver_array
-Xrbl_driver wl_en vdd rbl_wl vdd gnd and2_dec_0
-.ENDS port_address_0
-* Copyright 2020 The SkyWater PDK Authors
-*
-* Licensed under the Apache License, Version 2.0 (the "License");
-* you may not use this file except in compliance with the License.
-* You may obtain a copy of the License at
-*
-*     https://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing, software
-* distributed under the License is distributed on an "AS IS" BASIS,
-* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-* See the License for the specific language governing permissions and
-* limitations under the License.
-*
-* SPDX-License-Identifier: Apache-2.0
-
 
 .SUBCKT sky130_fd_bd_sram__openram_dp_cell BL0 BR0 BL1 BR1 WL0 WL1 VDD GND
 
@@ -39525,6 +37189,2130 @@ Xreplica_col_1 rbl_bl_0_1 rbl_bl_1_1 rbl_br_0_1 rbl_br_1_1 rbl_wl_0_0 gnd wl_0_0
 Xdummy_row_0 bl_0_0 bl_1_0 br_0_0 br_1_0 bl_0_1 bl_1_1 br_0_1 br_1_1 bl_0_2 bl_1_2 br_0_2 br_1_2 bl_0_3 bl_1_3 br_0_3 br_1_3 bl_0_4 bl_1_4 br_0_4 br_1_4 bl_0_5 bl_1_5 br_0_5 br_1_5 bl_0_6 bl_1_6 br_0_6 br_1_6 bl_0_7 bl_1_7 br_0_7 br_1_7 bl_0_8 bl_1_8 br_0_8 br_1_8 bl_0_9 bl_1_9 br_0_9 br_1_9 bl_0_10 bl_1_10 br_0_10 br_1_10 bl_0_11 bl_1_11 br_0_11 br_1_11 bl_0_12 bl_1_12 br_0_12 br_1_12 bl_0_13 bl_1_13 br_0_13 br_1_13 bl_0_14 bl_1_14 br_0_14 br_1_14 bl_0_15 bl_1_15 br_0_15 br_1_15 bl_0_16 bl_1_16 br_0_16 br_1_16 bl_0_17 bl_1_17 br_0_17 br_1_17 bl_0_18 bl_1_18 br_0_18 br_1_18 bl_0_19 bl_1_19 br_0_19 br_1_19 bl_0_20 bl_1_20 br_0_20 br_1_20 bl_0_21 bl_1_21 br_0_21 br_1_21 bl_0_22 bl_1_22 br_0_22 br_1_22 bl_0_23 bl_1_23 br_0_23 br_1_23 bl_0_24 bl_1_24 br_0_24 br_1_24 bl_0_25 bl_1_25 br_0_25 br_1_25 bl_0_26 bl_1_26 br_0_26 br_1_26 bl_0_27 bl_1_27 br_0_27 br_1_27 bl_0_28 bl_1_28 br_0_28 br_1_28 bl_0_29 bl_1_29 br_0_29 br_1_29 bl_0_30 bl_1_30 br_0_30 br_1_30 bl_0_31 bl_1_31 br_0_31 br_1_31 bl_0_32 bl_1_32 br_0_32 br_1_32 bl_0_33 bl_1_33 br_0_33 br_1_33 bl_0_34 bl_1_34 br_0_34 br_1_34 bl_0_35 bl_1_35 br_0_35 br_1_35 bl_0_36 bl_1_36 br_0_36 br_1_36 bl_0_37 bl_1_37 br_0_37 br_1_37 bl_0_38 bl_1_38 br_0_38 br_1_38 bl_0_39 bl_1_39 br_0_39 br_1_39 bl_0_40 bl_1_40 br_0_40 br_1_40 bl_0_41 bl_1_41 br_0_41 br_1_41 bl_0_42 bl_1_42 br_0_42 br_1_42 bl_0_43 bl_1_43 br_0_43 br_1_43 bl_0_44 bl_1_44 br_0_44 br_1_44 bl_0_45 bl_1_45 br_0_45 br_1_45 bl_0_46 bl_1_46 br_0_46 br_1_46 bl_0_47 bl_1_47 br_0_47 br_1_47 bl_0_48 bl_1_48 br_0_48 br_1_48 bl_0_49 bl_1_49 br_0_49 br_1_49 bl_0_50 bl_1_50 br_0_50 br_1_50 bl_0_51 bl_1_51 br_0_51 br_1_51 bl_0_52 bl_1_52 br_0_52 br_1_52 bl_0_53 bl_1_53 br_0_53 br_1_53 bl_0_54 bl_1_54 br_0_54 br_1_54 bl_0_55 bl_1_55 br_0_55 br_1_55 bl_0_56 bl_1_56 br_0_56 br_1_56 bl_0_57 bl_1_57 br_0_57 br_1_57 bl_0_58 bl_1_58 br_0_58 br_1_58 bl_0_59 bl_1_59 br_0_59 br_1_59 bl_0_60 bl_1_60 br_0_60 br_1_60 bl_0_61 bl_1_61 br_0_61 br_1_61 bl_0_62 bl_1_62 br_0_62 br_1_62 bl_0_63 bl_1_63 br_0_63 br_1_63 bl_0_64 bl_1_64 br_0_64 br_1_64 bl_0_65 bl_1_65 br_0_65 br_1_65 bl_0_66 bl_1_66 br_0_66 br_1_66 bl_0_67 bl_1_67 br_0_67 br_1_67 bl_0_68 bl_1_68 br_0_68 br_1_68 bl_0_69 bl_1_69 br_0_69 br_1_69 bl_0_70 bl_1_70 br_0_70 br_1_70 bl_0_71 bl_1_71 br_0_71 br_1_71 bl_0_72 bl_1_72 br_0_72 br_1_72 bl_0_73 bl_1_73 br_0_73 br_1_73 bl_0_74 bl_1_74 br_0_74 br_1_74 bl_0_75 bl_1_75 br_0_75 br_1_75 bl_0_76 bl_1_76 br_0_76 br_1_76 bl_0_77 bl_1_77 br_0_77 br_1_77 bl_0_78 bl_1_78 br_0_78 br_1_78 bl_0_79 bl_1_79 br_0_79 br_1_79 bl_0_80 bl_1_80 br_0_80 br_1_80 bl_0_81 bl_1_81 br_0_81 br_1_81 bl_0_82 bl_1_82 br_0_82 br_1_82 bl_0_83 bl_1_83 br_0_83 br_1_83 bl_0_84 bl_1_84 br_0_84 br_1_84 bl_0_85 bl_1_85 br_0_85 br_1_85 bl_0_86 bl_1_86 br_0_86 br_1_86 bl_0_87 bl_1_87 br_0_87 br_1_87 bl_0_88 bl_1_88 br_0_88 br_1_88 bl_0_89 bl_1_89 br_0_89 br_1_89 bl_0_90 bl_1_90 br_0_90 br_1_90 bl_0_91 bl_1_91 br_0_91 br_1_91 bl_0_92 bl_1_92 br_0_92 br_1_92 bl_0_93 bl_1_93 br_0_93 br_1_93 bl_0_94 bl_1_94 br_0_94 br_1_94 bl_0_95 bl_1_95 br_0_95 br_1_95 bl_0_96 bl_1_96 br_0_96 br_1_96 bl_0_97 bl_1_97 br_0_97 br_1_97 bl_0_98 bl_1_98 br_0_98 br_1_98 bl_0_99 bl_1_99 br_0_99 br_1_99 bl_0_100 bl_1_100 br_0_100 br_1_100 bl_0_101 bl_1_101 br_0_101 br_1_101 bl_0_102 bl_1_102 br_0_102 br_1_102 bl_0_103 bl_1_103 br_0_103 br_1_103 bl_0_104 bl_1_104 br_0_104 br_1_104 bl_0_105 bl_1_105 br_0_105 br_1_105 bl_0_106 bl_1_106 br_0_106 br_1_106 bl_0_107 bl_1_107 br_0_107 br_1_107 bl_0_108 bl_1_108 br_0_108 br_1_108 bl_0_109 bl_1_109 br_0_109 br_1_109 bl_0_110 bl_1_110 br_0_110 br_1_110 bl_0_111 bl_1_111 br_0_111 br_1_111 bl_0_112 bl_1_112 br_0_112 br_1_112 bl_0_113 bl_1_113 br_0_113 br_1_113 bl_0_114 bl_1_114 br_0_114 br_1_114 bl_0_115 bl_1_115 br_0_115 br_1_115 bl_0_116 bl_1_116 br_0_116 br_1_116 bl_0_117 bl_1_117 br_0_117 br_1_117 bl_0_118 bl_1_118 br_0_118 br_1_118 bl_0_119 bl_1_119 br_0_119 br_1_119 bl_0_120 bl_1_120 br_0_120 br_1_120 bl_0_121 bl_1_121 br_0_121 br_1_121 bl_0_122 bl_1_122 br_0_122 br_1_122 bl_0_123 bl_1_123 br_0_123 br_1_123 bl_0_124 bl_1_124 br_0_124 br_1_124 bl_0_125 bl_1_125 br_0_125 br_1_125 bl_0_126 bl_1_126 br_0_126 br_1_126 bl_0_127 bl_1_127 br_0_127 br_1_127 rbl_wl_0_0 gnd vdd gnd dummy_array
 Xdummy_row_1 bl_0_0 bl_1_0 br_0_0 br_1_0 bl_0_1 bl_1_1 br_0_1 br_1_1 bl_0_2 bl_1_2 br_0_2 br_1_2 bl_0_3 bl_1_3 br_0_3 br_1_3 bl_0_4 bl_1_4 br_0_4 br_1_4 bl_0_5 bl_1_5 br_0_5 br_1_5 bl_0_6 bl_1_6 br_0_6 br_1_6 bl_0_7 bl_1_7 br_0_7 br_1_7 bl_0_8 bl_1_8 br_0_8 br_1_8 bl_0_9 bl_1_9 br_0_9 br_1_9 bl_0_10 bl_1_10 br_0_10 br_1_10 bl_0_11 bl_1_11 br_0_11 br_1_11 bl_0_12 bl_1_12 br_0_12 br_1_12 bl_0_13 bl_1_13 br_0_13 br_1_13 bl_0_14 bl_1_14 br_0_14 br_1_14 bl_0_15 bl_1_15 br_0_15 br_1_15 bl_0_16 bl_1_16 br_0_16 br_1_16 bl_0_17 bl_1_17 br_0_17 br_1_17 bl_0_18 bl_1_18 br_0_18 br_1_18 bl_0_19 bl_1_19 br_0_19 br_1_19 bl_0_20 bl_1_20 br_0_20 br_1_20 bl_0_21 bl_1_21 br_0_21 br_1_21 bl_0_22 bl_1_22 br_0_22 br_1_22 bl_0_23 bl_1_23 br_0_23 br_1_23 bl_0_24 bl_1_24 br_0_24 br_1_24 bl_0_25 bl_1_25 br_0_25 br_1_25 bl_0_26 bl_1_26 br_0_26 br_1_26 bl_0_27 bl_1_27 br_0_27 br_1_27 bl_0_28 bl_1_28 br_0_28 br_1_28 bl_0_29 bl_1_29 br_0_29 br_1_29 bl_0_30 bl_1_30 br_0_30 br_1_30 bl_0_31 bl_1_31 br_0_31 br_1_31 bl_0_32 bl_1_32 br_0_32 br_1_32 bl_0_33 bl_1_33 br_0_33 br_1_33 bl_0_34 bl_1_34 br_0_34 br_1_34 bl_0_35 bl_1_35 br_0_35 br_1_35 bl_0_36 bl_1_36 br_0_36 br_1_36 bl_0_37 bl_1_37 br_0_37 br_1_37 bl_0_38 bl_1_38 br_0_38 br_1_38 bl_0_39 bl_1_39 br_0_39 br_1_39 bl_0_40 bl_1_40 br_0_40 br_1_40 bl_0_41 bl_1_41 br_0_41 br_1_41 bl_0_42 bl_1_42 br_0_42 br_1_42 bl_0_43 bl_1_43 br_0_43 br_1_43 bl_0_44 bl_1_44 br_0_44 br_1_44 bl_0_45 bl_1_45 br_0_45 br_1_45 bl_0_46 bl_1_46 br_0_46 br_1_46 bl_0_47 bl_1_47 br_0_47 br_1_47 bl_0_48 bl_1_48 br_0_48 br_1_48 bl_0_49 bl_1_49 br_0_49 br_1_49 bl_0_50 bl_1_50 br_0_50 br_1_50 bl_0_51 bl_1_51 br_0_51 br_1_51 bl_0_52 bl_1_52 br_0_52 br_1_52 bl_0_53 bl_1_53 br_0_53 br_1_53 bl_0_54 bl_1_54 br_0_54 br_1_54 bl_0_55 bl_1_55 br_0_55 br_1_55 bl_0_56 bl_1_56 br_0_56 br_1_56 bl_0_57 bl_1_57 br_0_57 br_1_57 bl_0_58 bl_1_58 br_0_58 br_1_58 bl_0_59 bl_1_59 br_0_59 br_1_59 bl_0_60 bl_1_60 br_0_60 br_1_60 bl_0_61 bl_1_61 br_0_61 br_1_61 bl_0_62 bl_1_62 br_0_62 br_1_62 bl_0_63 bl_1_63 br_0_63 br_1_63 bl_0_64 bl_1_64 br_0_64 br_1_64 bl_0_65 bl_1_65 br_0_65 br_1_65 bl_0_66 bl_1_66 br_0_66 br_1_66 bl_0_67 bl_1_67 br_0_67 br_1_67 bl_0_68 bl_1_68 br_0_68 br_1_68 bl_0_69 bl_1_69 br_0_69 br_1_69 bl_0_70 bl_1_70 br_0_70 br_1_70 bl_0_71 bl_1_71 br_0_71 br_1_71 bl_0_72 bl_1_72 br_0_72 br_1_72 bl_0_73 bl_1_73 br_0_73 br_1_73 bl_0_74 bl_1_74 br_0_74 br_1_74 bl_0_75 bl_1_75 br_0_75 br_1_75 bl_0_76 bl_1_76 br_0_76 br_1_76 bl_0_77 bl_1_77 br_0_77 br_1_77 bl_0_78 bl_1_78 br_0_78 br_1_78 bl_0_79 bl_1_79 br_0_79 br_1_79 bl_0_80 bl_1_80 br_0_80 br_1_80 bl_0_81 bl_1_81 br_0_81 br_1_81 bl_0_82 bl_1_82 br_0_82 br_1_82 bl_0_83 bl_1_83 br_0_83 br_1_83 bl_0_84 bl_1_84 br_0_84 br_1_84 bl_0_85 bl_1_85 br_0_85 br_1_85 bl_0_86 bl_1_86 br_0_86 br_1_86 bl_0_87 bl_1_87 br_0_87 br_1_87 bl_0_88 bl_1_88 br_0_88 br_1_88 bl_0_89 bl_1_89 br_0_89 br_1_89 bl_0_90 bl_1_90 br_0_90 br_1_90 bl_0_91 bl_1_91 br_0_91 br_1_91 bl_0_92 bl_1_92 br_0_92 br_1_92 bl_0_93 bl_1_93 br_0_93 br_1_93 bl_0_94 bl_1_94 br_0_94 br_1_94 bl_0_95 bl_1_95 br_0_95 br_1_95 bl_0_96 bl_1_96 br_0_96 br_1_96 bl_0_97 bl_1_97 br_0_97 br_1_97 bl_0_98 bl_1_98 br_0_98 br_1_98 bl_0_99 bl_1_99 br_0_99 br_1_99 bl_0_100 bl_1_100 br_0_100 br_1_100 bl_0_101 bl_1_101 br_0_101 br_1_101 bl_0_102 bl_1_102 br_0_102 br_1_102 bl_0_103 bl_1_103 br_0_103 br_1_103 bl_0_104 bl_1_104 br_0_104 br_1_104 bl_0_105 bl_1_105 br_0_105 br_1_105 bl_0_106 bl_1_106 br_0_106 br_1_106 bl_0_107 bl_1_107 br_0_107 br_1_107 bl_0_108 bl_1_108 br_0_108 br_1_108 bl_0_109 bl_1_109 br_0_109 br_1_109 bl_0_110 bl_1_110 br_0_110 br_1_110 bl_0_111 bl_1_111 br_0_111 br_1_111 bl_0_112 bl_1_112 br_0_112 br_1_112 bl_0_113 bl_1_113 br_0_113 br_1_113 bl_0_114 bl_1_114 br_0_114 br_1_114 bl_0_115 bl_1_115 br_0_115 br_1_115 bl_0_116 bl_1_116 br_0_116 br_1_116 bl_0_117 bl_1_117 br_0_117 br_1_117 bl_0_118 bl_1_118 br_0_118 br_1_118 bl_0_119 bl_1_119 br_0_119 br_1_119 bl_0_120 bl_1_120 br_0_120 br_1_120 bl_0_121 bl_1_121 br_0_121 br_1_121 bl_0_122 bl_1_122 br_0_122 br_1_122 bl_0_123 bl_1_123 br_0_123 br_1_123 bl_0_124 bl_1_124 br_0_124 br_1_124 bl_0_125 bl_1_125 br_0_125 br_1_125 bl_0_126 bl_1_126 br_0_126 br_1_126 bl_0_127 bl_1_127 br_0_127 br_1_127 gnd rbl_wl_1_1 vdd gnd dummy_array
 .ENDS replica_bitcell_array
+* Copyright 2020 The SkyWater PDK Authors
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*     https://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*
+* SPDX-License-Identifier: Apache-2.0
+
+* NGSPICE file created from sky130_fd_bd_sram__openram_dp_nand2_dec.ext - technology: EFS8A
+
+
+* Top level circuit sky130_fd_bd_sram__openram_dp_nand2_dec
+.subckt sky130_fd_bd_sram__openram_dp_nand2_dec A B Z VDD GND
+
+X1001 Z B VDD VDD sky130_fd_pr__pfet_01v8 W=1.12 L=0.15
+X1002 VDD A Z VDD sky130_fd_pr__pfet_01v8 W=1.12 L=0.15
+X1000 Z A a_n722_276# GND sky130_fd_pr__nfet_01v8 W=0.74 L=0.15
+X1003 a_n722_276# B GND GND sky130_fd_pr__nfet_01v8 W=0.74 L=0.15
+.ends
+
+
+* spice ptx X{0} {1} sky130_fd_pr__nfet_01v8 m=1 w=0.36 l=0.15 pd=1.02 ps=1.02 as=0.14u ad=0.14u
+
+* spice ptx X{0} {1} sky130_fd_pr__pfet_01v8 m=1 w=1.12 l=0.15 pd=2.54 ps=2.54 as=0.42u ad=0.42u
+
+.SUBCKT pinv_dec A Z vdd gnd
+*.PININFO A:I Z:O vdd:B gnd:B
+* INPUT : A 
+* OUTPUT: Z 
+* POWER : vdd 
+* GROUND: gnd 
+Xpinv_pmos Z A vdd vdd sky130_fd_pr__pfet_01v8 m=1 w=1.12 l=0.15 pd=2.54 ps=2.54 as=0.42u ad=0.42u
+Xpinv_nmos Z A gnd gnd sky130_fd_pr__nfet_01v8 m=1 w=0.36 l=0.15 pd=1.02 ps=1.02 as=0.14u ad=0.14u
+.ENDS pinv_dec
+
+.SUBCKT and2_dec A B Z vdd gnd
+*.PININFO A:I B:I Z:O vdd:B gnd:B
+* INPUT : A 
+* INPUT : B 
+* OUTPUT: Z 
+* POWER : vdd 
+* GROUND: gnd 
+* size: 1
+Xpand2_dec_nand A B zb_int vdd gnd sky130_fd_bd_sram__openram_dp_nand2_dec
+Xpand2_dec_inv zb_int Z vdd gnd pinv_dec
+.ENDS and2_dec
+* Copyright 2020 The SkyWater PDK Authors
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*     https://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*
+* SPDX-License-Identifier: Apache-2.0
+
+* NGSPICE file created from sky130_fd_bd_sram__openram_dp_nand3_dec.ext - technology: EFS8A
+
+
+* Top level circuit sky130_fd_bd_sram__openram_dp_nand3_dec
+.subckt sky130_fd_bd_sram__openram_dp_nand3_dec A B C Z VDD GND
+
+X1001 Z A a_n346_328# GND sky130_fd_pr__nfet_01v8 W=0.74 L=0.15
+X1002 a_n346_256# C GND GND sky130_fd_pr__nfet_01v8 W=0.74 L=0.15
+X1003 a_n346_328# B a_n346_256# GND sky130_fd_pr__nfet_01v8 W=0.74 L=0.15
+X1000 Z B VDD VDD sky130_fd_pr__pfet_01v8 W=1.12 L=0.15
+X1004 Z A VDD VDD sky130_fd_pr__pfet_01v8 W=1.12 L=0.15
+X1005 Z C VDD VDD sky130_fd_pr__pfet_01v8 W=1.12 L=0.15
+.ends
+
+
+.SUBCKT and3_dec A B C Z vdd gnd
+*.PININFO A:I B:I C:I Z:O vdd:B gnd:B
+* INPUT : A 
+* INPUT : B 
+* INPUT : C 
+* OUTPUT: Z 
+* POWER : vdd 
+* GROUND: gnd 
+* size: 1
+Xpand3_dec_nand A B C zb_int vdd gnd sky130_fd_bd_sram__openram_dp_nand3_dec
+Xpand3_dec_inv zb_int Z vdd gnd pinv_dec
+.ENDS and3_dec
+
+.SUBCKT hierarchical_predecode2x4 in_0 in_1 out_0 out_1 out_2 out_3 vdd gnd
+*.PININFO in_0:I in_1:I out_0:O out_1:O out_2:O out_3:O vdd:B gnd:B
+* INPUT : in_0 
+* INPUT : in_1 
+* OUTPUT: out_0 
+* OUTPUT: out_1 
+* OUTPUT: out_2 
+* OUTPUT: out_3 
+* POWER : vdd 
+* GROUND: gnd 
+Xpre_inv_0 in_0 inbar_0 vdd gnd pinv_dec
+Xpre_inv_1 in_1 inbar_1 vdd gnd pinv_dec
+XXpre2x4_and_0 inbar_0 inbar_1 out_0 vdd gnd and2_dec
+XXpre2x4_and_1 in_0 inbar_1 out_1 vdd gnd and2_dec
+XXpre2x4_and_2 inbar_0 in_1 out_2 vdd gnd and2_dec
+XXpre2x4_and_3 in_0 in_1 out_3 vdd gnd and2_dec
+.ENDS hierarchical_predecode2x4
+
+.SUBCKT hierarchical_predecode3x8 in_0 in_1 in_2 out_0 out_1 out_2 out_3 out_4 out_5 out_6 out_7 vdd gnd
+*.PININFO in_0:I in_1:I in_2:I out_0:O out_1:O out_2:O out_3:O out_4:O out_5:O out_6:O out_7:O vdd:B gnd:B
+* INPUT : in_0 
+* INPUT : in_1 
+* INPUT : in_2 
+* OUTPUT: out_0 
+* OUTPUT: out_1 
+* OUTPUT: out_2 
+* OUTPUT: out_3 
+* OUTPUT: out_4 
+* OUTPUT: out_5 
+* OUTPUT: out_6 
+* OUTPUT: out_7 
+* POWER : vdd 
+* GROUND: gnd 
+Xpre_inv_0 in_0 inbar_0 vdd gnd pinv_dec
+Xpre_inv_1 in_1 inbar_1 vdd gnd pinv_dec
+Xpre_inv_2 in_2 inbar_2 vdd gnd pinv_dec
+XXpre3x8_and_0 inbar_0 inbar_1 inbar_2 out_0 vdd gnd and3_dec
+XXpre3x8_and_1 in_0 inbar_1 inbar_2 out_1 vdd gnd and3_dec
+XXpre3x8_and_2 inbar_0 in_1 inbar_2 out_2 vdd gnd and3_dec
+XXpre3x8_and_3 in_0 in_1 inbar_2 out_3 vdd gnd and3_dec
+XXpre3x8_and_4 inbar_0 inbar_1 in_2 out_4 vdd gnd and3_dec
+XXpre3x8_and_5 in_0 inbar_1 in_2 out_5 vdd gnd and3_dec
+XXpre3x8_and_6 inbar_0 in_1 in_2 out_6 vdd gnd and3_dec
+XXpre3x8_and_7 in_0 in_1 in_2 out_7 vdd gnd and3_dec
+.ENDS hierarchical_predecode3x8
+* Copyright 2020 The SkyWater PDK Authors
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*     https://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*
+* SPDX-License-Identifier: Apache-2.0
+
+* NGSPICE file created from sky130_fd_bd_sram__openram_dp_nand4_dec.ext - technology: EFS8A
+
+.subckt sky130_fd_bd_sram__openram_dp_nand4_dec A B C D Z VDD GND
+X1000 Z A a_406_334# GND sky130_fd_pr__nfet_01v8 W=0.74 L=0.15
+X1004 a_406_190# D GND GND sky130_fd_pr__nfet_01v8 W=0.74 L=0.15
+X1005 a_406_262# C a_406_190# GND sky130_fd_pr__nfet_01v8 W=0.74 L=0.15
+X1007 a_406_334# B a_406_262# GND sky130_fd_pr__nfet_01v8 W=0.74 L=0.15
+X1001 Z A VDD VDD sky130_fd_pr__pfet_01v8 W=1.12 L=0.15
+X1002 VDD C Z VDD sky130_fd_pr__pfet_01v8 W=1.12 L=0.15
+X1003 VDD D Z VDD sky130_fd_pr__pfet_01v8 W=1.12 L=0.15
+X1006 Z B VDD VDD sky130_fd_pr__pfet_01v8 W=1.12 L=0.15
+.ends
+
+
+.SUBCKT and4_dec A B C D Z vdd gnd
+*.PININFO A:I B:I C:I D:I Z:O vdd:B gnd:B
+* INPUT : A 
+* INPUT : B 
+* INPUT : C 
+* INPUT : D 
+* OUTPUT: Z 
+* POWER : vdd 
+* GROUND: gnd 
+* size: 1
+Xpand4_dec_nand A B C D zb_int vdd gnd sky130_fd_bd_sram__openram_dp_nand4_dec
+Xpand4_dec_inv zb_int Z vdd gnd pinv_dec
+.ENDS and4_dec
+
+.SUBCKT hierarchical_predecode4x16 in_0 in_1 in_2 in_3 out_0 out_1 out_2 out_3 out_4 out_5 out_6 out_7 out_8 out_9 out_10 out_11 out_12 out_13 out_14 out_15 vdd gnd
+*.PININFO in_0:I in_1:I in_2:I in_3:I out_0:O out_1:O out_2:O out_3:O out_4:O out_5:O out_6:O out_7:O out_8:O out_9:O out_10:O out_11:O out_12:O out_13:O out_14:O out_15:O vdd:B gnd:B
+* INPUT : in_0 
+* INPUT : in_1 
+* INPUT : in_2 
+* INPUT : in_3 
+* OUTPUT: out_0 
+* OUTPUT: out_1 
+* OUTPUT: out_2 
+* OUTPUT: out_3 
+* OUTPUT: out_4 
+* OUTPUT: out_5 
+* OUTPUT: out_6 
+* OUTPUT: out_7 
+* OUTPUT: out_8 
+* OUTPUT: out_9 
+* OUTPUT: out_10 
+* OUTPUT: out_11 
+* OUTPUT: out_12 
+* OUTPUT: out_13 
+* OUTPUT: out_14 
+* OUTPUT: out_15 
+* POWER : vdd 
+* GROUND: gnd 
+Xpre_inv_0 in_0 inbar_0 vdd gnd pinv_dec
+Xpre_inv_1 in_1 inbar_1 vdd gnd pinv_dec
+Xpre_inv_2 in_2 inbar_2 vdd gnd pinv_dec
+Xpre_inv_3 in_3 inbar_3 vdd gnd pinv_dec
+XXpre4x16_and_0 inbar_0 inbar_1 inbar_2 inbar_3 out_0 vdd gnd and4_dec
+XXpre4x16_and_1 in_0 inbar_1 inbar_2 inbar_3 out_1 vdd gnd and4_dec
+XXpre4x16_and_2 inbar_0 in_1 inbar_2 inbar_3 out_2 vdd gnd and4_dec
+XXpre4x16_and_3 in_0 in_1 inbar_2 inbar_3 out_3 vdd gnd and4_dec
+XXpre4x16_and_4 inbar_0 inbar_1 in_2 inbar_3 out_4 vdd gnd and4_dec
+XXpre4x16_and_5 in_0 inbar_1 in_2 inbar_3 out_5 vdd gnd and4_dec
+XXpre4x16_and_6 inbar_0 in_1 in_2 inbar_3 out_6 vdd gnd and4_dec
+XXpre4x16_and_7 in_0 in_1 in_2 inbar_3 out_7 vdd gnd and4_dec
+XXpre4x16_and_8 inbar_0 inbar_1 inbar_2 in_3 out_8 vdd gnd and4_dec
+XXpre4x16_and_9 in_0 inbar_1 inbar_2 in_3 out_9 vdd gnd and4_dec
+XXpre4x16_and_10 inbar_0 in_1 inbar_2 in_3 out_10 vdd gnd and4_dec
+XXpre4x16_and_11 in_0 in_1 inbar_2 in_3 out_11 vdd gnd and4_dec
+XXpre4x16_and_12 inbar_0 inbar_1 in_2 in_3 out_12 vdd gnd and4_dec
+XXpre4x16_and_13 in_0 inbar_1 in_2 in_3 out_13 vdd gnd and4_dec
+XXpre4x16_and_14 inbar_0 in_1 in_2 in_3 out_14 vdd gnd and4_dec
+XXpre4x16_and_15 in_0 in_1 in_2 in_3 out_15 vdd gnd and4_dec
+.ENDS hierarchical_predecode4x16
+
+.SUBCKT hierarchical_decoder addr_0 addr_1 addr_2 addr_3 addr_4 addr_5 addr_6 addr_7 decode_0 decode_1 decode_2 decode_3 decode_4 decode_5 decode_6 decode_7 decode_8 decode_9 decode_10 decode_11 decode_12 decode_13 decode_14 decode_15 decode_16 decode_17 decode_18 decode_19 decode_20 decode_21 decode_22 decode_23 decode_24 decode_25 decode_26 decode_27 decode_28 decode_29 decode_30 decode_31 decode_32 decode_33 decode_34 decode_35 decode_36 decode_37 decode_38 decode_39 decode_40 decode_41 decode_42 decode_43 decode_44 decode_45 decode_46 decode_47 decode_48 decode_49 decode_50 decode_51 decode_52 decode_53 decode_54 decode_55 decode_56 decode_57 decode_58 decode_59 decode_60 decode_61 decode_62 decode_63 decode_64 decode_65 decode_66 decode_67 decode_68 decode_69 decode_70 decode_71 decode_72 decode_73 decode_74 decode_75 decode_76 decode_77 decode_78 decode_79 decode_80 decode_81 decode_82 decode_83 decode_84 decode_85 decode_86 decode_87 decode_88 decode_89 decode_90 decode_91 decode_92 decode_93 decode_94 decode_95 decode_96 decode_97 decode_98 decode_99 decode_100 decode_101 decode_102 decode_103 decode_104 decode_105 decode_106 decode_107 decode_108 decode_109 decode_110 decode_111 decode_112 decode_113 decode_114 decode_115 decode_116 decode_117 decode_118 decode_119 decode_120 decode_121 decode_122 decode_123 decode_124 decode_125 decode_126 decode_127 decode_128 decode_129 decode_130 decode_131 decode_132 decode_133 decode_134 decode_135 decode_136 decode_137 decode_138 decode_139 decode_140 decode_141 decode_142 decode_143 decode_144 decode_145 decode_146 decode_147 decode_148 decode_149 decode_150 decode_151 decode_152 decode_153 decode_154 decode_155 decode_156 decode_157 decode_158 decode_159 decode_160 decode_161 decode_162 decode_163 decode_164 decode_165 decode_166 decode_167 decode_168 decode_169 decode_170 decode_171 decode_172 decode_173 decode_174 decode_175 decode_176 decode_177 decode_178 decode_179 decode_180 decode_181 decode_182 decode_183 decode_184 decode_185 decode_186 decode_187 decode_188 decode_189 decode_190 decode_191 decode_192 decode_193 decode_194 decode_195 decode_196 decode_197 decode_198 decode_199 decode_200 decode_201 decode_202 decode_203 decode_204 decode_205 decode_206 decode_207 decode_208 decode_209 decode_210 decode_211 decode_212 decode_213 decode_214 decode_215 decode_216 decode_217 decode_218 decode_219 decode_220 decode_221 decode_222 decode_223 decode_224 decode_225 decode_226 decode_227 decode_228 decode_229 decode_230 decode_231 decode_232 decode_233 decode_234 decode_235 decode_236 decode_237 decode_238 decode_239 decode_240 decode_241 decode_242 decode_243 decode_244 decode_245 decode_246 decode_247 decode_248 decode_249 decode_250 decode_251 decode_252 decode_253 decode_254 decode_255 vdd gnd
+*.PININFO addr_0:I addr_1:I addr_2:I addr_3:I addr_4:I addr_5:I addr_6:I addr_7:I decode_0:O decode_1:O decode_2:O decode_3:O decode_4:O decode_5:O decode_6:O decode_7:O decode_8:O decode_9:O decode_10:O decode_11:O decode_12:O decode_13:O decode_14:O decode_15:O decode_16:O decode_17:O decode_18:O decode_19:O decode_20:O decode_21:O decode_22:O decode_23:O decode_24:O decode_25:O decode_26:O decode_27:O decode_28:O decode_29:O decode_30:O decode_31:O decode_32:O decode_33:O decode_34:O decode_35:O decode_36:O decode_37:O decode_38:O decode_39:O decode_40:O decode_41:O decode_42:O decode_43:O decode_44:O decode_45:O decode_46:O decode_47:O decode_48:O decode_49:O decode_50:O decode_51:O decode_52:O decode_53:O decode_54:O decode_55:O decode_56:O decode_57:O decode_58:O decode_59:O decode_60:O decode_61:O decode_62:O decode_63:O decode_64:O decode_65:O decode_66:O decode_67:O decode_68:O decode_69:O decode_70:O decode_71:O decode_72:O decode_73:O decode_74:O decode_75:O decode_76:O decode_77:O decode_78:O decode_79:O decode_80:O decode_81:O decode_82:O decode_83:O decode_84:O decode_85:O decode_86:O decode_87:O decode_88:O decode_89:O decode_90:O decode_91:O decode_92:O decode_93:O decode_94:O decode_95:O decode_96:O decode_97:O decode_98:O decode_99:O decode_100:O decode_101:O decode_102:O decode_103:O decode_104:O decode_105:O decode_106:O decode_107:O decode_108:O decode_109:O decode_110:O decode_111:O decode_112:O decode_113:O decode_114:O decode_115:O decode_116:O decode_117:O decode_118:O decode_119:O decode_120:O decode_121:O decode_122:O decode_123:O decode_124:O decode_125:O decode_126:O decode_127:O decode_128:O decode_129:O decode_130:O decode_131:O decode_132:O decode_133:O decode_134:O decode_135:O decode_136:O decode_137:O decode_138:O decode_139:O decode_140:O decode_141:O decode_142:O decode_143:O decode_144:O decode_145:O decode_146:O decode_147:O decode_148:O decode_149:O decode_150:O decode_151:O decode_152:O decode_153:O decode_154:O decode_155:O decode_156:O decode_157:O decode_158:O decode_159:O decode_160:O decode_161:O decode_162:O decode_163:O decode_164:O decode_165:O decode_166:O decode_167:O decode_168:O decode_169:O decode_170:O decode_171:O decode_172:O decode_173:O decode_174:O decode_175:O decode_176:O decode_177:O decode_178:O decode_179:O decode_180:O decode_181:O decode_182:O decode_183:O decode_184:O decode_185:O decode_186:O decode_187:O decode_188:O decode_189:O decode_190:O decode_191:O decode_192:O decode_193:O decode_194:O decode_195:O decode_196:O decode_197:O decode_198:O decode_199:O decode_200:O decode_201:O decode_202:O decode_203:O decode_204:O decode_205:O decode_206:O decode_207:O decode_208:O decode_209:O decode_210:O decode_211:O decode_212:O decode_213:O decode_214:O decode_215:O decode_216:O decode_217:O decode_218:O decode_219:O decode_220:O decode_221:O decode_222:O decode_223:O decode_224:O decode_225:O decode_226:O decode_227:O decode_228:O decode_229:O decode_230:O decode_231:O decode_232:O decode_233:O decode_234:O decode_235:O decode_236:O decode_237:O decode_238:O decode_239:O decode_240:O decode_241:O decode_242:O decode_243:O decode_244:O decode_245:O decode_246:O decode_247:O decode_248:O decode_249:O decode_250:O decode_251:O decode_252:O decode_253:O decode_254:O decode_255:O vdd:B gnd:B
+* INPUT : addr_0 
+* INPUT : addr_1 
+* INPUT : addr_2 
+* INPUT : addr_3 
+* INPUT : addr_4 
+* INPUT : addr_5 
+* INPUT : addr_6 
+* INPUT : addr_7 
+* OUTPUT: decode_0 
+* OUTPUT: decode_1 
+* OUTPUT: decode_2 
+* OUTPUT: decode_3 
+* OUTPUT: decode_4 
+* OUTPUT: decode_5 
+* OUTPUT: decode_6 
+* OUTPUT: decode_7 
+* OUTPUT: decode_8 
+* OUTPUT: decode_9 
+* OUTPUT: decode_10 
+* OUTPUT: decode_11 
+* OUTPUT: decode_12 
+* OUTPUT: decode_13 
+* OUTPUT: decode_14 
+* OUTPUT: decode_15 
+* OUTPUT: decode_16 
+* OUTPUT: decode_17 
+* OUTPUT: decode_18 
+* OUTPUT: decode_19 
+* OUTPUT: decode_20 
+* OUTPUT: decode_21 
+* OUTPUT: decode_22 
+* OUTPUT: decode_23 
+* OUTPUT: decode_24 
+* OUTPUT: decode_25 
+* OUTPUT: decode_26 
+* OUTPUT: decode_27 
+* OUTPUT: decode_28 
+* OUTPUT: decode_29 
+* OUTPUT: decode_30 
+* OUTPUT: decode_31 
+* OUTPUT: decode_32 
+* OUTPUT: decode_33 
+* OUTPUT: decode_34 
+* OUTPUT: decode_35 
+* OUTPUT: decode_36 
+* OUTPUT: decode_37 
+* OUTPUT: decode_38 
+* OUTPUT: decode_39 
+* OUTPUT: decode_40 
+* OUTPUT: decode_41 
+* OUTPUT: decode_42 
+* OUTPUT: decode_43 
+* OUTPUT: decode_44 
+* OUTPUT: decode_45 
+* OUTPUT: decode_46 
+* OUTPUT: decode_47 
+* OUTPUT: decode_48 
+* OUTPUT: decode_49 
+* OUTPUT: decode_50 
+* OUTPUT: decode_51 
+* OUTPUT: decode_52 
+* OUTPUT: decode_53 
+* OUTPUT: decode_54 
+* OUTPUT: decode_55 
+* OUTPUT: decode_56 
+* OUTPUT: decode_57 
+* OUTPUT: decode_58 
+* OUTPUT: decode_59 
+* OUTPUT: decode_60 
+* OUTPUT: decode_61 
+* OUTPUT: decode_62 
+* OUTPUT: decode_63 
+* OUTPUT: decode_64 
+* OUTPUT: decode_65 
+* OUTPUT: decode_66 
+* OUTPUT: decode_67 
+* OUTPUT: decode_68 
+* OUTPUT: decode_69 
+* OUTPUT: decode_70 
+* OUTPUT: decode_71 
+* OUTPUT: decode_72 
+* OUTPUT: decode_73 
+* OUTPUT: decode_74 
+* OUTPUT: decode_75 
+* OUTPUT: decode_76 
+* OUTPUT: decode_77 
+* OUTPUT: decode_78 
+* OUTPUT: decode_79 
+* OUTPUT: decode_80 
+* OUTPUT: decode_81 
+* OUTPUT: decode_82 
+* OUTPUT: decode_83 
+* OUTPUT: decode_84 
+* OUTPUT: decode_85 
+* OUTPUT: decode_86 
+* OUTPUT: decode_87 
+* OUTPUT: decode_88 
+* OUTPUT: decode_89 
+* OUTPUT: decode_90 
+* OUTPUT: decode_91 
+* OUTPUT: decode_92 
+* OUTPUT: decode_93 
+* OUTPUT: decode_94 
+* OUTPUT: decode_95 
+* OUTPUT: decode_96 
+* OUTPUT: decode_97 
+* OUTPUT: decode_98 
+* OUTPUT: decode_99 
+* OUTPUT: decode_100 
+* OUTPUT: decode_101 
+* OUTPUT: decode_102 
+* OUTPUT: decode_103 
+* OUTPUT: decode_104 
+* OUTPUT: decode_105 
+* OUTPUT: decode_106 
+* OUTPUT: decode_107 
+* OUTPUT: decode_108 
+* OUTPUT: decode_109 
+* OUTPUT: decode_110 
+* OUTPUT: decode_111 
+* OUTPUT: decode_112 
+* OUTPUT: decode_113 
+* OUTPUT: decode_114 
+* OUTPUT: decode_115 
+* OUTPUT: decode_116 
+* OUTPUT: decode_117 
+* OUTPUT: decode_118 
+* OUTPUT: decode_119 
+* OUTPUT: decode_120 
+* OUTPUT: decode_121 
+* OUTPUT: decode_122 
+* OUTPUT: decode_123 
+* OUTPUT: decode_124 
+* OUTPUT: decode_125 
+* OUTPUT: decode_126 
+* OUTPUT: decode_127 
+* OUTPUT: decode_128 
+* OUTPUT: decode_129 
+* OUTPUT: decode_130 
+* OUTPUT: decode_131 
+* OUTPUT: decode_132 
+* OUTPUT: decode_133 
+* OUTPUT: decode_134 
+* OUTPUT: decode_135 
+* OUTPUT: decode_136 
+* OUTPUT: decode_137 
+* OUTPUT: decode_138 
+* OUTPUT: decode_139 
+* OUTPUT: decode_140 
+* OUTPUT: decode_141 
+* OUTPUT: decode_142 
+* OUTPUT: decode_143 
+* OUTPUT: decode_144 
+* OUTPUT: decode_145 
+* OUTPUT: decode_146 
+* OUTPUT: decode_147 
+* OUTPUT: decode_148 
+* OUTPUT: decode_149 
+* OUTPUT: decode_150 
+* OUTPUT: decode_151 
+* OUTPUT: decode_152 
+* OUTPUT: decode_153 
+* OUTPUT: decode_154 
+* OUTPUT: decode_155 
+* OUTPUT: decode_156 
+* OUTPUT: decode_157 
+* OUTPUT: decode_158 
+* OUTPUT: decode_159 
+* OUTPUT: decode_160 
+* OUTPUT: decode_161 
+* OUTPUT: decode_162 
+* OUTPUT: decode_163 
+* OUTPUT: decode_164 
+* OUTPUT: decode_165 
+* OUTPUT: decode_166 
+* OUTPUT: decode_167 
+* OUTPUT: decode_168 
+* OUTPUT: decode_169 
+* OUTPUT: decode_170 
+* OUTPUT: decode_171 
+* OUTPUT: decode_172 
+* OUTPUT: decode_173 
+* OUTPUT: decode_174 
+* OUTPUT: decode_175 
+* OUTPUT: decode_176 
+* OUTPUT: decode_177 
+* OUTPUT: decode_178 
+* OUTPUT: decode_179 
+* OUTPUT: decode_180 
+* OUTPUT: decode_181 
+* OUTPUT: decode_182 
+* OUTPUT: decode_183 
+* OUTPUT: decode_184 
+* OUTPUT: decode_185 
+* OUTPUT: decode_186 
+* OUTPUT: decode_187 
+* OUTPUT: decode_188 
+* OUTPUT: decode_189 
+* OUTPUT: decode_190 
+* OUTPUT: decode_191 
+* OUTPUT: decode_192 
+* OUTPUT: decode_193 
+* OUTPUT: decode_194 
+* OUTPUT: decode_195 
+* OUTPUT: decode_196 
+* OUTPUT: decode_197 
+* OUTPUT: decode_198 
+* OUTPUT: decode_199 
+* OUTPUT: decode_200 
+* OUTPUT: decode_201 
+* OUTPUT: decode_202 
+* OUTPUT: decode_203 
+* OUTPUT: decode_204 
+* OUTPUT: decode_205 
+* OUTPUT: decode_206 
+* OUTPUT: decode_207 
+* OUTPUT: decode_208 
+* OUTPUT: decode_209 
+* OUTPUT: decode_210 
+* OUTPUT: decode_211 
+* OUTPUT: decode_212 
+* OUTPUT: decode_213 
+* OUTPUT: decode_214 
+* OUTPUT: decode_215 
+* OUTPUT: decode_216 
+* OUTPUT: decode_217 
+* OUTPUT: decode_218 
+* OUTPUT: decode_219 
+* OUTPUT: decode_220 
+* OUTPUT: decode_221 
+* OUTPUT: decode_222 
+* OUTPUT: decode_223 
+* OUTPUT: decode_224 
+* OUTPUT: decode_225 
+* OUTPUT: decode_226 
+* OUTPUT: decode_227 
+* OUTPUT: decode_228 
+* OUTPUT: decode_229 
+* OUTPUT: decode_230 
+* OUTPUT: decode_231 
+* OUTPUT: decode_232 
+* OUTPUT: decode_233 
+* OUTPUT: decode_234 
+* OUTPUT: decode_235 
+* OUTPUT: decode_236 
+* OUTPUT: decode_237 
+* OUTPUT: decode_238 
+* OUTPUT: decode_239 
+* OUTPUT: decode_240 
+* OUTPUT: decode_241 
+* OUTPUT: decode_242 
+* OUTPUT: decode_243 
+* OUTPUT: decode_244 
+* OUTPUT: decode_245 
+* OUTPUT: decode_246 
+* OUTPUT: decode_247 
+* OUTPUT: decode_248 
+* OUTPUT: decode_249 
+* OUTPUT: decode_250 
+* OUTPUT: decode_251 
+* OUTPUT: decode_252 
+* OUTPUT: decode_253 
+* OUTPUT: decode_254 
+* OUTPUT: decode_255 
+* POWER : vdd 
+* GROUND: gnd 
+Xpre_0 addr_0 addr_1 out_0 out_1 out_2 out_3 vdd gnd hierarchical_predecode2x4
+Xpre3x8_0 addr_2 addr_3 addr_4 out_4 out_5 out_6 out_7 out_8 out_9 out_10 out_11 vdd gnd hierarchical_predecode3x8
+Xpre3x8_1 addr_5 addr_6 addr_7 out_12 out_13 out_14 out_15 out_16 out_17 out_18 out_19 vdd gnd hierarchical_predecode3x8
+XDEC_AND_0 out_0 out_4 out_12 decode_0 vdd gnd and3_dec
+XDEC_AND_32 out_0 out_4 out_13 decode_32 vdd gnd and3_dec
+XDEC_AND_64 out_0 out_4 out_14 decode_64 vdd gnd and3_dec
+XDEC_AND_96 out_0 out_4 out_15 decode_96 vdd gnd and3_dec
+XDEC_AND_128 out_0 out_4 out_16 decode_128 vdd gnd and3_dec
+XDEC_AND_160 out_0 out_4 out_17 decode_160 vdd gnd and3_dec
+XDEC_AND_192 out_0 out_4 out_18 decode_192 vdd gnd and3_dec
+XDEC_AND_224 out_0 out_4 out_19 decode_224 vdd gnd and3_dec
+XDEC_AND_4 out_0 out_5 out_12 decode_4 vdd gnd and3_dec
+XDEC_AND_36 out_0 out_5 out_13 decode_36 vdd gnd and3_dec
+XDEC_AND_68 out_0 out_5 out_14 decode_68 vdd gnd and3_dec
+XDEC_AND_100 out_0 out_5 out_15 decode_100 vdd gnd and3_dec
+XDEC_AND_132 out_0 out_5 out_16 decode_132 vdd gnd and3_dec
+XDEC_AND_164 out_0 out_5 out_17 decode_164 vdd gnd and3_dec
+XDEC_AND_196 out_0 out_5 out_18 decode_196 vdd gnd and3_dec
+XDEC_AND_228 out_0 out_5 out_19 decode_228 vdd gnd and3_dec
+XDEC_AND_8 out_0 out_6 out_12 decode_8 vdd gnd and3_dec
+XDEC_AND_40 out_0 out_6 out_13 decode_40 vdd gnd and3_dec
+XDEC_AND_72 out_0 out_6 out_14 decode_72 vdd gnd and3_dec
+XDEC_AND_104 out_0 out_6 out_15 decode_104 vdd gnd and3_dec
+XDEC_AND_136 out_0 out_6 out_16 decode_136 vdd gnd and3_dec
+XDEC_AND_168 out_0 out_6 out_17 decode_168 vdd gnd and3_dec
+XDEC_AND_200 out_0 out_6 out_18 decode_200 vdd gnd and3_dec
+XDEC_AND_232 out_0 out_6 out_19 decode_232 vdd gnd and3_dec
+XDEC_AND_12 out_0 out_7 out_12 decode_12 vdd gnd and3_dec
+XDEC_AND_44 out_0 out_7 out_13 decode_44 vdd gnd and3_dec
+XDEC_AND_76 out_0 out_7 out_14 decode_76 vdd gnd and3_dec
+XDEC_AND_108 out_0 out_7 out_15 decode_108 vdd gnd and3_dec
+XDEC_AND_140 out_0 out_7 out_16 decode_140 vdd gnd and3_dec
+XDEC_AND_172 out_0 out_7 out_17 decode_172 vdd gnd and3_dec
+XDEC_AND_204 out_0 out_7 out_18 decode_204 vdd gnd and3_dec
+XDEC_AND_236 out_0 out_7 out_19 decode_236 vdd gnd and3_dec
+XDEC_AND_16 out_0 out_8 out_12 decode_16 vdd gnd and3_dec
+XDEC_AND_48 out_0 out_8 out_13 decode_48 vdd gnd and3_dec
+XDEC_AND_80 out_0 out_8 out_14 decode_80 vdd gnd and3_dec
+XDEC_AND_112 out_0 out_8 out_15 decode_112 vdd gnd and3_dec
+XDEC_AND_144 out_0 out_8 out_16 decode_144 vdd gnd and3_dec
+XDEC_AND_176 out_0 out_8 out_17 decode_176 vdd gnd and3_dec
+XDEC_AND_208 out_0 out_8 out_18 decode_208 vdd gnd and3_dec
+XDEC_AND_240 out_0 out_8 out_19 decode_240 vdd gnd and3_dec
+XDEC_AND_20 out_0 out_9 out_12 decode_20 vdd gnd and3_dec
+XDEC_AND_52 out_0 out_9 out_13 decode_52 vdd gnd and3_dec
+XDEC_AND_84 out_0 out_9 out_14 decode_84 vdd gnd and3_dec
+XDEC_AND_116 out_0 out_9 out_15 decode_116 vdd gnd and3_dec
+XDEC_AND_148 out_0 out_9 out_16 decode_148 vdd gnd and3_dec
+XDEC_AND_180 out_0 out_9 out_17 decode_180 vdd gnd and3_dec
+XDEC_AND_212 out_0 out_9 out_18 decode_212 vdd gnd and3_dec
+XDEC_AND_244 out_0 out_9 out_19 decode_244 vdd gnd and3_dec
+XDEC_AND_24 out_0 out_10 out_12 decode_24 vdd gnd and3_dec
+XDEC_AND_56 out_0 out_10 out_13 decode_56 vdd gnd and3_dec
+XDEC_AND_88 out_0 out_10 out_14 decode_88 vdd gnd and3_dec
+XDEC_AND_120 out_0 out_10 out_15 decode_120 vdd gnd and3_dec
+XDEC_AND_152 out_0 out_10 out_16 decode_152 vdd gnd and3_dec
+XDEC_AND_184 out_0 out_10 out_17 decode_184 vdd gnd and3_dec
+XDEC_AND_216 out_0 out_10 out_18 decode_216 vdd gnd and3_dec
+XDEC_AND_248 out_0 out_10 out_19 decode_248 vdd gnd and3_dec
+XDEC_AND_28 out_0 out_11 out_12 decode_28 vdd gnd and3_dec
+XDEC_AND_60 out_0 out_11 out_13 decode_60 vdd gnd and3_dec
+XDEC_AND_92 out_0 out_11 out_14 decode_92 vdd gnd and3_dec
+XDEC_AND_124 out_0 out_11 out_15 decode_124 vdd gnd and3_dec
+XDEC_AND_156 out_0 out_11 out_16 decode_156 vdd gnd and3_dec
+XDEC_AND_188 out_0 out_11 out_17 decode_188 vdd gnd and3_dec
+XDEC_AND_220 out_0 out_11 out_18 decode_220 vdd gnd and3_dec
+XDEC_AND_252 out_0 out_11 out_19 decode_252 vdd gnd and3_dec
+XDEC_AND_1 out_1 out_4 out_12 decode_1 vdd gnd and3_dec
+XDEC_AND_33 out_1 out_4 out_13 decode_33 vdd gnd and3_dec
+XDEC_AND_65 out_1 out_4 out_14 decode_65 vdd gnd and3_dec
+XDEC_AND_97 out_1 out_4 out_15 decode_97 vdd gnd and3_dec
+XDEC_AND_129 out_1 out_4 out_16 decode_129 vdd gnd and3_dec
+XDEC_AND_161 out_1 out_4 out_17 decode_161 vdd gnd and3_dec
+XDEC_AND_193 out_1 out_4 out_18 decode_193 vdd gnd and3_dec
+XDEC_AND_225 out_1 out_4 out_19 decode_225 vdd gnd and3_dec
+XDEC_AND_5 out_1 out_5 out_12 decode_5 vdd gnd and3_dec
+XDEC_AND_37 out_1 out_5 out_13 decode_37 vdd gnd and3_dec
+XDEC_AND_69 out_1 out_5 out_14 decode_69 vdd gnd and3_dec
+XDEC_AND_101 out_1 out_5 out_15 decode_101 vdd gnd and3_dec
+XDEC_AND_133 out_1 out_5 out_16 decode_133 vdd gnd and3_dec
+XDEC_AND_165 out_1 out_5 out_17 decode_165 vdd gnd and3_dec
+XDEC_AND_197 out_1 out_5 out_18 decode_197 vdd gnd and3_dec
+XDEC_AND_229 out_1 out_5 out_19 decode_229 vdd gnd and3_dec
+XDEC_AND_9 out_1 out_6 out_12 decode_9 vdd gnd and3_dec
+XDEC_AND_41 out_1 out_6 out_13 decode_41 vdd gnd and3_dec
+XDEC_AND_73 out_1 out_6 out_14 decode_73 vdd gnd and3_dec
+XDEC_AND_105 out_1 out_6 out_15 decode_105 vdd gnd and3_dec
+XDEC_AND_137 out_1 out_6 out_16 decode_137 vdd gnd and3_dec
+XDEC_AND_169 out_1 out_6 out_17 decode_169 vdd gnd and3_dec
+XDEC_AND_201 out_1 out_6 out_18 decode_201 vdd gnd and3_dec
+XDEC_AND_233 out_1 out_6 out_19 decode_233 vdd gnd and3_dec
+XDEC_AND_13 out_1 out_7 out_12 decode_13 vdd gnd and3_dec
+XDEC_AND_45 out_1 out_7 out_13 decode_45 vdd gnd and3_dec
+XDEC_AND_77 out_1 out_7 out_14 decode_77 vdd gnd and3_dec
+XDEC_AND_109 out_1 out_7 out_15 decode_109 vdd gnd and3_dec
+XDEC_AND_141 out_1 out_7 out_16 decode_141 vdd gnd and3_dec
+XDEC_AND_173 out_1 out_7 out_17 decode_173 vdd gnd and3_dec
+XDEC_AND_205 out_1 out_7 out_18 decode_205 vdd gnd and3_dec
+XDEC_AND_237 out_1 out_7 out_19 decode_237 vdd gnd and3_dec
+XDEC_AND_17 out_1 out_8 out_12 decode_17 vdd gnd and3_dec
+XDEC_AND_49 out_1 out_8 out_13 decode_49 vdd gnd and3_dec
+XDEC_AND_81 out_1 out_8 out_14 decode_81 vdd gnd and3_dec
+XDEC_AND_113 out_1 out_8 out_15 decode_113 vdd gnd and3_dec
+XDEC_AND_145 out_1 out_8 out_16 decode_145 vdd gnd and3_dec
+XDEC_AND_177 out_1 out_8 out_17 decode_177 vdd gnd and3_dec
+XDEC_AND_209 out_1 out_8 out_18 decode_209 vdd gnd and3_dec
+XDEC_AND_241 out_1 out_8 out_19 decode_241 vdd gnd and3_dec
+XDEC_AND_21 out_1 out_9 out_12 decode_21 vdd gnd and3_dec
+XDEC_AND_53 out_1 out_9 out_13 decode_53 vdd gnd and3_dec
+XDEC_AND_85 out_1 out_9 out_14 decode_85 vdd gnd and3_dec
+XDEC_AND_117 out_1 out_9 out_15 decode_117 vdd gnd and3_dec
+XDEC_AND_149 out_1 out_9 out_16 decode_149 vdd gnd and3_dec
+XDEC_AND_181 out_1 out_9 out_17 decode_181 vdd gnd and3_dec
+XDEC_AND_213 out_1 out_9 out_18 decode_213 vdd gnd and3_dec
+XDEC_AND_245 out_1 out_9 out_19 decode_245 vdd gnd and3_dec
+XDEC_AND_25 out_1 out_10 out_12 decode_25 vdd gnd and3_dec
+XDEC_AND_57 out_1 out_10 out_13 decode_57 vdd gnd and3_dec
+XDEC_AND_89 out_1 out_10 out_14 decode_89 vdd gnd and3_dec
+XDEC_AND_121 out_1 out_10 out_15 decode_121 vdd gnd and3_dec
+XDEC_AND_153 out_1 out_10 out_16 decode_153 vdd gnd and3_dec
+XDEC_AND_185 out_1 out_10 out_17 decode_185 vdd gnd and3_dec
+XDEC_AND_217 out_1 out_10 out_18 decode_217 vdd gnd and3_dec
+XDEC_AND_249 out_1 out_10 out_19 decode_249 vdd gnd and3_dec
+XDEC_AND_29 out_1 out_11 out_12 decode_29 vdd gnd and3_dec
+XDEC_AND_61 out_1 out_11 out_13 decode_61 vdd gnd and3_dec
+XDEC_AND_93 out_1 out_11 out_14 decode_93 vdd gnd and3_dec
+XDEC_AND_125 out_1 out_11 out_15 decode_125 vdd gnd and3_dec
+XDEC_AND_157 out_1 out_11 out_16 decode_157 vdd gnd and3_dec
+XDEC_AND_189 out_1 out_11 out_17 decode_189 vdd gnd and3_dec
+XDEC_AND_221 out_1 out_11 out_18 decode_221 vdd gnd and3_dec
+XDEC_AND_253 out_1 out_11 out_19 decode_253 vdd gnd and3_dec
+XDEC_AND_2 out_2 out_4 out_12 decode_2 vdd gnd and3_dec
+XDEC_AND_34 out_2 out_4 out_13 decode_34 vdd gnd and3_dec
+XDEC_AND_66 out_2 out_4 out_14 decode_66 vdd gnd and3_dec
+XDEC_AND_98 out_2 out_4 out_15 decode_98 vdd gnd and3_dec
+XDEC_AND_130 out_2 out_4 out_16 decode_130 vdd gnd and3_dec
+XDEC_AND_162 out_2 out_4 out_17 decode_162 vdd gnd and3_dec
+XDEC_AND_194 out_2 out_4 out_18 decode_194 vdd gnd and3_dec
+XDEC_AND_226 out_2 out_4 out_19 decode_226 vdd gnd and3_dec
+XDEC_AND_6 out_2 out_5 out_12 decode_6 vdd gnd and3_dec
+XDEC_AND_38 out_2 out_5 out_13 decode_38 vdd gnd and3_dec
+XDEC_AND_70 out_2 out_5 out_14 decode_70 vdd gnd and3_dec
+XDEC_AND_102 out_2 out_5 out_15 decode_102 vdd gnd and3_dec
+XDEC_AND_134 out_2 out_5 out_16 decode_134 vdd gnd and3_dec
+XDEC_AND_166 out_2 out_5 out_17 decode_166 vdd gnd and3_dec
+XDEC_AND_198 out_2 out_5 out_18 decode_198 vdd gnd and3_dec
+XDEC_AND_230 out_2 out_5 out_19 decode_230 vdd gnd and3_dec
+XDEC_AND_10 out_2 out_6 out_12 decode_10 vdd gnd and3_dec
+XDEC_AND_42 out_2 out_6 out_13 decode_42 vdd gnd and3_dec
+XDEC_AND_74 out_2 out_6 out_14 decode_74 vdd gnd and3_dec
+XDEC_AND_106 out_2 out_6 out_15 decode_106 vdd gnd and3_dec
+XDEC_AND_138 out_2 out_6 out_16 decode_138 vdd gnd and3_dec
+XDEC_AND_170 out_2 out_6 out_17 decode_170 vdd gnd and3_dec
+XDEC_AND_202 out_2 out_6 out_18 decode_202 vdd gnd and3_dec
+XDEC_AND_234 out_2 out_6 out_19 decode_234 vdd gnd and3_dec
+XDEC_AND_14 out_2 out_7 out_12 decode_14 vdd gnd and3_dec
+XDEC_AND_46 out_2 out_7 out_13 decode_46 vdd gnd and3_dec
+XDEC_AND_78 out_2 out_7 out_14 decode_78 vdd gnd and3_dec
+XDEC_AND_110 out_2 out_7 out_15 decode_110 vdd gnd and3_dec
+XDEC_AND_142 out_2 out_7 out_16 decode_142 vdd gnd and3_dec
+XDEC_AND_174 out_2 out_7 out_17 decode_174 vdd gnd and3_dec
+XDEC_AND_206 out_2 out_7 out_18 decode_206 vdd gnd and3_dec
+XDEC_AND_238 out_2 out_7 out_19 decode_238 vdd gnd and3_dec
+XDEC_AND_18 out_2 out_8 out_12 decode_18 vdd gnd and3_dec
+XDEC_AND_50 out_2 out_8 out_13 decode_50 vdd gnd and3_dec
+XDEC_AND_82 out_2 out_8 out_14 decode_82 vdd gnd and3_dec
+XDEC_AND_114 out_2 out_8 out_15 decode_114 vdd gnd and3_dec
+XDEC_AND_146 out_2 out_8 out_16 decode_146 vdd gnd and3_dec
+XDEC_AND_178 out_2 out_8 out_17 decode_178 vdd gnd and3_dec
+XDEC_AND_210 out_2 out_8 out_18 decode_210 vdd gnd and3_dec
+XDEC_AND_242 out_2 out_8 out_19 decode_242 vdd gnd and3_dec
+XDEC_AND_22 out_2 out_9 out_12 decode_22 vdd gnd and3_dec
+XDEC_AND_54 out_2 out_9 out_13 decode_54 vdd gnd and3_dec
+XDEC_AND_86 out_2 out_9 out_14 decode_86 vdd gnd and3_dec
+XDEC_AND_118 out_2 out_9 out_15 decode_118 vdd gnd and3_dec
+XDEC_AND_150 out_2 out_9 out_16 decode_150 vdd gnd and3_dec
+XDEC_AND_182 out_2 out_9 out_17 decode_182 vdd gnd and3_dec
+XDEC_AND_214 out_2 out_9 out_18 decode_214 vdd gnd and3_dec
+XDEC_AND_246 out_2 out_9 out_19 decode_246 vdd gnd and3_dec
+XDEC_AND_26 out_2 out_10 out_12 decode_26 vdd gnd and3_dec
+XDEC_AND_58 out_2 out_10 out_13 decode_58 vdd gnd and3_dec
+XDEC_AND_90 out_2 out_10 out_14 decode_90 vdd gnd and3_dec
+XDEC_AND_122 out_2 out_10 out_15 decode_122 vdd gnd and3_dec
+XDEC_AND_154 out_2 out_10 out_16 decode_154 vdd gnd and3_dec
+XDEC_AND_186 out_2 out_10 out_17 decode_186 vdd gnd and3_dec
+XDEC_AND_218 out_2 out_10 out_18 decode_218 vdd gnd and3_dec
+XDEC_AND_250 out_2 out_10 out_19 decode_250 vdd gnd and3_dec
+XDEC_AND_30 out_2 out_11 out_12 decode_30 vdd gnd and3_dec
+XDEC_AND_62 out_2 out_11 out_13 decode_62 vdd gnd and3_dec
+XDEC_AND_94 out_2 out_11 out_14 decode_94 vdd gnd and3_dec
+XDEC_AND_126 out_2 out_11 out_15 decode_126 vdd gnd and3_dec
+XDEC_AND_158 out_2 out_11 out_16 decode_158 vdd gnd and3_dec
+XDEC_AND_190 out_2 out_11 out_17 decode_190 vdd gnd and3_dec
+XDEC_AND_222 out_2 out_11 out_18 decode_222 vdd gnd and3_dec
+XDEC_AND_254 out_2 out_11 out_19 decode_254 vdd gnd and3_dec
+XDEC_AND_3 out_3 out_4 out_12 decode_3 vdd gnd and3_dec
+XDEC_AND_35 out_3 out_4 out_13 decode_35 vdd gnd and3_dec
+XDEC_AND_67 out_3 out_4 out_14 decode_67 vdd gnd and3_dec
+XDEC_AND_99 out_3 out_4 out_15 decode_99 vdd gnd and3_dec
+XDEC_AND_131 out_3 out_4 out_16 decode_131 vdd gnd and3_dec
+XDEC_AND_163 out_3 out_4 out_17 decode_163 vdd gnd and3_dec
+XDEC_AND_195 out_3 out_4 out_18 decode_195 vdd gnd and3_dec
+XDEC_AND_227 out_3 out_4 out_19 decode_227 vdd gnd and3_dec
+XDEC_AND_7 out_3 out_5 out_12 decode_7 vdd gnd and3_dec
+XDEC_AND_39 out_3 out_5 out_13 decode_39 vdd gnd and3_dec
+XDEC_AND_71 out_3 out_5 out_14 decode_71 vdd gnd and3_dec
+XDEC_AND_103 out_3 out_5 out_15 decode_103 vdd gnd and3_dec
+XDEC_AND_135 out_3 out_5 out_16 decode_135 vdd gnd and3_dec
+XDEC_AND_167 out_3 out_5 out_17 decode_167 vdd gnd and3_dec
+XDEC_AND_199 out_3 out_5 out_18 decode_199 vdd gnd and3_dec
+XDEC_AND_231 out_3 out_5 out_19 decode_231 vdd gnd and3_dec
+XDEC_AND_11 out_3 out_6 out_12 decode_11 vdd gnd and3_dec
+XDEC_AND_43 out_3 out_6 out_13 decode_43 vdd gnd and3_dec
+XDEC_AND_75 out_3 out_6 out_14 decode_75 vdd gnd and3_dec
+XDEC_AND_107 out_3 out_6 out_15 decode_107 vdd gnd and3_dec
+XDEC_AND_139 out_3 out_6 out_16 decode_139 vdd gnd and3_dec
+XDEC_AND_171 out_3 out_6 out_17 decode_171 vdd gnd and3_dec
+XDEC_AND_203 out_3 out_6 out_18 decode_203 vdd gnd and3_dec
+XDEC_AND_235 out_3 out_6 out_19 decode_235 vdd gnd and3_dec
+XDEC_AND_15 out_3 out_7 out_12 decode_15 vdd gnd and3_dec
+XDEC_AND_47 out_3 out_7 out_13 decode_47 vdd gnd and3_dec
+XDEC_AND_79 out_3 out_7 out_14 decode_79 vdd gnd and3_dec
+XDEC_AND_111 out_3 out_7 out_15 decode_111 vdd gnd and3_dec
+XDEC_AND_143 out_3 out_7 out_16 decode_143 vdd gnd and3_dec
+XDEC_AND_175 out_3 out_7 out_17 decode_175 vdd gnd and3_dec
+XDEC_AND_207 out_3 out_7 out_18 decode_207 vdd gnd and3_dec
+XDEC_AND_239 out_3 out_7 out_19 decode_239 vdd gnd and3_dec
+XDEC_AND_19 out_3 out_8 out_12 decode_19 vdd gnd and3_dec
+XDEC_AND_51 out_3 out_8 out_13 decode_51 vdd gnd and3_dec
+XDEC_AND_83 out_3 out_8 out_14 decode_83 vdd gnd and3_dec
+XDEC_AND_115 out_3 out_8 out_15 decode_115 vdd gnd and3_dec
+XDEC_AND_147 out_3 out_8 out_16 decode_147 vdd gnd and3_dec
+XDEC_AND_179 out_3 out_8 out_17 decode_179 vdd gnd and3_dec
+XDEC_AND_211 out_3 out_8 out_18 decode_211 vdd gnd and3_dec
+XDEC_AND_243 out_3 out_8 out_19 decode_243 vdd gnd and3_dec
+XDEC_AND_23 out_3 out_9 out_12 decode_23 vdd gnd and3_dec
+XDEC_AND_55 out_3 out_9 out_13 decode_55 vdd gnd and3_dec
+XDEC_AND_87 out_3 out_9 out_14 decode_87 vdd gnd and3_dec
+XDEC_AND_119 out_3 out_9 out_15 decode_119 vdd gnd and3_dec
+XDEC_AND_151 out_3 out_9 out_16 decode_151 vdd gnd and3_dec
+XDEC_AND_183 out_3 out_9 out_17 decode_183 vdd gnd and3_dec
+XDEC_AND_215 out_3 out_9 out_18 decode_215 vdd gnd and3_dec
+XDEC_AND_247 out_3 out_9 out_19 decode_247 vdd gnd and3_dec
+XDEC_AND_27 out_3 out_10 out_12 decode_27 vdd gnd and3_dec
+XDEC_AND_59 out_3 out_10 out_13 decode_59 vdd gnd and3_dec
+XDEC_AND_91 out_3 out_10 out_14 decode_91 vdd gnd and3_dec
+XDEC_AND_123 out_3 out_10 out_15 decode_123 vdd gnd and3_dec
+XDEC_AND_155 out_3 out_10 out_16 decode_155 vdd gnd and3_dec
+XDEC_AND_187 out_3 out_10 out_17 decode_187 vdd gnd and3_dec
+XDEC_AND_219 out_3 out_10 out_18 decode_219 vdd gnd and3_dec
+XDEC_AND_251 out_3 out_10 out_19 decode_251 vdd gnd and3_dec
+XDEC_AND_31 out_3 out_11 out_12 decode_31 vdd gnd and3_dec
+XDEC_AND_63 out_3 out_11 out_13 decode_63 vdd gnd and3_dec
+XDEC_AND_95 out_3 out_11 out_14 decode_95 vdd gnd and3_dec
+XDEC_AND_127 out_3 out_11 out_15 decode_127 vdd gnd and3_dec
+XDEC_AND_159 out_3 out_11 out_16 decode_159 vdd gnd and3_dec
+XDEC_AND_191 out_3 out_11 out_17 decode_191 vdd gnd and3_dec
+XDEC_AND_223 out_3 out_11 out_18 decode_223 vdd gnd and3_dec
+XDEC_AND_255 out_3 out_11 out_19 decode_255 vdd gnd and3_dec
+.ENDS hierarchical_decoder
+
+* spice ptx X{0} {1} sky130_fd_pr__nfet_01v8 m=1 w=7.0 l=0.15 pd=14.30 ps=14.30 as=2.62u ad=2.62u
+
+* spice ptx X{0} {1} sky130_fd_pr__pfet_01v8 m=1 w=7.0 l=0.15 pd=14.30 ps=14.30 as=2.62u ad=2.62u
+
+.SUBCKT pinv_dec_0 A Z vdd gnd
+*.PININFO A:I Z:O vdd:B gnd:B
+* INPUT : A 
+* OUTPUT: Z 
+* POWER : vdd 
+* GROUND: gnd 
+Xpinv_pmos Z A vdd vdd sky130_fd_pr__pfet_01v8 m=1 w=7.0 l=0.15 pd=14.30 ps=14.30 as=2.62u ad=2.62u
+Xpinv_nmos Z A gnd gnd sky130_fd_pr__nfet_01v8 m=1 w=7.0 l=0.15 pd=14.30 ps=14.30 as=2.62u ad=2.62u
+.ENDS pinv_dec_0
+
+.SUBCKT wordline_driver A B Z vdd gnd
+*.PININFO A:I B:I Z:O vdd:B gnd:B
+* INPUT : A 
+* INPUT : B 
+* OUTPUT: Z 
+* POWER : vdd 
+* GROUND: gnd 
+Xwld_nand A B zb_int vdd gnd sky130_fd_bd_sram__openram_dp_nand2_dec
+Xwl_driver zb_int Z vdd gnd pinv_dec_0
+.ENDS wordline_driver
+
+.SUBCKT wordline_driver_array in_0 in_1 in_2 in_3 in_4 in_5 in_6 in_7 in_8 in_9 in_10 in_11 in_12 in_13 in_14 in_15 in_16 in_17 in_18 in_19 in_20 in_21 in_22 in_23 in_24 in_25 in_26 in_27 in_28 in_29 in_30 in_31 in_32 in_33 in_34 in_35 in_36 in_37 in_38 in_39 in_40 in_41 in_42 in_43 in_44 in_45 in_46 in_47 in_48 in_49 in_50 in_51 in_52 in_53 in_54 in_55 in_56 in_57 in_58 in_59 in_60 in_61 in_62 in_63 in_64 in_65 in_66 in_67 in_68 in_69 in_70 in_71 in_72 in_73 in_74 in_75 in_76 in_77 in_78 in_79 in_80 in_81 in_82 in_83 in_84 in_85 in_86 in_87 in_88 in_89 in_90 in_91 in_92 in_93 in_94 in_95 in_96 in_97 in_98 in_99 in_100 in_101 in_102 in_103 in_104 in_105 in_106 in_107 in_108 in_109 in_110 in_111 in_112 in_113 in_114 in_115 in_116 in_117 in_118 in_119 in_120 in_121 in_122 in_123 in_124 in_125 in_126 in_127 in_128 in_129 in_130 in_131 in_132 in_133 in_134 in_135 in_136 in_137 in_138 in_139 in_140 in_141 in_142 in_143 in_144 in_145 in_146 in_147 in_148 in_149 in_150 in_151 in_152 in_153 in_154 in_155 in_156 in_157 in_158 in_159 in_160 in_161 in_162 in_163 in_164 in_165 in_166 in_167 in_168 in_169 in_170 in_171 in_172 in_173 in_174 in_175 in_176 in_177 in_178 in_179 in_180 in_181 in_182 in_183 in_184 in_185 in_186 in_187 in_188 in_189 in_190 in_191 in_192 in_193 in_194 in_195 in_196 in_197 in_198 in_199 in_200 in_201 in_202 in_203 in_204 in_205 in_206 in_207 in_208 in_209 in_210 in_211 in_212 in_213 in_214 in_215 in_216 in_217 in_218 in_219 in_220 in_221 in_222 in_223 in_224 in_225 in_226 in_227 in_228 in_229 in_230 in_231 in_232 in_233 in_234 in_235 in_236 in_237 in_238 in_239 in_240 in_241 in_242 in_243 in_244 in_245 in_246 in_247 in_248 in_249 in_250 in_251 in_252 in_253 in_254 in_255 wl_0 wl_1 wl_2 wl_3 wl_4 wl_5 wl_6 wl_7 wl_8 wl_9 wl_10 wl_11 wl_12 wl_13 wl_14 wl_15 wl_16 wl_17 wl_18 wl_19 wl_20 wl_21 wl_22 wl_23 wl_24 wl_25 wl_26 wl_27 wl_28 wl_29 wl_30 wl_31 wl_32 wl_33 wl_34 wl_35 wl_36 wl_37 wl_38 wl_39 wl_40 wl_41 wl_42 wl_43 wl_44 wl_45 wl_46 wl_47 wl_48 wl_49 wl_50 wl_51 wl_52 wl_53 wl_54 wl_55 wl_56 wl_57 wl_58 wl_59 wl_60 wl_61 wl_62 wl_63 wl_64 wl_65 wl_66 wl_67 wl_68 wl_69 wl_70 wl_71 wl_72 wl_73 wl_74 wl_75 wl_76 wl_77 wl_78 wl_79 wl_80 wl_81 wl_82 wl_83 wl_84 wl_85 wl_86 wl_87 wl_88 wl_89 wl_90 wl_91 wl_92 wl_93 wl_94 wl_95 wl_96 wl_97 wl_98 wl_99 wl_100 wl_101 wl_102 wl_103 wl_104 wl_105 wl_106 wl_107 wl_108 wl_109 wl_110 wl_111 wl_112 wl_113 wl_114 wl_115 wl_116 wl_117 wl_118 wl_119 wl_120 wl_121 wl_122 wl_123 wl_124 wl_125 wl_126 wl_127 wl_128 wl_129 wl_130 wl_131 wl_132 wl_133 wl_134 wl_135 wl_136 wl_137 wl_138 wl_139 wl_140 wl_141 wl_142 wl_143 wl_144 wl_145 wl_146 wl_147 wl_148 wl_149 wl_150 wl_151 wl_152 wl_153 wl_154 wl_155 wl_156 wl_157 wl_158 wl_159 wl_160 wl_161 wl_162 wl_163 wl_164 wl_165 wl_166 wl_167 wl_168 wl_169 wl_170 wl_171 wl_172 wl_173 wl_174 wl_175 wl_176 wl_177 wl_178 wl_179 wl_180 wl_181 wl_182 wl_183 wl_184 wl_185 wl_186 wl_187 wl_188 wl_189 wl_190 wl_191 wl_192 wl_193 wl_194 wl_195 wl_196 wl_197 wl_198 wl_199 wl_200 wl_201 wl_202 wl_203 wl_204 wl_205 wl_206 wl_207 wl_208 wl_209 wl_210 wl_211 wl_212 wl_213 wl_214 wl_215 wl_216 wl_217 wl_218 wl_219 wl_220 wl_221 wl_222 wl_223 wl_224 wl_225 wl_226 wl_227 wl_228 wl_229 wl_230 wl_231 wl_232 wl_233 wl_234 wl_235 wl_236 wl_237 wl_238 wl_239 wl_240 wl_241 wl_242 wl_243 wl_244 wl_245 wl_246 wl_247 wl_248 wl_249 wl_250 wl_251 wl_252 wl_253 wl_254 wl_255 en vdd gnd
+*.PININFO in_0:I in_1:I in_2:I in_3:I in_4:I in_5:I in_6:I in_7:I in_8:I in_9:I in_10:I in_11:I in_12:I in_13:I in_14:I in_15:I in_16:I in_17:I in_18:I in_19:I in_20:I in_21:I in_22:I in_23:I in_24:I in_25:I in_26:I in_27:I in_28:I in_29:I in_30:I in_31:I in_32:I in_33:I in_34:I in_35:I in_36:I in_37:I in_38:I in_39:I in_40:I in_41:I in_42:I in_43:I in_44:I in_45:I in_46:I in_47:I in_48:I in_49:I in_50:I in_51:I in_52:I in_53:I in_54:I in_55:I in_56:I in_57:I in_58:I in_59:I in_60:I in_61:I in_62:I in_63:I in_64:I in_65:I in_66:I in_67:I in_68:I in_69:I in_70:I in_71:I in_72:I in_73:I in_74:I in_75:I in_76:I in_77:I in_78:I in_79:I in_80:I in_81:I in_82:I in_83:I in_84:I in_85:I in_86:I in_87:I in_88:I in_89:I in_90:I in_91:I in_92:I in_93:I in_94:I in_95:I in_96:I in_97:I in_98:I in_99:I in_100:I in_101:I in_102:I in_103:I in_104:I in_105:I in_106:I in_107:I in_108:I in_109:I in_110:I in_111:I in_112:I in_113:I in_114:I in_115:I in_116:I in_117:I in_118:I in_119:I in_120:I in_121:I in_122:I in_123:I in_124:I in_125:I in_126:I in_127:I in_128:I in_129:I in_130:I in_131:I in_132:I in_133:I in_134:I in_135:I in_136:I in_137:I in_138:I in_139:I in_140:I in_141:I in_142:I in_143:I in_144:I in_145:I in_146:I in_147:I in_148:I in_149:I in_150:I in_151:I in_152:I in_153:I in_154:I in_155:I in_156:I in_157:I in_158:I in_159:I in_160:I in_161:I in_162:I in_163:I in_164:I in_165:I in_166:I in_167:I in_168:I in_169:I in_170:I in_171:I in_172:I in_173:I in_174:I in_175:I in_176:I in_177:I in_178:I in_179:I in_180:I in_181:I in_182:I in_183:I in_184:I in_185:I in_186:I in_187:I in_188:I in_189:I in_190:I in_191:I in_192:I in_193:I in_194:I in_195:I in_196:I in_197:I in_198:I in_199:I in_200:I in_201:I in_202:I in_203:I in_204:I in_205:I in_206:I in_207:I in_208:I in_209:I in_210:I in_211:I in_212:I in_213:I in_214:I in_215:I in_216:I in_217:I in_218:I in_219:I in_220:I in_221:I in_222:I in_223:I in_224:I in_225:I in_226:I in_227:I in_228:I in_229:I in_230:I in_231:I in_232:I in_233:I in_234:I in_235:I in_236:I in_237:I in_238:I in_239:I in_240:I in_241:I in_242:I in_243:I in_244:I in_245:I in_246:I in_247:I in_248:I in_249:I in_250:I in_251:I in_252:I in_253:I in_254:I in_255:I wl_0:O wl_1:O wl_2:O wl_3:O wl_4:O wl_5:O wl_6:O wl_7:O wl_8:O wl_9:O wl_10:O wl_11:O wl_12:O wl_13:O wl_14:O wl_15:O wl_16:O wl_17:O wl_18:O wl_19:O wl_20:O wl_21:O wl_22:O wl_23:O wl_24:O wl_25:O wl_26:O wl_27:O wl_28:O wl_29:O wl_30:O wl_31:O wl_32:O wl_33:O wl_34:O wl_35:O wl_36:O wl_37:O wl_38:O wl_39:O wl_40:O wl_41:O wl_42:O wl_43:O wl_44:O wl_45:O wl_46:O wl_47:O wl_48:O wl_49:O wl_50:O wl_51:O wl_52:O wl_53:O wl_54:O wl_55:O wl_56:O wl_57:O wl_58:O wl_59:O wl_60:O wl_61:O wl_62:O wl_63:O wl_64:O wl_65:O wl_66:O wl_67:O wl_68:O wl_69:O wl_70:O wl_71:O wl_72:O wl_73:O wl_74:O wl_75:O wl_76:O wl_77:O wl_78:O wl_79:O wl_80:O wl_81:O wl_82:O wl_83:O wl_84:O wl_85:O wl_86:O wl_87:O wl_88:O wl_89:O wl_90:O wl_91:O wl_92:O wl_93:O wl_94:O wl_95:O wl_96:O wl_97:O wl_98:O wl_99:O wl_100:O wl_101:O wl_102:O wl_103:O wl_104:O wl_105:O wl_106:O wl_107:O wl_108:O wl_109:O wl_110:O wl_111:O wl_112:O wl_113:O wl_114:O wl_115:O wl_116:O wl_117:O wl_118:O wl_119:O wl_120:O wl_121:O wl_122:O wl_123:O wl_124:O wl_125:O wl_126:O wl_127:O wl_128:O wl_129:O wl_130:O wl_131:O wl_132:O wl_133:O wl_134:O wl_135:O wl_136:O wl_137:O wl_138:O wl_139:O wl_140:O wl_141:O wl_142:O wl_143:O wl_144:O wl_145:O wl_146:O wl_147:O wl_148:O wl_149:O wl_150:O wl_151:O wl_152:O wl_153:O wl_154:O wl_155:O wl_156:O wl_157:O wl_158:O wl_159:O wl_160:O wl_161:O wl_162:O wl_163:O wl_164:O wl_165:O wl_166:O wl_167:O wl_168:O wl_169:O wl_170:O wl_171:O wl_172:O wl_173:O wl_174:O wl_175:O wl_176:O wl_177:O wl_178:O wl_179:O wl_180:O wl_181:O wl_182:O wl_183:O wl_184:O wl_185:O wl_186:O wl_187:O wl_188:O wl_189:O wl_190:O wl_191:O wl_192:O wl_193:O wl_194:O wl_195:O wl_196:O wl_197:O wl_198:O wl_199:O wl_200:O wl_201:O wl_202:O wl_203:O wl_204:O wl_205:O wl_206:O wl_207:O wl_208:O wl_209:O wl_210:O wl_211:O wl_212:O wl_213:O wl_214:O wl_215:O wl_216:O wl_217:O wl_218:O wl_219:O wl_220:O wl_221:O wl_222:O wl_223:O wl_224:O wl_225:O wl_226:O wl_227:O wl_228:O wl_229:O wl_230:O wl_231:O wl_232:O wl_233:O wl_234:O wl_235:O wl_236:O wl_237:O wl_238:O wl_239:O wl_240:O wl_241:O wl_242:O wl_243:O wl_244:O wl_245:O wl_246:O wl_247:O wl_248:O wl_249:O wl_250:O wl_251:O wl_252:O wl_253:O wl_254:O wl_255:O en:I vdd:B gnd:B
+* INPUT : in_0 
+* INPUT : in_1 
+* INPUT : in_2 
+* INPUT : in_3 
+* INPUT : in_4 
+* INPUT : in_5 
+* INPUT : in_6 
+* INPUT : in_7 
+* INPUT : in_8 
+* INPUT : in_9 
+* INPUT : in_10 
+* INPUT : in_11 
+* INPUT : in_12 
+* INPUT : in_13 
+* INPUT : in_14 
+* INPUT : in_15 
+* INPUT : in_16 
+* INPUT : in_17 
+* INPUT : in_18 
+* INPUT : in_19 
+* INPUT : in_20 
+* INPUT : in_21 
+* INPUT : in_22 
+* INPUT : in_23 
+* INPUT : in_24 
+* INPUT : in_25 
+* INPUT : in_26 
+* INPUT : in_27 
+* INPUT : in_28 
+* INPUT : in_29 
+* INPUT : in_30 
+* INPUT : in_31 
+* INPUT : in_32 
+* INPUT : in_33 
+* INPUT : in_34 
+* INPUT : in_35 
+* INPUT : in_36 
+* INPUT : in_37 
+* INPUT : in_38 
+* INPUT : in_39 
+* INPUT : in_40 
+* INPUT : in_41 
+* INPUT : in_42 
+* INPUT : in_43 
+* INPUT : in_44 
+* INPUT : in_45 
+* INPUT : in_46 
+* INPUT : in_47 
+* INPUT : in_48 
+* INPUT : in_49 
+* INPUT : in_50 
+* INPUT : in_51 
+* INPUT : in_52 
+* INPUT : in_53 
+* INPUT : in_54 
+* INPUT : in_55 
+* INPUT : in_56 
+* INPUT : in_57 
+* INPUT : in_58 
+* INPUT : in_59 
+* INPUT : in_60 
+* INPUT : in_61 
+* INPUT : in_62 
+* INPUT : in_63 
+* INPUT : in_64 
+* INPUT : in_65 
+* INPUT : in_66 
+* INPUT : in_67 
+* INPUT : in_68 
+* INPUT : in_69 
+* INPUT : in_70 
+* INPUT : in_71 
+* INPUT : in_72 
+* INPUT : in_73 
+* INPUT : in_74 
+* INPUT : in_75 
+* INPUT : in_76 
+* INPUT : in_77 
+* INPUT : in_78 
+* INPUT : in_79 
+* INPUT : in_80 
+* INPUT : in_81 
+* INPUT : in_82 
+* INPUT : in_83 
+* INPUT : in_84 
+* INPUT : in_85 
+* INPUT : in_86 
+* INPUT : in_87 
+* INPUT : in_88 
+* INPUT : in_89 
+* INPUT : in_90 
+* INPUT : in_91 
+* INPUT : in_92 
+* INPUT : in_93 
+* INPUT : in_94 
+* INPUT : in_95 
+* INPUT : in_96 
+* INPUT : in_97 
+* INPUT : in_98 
+* INPUT : in_99 
+* INPUT : in_100 
+* INPUT : in_101 
+* INPUT : in_102 
+* INPUT : in_103 
+* INPUT : in_104 
+* INPUT : in_105 
+* INPUT : in_106 
+* INPUT : in_107 
+* INPUT : in_108 
+* INPUT : in_109 
+* INPUT : in_110 
+* INPUT : in_111 
+* INPUT : in_112 
+* INPUT : in_113 
+* INPUT : in_114 
+* INPUT : in_115 
+* INPUT : in_116 
+* INPUT : in_117 
+* INPUT : in_118 
+* INPUT : in_119 
+* INPUT : in_120 
+* INPUT : in_121 
+* INPUT : in_122 
+* INPUT : in_123 
+* INPUT : in_124 
+* INPUT : in_125 
+* INPUT : in_126 
+* INPUT : in_127 
+* INPUT : in_128 
+* INPUT : in_129 
+* INPUT : in_130 
+* INPUT : in_131 
+* INPUT : in_132 
+* INPUT : in_133 
+* INPUT : in_134 
+* INPUT : in_135 
+* INPUT : in_136 
+* INPUT : in_137 
+* INPUT : in_138 
+* INPUT : in_139 
+* INPUT : in_140 
+* INPUT : in_141 
+* INPUT : in_142 
+* INPUT : in_143 
+* INPUT : in_144 
+* INPUT : in_145 
+* INPUT : in_146 
+* INPUT : in_147 
+* INPUT : in_148 
+* INPUT : in_149 
+* INPUT : in_150 
+* INPUT : in_151 
+* INPUT : in_152 
+* INPUT : in_153 
+* INPUT : in_154 
+* INPUT : in_155 
+* INPUT : in_156 
+* INPUT : in_157 
+* INPUT : in_158 
+* INPUT : in_159 
+* INPUT : in_160 
+* INPUT : in_161 
+* INPUT : in_162 
+* INPUT : in_163 
+* INPUT : in_164 
+* INPUT : in_165 
+* INPUT : in_166 
+* INPUT : in_167 
+* INPUT : in_168 
+* INPUT : in_169 
+* INPUT : in_170 
+* INPUT : in_171 
+* INPUT : in_172 
+* INPUT : in_173 
+* INPUT : in_174 
+* INPUT : in_175 
+* INPUT : in_176 
+* INPUT : in_177 
+* INPUT : in_178 
+* INPUT : in_179 
+* INPUT : in_180 
+* INPUT : in_181 
+* INPUT : in_182 
+* INPUT : in_183 
+* INPUT : in_184 
+* INPUT : in_185 
+* INPUT : in_186 
+* INPUT : in_187 
+* INPUT : in_188 
+* INPUT : in_189 
+* INPUT : in_190 
+* INPUT : in_191 
+* INPUT : in_192 
+* INPUT : in_193 
+* INPUT : in_194 
+* INPUT : in_195 
+* INPUT : in_196 
+* INPUT : in_197 
+* INPUT : in_198 
+* INPUT : in_199 
+* INPUT : in_200 
+* INPUT : in_201 
+* INPUT : in_202 
+* INPUT : in_203 
+* INPUT : in_204 
+* INPUT : in_205 
+* INPUT : in_206 
+* INPUT : in_207 
+* INPUT : in_208 
+* INPUT : in_209 
+* INPUT : in_210 
+* INPUT : in_211 
+* INPUT : in_212 
+* INPUT : in_213 
+* INPUT : in_214 
+* INPUT : in_215 
+* INPUT : in_216 
+* INPUT : in_217 
+* INPUT : in_218 
+* INPUT : in_219 
+* INPUT : in_220 
+* INPUT : in_221 
+* INPUT : in_222 
+* INPUT : in_223 
+* INPUT : in_224 
+* INPUT : in_225 
+* INPUT : in_226 
+* INPUT : in_227 
+* INPUT : in_228 
+* INPUT : in_229 
+* INPUT : in_230 
+* INPUT : in_231 
+* INPUT : in_232 
+* INPUT : in_233 
+* INPUT : in_234 
+* INPUT : in_235 
+* INPUT : in_236 
+* INPUT : in_237 
+* INPUT : in_238 
+* INPUT : in_239 
+* INPUT : in_240 
+* INPUT : in_241 
+* INPUT : in_242 
+* INPUT : in_243 
+* INPUT : in_244 
+* INPUT : in_245 
+* INPUT : in_246 
+* INPUT : in_247 
+* INPUT : in_248 
+* INPUT : in_249 
+* INPUT : in_250 
+* INPUT : in_251 
+* INPUT : in_252 
+* INPUT : in_253 
+* INPUT : in_254 
+* INPUT : in_255 
+* OUTPUT: wl_0 
+* OUTPUT: wl_1 
+* OUTPUT: wl_2 
+* OUTPUT: wl_3 
+* OUTPUT: wl_4 
+* OUTPUT: wl_5 
+* OUTPUT: wl_6 
+* OUTPUT: wl_7 
+* OUTPUT: wl_8 
+* OUTPUT: wl_9 
+* OUTPUT: wl_10 
+* OUTPUT: wl_11 
+* OUTPUT: wl_12 
+* OUTPUT: wl_13 
+* OUTPUT: wl_14 
+* OUTPUT: wl_15 
+* OUTPUT: wl_16 
+* OUTPUT: wl_17 
+* OUTPUT: wl_18 
+* OUTPUT: wl_19 
+* OUTPUT: wl_20 
+* OUTPUT: wl_21 
+* OUTPUT: wl_22 
+* OUTPUT: wl_23 
+* OUTPUT: wl_24 
+* OUTPUT: wl_25 
+* OUTPUT: wl_26 
+* OUTPUT: wl_27 
+* OUTPUT: wl_28 
+* OUTPUT: wl_29 
+* OUTPUT: wl_30 
+* OUTPUT: wl_31 
+* OUTPUT: wl_32 
+* OUTPUT: wl_33 
+* OUTPUT: wl_34 
+* OUTPUT: wl_35 
+* OUTPUT: wl_36 
+* OUTPUT: wl_37 
+* OUTPUT: wl_38 
+* OUTPUT: wl_39 
+* OUTPUT: wl_40 
+* OUTPUT: wl_41 
+* OUTPUT: wl_42 
+* OUTPUT: wl_43 
+* OUTPUT: wl_44 
+* OUTPUT: wl_45 
+* OUTPUT: wl_46 
+* OUTPUT: wl_47 
+* OUTPUT: wl_48 
+* OUTPUT: wl_49 
+* OUTPUT: wl_50 
+* OUTPUT: wl_51 
+* OUTPUT: wl_52 
+* OUTPUT: wl_53 
+* OUTPUT: wl_54 
+* OUTPUT: wl_55 
+* OUTPUT: wl_56 
+* OUTPUT: wl_57 
+* OUTPUT: wl_58 
+* OUTPUT: wl_59 
+* OUTPUT: wl_60 
+* OUTPUT: wl_61 
+* OUTPUT: wl_62 
+* OUTPUT: wl_63 
+* OUTPUT: wl_64 
+* OUTPUT: wl_65 
+* OUTPUT: wl_66 
+* OUTPUT: wl_67 
+* OUTPUT: wl_68 
+* OUTPUT: wl_69 
+* OUTPUT: wl_70 
+* OUTPUT: wl_71 
+* OUTPUT: wl_72 
+* OUTPUT: wl_73 
+* OUTPUT: wl_74 
+* OUTPUT: wl_75 
+* OUTPUT: wl_76 
+* OUTPUT: wl_77 
+* OUTPUT: wl_78 
+* OUTPUT: wl_79 
+* OUTPUT: wl_80 
+* OUTPUT: wl_81 
+* OUTPUT: wl_82 
+* OUTPUT: wl_83 
+* OUTPUT: wl_84 
+* OUTPUT: wl_85 
+* OUTPUT: wl_86 
+* OUTPUT: wl_87 
+* OUTPUT: wl_88 
+* OUTPUT: wl_89 
+* OUTPUT: wl_90 
+* OUTPUT: wl_91 
+* OUTPUT: wl_92 
+* OUTPUT: wl_93 
+* OUTPUT: wl_94 
+* OUTPUT: wl_95 
+* OUTPUT: wl_96 
+* OUTPUT: wl_97 
+* OUTPUT: wl_98 
+* OUTPUT: wl_99 
+* OUTPUT: wl_100 
+* OUTPUT: wl_101 
+* OUTPUT: wl_102 
+* OUTPUT: wl_103 
+* OUTPUT: wl_104 
+* OUTPUT: wl_105 
+* OUTPUT: wl_106 
+* OUTPUT: wl_107 
+* OUTPUT: wl_108 
+* OUTPUT: wl_109 
+* OUTPUT: wl_110 
+* OUTPUT: wl_111 
+* OUTPUT: wl_112 
+* OUTPUT: wl_113 
+* OUTPUT: wl_114 
+* OUTPUT: wl_115 
+* OUTPUT: wl_116 
+* OUTPUT: wl_117 
+* OUTPUT: wl_118 
+* OUTPUT: wl_119 
+* OUTPUT: wl_120 
+* OUTPUT: wl_121 
+* OUTPUT: wl_122 
+* OUTPUT: wl_123 
+* OUTPUT: wl_124 
+* OUTPUT: wl_125 
+* OUTPUT: wl_126 
+* OUTPUT: wl_127 
+* OUTPUT: wl_128 
+* OUTPUT: wl_129 
+* OUTPUT: wl_130 
+* OUTPUT: wl_131 
+* OUTPUT: wl_132 
+* OUTPUT: wl_133 
+* OUTPUT: wl_134 
+* OUTPUT: wl_135 
+* OUTPUT: wl_136 
+* OUTPUT: wl_137 
+* OUTPUT: wl_138 
+* OUTPUT: wl_139 
+* OUTPUT: wl_140 
+* OUTPUT: wl_141 
+* OUTPUT: wl_142 
+* OUTPUT: wl_143 
+* OUTPUT: wl_144 
+* OUTPUT: wl_145 
+* OUTPUT: wl_146 
+* OUTPUT: wl_147 
+* OUTPUT: wl_148 
+* OUTPUT: wl_149 
+* OUTPUT: wl_150 
+* OUTPUT: wl_151 
+* OUTPUT: wl_152 
+* OUTPUT: wl_153 
+* OUTPUT: wl_154 
+* OUTPUT: wl_155 
+* OUTPUT: wl_156 
+* OUTPUT: wl_157 
+* OUTPUT: wl_158 
+* OUTPUT: wl_159 
+* OUTPUT: wl_160 
+* OUTPUT: wl_161 
+* OUTPUT: wl_162 
+* OUTPUT: wl_163 
+* OUTPUT: wl_164 
+* OUTPUT: wl_165 
+* OUTPUT: wl_166 
+* OUTPUT: wl_167 
+* OUTPUT: wl_168 
+* OUTPUT: wl_169 
+* OUTPUT: wl_170 
+* OUTPUT: wl_171 
+* OUTPUT: wl_172 
+* OUTPUT: wl_173 
+* OUTPUT: wl_174 
+* OUTPUT: wl_175 
+* OUTPUT: wl_176 
+* OUTPUT: wl_177 
+* OUTPUT: wl_178 
+* OUTPUT: wl_179 
+* OUTPUT: wl_180 
+* OUTPUT: wl_181 
+* OUTPUT: wl_182 
+* OUTPUT: wl_183 
+* OUTPUT: wl_184 
+* OUTPUT: wl_185 
+* OUTPUT: wl_186 
+* OUTPUT: wl_187 
+* OUTPUT: wl_188 
+* OUTPUT: wl_189 
+* OUTPUT: wl_190 
+* OUTPUT: wl_191 
+* OUTPUT: wl_192 
+* OUTPUT: wl_193 
+* OUTPUT: wl_194 
+* OUTPUT: wl_195 
+* OUTPUT: wl_196 
+* OUTPUT: wl_197 
+* OUTPUT: wl_198 
+* OUTPUT: wl_199 
+* OUTPUT: wl_200 
+* OUTPUT: wl_201 
+* OUTPUT: wl_202 
+* OUTPUT: wl_203 
+* OUTPUT: wl_204 
+* OUTPUT: wl_205 
+* OUTPUT: wl_206 
+* OUTPUT: wl_207 
+* OUTPUT: wl_208 
+* OUTPUT: wl_209 
+* OUTPUT: wl_210 
+* OUTPUT: wl_211 
+* OUTPUT: wl_212 
+* OUTPUT: wl_213 
+* OUTPUT: wl_214 
+* OUTPUT: wl_215 
+* OUTPUT: wl_216 
+* OUTPUT: wl_217 
+* OUTPUT: wl_218 
+* OUTPUT: wl_219 
+* OUTPUT: wl_220 
+* OUTPUT: wl_221 
+* OUTPUT: wl_222 
+* OUTPUT: wl_223 
+* OUTPUT: wl_224 
+* OUTPUT: wl_225 
+* OUTPUT: wl_226 
+* OUTPUT: wl_227 
+* OUTPUT: wl_228 
+* OUTPUT: wl_229 
+* OUTPUT: wl_230 
+* OUTPUT: wl_231 
+* OUTPUT: wl_232 
+* OUTPUT: wl_233 
+* OUTPUT: wl_234 
+* OUTPUT: wl_235 
+* OUTPUT: wl_236 
+* OUTPUT: wl_237 
+* OUTPUT: wl_238 
+* OUTPUT: wl_239 
+* OUTPUT: wl_240 
+* OUTPUT: wl_241 
+* OUTPUT: wl_242 
+* OUTPUT: wl_243 
+* OUTPUT: wl_244 
+* OUTPUT: wl_245 
+* OUTPUT: wl_246 
+* OUTPUT: wl_247 
+* OUTPUT: wl_248 
+* OUTPUT: wl_249 
+* OUTPUT: wl_250 
+* OUTPUT: wl_251 
+* OUTPUT: wl_252 
+* OUTPUT: wl_253 
+* OUTPUT: wl_254 
+* OUTPUT: wl_255 
+* INPUT : en 
+* POWER : vdd 
+* GROUND: gnd 
+* rows: 256 cols: 128
+Xwl_driver_and0 in_0 en wl_0 vdd gnd wordline_driver
+Xwl_driver_and1 in_1 en wl_1 vdd gnd wordline_driver
+Xwl_driver_and2 in_2 en wl_2 vdd gnd wordline_driver
+Xwl_driver_and3 in_3 en wl_3 vdd gnd wordline_driver
+Xwl_driver_and4 in_4 en wl_4 vdd gnd wordline_driver
+Xwl_driver_and5 in_5 en wl_5 vdd gnd wordline_driver
+Xwl_driver_and6 in_6 en wl_6 vdd gnd wordline_driver
+Xwl_driver_and7 in_7 en wl_7 vdd gnd wordline_driver
+Xwl_driver_and8 in_8 en wl_8 vdd gnd wordline_driver
+Xwl_driver_and9 in_9 en wl_9 vdd gnd wordline_driver
+Xwl_driver_and10 in_10 en wl_10 vdd gnd wordline_driver
+Xwl_driver_and11 in_11 en wl_11 vdd gnd wordline_driver
+Xwl_driver_and12 in_12 en wl_12 vdd gnd wordline_driver
+Xwl_driver_and13 in_13 en wl_13 vdd gnd wordline_driver
+Xwl_driver_and14 in_14 en wl_14 vdd gnd wordline_driver
+Xwl_driver_and15 in_15 en wl_15 vdd gnd wordline_driver
+Xwl_driver_and16 in_16 en wl_16 vdd gnd wordline_driver
+Xwl_driver_and17 in_17 en wl_17 vdd gnd wordline_driver
+Xwl_driver_and18 in_18 en wl_18 vdd gnd wordline_driver
+Xwl_driver_and19 in_19 en wl_19 vdd gnd wordline_driver
+Xwl_driver_and20 in_20 en wl_20 vdd gnd wordline_driver
+Xwl_driver_and21 in_21 en wl_21 vdd gnd wordline_driver
+Xwl_driver_and22 in_22 en wl_22 vdd gnd wordline_driver
+Xwl_driver_and23 in_23 en wl_23 vdd gnd wordline_driver
+Xwl_driver_and24 in_24 en wl_24 vdd gnd wordline_driver
+Xwl_driver_and25 in_25 en wl_25 vdd gnd wordline_driver
+Xwl_driver_and26 in_26 en wl_26 vdd gnd wordline_driver
+Xwl_driver_and27 in_27 en wl_27 vdd gnd wordline_driver
+Xwl_driver_and28 in_28 en wl_28 vdd gnd wordline_driver
+Xwl_driver_and29 in_29 en wl_29 vdd gnd wordline_driver
+Xwl_driver_and30 in_30 en wl_30 vdd gnd wordline_driver
+Xwl_driver_and31 in_31 en wl_31 vdd gnd wordline_driver
+Xwl_driver_and32 in_32 en wl_32 vdd gnd wordline_driver
+Xwl_driver_and33 in_33 en wl_33 vdd gnd wordline_driver
+Xwl_driver_and34 in_34 en wl_34 vdd gnd wordline_driver
+Xwl_driver_and35 in_35 en wl_35 vdd gnd wordline_driver
+Xwl_driver_and36 in_36 en wl_36 vdd gnd wordline_driver
+Xwl_driver_and37 in_37 en wl_37 vdd gnd wordline_driver
+Xwl_driver_and38 in_38 en wl_38 vdd gnd wordline_driver
+Xwl_driver_and39 in_39 en wl_39 vdd gnd wordline_driver
+Xwl_driver_and40 in_40 en wl_40 vdd gnd wordline_driver
+Xwl_driver_and41 in_41 en wl_41 vdd gnd wordline_driver
+Xwl_driver_and42 in_42 en wl_42 vdd gnd wordline_driver
+Xwl_driver_and43 in_43 en wl_43 vdd gnd wordline_driver
+Xwl_driver_and44 in_44 en wl_44 vdd gnd wordline_driver
+Xwl_driver_and45 in_45 en wl_45 vdd gnd wordline_driver
+Xwl_driver_and46 in_46 en wl_46 vdd gnd wordline_driver
+Xwl_driver_and47 in_47 en wl_47 vdd gnd wordline_driver
+Xwl_driver_and48 in_48 en wl_48 vdd gnd wordline_driver
+Xwl_driver_and49 in_49 en wl_49 vdd gnd wordline_driver
+Xwl_driver_and50 in_50 en wl_50 vdd gnd wordline_driver
+Xwl_driver_and51 in_51 en wl_51 vdd gnd wordline_driver
+Xwl_driver_and52 in_52 en wl_52 vdd gnd wordline_driver
+Xwl_driver_and53 in_53 en wl_53 vdd gnd wordline_driver
+Xwl_driver_and54 in_54 en wl_54 vdd gnd wordline_driver
+Xwl_driver_and55 in_55 en wl_55 vdd gnd wordline_driver
+Xwl_driver_and56 in_56 en wl_56 vdd gnd wordline_driver
+Xwl_driver_and57 in_57 en wl_57 vdd gnd wordline_driver
+Xwl_driver_and58 in_58 en wl_58 vdd gnd wordline_driver
+Xwl_driver_and59 in_59 en wl_59 vdd gnd wordline_driver
+Xwl_driver_and60 in_60 en wl_60 vdd gnd wordline_driver
+Xwl_driver_and61 in_61 en wl_61 vdd gnd wordline_driver
+Xwl_driver_and62 in_62 en wl_62 vdd gnd wordline_driver
+Xwl_driver_and63 in_63 en wl_63 vdd gnd wordline_driver
+Xwl_driver_and64 in_64 en wl_64 vdd gnd wordline_driver
+Xwl_driver_and65 in_65 en wl_65 vdd gnd wordline_driver
+Xwl_driver_and66 in_66 en wl_66 vdd gnd wordline_driver
+Xwl_driver_and67 in_67 en wl_67 vdd gnd wordline_driver
+Xwl_driver_and68 in_68 en wl_68 vdd gnd wordline_driver
+Xwl_driver_and69 in_69 en wl_69 vdd gnd wordline_driver
+Xwl_driver_and70 in_70 en wl_70 vdd gnd wordline_driver
+Xwl_driver_and71 in_71 en wl_71 vdd gnd wordline_driver
+Xwl_driver_and72 in_72 en wl_72 vdd gnd wordline_driver
+Xwl_driver_and73 in_73 en wl_73 vdd gnd wordline_driver
+Xwl_driver_and74 in_74 en wl_74 vdd gnd wordline_driver
+Xwl_driver_and75 in_75 en wl_75 vdd gnd wordline_driver
+Xwl_driver_and76 in_76 en wl_76 vdd gnd wordline_driver
+Xwl_driver_and77 in_77 en wl_77 vdd gnd wordline_driver
+Xwl_driver_and78 in_78 en wl_78 vdd gnd wordline_driver
+Xwl_driver_and79 in_79 en wl_79 vdd gnd wordline_driver
+Xwl_driver_and80 in_80 en wl_80 vdd gnd wordline_driver
+Xwl_driver_and81 in_81 en wl_81 vdd gnd wordline_driver
+Xwl_driver_and82 in_82 en wl_82 vdd gnd wordline_driver
+Xwl_driver_and83 in_83 en wl_83 vdd gnd wordline_driver
+Xwl_driver_and84 in_84 en wl_84 vdd gnd wordline_driver
+Xwl_driver_and85 in_85 en wl_85 vdd gnd wordline_driver
+Xwl_driver_and86 in_86 en wl_86 vdd gnd wordline_driver
+Xwl_driver_and87 in_87 en wl_87 vdd gnd wordline_driver
+Xwl_driver_and88 in_88 en wl_88 vdd gnd wordline_driver
+Xwl_driver_and89 in_89 en wl_89 vdd gnd wordline_driver
+Xwl_driver_and90 in_90 en wl_90 vdd gnd wordline_driver
+Xwl_driver_and91 in_91 en wl_91 vdd gnd wordline_driver
+Xwl_driver_and92 in_92 en wl_92 vdd gnd wordline_driver
+Xwl_driver_and93 in_93 en wl_93 vdd gnd wordline_driver
+Xwl_driver_and94 in_94 en wl_94 vdd gnd wordline_driver
+Xwl_driver_and95 in_95 en wl_95 vdd gnd wordline_driver
+Xwl_driver_and96 in_96 en wl_96 vdd gnd wordline_driver
+Xwl_driver_and97 in_97 en wl_97 vdd gnd wordline_driver
+Xwl_driver_and98 in_98 en wl_98 vdd gnd wordline_driver
+Xwl_driver_and99 in_99 en wl_99 vdd gnd wordline_driver
+Xwl_driver_and100 in_100 en wl_100 vdd gnd wordline_driver
+Xwl_driver_and101 in_101 en wl_101 vdd gnd wordline_driver
+Xwl_driver_and102 in_102 en wl_102 vdd gnd wordline_driver
+Xwl_driver_and103 in_103 en wl_103 vdd gnd wordline_driver
+Xwl_driver_and104 in_104 en wl_104 vdd gnd wordline_driver
+Xwl_driver_and105 in_105 en wl_105 vdd gnd wordline_driver
+Xwl_driver_and106 in_106 en wl_106 vdd gnd wordline_driver
+Xwl_driver_and107 in_107 en wl_107 vdd gnd wordline_driver
+Xwl_driver_and108 in_108 en wl_108 vdd gnd wordline_driver
+Xwl_driver_and109 in_109 en wl_109 vdd gnd wordline_driver
+Xwl_driver_and110 in_110 en wl_110 vdd gnd wordline_driver
+Xwl_driver_and111 in_111 en wl_111 vdd gnd wordline_driver
+Xwl_driver_and112 in_112 en wl_112 vdd gnd wordline_driver
+Xwl_driver_and113 in_113 en wl_113 vdd gnd wordline_driver
+Xwl_driver_and114 in_114 en wl_114 vdd gnd wordline_driver
+Xwl_driver_and115 in_115 en wl_115 vdd gnd wordline_driver
+Xwl_driver_and116 in_116 en wl_116 vdd gnd wordline_driver
+Xwl_driver_and117 in_117 en wl_117 vdd gnd wordline_driver
+Xwl_driver_and118 in_118 en wl_118 vdd gnd wordline_driver
+Xwl_driver_and119 in_119 en wl_119 vdd gnd wordline_driver
+Xwl_driver_and120 in_120 en wl_120 vdd gnd wordline_driver
+Xwl_driver_and121 in_121 en wl_121 vdd gnd wordline_driver
+Xwl_driver_and122 in_122 en wl_122 vdd gnd wordline_driver
+Xwl_driver_and123 in_123 en wl_123 vdd gnd wordline_driver
+Xwl_driver_and124 in_124 en wl_124 vdd gnd wordline_driver
+Xwl_driver_and125 in_125 en wl_125 vdd gnd wordline_driver
+Xwl_driver_and126 in_126 en wl_126 vdd gnd wordline_driver
+Xwl_driver_and127 in_127 en wl_127 vdd gnd wordline_driver
+Xwl_driver_and128 in_128 en wl_128 vdd gnd wordline_driver
+Xwl_driver_and129 in_129 en wl_129 vdd gnd wordline_driver
+Xwl_driver_and130 in_130 en wl_130 vdd gnd wordline_driver
+Xwl_driver_and131 in_131 en wl_131 vdd gnd wordline_driver
+Xwl_driver_and132 in_132 en wl_132 vdd gnd wordline_driver
+Xwl_driver_and133 in_133 en wl_133 vdd gnd wordline_driver
+Xwl_driver_and134 in_134 en wl_134 vdd gnd wordline_driver
+Xwl_driver_and135 in_135 en wl_135 vdd gnd wordline_driver
+Xwl_driver_and136 in_136 en wl_136 vdd gnd wordline_driver
+Xwl_driver_and137 in_137 en wl_137 vdd gnd wordline_driver
+Xwl_driver_and138 in_138 en wl_138 vdd gnd wordline_driver
+Xwl_driver_and139 in_139 en wl_139 vdd gnd wordline_driver
+Xwl_driver_and140 in_140 en wl_140 vdd gnd wordline_driver
+Xwl_driver_and141 in_141 en wl_141 vdd gnd wordline_driver
+Xwl_driver_and142 in_142 en wl_142 vdd gnd wordline_driver
+Xwl_driver_and143 in_143 en wl_143 vdd gnd wordline_driver
+Xwl_driver_and144 in_144 en wl_144 vdd gnd wordline_driver
+Xwl_driver_and145 in_145 en wl_145 vdd gnd wordline_driver
+Xwl_driver_and146 in_146 en wl_146 vdd gnd wordline_driver
+Xwl_driver_and147 in_147 en wl_147 vdd gnd wordline_driver
+Xwl_driver_and148 in_148 en wl_148 vdd gnd wordline_driver
+Xwl_driver_and149 in_149 en wl_149 vdd gnd wordline_driver
+Xwl_driver_and150 in_150 en wl_150 vdd gnd wordline_driver
+Xwl_driver_and151 in_151 en wl_151 vdd gnd wordline_driver
+Xwl_driver_and152 in_152 en wl_152 vdd gnd wordline_driver
+Xwl_driver_and153 in_153 en wl_153 vdd gnd wordline_driver
+Xwl_driver_and154 in_154 en wl_154 vdd gnd wordline_driver
+Xwl_driver_and155 in_155 en wl_155 vdd gnd wordline_driver
+Xwl_driver_and156 in_156 en wl_156 vdd gnd wordline_driver
+Xwl_driver_and157 in_157 en wl_157 vdd gnd wordline_driver
+Xwl_driver_and158 in_158 en wl_158 vdd gnd wordline_driver
+Xwl_driver_and159 in_159 en wl_159 vdd gnd wordline_driver
+Xwl_driver_and160 in_160 en wl_160 vdd gnd wordline_driver
+Xwl_driver_and161 in_161 en wl_161 vdd gnd wordline_driver
+Xwl_driver_and162 in_162 en wl_162 vdd gnd wordline_driver
+Xwl_driver_and163 in_163 en wl_163 vdd gnd wordline_driver
+Xwl_driver_and164 in_164 en wl_164 vdd gnd wordline_driver
+Xwl_driver_and165 in_165 en wl_165 vdd gnd wordline_driver
+Xwl_driver_and166 in_166 en wl_166 vdd gnd wordline_driver
+Xwl_driver_and167 in_167 en wl_167 vdd gnd wordline_driver
+Xwl_driver_and168 in_168 en wl_168 vdd gnd wordline_driver
+Xwl_driver_and169 in_169 en wl_169 vdd gnd wordline_driver
+Xwl_driver_and170 in_170 en wl_170 vdd gnd wordline_driver
+Xwl_driver_and171 in_171 en wl_171 vdd gnd wordline_driver
+Xwl_driver_and172 in_172 en wl_172 vdd gnd wordline_driver
+Xwl_driver_and173 in_173 en wl_173 vdd gnd wordline_driver
+Xwl_driver_and174 in_174 en wl_174 vdd gnd wordline_driver
+Xwl_driver_and175 in_175 en wl_175 vdd gnd wordline_driver
+Xwl_driver_and176 in_176 en wl_176 vdd gnd wordline_driver
+Xwl_driver_and177 in_177 en wl_177 vdd gnd wordline_driver
+Xwl_driver_and178 in_178 en wl_178 vdd gnd wordline_driver
+Xwl_driver_and179 in_179 en wl_179 vdd gnd wordline_driver
+Xwl_driver_and180 in_180 en wl_180 vdd gnd wordline_driver
+Xwl_driver_and181 in_181 en wl_181 vdd gnd wordline_driver
+Xwl_driver_and182 in_182 en wl_182 vdd gnd wordline_driver
+Xwl_driver_and183 in_183 en wl_183 vdd gnd wordline_driver
+Xwl_driver_and184 in_184 en wl_184 vdd gnd wordline_driver
+Xwl_driver_and185 in_185 en wl_185 vdd gnd wordline_driver
+Xwl_driver_and186 in_186 en wl_186 vdd gnd wordline_driver
+Xwl_driver_and187 in_187 en wl_187 vdd gnd wordline_driver
+Xwl_driver_and188 in_188 en wl_188 vdd gnd wordline_driver
+Xwl_driver_and189 in_189 en wl_189 vdd gnd wordline_driver
+Xwl_driver_and190 in_190 en wl_190 vdd gnd wordline_driver
+Xwl_driver_and191 in_191 en wl_191 vdd gnd wordline_driver
+Xwl_driver_and192 in_192 en wl_192 vdd gnd wordline_driver
+Xwl_driver_and193 in_193 en wl_193 vdd gnd wordline_driver
+Xwl_driver_and194 in_194 en wl_194 vdd gnd wordline_driver
+Xwl_driver_and195 in_195 en wl_195 vdd gnd wordline_driver
+Xwl_driver_and196 in_196 en wl_196 vdd gnd wordline_driver
+Xwl_driver_and197 in_197 en wl_197 vdd gnd wordline_driver
+Xwl_driver_and198 in_198 en wl_198 vdd gnd wordline_driver
+Xwl_driver_and199 in_199 en wl_199 vdd gnd wordline_driver
+Xwl_driver_and200 in_200 en wl_200 vdd gnd wordline_driver
+Xwl_driver_and201 in_201 en wl_201 vdd gnd wordline_driver
+Xwl_driver_and202 in_202 en wl_202 vdd gnd wordline_driver
+Xwl_driver_and203 in_203 en wl_203 vdd gnd wordline_driver
+Xwl_driver_and204 in_204 en wl_204 vdd gnd wordline_driver
+Xwl_driver_and205 in_205 en wl_205 vdd gnd wordline_driver
+Xwl_driver_and206 in_206 en wl_206 vdd gnd wordline_driver
+Xwl_driver_and207 in_207 en wl_207 vdd gnd wordline_driver
+Xwl_driver_and208 in_208 en wl_208 vdd gnd wordline_driver
+Xwl_driver_and209 in_209 en wl_209 vdd gnd wordline_driver
+Xwl_driver_and210 in_210 en wl_210 vdd gnd wordline_driver
+Xwl_driver_and211 in_211 en wl_211 vdd gnd wordline_driver
+Xwl_driver_and212 in_212 en wl_212 vdd gnd wordline_driver
+Xwl_driver_and213 in_213 en wl_213 vdd gnd wordline_driver
+Xwl_driver_and214 in_214 en wl_214 vdd gnd wordline_driver
+Xwl_driver_and215 in_215 en wl_215 vdd gnd wordline_driver
+Xwl_driver_and216 in_216 en wl_216 vdd gnd wordline_driver
+Xwl_driver_and217 in_217 en wl_217 vdd gnd wordline_driver
+Xwl_driver_and218 in_218 en wl_218 vdd gnd wordline_driver
+Xwl_driver_and219 in_219 en wl_219 vdd gnd wordline_driver
+Xwl_driver_and220 in_220 en wl_220 vdd gnd wordline_driver
+Xwl_driver_and221 in_221 en wl_221 vdd gnd wordline_driver
+Xwl_driver_and222 in_222 en wl_222 vdd gnd wordline_driver
+Xwl_driver_and223 in_223 en wl_223 vdd gnd wordline_driver
+Xwl_driver_and224 in_224 en wl_224 vdd gnd wordline_driver
+Xwl_driver_and225 in_225 en wl_225 vdd gnd wordline_driver
+Xwl_driver_and226 in_226 en wl_226 vdd gnd wordline_driver
+Xwl_driver_and227 in_227 en wl_227 vdd gnd wordline_driver
+Xwl_driver_and228 in_228 en wl_228 vdd gnd wordline_driver
+Xwl_driver_and229 in_229 en wl_229 vdd gnd wordline_driver
+Xwl_driver_and230 in_230 en wl_230 vdd gnd wordline_driver
+Xwl_driver_and231 in_231 en wl_231 vdd gnd wordline_driver
+Xwl_driver_and232 in_232 en wl_232 vdd gnd wordline_driver
+Xwl_driver_and233 in_233 en wl_233 vdd gnd wordline_driver
+Xwl_driver_and234 in_234 en wl_234 vdd gnd wordline_driver
+Xwl_driver_and235 in_235 en wl_235 vdd gnd wordline_driver
+Xwl_driver_and236 in_236 en wl_236 vdd gnd wordline_driver
+Xwl_driver_and237 in_237 en wl_237 vdd gnd wordline_driver
+Xwl_driver_and238 in_238 en wl_238 vdd gnd wordline_driver
+Xwl_driver_and239 in_239 en wl_239 vdd gnd wordline_driver
+Xwl_driver_and240 in_240 en wl_240 vdd gnd wordline_driver
+Xwl_driver_and241 in_241 en wl_241 vdd gnd wordline_driver
+Xwl_driver_and242 in_242 en wl_242 vdd gnd wordline_driver
+Xwl_driver_and243 in_243 en wl_243 vdd gnd wordline_driver
+Xwl_driver_and244 in_244 en wl_244 vdd gnd wordline_driver
+Xwl_driver_and245 in_245 en wl_245 vdd gnd wordline_driver
+Xwl_driver_and246 in_246 en wl_246 vdd gnd wordline_driver
+Xwl_driver_and247 in_247 en wl_247 vdd gnd wordline_driver
+Xwl_driver_and248 in_248 en wl_248 vdd gnd wordline_driver
+Xwl_driver_and249 in_249 en wl_249 vdd gnd wordline_driver
+Xwl_driver_and250 in_250 en wl_250 vdd gnd wordline_driver
+Xwl_driver_and251 in_251 en wl_251 vdd gnd wordline_driver
+Xwl_driver_and252 in_252 en wl_252 vdd gnd wordline_driver
+Xwl_driver_and253 in_253 en wl_253 vdd gnd wordline_driver
+Xwl_driver_and254 in_254 en wl_254 vdd gnd wordline_driver
+Xwl_driver_and255 in_255 en wl_255 vdd gnd wordline_driver
+.ENDS wordline_driver_array
+
+.SUBCKT and2_dec_0 A B Z vdd gnd
+*.PININFO A:I B:I Z:O vdd:B gnd:B
+* INPUT : A 
+* INPUT : B 
+* OUTPUT: Z 
+* POWER : vdd 
+* GROUND: gnd 
+* size: 32
+Xpand2_dec_nand A B zb_int vdd gnd sky130_fd_bd_sram__openram_dp_nand2_dec
+Xpand2_dec_inv zb_int Z vdd gnd pinv_dec_0
+.ENDS and2_dec_0
+
+.SUBCKT port_address addr_0 addr_1 addr_2 addr_3 addr_4 addr_5 addr_6 addr_7 wl_en wl_0 wl_1 wl_2 wl_3 wl_4 wl_5 wl_6 wl_7 wl_8 wl_9 wl_10 wl_11 wl_12 wl_13 wl_14 wl_15 wl_16 wl_17 wl_18 wl_19 wl_20 wl_21 wl_22 wl_23 wl_24 wl_25 wl_26 wl_27 wl_28 wl_29 wl_30 wl_31 wl_32 wl_33 wl_34 wl_35 wl_36 wl_37 wl_38 wl_39 wl_40 wl_41 wl_42 wl_43 wl_44 wl_45 wl_46 wl_47 wl_48 wl_49 wl_50 wl_51 wl_52 wl_53 wl_54 wl_55 wl_56 wl_57 wl_58 wl_59 wl_60 wl_61 wl_62 wl_63 wl_64 wl_65 wl_66 wl_67 wl_68 wl_69 wl_70 wl_71 wl_72 wl_73 wl_74 wl_75 wl_76 wl_77 wl_78 wl_79 wl_80 wl_81 wl_82 wl_83 wl_84 wl_85 wl_86 wl_87 wl_88 wl_89 wl_90 wl_91 wl_92 wl_93 wl_94 wl_95 wl_96 wl_97 wl_98 wl_99 wl_100 wl_101 wl_102 wl_103 wl_104 wl_105 wl_106 wl_107 wl_108 wl_109 wl_110 wl_111 wl_112 wl_113 wl_114 wl_115 wl_116 wl_117 wl_118 wl_119 wl_120 wl_121 wl_122 wl_123 wl_124 wl_125 wl_126 wl_127 wl_128 wl_129 wl_130 wl_131 wl_132 wl_133 wl_134 wl_135 wl_136 wl_137 wl_138 wl_139 wl_140 wl_141 wl_142 wl_143 wl_144 wl_145 wl_146 wl_147 wl_148 wl_149 wl_150 wl_151 wl_152 wl_153 wl_154 wl_155 wl_156 wl_157 wl_158 wl_159 wl_160 wl_161 wl_162 wl_163 wl_164 wl_165 wl_166 wl_167 wl_168 wl_169 wl_170 wl_171 wl_172 wl_173 wl_174 wl_175 wl_176 wl_177 wl_178 wl_179 wl_180 wl_181 wl_182 wl_183 wl_184 wl_185 wl_186 wl_187 wl_188 wl_189 wl_190 wl_191 wl_192 wl_193 wl_194 wl_195 wl_196 wl_197 wl_198 wl_199 wl_200 wl_201 wl_202 wl_203 wl_204 wl_205 wl_206 wl_207 wl_208 wl_209 wl_210 wl_211 wl_212 wl_213 wl_214 wl_215 wl_216 wl_217 wl_218 wl_219 wl_220 wl_221 wl_222 wl_223 wl_224 wl_225 wl_226 wl_227 wl_228 wl_229 wl_230 wl_231 wl_232 wl_233 wl_234 wl_235 wl_236 wl_237 wl_238 wl_239 wl_240 wl_241 wl_242 wl_243 wl_244 wl_245 wl_246 wl_247 wl_248 wl_249 wl_250 wl_251 wl_252 wl_253 wl_254 wl_255 rbl_wl vdd gnd
+*.PININFO addr_0:I addr_1:I addr_2:I addr_3:I addr_4:I addr_5:I addr_6:I addr_7:I wl_en:I wl_0:O wl_1:O wl_2:O wl_3:O wl_4:O wl_5:O wl_6:O wl_7:O wl_8:O wl_9:O wl_10:O wl_11:O wl_12:O wl_13:O wl_14:O wl_15:O wl_16:O wl_17:O wl_18:O wl_19:O wl_20:O wl_21:O wl_22:O wl_23:O wl_24:O wl_25:O wl_26:O wl_27:O wl_28:O wl_29:O wl_30:O wl_31:O wl_32:O wl_33:O wl_34:O wl_35:O wl_36:O wl_37:O wl_38:O wl_39:O wl_40:O wl_41:O wl_42:O wl_43:O wl_44:O wl_45:O wl_46:O wl_47:O wl_48:O wl_49:O wl_50:O wl_51:O wl_52:O wl_53:O wl_54:O wl_55:O wl_56:O wl_57:O wl_58:O wl_59:O wl_60:O wl_61:O wl_62:O wl_63:O wl_64:O wl_65:O wl_66:O wl_67:O wl_68:O wl_69:O wl_70:O wl_71:O wl_72:O wl_73:O wl_74:O wl_75:O wl_76:O wl_77:O wl_78:O wl_79:O wl_80:O wl_81:O wl_82:O wl_83:O wl_84:O wl_85:O wl_86:O wl_87:O wl_88:O wl_89:O wl_90:O wl_91:O wl_92:O wl_93:O wl_94:O wl_95:O wl_96:O wl_97:O wl_98:O wl_99:O wl_100:O wl_101:O wl_102:O wl_103:O wl_104:O wl_105:O wl_106:O wl_107:O wl_108:O wl_109:O wl_110:O wl_111:O wl_112:O wl_113:O wl_114:O wl_115:O wl_116:O wl_117:O wl_118:O wl_119:O wl_120:O wl_121:O wl_122:O wl_123:O wl_124:O wl_125:O wl_126:O wl_127:O wl_128:O wl_129:O wl_130:O wl_131:O wl_132:O wl_133:O wl_134:O wl_135:O wl_136:O wl_137:O wl_138:O wl_139:O wl_140:O wl_141:O wl_142:O wl_143:O wl_144:O wl_145:O wl_146:O wl_147:O wl_148:O wl_149:O wl_150:O wl_151:O wl_152:O wl_153:O wl_154:O wl_155:O wl_156:O wl_157:O wl_158:O wl_159:O wl_160:O wl_161:O wl_162:O wl_163:O wl_164:O wl_165:O wl_166:O wl_167:O wl_168:O wl_169:O wl_170:O wl_171:O wl_172:O wl_173:O wl_174:O wl_175:O wl_176:O wl_177:O wl_178:O wl_179:O wl_180:O wl_181:O wl_182:O wl_183:O wl_184:O wl_185:O wl_186:O wl_187:O wl_188:O wl_189:O wl_190:O wl_191:O wl_192:O wl_193:O wl_194:O wl_195:O wl_196:O wl_197:O wl_198:O wl_199:O wl_200:O wl_201:O wl_202:O wl_203:O wl_204:O wl_205:O wl_206:O wl_207:O wl_208:O wl_209:O wl_210:O wl_211:O wl_212:O wl_213:O wl_214:O wl_215:O wl_216:O wl_217:O wl_218:O wl_219:O wl_220:O wl_221:O wl_222:O wl_223:O wl_224:O wl_225:O wl_226:O wl_227:O wl_228:O wl_229:O wl_230:O wl_231:O wl_232:O wl_233:O wl_234:O wl_235:O wl_236:O wl_237:O wl_238:O wl_239:O wl_240:O wl_241:O wl_242:O wl_243:O wl_244:O wl_245:O wl_246:O wl_247:O wl_248:O wl_249:O wl_250:O wl_251:O wl_252:O wl_253:O wl_254:O wl_255:O rbl_wl:O vdd:B gnd:B
+* INPUT : addr_0 
+* INPUT : addr_1 
+* INPUT : addr_2 
+* INPUT : addr_3 
+* INPUT : addr_4 
+* INPUT : addr_5 
+* INPUT : addr_6 
+* INPUT : addr_7 
+* INPUT : wl_en 
+* OUTPUT: wl_0 
+* OUTPUT: wl_1 
+* OUTPUT: wl_2 
+* OUTPUT: wl_3 
+* OUTPUT: wl_4 
+* OUTPUT: wl_5 
+* OUTPUT: wl_6 
+* OUTPUT: wl_7 
+* OUTPUT: wl_8 
+* OUTPUT: wl_9 
+* OUTPUT: wl_10 
+* OUTPUT: wl_11 
+* OUTPUT: wl_12 
+* OUTPUT: wl_13 
+* OUTPUT: wl_14 
+* OUTPUT: wl_15 
+* OUTPUT: wl_16 
+* OUTPUT: wl_17 
+* OUTPUT: wl_18 
+* OUTPUT: wl_19 
+* OUTPUT: wl_20 
+* OUTPUT: wl_21 
+* OUTPUT: wl_22 
+* OUTPUT: wl_23 
+* OUTPUT: wl_24 
+* OUTPUT: wl_25 
+* OUTPUT: wl_26 
+* OUTPUT: wl_27 
+* OUTPUT: wl_28 
+* OUTPUT: wl_29 
+* OUTPUT: wl_30 
+* OUTPUT: wl_31 
+* OUTPUT: wl_32 
+* OUTPUT: wl_33 
+* OUTPUT: wl_34 
+* OUTPUT: wl_35 
+* OUTPUT: wl_36 
+* OUTPUT: wl_37 
+* OUTPUT: wl_38 
+* OUTPUT: wl_39 
+* OUTPUT: wl_40 
+* OUTPUT: wl_41 
+* OUTPUT: wl_42 
+* OUTPUT: wl_43 
+* OUTPUT: wl_44 
+* OUTPUT: wl_45 
+* OUTPUT: wl_46 
+* OUTPUT: wl_47 
+* OUTPUT: wl_48 
+* OUTPUT: wl_49 
+* OUTPUT: wl_50 
+* OUTPUT: wl_51 
+* OUTPUT: wl_52 
+* OUTPUT: wl_53 
+* OUTPUT: wl_54 
+* OUTPUT: wl_55 
+* OUTPUT: wl_56 
+* OUTPUT: wl_57 
+* OUTPUT: wl_58 
+* OUTPUT: wl_59 
+* OUTPUT: wl_60 
+* OUTPUT: wl_61 
+* OUTPUT: wl_62 
+* OUTPUT: wl_63 
+* OUTPUT: wl_64 
+* OUTPUT: wl_65 
+* OUTPUT: wl_66 
+* OUTPUT: wl_67 
+* OUTPUT: wl_68 
+* OUTPUT: wl_69 
+* OUTPUT: wl_70 
+* OUTPUT: wl_71 
+* OUTPUT: wl_72 
+* OUTPUT: wl_73 
+* OUTPUT: wl_74 
+* OUTPUT: wl_75 
+* OUTPUT: wl_76 
+* OUTPUT: wl_77 
+* OUTPUT: wl_78 
+* OUTPUT: wl_79 
+* OUTPUT: wl_80 
+* OUTPUT: wl_81 
+* OUTPUT: wl_82 
+* OUTPUT: wl_83 
+* OUTPUT: wl_84 
+* OUTPUT: wl_85 
+* OUTPUT: wl_86 
+* OUTPUT: wl_87 
+* OUTPUT: wl_88 
+* OUTPUT: wl_89 
+* OUTPUT: wl_90 
+* OUTPUT: wl_91 
+* OUTPUT: wl_92 
+* OUTPUT: wl_93 
+* OUTPUT: wl_94 
+* OUTPUT: wl_95 
+* OUTPUT: wl_96 
+* OUTPUT: wl_97 
+* OUTPUT: wl_98 
+* OUTPUT: wl_99 
+* OUTPUT: wl_100 
+* OUTPUT: wl_101 
+* OUTPUT: wl_102 
+* OUTPUT: wl_103 
+* OUTPUT: wl_104 
+* OUTPUT: wl_105 
+* OUTPUT: wl_106 
+* OUTPUT: wl_107 
+* OUTPUT: wl_108 
+* OUTPUT: wl_109 
+* OUTPUT: wl_110 
+* OUTPUT: wl_111 
+* OUTPUT: wl_112 
+* OUTPUT: wl_113 
+* OUTPUT: wl_114 
+* OUTPUT: wl_115 
+* OUTPUT: wl_116 
+* OUTPUT: wl_117 
+* OUTPUT: wl_118 
+* OUTPUT: wl_119 
+* OUTPUT: wl_120 
+* OUTPUT: wl_121 
+* OUTPUT: wl_122 
+* OUTPUT: wl_123 
+* OUTPUT: wl_124 
+* OUTPUT: wl_125 
+* OUTPUT: wl_126 
+* OUTPUT: wl_127 
+* OUTPUT: wl_128 
+* OUTPUT: wl_129 
+* OUTPUT: wl_130 
+* OUTPUT: wl_131 
+* OUTPUT: wl_132 
+* OUTPUT: wl_133 
+* OUTPUT: wl_134 
+* OUTPUT: wl_135 
+* OUTPUT: wl_136 
+* OUTPUT: wl_137 
+* OUTPUT: wl_138 
+* OUTPUT: wl_139 
+* OUTPUT: wl_140 
+* OUTPUT: wl_141 
+* OUTPUT: wl_142 
+* OUTPUT: wl_143 
+* OUTPUT: wl_144 
+* OUTPUT: wl_145 
+* OUTPUT: wl_146 
+* OUTPUT: wl_147 
+* OUTPUT: wl_148 
+* OUTPUT: wl_149 
+* OUTPUT: wl_150 
+* OUTPUT: wl_151 
+* OUTPUT: wl_152 
+* OUTPUT: wl_153 
+* OUTPUT: wl_154 
+* OUTPUT: wl_155 
+* OUTPUT: wl_156 
+* OUTPUT: wl_157 
+* OUTPUT: wl_158 
+* OUTPUT: wl_159 
+* OUTPUT: wl_160 
+* OUTPUT: wl_161 
+* OUTPUT: wl_162 
+* OUTPUT: wl_163 
+* OUTPUT: wl_164 
+* OUTPUT: wl_165 
+* OUTPUT: wl_166 
+* OUTPUT: wl_167 
+* OUTPUT: wl_168 
+* OUTPUT: wl_169 
+* OUTPUT: wl_170 
+* OUTPUT: wl_171 
+* OUTPUT: wl_172 
+* OUTPUT: wl_173 
+* OUTPUT: wl_174 
+* OUTPUT: wl_175 
+* OUTPUT: wl_176 
+* OUTPUT: wl_177 
+* OUTPUT: wl_178 
+* OUTPUT: wl_179 
+* OUTPUT: wl_180 
+* OUTPUT: wl_181 
+* OUTPUT: wl_182 
+* OUTPUT: wl_183 
+* OUTPUT: wl_184 
+* OUTPUT: wl_185 
+* OUTPUT: wl_186 
+* OUTPUT: wl_187 
+* OUTPUT: wl_188 
+* OUTPUT: wl_189 
+* OUTPUT: wl_190 
+* OUTPUT: wl_191 
+* OUTPUT: wl_192 
+* OUTPUT: wl_193 
+* OUTPUT: wl_194 
+* OUTPUT: wl_195 
+* OUTPUT: wl_196 
+* OUTPUT: wl_197 
+* OUTPUT: wl_198 
+* OUTPUT: wl_199 
+* OUTPUT: wl_200 
+* OUTPUT: wl_201 
+* OUTPUT: wl_202 
+* OUTPUT: wl_203 
+* OUTPUT: wl_204 
+* OUTPUT: wl_205 
+* OUTPUT: wl_206 
+* OUTPUT: wl_207 
+* OUTPUT: wl_208 
+* OUTPUT: wl_209 
+* OUTPUT: wl_210 
+* OUTPUT: wl_211 
+* OUTPUT: wl_212 
+* OUTPUT: wl_213 
+* OUTPUT: wl_214 
+* OUTPUT: wl_215 
+* OUTPUT: wl_216 
+* OUTPUT: wl_217 
+* OUTPUT: wl_218 
+* OUTPUT: wl_219 
+* OUTPUT: wl_220 
+* OUTPUT: wl_221 
+* OUTPUT: wl_222 
+* OUTPUT: wl_223 
+* OUTPUT: wl_224 
+* OUTPUT: wl_225 
+* OUTPUT: wl_226 
+* OUTPUT: wl_227 
+* OUTPUT: wl_228 
+* OUTPUT: wl_229 
+* OUTPUT: wl_230 
+* OUTPUT: wl_231 
+* OUTPUT: wl_232 
+* OUTPUT: wl_233 
+* OUTPUT: wl_234 
+* OUTPUT: wl_235 
+* OUTPUT: wl_236 
+* OUTPUT: wl_237 
+* OUTPUT: wl_238 
+* OUTPUT: wl_239 
+* OUTPUT: wl_240 
+* OUTPUT: wl_241 
+* OUTPUT: wl_242 
+* OUTPUT: wl_243 
+* OUTPUT: wl_244 
+* OUTPUT: wl_245 
+* OUTPUT: wl_246 
+* OUTPUT: wl_247 
+* OUTPUT: wl_248 
+* OUTPUT: wl_249 
+* OUTPUT: wl_250 
+* OUTPUT: wl_251 
+* OUTPUT: wl_252 
+* OUTPUT: wl_253 
+* OUTPUT: wl_254 
+* OUTPUT: wl_255 
+* OUTPUT: rbl_wl 
+* POWER : vdd 
+* GROUND: gnd 
+Xrow_decoder addr_0 addr_1 addr_2 addr_3 addr_4 addr_5 addr_6 addr_7 dec_out_0 dec_out_1 dec_out_2 dec_out_3 dec_out_4 dec_out_5 dec_out_6 dec_out_7 dec_out_8 dec_out_9 dec_out_10 dec_out_11 dec_out_12 dec_out_13 dec_out_14 dec_out_15 dec_out_16 dec_out_17 dec_out_18 dec_out_19 dec_out_20 dec_out_21 dec_out_22 dec_out_23 dec_out_24 dec_out_25 dec_out_26 dec_out_27 dec_out_28 dec_out_29 dec_out_30 dec_out_31 dec_out_32 dec_out_33 dec_out_34 dec_out_35 dec_out_36 dec_out_37 dec_out_38 dec_out_39 dec_out_40 dec_out_41 dec_out_42 dec_out_43 dec_out_44 dec_out_45 dec_out_46 dec_out_47 dec_out_48 dec_out_49 dec_out_50 dec_out_51 dec_out_52 dec_out_53 dec_out_54 dec_out_55 dec_out_56 dec_out_57 dec_out_58 dec_out_59 dec_out_60 dec_out_61 dec_out_62 dec_out_63 dec_out_64 dec_out_65 dec_out_66 dec_out_67 dec_out_68 dec_out_69 dec_out_70 dec_out_71 dec_out_72 dec_out_73 dec_out_74 dec_out_75 dec_out_76 dec_out_77 dec_out_78 dec_out_79 dec_out_80 dec_out_81 dec_out_82 dec_out_83 dec_out_84 dec_out_85 dec_out_86 dec_out_87 dec_out_88 dec_out_89 dec_out_90 dec_out_91 dec_out_92 dec_out_93 dec_out_94 dec_out_95 dec_out_96 dec_out_97 dec_out_98 dec_out_99 dec_out_100 dec_out_101 dec_out_102 dec_out_103 dec_out_104 dec_out_105 dec_out_106 dec_out_107 dec_out_108 dec_out_109 dec_out_110 dec_out_111 dec_out_112 dec_out_113 dec_out_114 dec_out_115 dec_out_116 dec_out_117 dec_out_118 dec_out_119 dec_out_120 dec_out_121 dec_out_122 dec_out_123 dec_out_124 dec_out_125 dec_out_126 dec_out_127 dec_out_128 dec_out_129 dec_out_130 dec_out_131 dec_out_132 dec_out_133 dec_out_134 dec_out_135 dec_out_136 dec_out_137 dec_out_138 dec_out_139 dec_out_140 dec_out_141 dec_out_142 dec_out_143 dec_out_144 dec_out_145 dec_out_146 dec_out_147 dec_out_148 dec_out_149 dec_out_150 dec_out_151 dec_out_152 dec_out_153 dec_out_154 dec_out_155 dec_out_156 dec_out_157 dec_out_158 dec_out_159 dec_out_160 dec_out_161 dec_out_162 dec_out_163 dec_out_164 dec_out_165 dec_out_166 dec_out_167 dec_out_168 dec_out_169 dec_out_170 dec_out_171 dec_out_172 dec_out_173 dec_out_174 dec_out_175 dec_out_176 dec_out_177 dec_out_178 dec_out_179 dec_out_180 dec_out_181 dec_out_182 dec_out_183 dec_out_184 dec_out_185 dec_out_186 dec_out_187 dec_out_188 dec_out_189 dec_out_190 dec_out_191 dec_out_192 dec_out_193 dec_out_194 dec_out_195 dec_out_196 dec_out_197 dec_out_198 dec_out_199 dec_out_200 dec_out_201 dec_out_202 dec_out_203 dec_out_204 dec_out_205 dec_out_206 dec_out_207 dec_out_208 dec_out_209 dec_out_210 dec_out_211 dec_out_212 dec_out_213 dec_out_214 dec_out_215 dec_out_216 dec_out_217 dec_out_218 dec_out_219 dec_out_220 dec_out_221 dec_out_222 dec_out_223 dec_out_224 dec_out_225 dec_out_226 dec_out_227 dec_out_228 dec_out_229 dec_out_230 dec_out_231 dec_out_232 dec_out_233 dec_out_234 dec_out_235 dec_out_236 dec_out_237 dec_out_238 dec_out_239 dec_out_240 dec_out_241 dec_out_242 dec_out_243 dec_out_244 dec_out_245 dec_out_246 dec_out_247 dec_out_248 dec_out_249 dec_out_250 dec_out_251 dec_out_252 dec_out_253 dec_out_254 dec_out_255 vdd gnd hierarchical_decoder
+Xwordline_driver dec_out_0 dec_out_1 dec_out_2 dec_out_3 dec_out_4 dec_out_5 dec_out_6 dec_out_7 dec_out_8 dec_out_9 dec_out_10 dec_out_11 dec_out_12 dec_out_13 dec_out_14 dec_out_15 dec_out_16 dec_out_17 dec_out_18 dec_out_19 dec_out_20 dec_out_21 dec_out_22 dec_out_23 dec_out_24 dec_out_25 dec_out_26 dec_out_27 dec_out_28 dec_out_29 dec_out_30 dec_out_31 dec_out_32 dec_out_33 dec_out_34 dec_out_35 dec_out_36 dec_out_37 dec_out_38 dec_out_39 dec_out_40 dec_out_41 dec_out_42 dec_out_43 dec_out_44 dec_out_45 dec_out_46 dec_out_47 dec_out_48 dec_out_49 dec_out_50 dec_out_51 dec_out_52 dec_out_53 dec_out_54 dec_out_55 dec_out_56 dec_out_57 dec_out_58 dec_out_59 dec_out_60 dec_out_61 dec_out_62 dec_out_63 dec_out_64 dec_out_65 dec_out_66 dec_out_67 dec_out_68 dec_out_69 dec_out_70 dec_out_71 dec_out_72 dec_out_73 dec_out_74 dec_out_75 dec_out_76 dec_out_77 dec_out_78 dec_out_79 dec_out_80 dec_out_81 dec_out_82 dec_out_83 dec_out_84 dec_out_85 dec_out_86 dec_out_87 dec_out_88 dec_out_89 dec_out_90 dec_out_91 dec_out_92 dec_out_93 dec_out_94 dec_out_95 dec_out_96 dec_out_97 dec_out_98 dec_out_99 dec_out_100 dec_out_101 dec_out_102 dec_out_103 dec_out_104 dec_out_105 dec_out_106 dec_out_107 dec_out_108 dec_out_109 dec_out_110 dec_out_111 dec_out_112 dec_out_113 dec_out_114 dec_out_115 dec_out_116 dec_out_117 dec_out_118 dec_out_119 dec_out_120 dec_out_121 dec_out_122 dec_out_123 dec_out_124 dec_out_125 dec_out_126 dec_out_127 dec_out_128 dec_out_129 dec_out_130 dec_out_131 dec_out_132 dec_out_133 dec_out_134 dec_out_135 dec_out_136 dec_out_137 dec_out_138 dec_out_139 dec_out_140 dec_out_141 dec_out_142 dec_out_143 dec_out_144 dec_out_145 dec_out_146 dec_out_147 dec_out_148 dec_out_149 dec_out_150 dec_out_151 dec_out_152 dec_out_153 dec_out_154 dec_out_155 dec_out_156 dec_out_157 dec_out_158 dec_out_159 dec_out_160 dec_out_161 dec_out_162 dec_out_163 dec_out_164 dec_out_165 dec_out_166 dec_out_167 dec_out_168 dec_out_169 dec_out_170 dec_out_171 dec_out_172 dec_out_173 dec_out_174 dec_out_175 dec_out_176 dec_out_177 dec_out_178 dec_out_179 dec_out_180 dec_out_181 dec_out_182 dec_out_183 dec_out_184 dec_out_185 dec_out_186 dec_out_187 dec_out_188 dec_out_189 dec_out_190 dec_out_191 dec_out_192 dec_out_193 dec_out_194 dec_out_195 dec_out_196 dec_out_197 dec_out_198 dec_out_199 dec_out_200 dec_out_201 dec_out_202 dec_out_203 dec_out_204 dec_out_205 dec_out_206 dec_out_207 dec_out_208 dec_out_209 dec_out_210 dec_out_211 dec_out_212 dec_out_213 dec_out_214 dec_out_215 dec_out_216 dec_out_217 dec_out_218 dec_out_219 dec_out_220 dec_out_221 dec_out_222 dec_out_223 dec_out_224 dec_out_225 dec_out_226 dec_out_227 dec_out_228 dec_out_229 dec_out_230 dec_out_231 dec_out_232 dec_out_233 dec_out_234 dec_out_235 dec_out_236 dec_out_237 dec_out_238 dec_out_239 dec_out_240 dec_out_241 dec_out_242 dec_out_243 dec_out_244 dec_out_245 dec_out_246 dec_out_247 dec_out_248 dec_out_249 dec_out_250 dec_out_251 dec_out_252 dec_out_253 dec_out_254 dec_out_255 wl_0 wl_1 wl_2 wl_3 wl_4 wl_5 wl_6 wl_7 wl_8 wl_9 wl_10 wl_11 wl_12 wl_13 wl_14 wl_15 wl_16 wl_17 wl_18 wl_19 wl_20 wl_21 wl_22 wl_23 wl_24 wl_25 wl_26 wl_27 wl_28 wl_29 wl_30 wl_31 wl_32 wl_33 wl_34 wl_35 wl_36 wl_37 wl_38 wl_39 wl_40 wl_41 wl_42 wl_43 wl_44 wl_45 wl_46 wl_47 wl_48 wl_49 wl_50 wl_51 wl_52 wl_53 wl_54 wl_55 wl_56 wl_57 wl_58 wl_59 wl_60 wl_61 wl_62 wl_63 wl_64 wl_65 wl_66 wl_67 wl_68 wl_69 wl_70 wl_71 wl_72 wl_73 wl_74 wl_75 wl_76 wl_77 wl_78 wl_79 wl_80 wl_81 wl_82 wl_83 wl_84 wl_85 wl_86 wl_87 wl_88 wl_89 wl_90 wl_91 wl_92 wl_93 wl_94 wl_95 wl_96 wl_97 wl_98 wl_99 wl_100 wl_101 wl_102 wl_103 wl_104 wl_105 wl_106 wl_107 wl_108 wl_109 wl_110 wl_111 wl_112 wl_113 wl_114 wl_115 wl_116 wl_117 wl_118 wl_119 wl_120 wl_121 wl_122 wl_123 wl_124 wl_125 wl_126 wl_127 wl_128 wl_129 wl_130 wl_131 wl_132 wl_133 wl_134 wl_135 wl_136 wl_137 wl_138 wl_139 wl_140 wl_141 wl_142 wl_143 wl_144 wl_145 wl_146 wl_147 wl_148 wl_149 wl_150 wl_151 wl_152 wl_153 wl_154 wl_155 wl_156 wl_157 wl_158 wl_159 wl_160 wl_161 wl_162 wl_163 wl_164 wl_165 wl_166 wl_167 wl_168 wl_169 wl_170 wl_171 wl_172 wl_173 wl_174 wl_175 wl_176 wl_177 wl_178 wl_179 wl_180 wl_181 wl_182 wl_183 wl_184 wl_185 wl_186 wl_187 wl_188 wl_189 wl_190 wl_191 wl_192 wl_193 wl_194 wl_195 wl_196 wl_197 wl_198 wl_199 wl_200 wl_201 wl_202 wl_203 wl_204 wl_205 wl_206 wl_207 wl_208 wl_209 wl_210 wl_211 wl_212 wl_213 wl_214 wl_215 wl_216 wl_217 wl_218 wl_219 wl_220 wl_221 wl_222 wl_223 wl_224 wl_225 wl_226 wl_227 wl_228 wl_229 wl_230 wl_231 wl_232 wl_233 wl_234 wl_235 wl_236 wl_237 wl_238 wl_239 wl_240 wl_241 wl_242 wl_243 wl_244 wl_245 wl_246 wl_247 wl_248 wl_249 wl_250 wl_251 wl_252 wl_253 wl_254 wl_255 wl_en vdd gnd wordline_driver_array
+Xrbl_driver wl_en vdd rbl_wl vdd gnd and2_dec_0
+.ENDS port_address
+
+.SUBCKT port_address_0 addr_0 addr_1 addr_2 addr_3 addr_4 addr_5 addr_6 addr_7 wl_en wl_0 wl_1 wl_2 wl_3 wl_4 wl_5 wl_6 wl_7 wl_8 wl_9 wl_10 wl_11 wl_12 wl_13 wl_14 wl_15 wl_16 wl_17 wl_18 wl_19 wl_20 wl_21 wl_22 wl_23 wl_24 wl_25 wl_26 wl_27 wl_28 wl_29 wl_30 wl_31 wl_32 wl_33 wl_34 wl_35 wl_36 wl_37 wl_38 wl_39 wl_40 wl_41 wl_42 wl_43 wl_44 wl_45 wl_46 wl_47 wl_48 wl_49 wl_50 wl_51 wl_52 wl_53 wl_54 wl_55 wl_56 wl_57 wl_58 wl_59 wl_60 wl_61 wl_62 wl_63 wl_64 wl_65 wl_66 wl_67 wl_68 wl_69 wl_70 wl_71 wl_72 wl_73 wl_74 wl_75 wl_76 wl_77 wl_78 wl_79 wl_80 wl_81 wl_82 wl_83 wl_84 wl_85 wl_86 wl_87 wl_88 wl_89 wl_90 wl_91 wl_92 wl_93 wl_94 wl_95 wl_96 wl_97 wl_98 wl_99 wl_100 wl_101 wl_102 wl_103 wl_104 wl_105 wl_106 wl_107 wl_108 wl_109 wl_110 wl_111 wl_112 wl_113 wl_114 wl_115 wl_116 wl_117 wl_118 wl_119 wl_120 wl_121 wl_122 wl_123 wl_124 wl_125 wl_126 wl_127 wl_128 wl_129 wl_130 wl_131 wl_132 wl_133 wl_134 wl_135 wl_136 wl_137 wl_138 wl_139 wl_140 wl_141 wl_142 wl_143 wl_144 wl_145 wl_146 wl_147 wl_148 wl_149 wl_150 wl_151 wl_152 wl_153 wl_154 wl_155 wl_156 wl_157 wl_158 wl_159 wl_160 wl_161 wl_162 wl_163 wl_164 wl_165 wl_166 wl_167 wl_168 wl_169 wl_170 wl_171 wl_172 wl_173 wl_174 wl_175 wl_176 wl_177 wl_178 wl_179 wl_180 wl_181 wl_182 wl_183 wl_184 wl_185 wl_186 wl_187 wl_188 wl_189 wl_190 wl_191 wl_192 wl_193 wl_194 wl_195 wl_196 wl_197 wl_198 wl_199 wl_200 wl_201 wl_202 wl_203 wl_204 wl_205 wl_206 wl_207 wl_208 wl_209 wl_210 wl_211 wl_212 wl_213 wl_214 wl_215 wl_216 wl_217 wl_218 wl_219 wl_220 wl_221 wl_222 wl_223 wl_224 wl_225 wl_226 wl_227 wl_228 wl_229 wl_230 wl_231 wl_232 wl_233 wl_234 wl_235 wl_236 wl_237 wl_238 wl_239 wl_240 wl_241 wl_242 wl_243 wl_244 wl_245 wl_246 wl_247 wl_248 wl_249 wl_250 wl_251 wl_252 wl_253 wl_254 wl_255 rbl_wl vdd gnd
+*.PININFO addr_0:I addr_1:I addr_2:I addr_3:I addr_4:I addr_5:I addr_6:I addr_7:I wl_en:I wl_0:O wl_1:O wl_2:O wl_3:O wl_4:O wl_5:O wl_6:O wl_7:O wl_8:O wl_9:O wl_10:O wl_11:O wl_12:O wl_13:O wl_14:O wl_15:O wl_16:O wl_17:O wl_18:O wl_19:O wl_20:O wl_21:O wl_22:O wl_23:O wl_24:O wl_25:O wl_26:O wl_27:O wl_28:O wl_29:O wl_30:O wl_31:O wl_32:O wl_33:O wl_34:O wl_35:O wl_36:O wl_37:O wl_38:O wl_39:O wl_40:O wl_41:O wl_42:O wl_43:O wl_44:O wl_45:O wl_46:O wl_47:O wl_48:O wl_49:O wl_50:O wl_51:O wl_52:O wl_53:O wl_54:O wl_55:O wl_56:O wl_57:O wl_58:O wl_59:O wl_60:O wl_61:O wl_62:O wl_63:O wl_64:O wl_65:O wl_66:O wl_67:O wl_68:O wl_69:O wl_70:O wl_71:O wl_72:O wl_73:O wl_74:O wl_75:O wl_76:O wl_77:O wl_78:O wl_79:O wl_80:O wl_81:O wl_82:O wl_83:O wl_84:O wl_85:O wl_86:O wl_87:O wl_88:O wl_89:O wl_90:O wl_91:O wl_92:O wl_93:O wl_94:O wl_95:O wl_96:O wl_97:O wl_98:O wl_99:O wl_100:O wl_101:O wl_102:O wl_103:O wl_104:O wl_105:O wl_106:O wl_107:O wl_108:O wl_109:O wl_110:O wl_111:O wl_112:O wl_113:O wl_114:O wl_115:O wl_116:O wl_117:O wl_118:O wl_119:O wl_120:O wl_121:O wl_122:O wl_123:O wl_124:O wl_125:O wl_126:O wl_127:O wl_128:O wl_129:O wl_130:O wl_131:O wl_132:O wl_133:O wl_134:O wl_135:O wl_136:O wl_137:O wl_138:O wl_139:O wl_140:O wl_141:O wl_142:O wl_143:O wl_144:O wl_145:O wl_146:O wl_147:O wl_148:O wl_149:O wl_150:O wl_151:O wl_152:O wl_153:O wl_154:O wl_155:O wl_156:O wl_157:O wl_158:O wl_159:O wl_160:O wl_161:O wl_162:O wl_163:O wl_164:O wl_165:O wl_166:O wl_167:O wl_168:O wl_169:O wl_170:O wl_171:O wl_172:O wl_173:O wl_174:O wl_175:O wl_176:O wl_177:O wl_178:O wl_179:O wl_180:O wl_181:O wl_182:O wl_183:O wl_184:O wl_185:O wl_186:O wl_187:O wl_188:O wl_189:O wl_190:O wl_191:O wl_192:O wl_193:O wl_194:O wl_195:O wl_196:O wl_197:O wl_198:O wl_199:O wl_200:O wl_201:O wl_202:O wl_203:O wl_204:O wl_205:O wl_206:O wl_207:O wl_208:O wl_209:O wl_210:O wl_211:O wl_212:O wl_213:O wl_214:O wl_215:O wl_216:O wl_217:O wl_218:O wl_219:O wl_220:O wl_221:O wl_222:O wl_223:O wl_224:O wl_225:O wl_226:O wl_227:O wl_228:O wl_229:O wl_230:O wl_231:O wl_232:O wl_233:O wl_234:O wl_235:O wl_236:O wl_237:O wl_238:O wl_239:O wl_240:O wl_241:O wl_242:O wl_243:O wl_244:O wl_245:O wl_246:O wl_247:O wl_248:O wl_249:O wl_250:O wl_251:O wl_252:O wl_253:O wl_254:O wl_255:O rbl_wl:O vdd:B gnd:B
+* INPUT : addr_0 
+* INPUT : addr_1 
+* INPUT : addr_2 
+* INPUT : addr_3 
+* INPUT : addr_4 
+* INPUT : addr_5 
+* INPUT : addr_6 
+* INPUT : addr_7 
+* INPUT : wl_en 
+* OUTPUT: wl_0 
+* OUTPUT: wl_1 
+* OUTPUT: wl_2 
+* OUTPUT: wl_3 
+* OUTPUT: wl_4 
+* OUTPUT: wl_5 
+* OUTPUT: wl_6 
+* OUTPUT: wl_7 
+* OUTPUT: wl_8 
+* OUTPUT: wl_9 
+* OUTPUT: wl_10 
+* OUTPUT: wl_11 
+* OUTPUT: wl_12 
+* OUTPUT: wl_13 
+* OUTPUT: wl_14 
+* OUTPUT: wl_15 
+* OUTPUT: wl_16 
+* OUTPUT: wl_17 
+* OUTPUT: wl_18 
+* OUTPUT: wl_19 
+* OUTPUT: wl_20 
+* OUTPUT: wl_21 
+* OUTPUT: wl_22 
+* OUTPUT: wl_23 
+* OUTPUT: wl_24 
+* OUTPUT: wl_25 
+* OUTPUT: wl_26 
+* OUTPUT: wl_27 
+* OUTPUT: wl_28 
+* OUTPUT: wl_29 
+* OUTPUT: wl_30 
+* OUTPUT: wl_31 
+* OUTPUT: wl_32 
+* OUTPUT: wl_33 
+* OUTPUT: wl_34 
+* OUTPUT: wl_35 
+* OUTPUT: wl_36 
+* OUTPUT: wl_37 
+* OUTPUT: wl_38 
+* OUTPUT: wl_39 
+* OUTPUT: wl_40 
+* OUTPUT: wl_41 
+* OUTPUT: wl_42 
+* OUTPUT: wl_43 
+* OUTPUT: wl_44 
+* OUTPUT: wl_45 
+* OUTPUT: wl_46 
+* OUTPUT: wl_47 
+* OUTPUT: wl_48 
+* OUTPUT: wl_49 
+* OUTPUT: wl_50 
+* OUTPUT: wl_51 
+* OUTPUT: wl_52 
+* OUTPUT: wl_53 
+* OUTPUT: wl_54 
+* OUTPUT: wl_55 
+* OUTPUT: wl_56 
+* OUTPUT: wl_57 
+* OUTPUT: wl_58 
+* OUTPUT: wl_59 
+* OUTPUT: wl_60 
+* OUTPUT: wl_61 
+* OUTPUT: wl_62 
+* OUTPUT: wl_63 
+* OUTPUT: wl_64 
+* OUTPUT: wl_65 
+* OUTPUT: wl_66 
+* OUTPUT: wl_67 
+* OUTPUT: wl_68 
+* OUTPUT: wl_69 
+* OUTPUT: wl_70 
+* OUTPUT: wl_71 
+* OUTPUT: wl_72 
+* OUTPUT: wl_73 
+* OUTPUT: wl_74 
+* OUTPUT: wl_75 
+* OUTPUT: wl_76 
+* OUTPUT: wl_77 
+* OUTPUT: wl_78 
+* OUTPUT: wl_79 
+* OUTPUT: wl_80 
+* OUTPUT: wl_81 
+* OUTPUT: wl_82 
+* OUTPUT: wl_83 
+* OUTPUT: wl_84 
+* OUTPUT: wl_85 
+* OUTPUT: wl_86 
+* OUTPUT: wl_87 
+* OUTPUT: wl_88 
+* OUTPUT: wl_89 
+* OUTPUT: wl_90 
+* OUTPUT: wl_91 
+* OUTPUT: wl_92 
+* OUTPUT: wl_93 
+* OUTPUT: wl_94 
+* OUTPUT: wl_95 
+* OUTPUT: wl_96 
+* OUTPUT: wl_97 
+* OUTPUT: wl_98 
+* OUTPUT: wl_99 
+* OUTPUT: wl_100 
+* OUTPUT: wl_101 
+* OUTPUT: wl_102 
+* OUTPUT: wl_103 
+* OUTPUT: wl_104 
+* OUTPUT: wl_105 
+* OUTPUT: wl_106 
+* OUTPUT: wl_107 
+* OUTPUT: wl_108 
+* OUTPUT: wl_109 
+* OUTPUT: wl_110 
+* OUTPUT: wl_111 
+* OUTPUT: wl_112 
+* OUTPUT: wl_113 
+* OUTPUT: wl_114 
+* OUTPUT: wl_115 
+* OUTPUT: wl_116 
+* OUTPUT: wl_117 
+* OUTPUT: wl_118 
+* OUTPUT: wl_119 
+* OUTPUT: wl_120 
+* OUTPUT: wl_121 
+* OUTPUT: wl_122 
+* OUTPUT: wl_123 
+* OUTPUT: wl_124 
+* OUTPUT: wl_125 
+* OUTPUT: wl_126 
+* OUTPUT: wl_127 
+* OUTPUT: wl_128 
+* OUTPUT: wl_129 
+* OUTPUT: wl_130 
+* OUTPUT: wl_131 
+* OUTPUT: wl_132 
+* OUTPUT: wl_133 
+* OUTPUT: wl_134 
+* OUTPUT: wl_135 
+* OUTPUT: wl_136 
+* OUTPUT: wl_137 
+* OUTPUT: wl_138 
+* OUTPUT: wl_139 
+* OUTPUT: wl_140 
+* OUTPUT: wl_141 
+* OUTPUT: wl_142 
+* OUTPUT: wl_143 
+* OUTPUT: wl_144 
+* OUTPUT: wl_145 
+* OUTPUT: wl_146 
+* OUTPUT: wl_147 
+* OUTPUT: wl_148 
+* OUTPUT: wl_149 
+* OUTPUT: wl_150 
+* OUTPUT: wl_151 
+* OUTPUT: wl_152 
+* OUTPUT: wl_153 
+* OUTPUT: wl_154 
+* OUTPUT: wl_155 
+* OUTPUT: wl_156 
+* OUTPUT: wl_157 
+* OUTPUT: wl_158 
+* OUTPUT: wl_159 
+* OUTPUT: wl_160 
+* OUTPUT: wl_161 
+* OUTPUT: wl_162 
+* OUTPUT: wl_163 
+* OUTPUT: wl_164 
+* OUTPUT: wl_165 
+* OUTPUT: wl_166 
+* OUTPUT: wl_167 
+* OUTPUT: wl_168 
+* OUTPUT: wl_169 
+* OUTPUT: wl_170 
+* OUTPUT: wl_171 
+* OUTPUT: wl_172 
+* OUTPUT: wl_173 
+* OUTPUT: wl_174 
+* OUTPUT: wl_175 
+* OUTPUT: wl_176 
+* OUTPUT: wl_177 
+* OUTPUT: wl_178 
+* OUTPUT: wl_179 
+* OUTPUT: wl_180 
+* OUTPUT: wl_181 
+* OUTPUT: wl_182 
+* OUTPUT: wl_183 
+* OUTPUT: wl_184 
+* OUTPUT: wl_185 
+* OUTPUT: wl_186 
+* OUTPUT: wl_187 
+* OUTPUT: wl_188 
+* OUTPUT: wl_189 
+* OUTPUT: wl_190 
+* OUTPUT: wl_191 
+* OUTPUT: wl_192 
+* OUTPUT: wl_193 
+* OUTPUT: wl_194 
+* OUTPUT: wl_195 
+* OUTPUT: wl_196 
+* OUTPUT: wl_197 
+* OUTPUT: wl_198 
+* OUTPUT: wl_199 
+* OUTPUT: wl_200 
+* OUTPUT: wl_201 
+* OUTPUT: wl_202 
+* OUTPUT: wl_203 
+* OUTPUT: wl_204 
+* OUTPUT: wl_205 
+* OUTPUT: wl_206 
+* OUTPUT: wl_207 
+* OUTPUT: wl_208 
+* OUTPUT: wl_209 
+* OUTPUT: wl_210 
+* OUTPUT: wl_211 
+* OUTPUT: wl_212 
+* OUTPUT: wl_213 
+* OUTPUT: wl_214 
+* OUTPUT: wl_215 
+* OUTPUT: wl_216 
+* OUTPUT: wl_217 
+* OUTPUT: wl_218 
+* OUTPUT: wl_219 
+* OUTPUT: wl_220 
+* OUTPUT: wl_221 
+* OUTPUT: wl_222 
+* OUTPUT: wl_223 
+* OUTPUT: wl_224 
+* OUTPUT: wl_225 
+* OUTPUT: wl_226 
+* OUTPUT: wl_227 
+* OUTPUT: wl_228 
+* OUTPUT: wl_229 
+* OUTPUT: wl_230 
+* OUTPUT: wl_231 
+* OUTPUT: wl_232 
+* OUTPUT: wl_233 
+* OUTPUT: wl_234 
+* OUTPUT: wl_235 
+* OUTPUT: wl_236 
+* OUTPUT: wl_237 
+* OUTPUT: wl_238 
+* OUTPUT: wl_239 
+* OUTPUT: wl_240 
+* OUTPUT: wl_241 
+* OUTPUT: wl_242 
+* OUTPUT: wl_243 
+* OUTPUT: wl_244 
+* OUTPUT: wl_245 
+* OUTPUT: wl_246 
+* OUTPUT: wl_247 
+* OUTPUT: wl_248 
+* OUTPUT: wl_249 
+* OUTPUT: wl_250 
+* OUTPUT: wl_251 
+* OUTPUT: wl_252 
+* OUTPUT: wl_253 
+* OUTPUT: wl_254 
+* OUTPUT: wl_255 
+* OUTPUT: rbl_wl 
+* POWER : vdd 
+* GROUND: gnd 
+Xrow_decoder addr_0 addr_1 addr_2 addr_3 addr_4 addr_5 addr_6 addr_7 dec_out_0 dec_out_1 dec_out_2 dec_out_3 dec_out_4 dec_out_5 dec_out_6 dec_out_7 dec_out_8 dec_out_9 dec_out_10 dec_out_11 dec_out_12 dec_out_13 dec_out_14 dec_out_15 dec_out_16 dec_out_17 dec_out_18 dec_out_19 dec_out_20 dec_out_21 dec_out_22 dec_out_23 dec_out_24 dec_out_25 dec_out_26 dec_out_27 dec_out_28 dec_out_29 dec_out_30 dec_out_31 dec_out_32 dec_out_33 dec_out_34 dec_out_35 dec_out_36 dec_out_37 dec_out_38 dec_out_39 dec_out_40 dec_out_41 dec_out_42 dec_out_43 dec_out_44 dec_out_45 dec_out_46 dec_out_47 dec_out_48 dec_out_49 dec_out_50 dec_out_51 dec_out_52 dec_out_53 dec_out_54 dec_out_55 dec_out_56 dec_out_57 dec_out_58 dec_out_59 dec_out_60 dec_out_61 dec_out_62 dec_out_63 dec_out_64 dec_out_65 dec_out_66 dec_out_67 dec_out_68 dec_out_69 dec_out_70 dec_out_71 dec_out_72 dec_out_73 dec_out_74 dec_out_75 dec_out_76 dec_out_77 dec_out_78 dec_out_79 dec_out_80 dec_out_81 dec_out_82 dec_out_83 dec_out_84 dec_out_85 dec_out_86 dec_out_87 dec_out_88 dec_out_89 dec_out_90 dec_out_91 dec_out_92 dec_out_93 dec_out_94 dec_out_95 dec_out_96 dec_out_97 dec_out_98 dec_out_99 dec_out_100 dec_out_101 dec_out_102 dec_out_103 dec_out_104 dec_out_105 dec_out_106 dec_out_107 dec_out_108 dec_out_109 dec_out_110 dec_out_111 dec_out_112 dec_out_113 dec_out_114 dec_out_115 dec_out_116 dec_out_117 dec_out_118 dec_out_119 dec_out_120 dec_out_121 dec_out_122 dec_out_123 dec_out_124 dec_out_125 dec_out_126 dec_out_127 dec_out_128 dec_out_129 dec_out_130 dec_out_131 dec_out_132 dec_out_133 dec_out_134 dec_out_135 dec_out_136 dec_out_137 dec_out_138 dec_out_139 dec_out_140 dec_out_141 dec_out_142 dec_out_143 dec_out_144 dec_out_145 dec_out_146 dec_out_147 dec_out_148 dec_out_149 dec_out_150 dec_out_151 dec_out_152 dec_out_153 dec_out_154 dec_out_155 dec_out_156 dec_out_157 dec_out_158 dec_out_159 dec_out_160 dec_out_161 dec_out_162 dec_out_163 dec_out_164 dec_out_165 dec_out_166 dec_out_167 dec_out_168 dec_out_169 dec_out_170 dec_out_171 dec_out_172 dec_out_173 dec_out_174 dec_out_175 dec_out_176 dec_out_177 dec_out_178 dec_out_179 dec_out_180 dec_out_181 dec_out_182 dec_out_183 dec_out_184 dec_out_185 dec_out_186 dec_out_187 dec_out_188 dec_out_189 dec_out_190 dec_out_191 dec_out_192 dec_out_193 dec_out_194 dec_out_195 dec_out_196 dec_out_197 dec_out_198 dec_out_199 dec_out_200 dec_out_201 dec_out_202 dec_out_203 dec_out_204 dec_out_205 dec_out_206 dec_out_207 dec_out_208 dec_out_209 dec_out_210 dec_out_211 dec_out_212 dec_out_213 dec_out_214 dec_out_215 dec_out_216 dec_out_217 dec_out_218 dec_out_219 dec_out_220 dec_out_221 dec_out_222 dec_out_223 dec_out_224 dec_out_225 dec_out_226 dec_out_227 dec_out_228 dec_out_229 dec_out_230 dec_out_231 dec_out_232 dec_out_233 dec_out_234 dec_out_235 dec_out_236 dec_out_237 dec_out_238 dec_out_239 dec_out_240 dec_out_241 dec_out_242 dec_out_243 dec_out_244 dec_out_245 dec_out_246 dec_out_247 dec_out_248 dec_out_249 dec_out_250 dec_out_251 dec_out_252 dec_out_253 dec_out_254 dec_out_255 vdd gnd hierarchical_decoder
+Xwordline_driver dec_out_0 dec_out_1 dec_out_2 dec_out_3 dec_out_4 dec_out_5 dec_out_6 dec_out_7 dec_out_8 dec_out_9 dec_out_10 dec_out_11 dec_out_12 dec_out_13 dec_out_14 dec_out_15 dec_out_16 dec_out_17 dec_out_18 dec_out_19 dec_out_20 dec_out_21 dec_out_22 dec_out_23 dec_out_24 dec_out_25 dec_out_26 dec_out_27 dec_out_28 dec_out_29 dec_out_30 dec_out_31 dec_out_32 dec_out_33 dec_out_34 dec_out_35 dec_out_36 dec_out_37 dec_out_38 dec_out_39 dec_out_40 dec_out_41 dec_out_42 dec_out_43 dec_out_44 dec_out_45 dec_out_46 dec_out_47 dec_out_48 dec_out_49 dec_out_50 dec_out_51 dec_out_52 dec_out_53 dec_out_54 dec_out_55 dec_out_56 dec_out_57 dec_out_58 dec_out_59 dec_out_60 dec_out_61 dec_out_62 dec_out_63 dec_out_64 dec_out_65 dec_out_66 dec_out_67 dec_out_68 dec_out_69 dec_out_70 dec_out_71 dec_out_72 dec_out_73 dec_out_74 dec_out_75 dec_out_76 dec_out_77 dec_out_78 dec_out_79 dec_out_80 dec_out_81 dec_out_82 dec_out_83 dec_out_84 dec_out_85 dec_out_86 dec_out_87 dec_out_88 dec_out_89 dec_out_90 dec_out_91 dec_out_92 dec_out_93 dec_out_94 dec_out_95 dec_out_96 dec_out_97 dec_out_98 dec_out_99 dec_out_100 dec_out_101 dec_out_102 dec_out_103 dec_out_104 dec_out_105 dec_out_106 dec_out_107 dec_out_108 dec_out_109 dec_out_110 dec_out_111 dec_out_112 dec_out_113 dec_out_114 dec_out_115 dec_out_116 dec_out_117 dec_out_118 dec_out_119 dec_out_120 dec_out_121 dec_out_122 dec_out_123 dec_out_124 dec_out_125 dec_out_126 dec_out_127 dec_out_128 dec_out_129 dec_out_130 dec_out_131 dec_out_132 dec_out_133 dec_out_134 dec_out_135 dec_out_136 dec_out_137 dec_out_138 dec_out_139 dec_out_140 dec_out_141 dec_out_142 dec_out_143 dec_out_144 dec_out_145 dec_out_146 dec_out_147 dec_out_148 dec_out_149 dec_out_150 dec_out_151 dec_out_152 dec_out_153 dec_out_154 dec_out_155 dec_out_156 dec_out_157 dec_out_158 dec_out_159 dec_out_160 dec_out_161 dec_out_162 dec_out_163 dec_out_164 dec_out_165 dec_out_166 dec_out_167 dec_out_168 dec_out_169 dec_out_170 dec_out_171 dec_out_172 dec_out_173 dec_out_174 dec_out_175 dec_out_176 dec_out_177 dec_out_178 dec_out_179 dec_out_180 dec_out_181 dec_out_182 dec_out_183 dec_out_184 dec_out_185 dec_out_186 dec_out_187 dec_out_188 dec_out_189 dec_out_190 dec_out_191 dec_out_192 dec_out_193 dec_out_194 dec_out_195 dec_out_196 dec_out_197 dec_out_198 dec_out_199 dec_out_200 dec_out_201 dec_out_202 dec_out_203 dec_out_204 dec_out_205 dec_out_206 dec_out_207 dec_out_208 dec_out_209 dec_out_210 dec_out_211 dec_out_212 dec_out_213 dec_out_214 dec_out_215 dec_out_216 dec_out_217 dec_out_218 dec_out_219 dec_out_220 dec_out_221 dec_out_222 dec_out_223 dec_out_224 dec_out_225 dec_out_226 dec_out_227 dec_out_228 dec_out_229 dec_out_230 dec_out_231 dec_out_232 dec_out_233 dec_out_234 dec_out_235 dec_out_236 dec_out_237 dec_out_238 dec_out_239 dec_out_240 dec_out_241 dec_out_242 dec_out_243 dec_out_244 dec_out_245 dec_out_246 dec_out_247 dec_out_248 dec_out_249 dec_out_250 dec_out_251 dec_out_252 dec_out_253 dec_out_254 dec_out_255 wl_0 wl_1 wl_2 wl_3 wl_4 wl_5 wl_6 wl_7 wl_8 wl_9 wl_10 wl_11 wl_12 wl_13 wl_14 wl_15 wl_16 wl_17 wl_18 wl_19 wl_20 wl_21 wl_22 wl_23 wl_24 wl_25 wl_26 wl_27 wl_28 wl_29 wl_30 wl_31 wl_32 wl_33 wl_34 wl_35 wl_36 wl_37 wl_38 wl_39 wl_40 wl_41 wl_42 wl_43 wl_44 wl_45 wl_46 wl_47 wl_48 wl_49 wl_50 wl_51 wl_52 wl_53 wl_54 wl_55 wl_56 wl_57 wl_58 wl_59 wl_60 wl_61 wl_62 wl_63 wl_64 wl_65 wl_66 wl_67 wl_68 wl_69 wl_70 wl_71 wl_72 wl_73 wl_74 wl_75 wl_76 wl_77 wl_78 wl_79 wl_80 wl_81 wl_82 wl_83 wl_84 wl_85 wl_86 wl_87 wl_88 wl_89 wl_90 wl_91 wl_92 wl_93 wl_94 wl_95 wl_96 wl_97 wl_98 wl_99 wl_100 wl_101 wl_102 wl_103 wl_104 wl_105 wl_106 wl_107 wl_108 wl_109 wl_110 wl_111 wl_112 wl_113 wl_114 wl_115 wl_116 wl_117 wl_118 wl_119 wl_120 wl_121 wl_122 wl_123 wl_124 wl_125 wl_126 wl_127 wl_128 wl_129 wl_130 wl_131 wl_132 wl_133 wl_134 wl_135 wl_136 wl_137 wl_138 wl_139 wl_140 wl_141 wl_142 wl_143 wl_144 wl_145 wl_146 wl_147 wl_148 wl_149 wl_150 wl_151 wl_152 wl_153 wl_154 wl_155 wl_156 wl_157 wl_158 wl_159 wl_160 wl_161 wl_162 wl_163 wl_164 wl_165 wl_166 wl_167 wl_168 wl_169 wl_170 wl_171 wl_172 wl_173 wl_174 wl_175 wl_176 wl_177 wl_178 wl_179 wl_180 wl_181 wl_182 wl_183 wl_184 wl_185 wl_186 wl_187 wl_188 wl_189 wl_190 wl_191 wl_192 wl_193 wl_194 wl_195 wl_196 wl_197 wl_198 wl_199 wl_200 wl_201 wl_202 wl_203 wl_204 wl_205 wl_206 wl_207 wl_208 wl_209 wl_210 wl_211 wl_212 wl_213 wl_214 wl_215 wl_216 wl_217 wl_218 wl_219 wl_220 wl_221 wl_222 wl_223 wl_224 wl_225 wl_226 wl_227 wl_228 wl_229 wl_230 wl_231 wl_232 wl_233 wl_234 wl_235 wl_236 wl_237 wl_238 wl_239 wl_240 wl_241 wl_242 wl_243 wl_244 wl_245 wl_246 wl_247 wl_248 wl_249 wl_250 wl_251 wl_252 wl_253 wl_254 wl_255 wl_en vdd gnd wordline_driver_array
+Xrbl_driver wl_en vdd rbl_wl vdd gnd and2_dec_0
+.ENDS port_address_0
 
 * spice ptx X{0} {1} sky130_fd_pr__pfet_01v8 m=1 w=0.55 l=0.15 pd=1.40 ps=1.40 as=0.21u ad=0.21u
 
@@ -42575,6 +42363,218 @@ Xport_address1 addr1_2 addr1_3 addr1_4 addr1_5 addr1_6 addr1_7 addr1_8 addr1_9 w
 Xcol_address_decoder0 addr0_0 addr0_1 sel0_0 sel0_1 sel0_2 sel0_3 vdd gnd hierarchical_predecode2x4_0
 Xcol_address_decoder1 addr1_0 addr1_1 sel1_0 sel1_1 sel1_2 sel1_3 vdd gnd hierarchical_predecode2x4_0
 .ENDS bank
+* Copyright 2020 The SkyWater PDK Authors
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*     https://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*
+* SPDX-License-Identifier: Apache-2.0
+
+* SPICE3 file created from sky130_fd_bd_sram__openram_dff.ext - technology: EFS8A
+
+.subckt sky130_fd_bd_sram__openram_dff D Q CLK VDD GND
+X1000 a_511_725# a_n8_115# VDD VDD sky130_fd_pr__pfet_01v8 W=3 L=0.15
+X1001 a_353_115# CLK a_11_624# GND sky130_fd_pr__nfet_01v8 W=1 L=0.15
+X1002 a_353_725# a_203_89# a_11_624# VDD sky130_fd_pr__pfet_01v8 W=3 L=0.15
+X1003 a_11_624# a_203_89# a_161_115# GND sky130_fd_pr__nfet_01v8 W=1 L=0.15
+X1004 a_11_624# CLK a_161_725# VDD sky130_fd_pr__pfet_01v8 W=3 L=0.15
+X1005 GND Q a_703_115# GND sky130_fd_pr__nfet_01v8 W=1 L=0.15
+X1006 VDD Q a_703_725# VDD sky130_fd_pr__pfet_01v8 W=3 L=0.15
+X1007 a_203_89# CLK GND GND sky130_fd_pr__nfet_01v8 W=1 L=0.15
+X1008 a_203_89# CLK VDD VDD sky130_fd_pr__pfet_01v8 W=3 L=0.15
+X1009 a_161_115# D GND GND sky130_fd_pr__nfet_01v8 W=1 L=0.15
+X1010 a_161_725# D VDD VDD sky130_fd_pr__pfet_01v8 W=3 L=0.15
+X1011 GND a_11_624# a_n8_115# GND sky130_fd_pr__nfet_01v8 W=1 L=0.15
+X1012 a_703_115# a_203_89# ON GND sky130_fd_pr__nfet_01v8 W=1 L=0.15
+X1013 VDD a_11_624# a_n8_115# VDD sky130_fd_pr__pfet_01v8 W=3 L=0.15
+X1014 a_703_725# CLK ON VDD sky130_fd_pr__pfet_01v8 W=3 L=0.15
+X1015 Q ON VDD VDD sky130_fd_pr__pfet_01v8 W=3 L=0.15
+X1016 Q ON GND GND sky130_fd_pr__nfet_01v8 W=1 L=0.15
+X1017 ON a_203_89# a_511_725# VDD sky130_fd_pr__pfet_01v8 W=3 L=0.15
+X1018 ON CLK a_511_115# GND sky130_fd_pr__nfet_01v8 W=1 L=0.15
+X1019 GND a_n8_115# a_353_115# GND sky130_fd_pr__nfet_01v8 W=1 L=0.15
+X1020 VDD a_n8_115# a_353_725# VDD sky130_fd_pr__pfet_01v8 W=3 L=0.15
+X1021 a_511_115# a_n8_115# GND GND sky130_fd_pr__nfet_01v8 W=1 L=0.15
+.ends
+
+.SUBCKT row_addr_dff din_0 din_1 din_2 din_3 din_4 din_5 din_6 din_7 dout_0 dout_1 dout_2 dout_3 dout_4 dout_5 dout_6 dout_7 clk vdd gnd
+*.PININFO din_0:I din_1:I din_2:I din_3:I din_4:I din_5:I din_6:I din_7:I dout_0:O dout_1:O dout_2:O dout_3:O dout_4:O dout_5:O dout_6:O dout_7:O clk:I vdd:B gnd:B
+* INPUT : din_0 
+* INPUT : din_1 
+* INPUT : din_2 
+* INPUT : din_3 
+* INPUT : din_4 
+* INPUT : din_5 
+* INPUT : din_6 
+* INPUT : din_7 
+* OUTPUT: dout_0 
+* OUTPUT: dout_1 
+* OUTPUT: dout_2 
+* OUTPUT: dout_3 
+* OUTPUT: dout_4 
+* OUTPUT: dout_5 
+* OUTPUT: dout_6 
+* OUTPUT: dout_7 
+* INPUT : clk 
+* POWER : vdd 
+* GROUND: gnd 
+* rows: 8 cols: 1
+Xdff_r0_c0 din_0 dout_0 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r1_c0 din_1 dout_1 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r2_c0 din_2 dout_2 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r3_c0 din_3 dout_3 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r4_c0 din_4 dout_4 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r5_c0 din_5 dout_5 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r6_c0 din_6 dout_6 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r7_c0 din_7 dout_7 CLK VDD GND sky130_fd_bd_sram__openram_dff
+.ENDS row_addr_dff
+
+.SUBCKT col_addr_dff din_0 din_1 dout_0 dout_1 clk vdd gnd
+*.PININFO din_0:I din_1:I dout_0:O dout_1:O clk:I vdd:B gnd:B
+* INPUT : din_0 
+* INPUT : din_1 
+* OUTPUT: dout_0 
+* OUTPUT: dout_1 
+* INPUT : clk 
+* POWER : vdd 
+* GROUND: gnd 
+* rows: 1 cols: 2
+Xdff_r0_c0 din_0 dout_0 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r0_c1 din_1 dout_1 CLK VDD GND sky130_fd_bd_sram__openram_dff
+.ENDS col_addr_dff
+
+.SUBCKT data_dff din_0 din_1 din_2 din_3 din_4 din_5 din_6 din_7 din_8 din_9 din_10 din_11 din_12 din_13 din_14 din_15 din_16 din_17 din_18 din_19 din_20 din_21 din_22 din_23 din_24 din_25 din_26 din_27 din_28 din_29 din_30 din_31 dout_0 dout_1 dout_2 dout_3 dout_4 dout_5 dout_6 dout_7 dout_8 dout_9 dout_10 dout_11 dout_12 dout_13 dout_14 dout_15 dout_16 dout_17 dout_18 dout_19 dout_20 dout_21 dout_22 dout_23 dout_24 dout_25 dout_26 dout_27 dout_28 dout_29 dout_30 dout_31 clk vdd gnd
+*.PININFO din_0:I din_1:I din_2:I din_3:I din_4:I din_5:I din_6:I din_7:I din_8:I din_9:I din_10:I din_11:I din_12:I din_13:I din_14:I din_15:I din_16:I din_17:I din_18:I din_19:I din_20:I din_21:I din_22:I din_23:I din_24:I din_25:I din_26:I din_27:I din_28:I din_29:I din_30:I din_31:I dout_0:O dout_1:O dout_2:O dout_3:O dout_4:O dout_5:O dout_6:O dout_7:O dout_8:O dout_9:O dout_10:O dout_11:O dout_12:O dout_13:O dout_14:O dout_15:O dout_16:O dout_17:O dout_18:O dout_19:O dout_20:O dout_21:O dout_22:O dout_23:O dout_24:O dout_25:O dout_26:O dout_27:O dout_28:O dout_29:O dout_30:O dout_31:O clk:I vdd:B gnd:B
+* INPUT : din_0 
+* INPUT : din_1 
+* INPUT : din_2 
+* INPUT : din_3 
+* INPUT : din_4 
+* INPUT : din_5 
+* INPUT : din_6 
+* INPUT : din_7 
+* INPUT : din_8 
+* INPUT : din_9 
+* INPUT : din_10 
+* INPUT : din_11 
+* INPUT : din_12 
+* INPUT : din_13 
+* INPUT : din_14 
+* INPUT : din_15 
+* INPUT : din_16 
+* INPUT : din_17 
+* INPUT : din_18 
+* INPUT : din_19 
+* INPUT : din_20 
+* INPUT : din_21 
+* INPUT : din_22 
+* INPUT : din_23 
+* INPUT : din_24 
+* INPUT : din_25 
+* INPUT : din_26 
+* INPUT : din_27 
+* INPUT : din_28 
+* INPUT : din_29 
+* INPUT : din_30 
+* INPUT : din_31 
+* OUTPUT: dout_0 
+* OUTPUT: dout_1 
+* OUTPUT: dout_2 
+* OUTPUT: dout_3 
+* OUTPUT: dout_4 
+* OUTPUT: dout_5 
+* OUTPUT: dout_6 
+* OUTPUT: dout_7 
+* OUTPUT: dout_8 
+* OUTPUT: dout_9 
+* OUTPUT: dout_10 
+* OUTPUT: dout_11 
+* OUTPUT: dout_12 
+* OUTPUT: dout_13 
+* OUTPUT: dout_14 
+* OUTPUT: dout_15 
+* OUTPUT: dout_16 
+* OUTPUT: dout_17 
+* OUTPUT: dout_18 
+* OUTPUT: dout_19 
+* OUTPUT: dout_20 
+* OUTPUT: dout_21 
+* OUTPUT: dout_22 
+* OUTPUT: dout_23 
+* OUTPUT: dout_24 
+* OUTPUT: dout_25 
+* OUTPUT: dout_26 
+* OUTPUT: dout_27 
+* OUTPUT: dout_28 
+* OUTPUT: dout_29 
+* OUTPUT: dout_30 
+* OUTPUT: dout_31 
+* INPUT : clk 
+* POWER : vdd 
+* GROUND: gnd 
+* rows: 1 cols: 32
+Xdff_r0_c0 din_0 dout_0 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r0_c1 din_1 dout_1 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r0_c2 din_2 dout_2 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r0_c3 din_3 dout_3 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r0_c4 din_4 dout_4 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r0_c5 din_5 dout_5 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r0_c6 din_6 dout_6 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r0_c7 din_7 dout_7 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r0_c8 din_8 dout_8 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r0_c9 din_9 dout_9 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r0_c10 din_10 dout_10 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r0_c11 din_11 dout_11 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r0_c12 din_12 dout_12 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r0_c13 din_13 dout_13 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r0_c14 din_14 dout_14 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r0_c15 din_15 dout_15 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r0_c16 din_16 dout_16 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r0_c17 din_17 dout_17 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r0_c18 din_18 dout_18 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r0_c19 din_19 dout_19 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r0_c20 din_20 dout_20 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r0_c21 din_21 dout_21 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r0_c22 din_22 dout_22 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r0_c23 din_23 dout_23 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r0_c24 din_24 dout_24 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r0_c25 din_25 dout_25 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r0_c26 din_26 dout_26 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r0_c27 din_27 dout_27 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r0_c28 din_28 dout_28 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r0_c29 din_29 dout_29 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r0_c30 din_30 dout_30 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r0_c31 din_31 dout_31 CLK VDD GND sky130_fd_bd_sram__openram_dff
+.ENDS data_dff
+
+.SUBCKT wmask_dff din_0 din_1 din_2 din_3 dout_0 dout_1 dout_2 dout_3 clk vdd gnd
+*.PININFO din_0:I din_1:I din_2:I din_3:I dout_0:O dout_1:O dout_2:O dout_3:O clk:I vdd:B gnd:B
+* INPUT : din_0 
+* INPUT : din_1 
+* INPUT : din_2 
+* INPUT : din_3 
+* OUTPUT: dout_0 
+* OUTPUT: dout_1 
+* OUTPUT: dout_2 
+* OUTPUT: dout_3 
+* INPUT : clk 
+* POWER : vdd 
+* GROUND: gnd 
+* rows: 1 cols: 4
+Xdff_r0_c0 din_0 dout_0 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r0_c1 din_1 dout_1 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r0_c2 din_2 dout_2 CLK VDD GND sky130_fd_bd_sram__openram_dff
+Xdff_r0_c3 din_3 dout_3 CLK VDD GND sky130_fd_bd_sram__openram_dff
+.ENDS wmask_dff
 
 .SUBCKT pinv_2 A Z vdd gnd
 *.PININFO A:I Z:O vdd:B gnd:B

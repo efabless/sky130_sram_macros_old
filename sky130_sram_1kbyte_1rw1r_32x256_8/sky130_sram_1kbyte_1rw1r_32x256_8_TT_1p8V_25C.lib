@@ -89,7 +89,7 @@ cell (sky130_sram_1kbyte_1rw1r_32x256_8){
     dont_use  : true;
     map_only   : true;
     dont_touch : true;
-    area : 187796.846;
+    area : 190712.55;
 
     pg_pin(vccd1) {
          voltage_name : VCCD1;

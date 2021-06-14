@@ -4,7 +4,7 @@
 [globals/read_config]: Output saved in /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/
 [globals/import_tech]: Adding technology path: /home/mrg/openram/technology
 [globals/import_tech]: Adding technology path: /home/mrg/data/sky130_fd_bd_sram/tools/openram/technology
-[globals/purge_temp]: Purging temp directory: /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/
+[globals/init_paths]: Creating temp directory: /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/
 [globals/setup_bitcell]: Using bitcell: bitcell_2port
 [characterizer/<module>]: Initializing characterizer...
 [characterizer/<module>]: Analytical model enabled.
@@ -26,9 +26,7 @@
 |=========Temp dir: /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/=========|
 |=========                See LICENSE for license info                =========|
 |==============================================================================|
-** Start: 05/28/2021 12:09:33
-ERROR: file globals.py: line 617: Write size needs to be between 1 bit and 4 bits.
-
+** Start: 06/13/2021 15:37:17
 Technology: sky130
 Total size: 8192 bits
 Word size: 8
@@ -55,16 +53,6 @@ Output files are:
 /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/sky130_sram_1kbyte_1rw1r_8x1024_8.log
 /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/sky130_sram_1kbyte_1rw1r_8x1024_8.lef
 /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/sky130_sram_1kbyte_1rw1r_8x1024_8.gds
-[dff_array/__init__]: Creating row_addr_dff rows=7 cols=1
-[dff_array/__init__]: Creating col_addr_dff rows=1 cols=3
-[dff_array/__init__]: Creating data_dff rows=1 cols=8
-[dff_array/__init__]: Creating wmask_dff rows=1 cols=1
-[and2_dec/__init__]: Creating and2_dec and2_dec
-[and3_dec/__init__]: Creating and3_dec and3_dec
-[and4_dec/__init__]: Creating and4_dec and4_dec
-[wordline_driver_array/__init__]: Creating wordline_driver_array
-[wordline_driver/__init__]: Creating wordline_driver wordline_driver
-[and2_dec/__init__]: Creating and2_dec and2_dec_0
 [bitcell_base_array/__init__]: Creating replica_bitcell_array 128 x 64
 [replica_bitcell_array/__init__]: Creating replica_bitcell_array 128 x 64 rbls: None left_rbl: None right_rbl: None
 [bitcell_base_array/__init__]: Creating bitcell_array 128 x 64
@@ -76,6 +64,12 @@ Output files are:
 [bitcell_base_array/__init__]: Creating col_cap_array_0 1 x 64
 [bitcell_base_array/__init__]: Creating row_cap_array 130 x 1
 [bitcell_base_array/__init__]: Creating row_cap_array_0 130 x 1
+[and2_dec/__init__]: Creating and2_dec and2_dec
+[and3_dec/__init__]: Creating and3_dec and3_dec
+[and4_dec/__init__]: Creating and4_dec and4_dec
+[wordline_driver_array/__init__]: Creating wordline_driver_array
+[wordline_driver/__init__]: Creating wordline_driver wordline_driver
+[and2_dec/__init__]: Creating and2_dec and2_dec_0
 [precharge_array/__init__]: Creating precharge_array
 [sense_amp_array/__init__]: Creating sense_amp_array
 [column_mux_array/__init__]: Creating column_mux_array
@@ -87,6 +81,10 @@ Output files are:
 [column_mux_array/__init__]: Creating column_mux_array_0
 [pand3/__init__]: Creating pand3 pand3
 [pdriver/__init__]: creating pdriver pdriver_0
+[dff_array/__init__]: Creating row_addr_dff rows=7 cols=1
+[dff_array/__init__]: Creating col_addr_dff rows=1 cols=3
+[dff_array/__init__]: Creating data_dff rows=1 cols=8
+[dff_array/__init__]: Creating wmask_dff rows=1 cols=1
 [control_logic/__init__]: Creating control_logic_rw
 [dff_buf/__init__]: Creating dff_buf
 [dff_buf_array/__init__]: Creating dff_buf_array
@@ -105,28 +103,28 @@ Output files are:
 [control_logic/__init__]: Creating control_logic_r
 [dff_buf_array/__init__]: Creating dff_buf_array_0
 [pdriver/__init__]: creating pdriver pdriver_7
-** Submodules: 6.2 seconds
+** Submodules: 6.4 seconds
 ** Placement: 0.0 seconds
 [router_tech/__init__]: Minimum track width: 0.680
 [router_tech/__init__]: Minimum track space: 0.300
 [router_tech/__init__]: Minimum track wire width: 0.380
-[hierarchy_layout/get_bbox]: Size: 434.87 x 426.4 with perimeter big margin 0.6799999999999999 little margin 0
-[hierarchy_layout/get_bbox]: Size: 434.87 x 426.4 with perimeter big margin 8.16 little margin 1.3599999999999999
+[hierarchy_layout/get_bbox]: Size: 438.61 x 429.76 with perimeter big margin 0.6799999999999999 little margin 0
+[hierarchy_layout/get_bbox]: Size: 438.61 x 429.76 with perimeter big margin 8.16 little margin 1.3599999999999999
 [router_tech/__init__]: Minimum track width: 0.680
 [router_tech/__init__]: Minimum track space: 0.300
 [router_tech/__init__]: Minimum track wire width: 0.380
-[grid/__init__]: BBOX coords: ll=v[-57.480000000000004,-29.67] ur=v[393.71000000000004,413.05]
-[grid/__init__]: BBOX grids: ll=v3d[-85, -44, 0.0] ur=v3d[579, 607, 0.0]
+[grid/__init__]: BBOX coords: ll=v[-59.34,-31.35] ur=v[395.59000000000003,414.73]
+[grid/__init__]: BBOX grids: ll=v3d[-87, -46, 0.0] ur=v3d[582, 610, 0.0]
 **** Retrieving pins: 0.0 seconds
 **** Analyzing pins: 0.0 seconds
 [router/find_blockages]: Finding blockages.
-**** Finding blockages: 2.8 seconds
+**** Finding blockages: 3.8 seconds
 [router/convert_blockages]: Converting blockages.
 **** Converting blockages: 0.3 seconds
 **** Converting pins: 0.1 seconds
 **** Separating adjacent pins: 0.0 seconds
 **** Enclosing pins: 0.0 seconds
-*** Finding pins and blockages: 66.4 seconds
+*** Finding pins and blockages: 72.1 seconds
 [signal_escape_router/route_signal]: Escape routing csb0 with scale 5
 [signal_escape_router/route_signal]: Escape routing web0 with scale 5
 [signal_escape_router/route_signal]: Escape routing csb1 with scale 5
@@ -177,55 +175,68 @@ Output files are:
 [signal_escape_router/route_signal]: Escape routing dout0[5] with scale 5
 [signal_escape_router/route_signal]: Escape routing dout0[6] with scale 5
 [signal_escape_router/route_signal]: Escape routing dout0[7] with scale 5
-*** Maze routing pins: 103.8 seconds
+*** Maze routing pins: 101.5 seconds
 [router_tech/__init__]: Minimum track width: 0.680
 [router_tech/__init__]: Minimum track space: 0.300
 [router_tech/__init__]: Minimum track wire width: 0.380
 [supply_tree_router/route]: Running supply router on vdd and gnd...
-[grid/__init__]: BBOX coords: ll=v[-50.0,-22.19] ur=v[386.23,405.57]
-[grid/__init__]: BBOX grids: ll=v3d[-74, -33, 0.0] ur=v3d[568, 596, 0.0]
+[grid/__init__]: BBOX coords: ll=v[-51.86,-23.87] ur=v[388.11,407.25]
+[grid/__init__]: BBOX grids: ll=v3d[-76, -35, 0.0] ur=v3d[571, 599, 0.0]
 **** Retrieving pins: 0.1 seconds
-**** Analyzing pins: 3.6 seconds
+**** Analyzing pins: 3.8 seconds
 [router/find_blockages]: Finding blockages.
-**** Finding blockages: 10.2 seconds
+**** Finding blockages: 11.9 seconds
 [router/convert_blockages]: Converting blockages.
 **** Converting blockages: 0.1 seconds
-**** Converting pins: 6.6 seconds
-**** Separating adjacent pins: 12.8 seconds
-**** Enclosing pins: 13.7 seconds
-*** Finding pins and blockages: 119.2 seconds
-[router/write_debug_gds]: Writing annotated router gds file to foo.gds
-[supply_tree_router/route_pins]: Routing vdd with 1199 pins.
-[supply_tree_router/route_pins]: 0 supply segments routed, 1198 remaining.
-[supply_tree_router/route_pins]: 100 supply segments routed, 1098 remaining.
-[supply_tree_router/route_pins]: 200 supply segments routed, 998 remaining.
-[supply_tree_router/route_pins]: 300 supply segments routed, 898 remaining.
-[supply_tree_router/route_pins]: 400 supply segments routed, 798 remaining.
-[supply_tree_router/route_pins]: 500 supply segments routed, 698 remaining.
-[supply_tree_router/route_pins]: 600 supply segments routed, 598 remaining.
-[supply_tree_router/route_pins]: 700 supply segments routed, 498 remaining.
-[supply_tree_router/route_pins]: 800 supply segments routed, 398 remaining.
-[supply_tree_router/route_pins]: 900 supply segments routed, 298 remaining.
-[supply_tree_router/route_pins]: 1000 supply segments routed, 198 remaining.
-[supply_tree_router/route_pins]: 1100 supply segments routed, 98 remaining.
-[supply_tree_router/route_pins]: Routing gnd with 1344 pins.
-[supply_tree_router/route_pins]: 0 supply segments routed, 1343 remaining.
-[supply_tree_router/route_pins]: 100 supply segments routed, 1243 remaining.
-[supply_tree_router/route_pins]: 200 supply segments routed, 1143 remaining.
-[supply_tree_router/route_pins]: 300 supply segments routed, 1043 remaining.
-[supply_tree_router/route_pins]: 400 supply segments routed, 943 remaining.
-[supply_tree_router/route_pins]: 500 supply segments routed, 843 remaining.
-[supply_tree_router/route_pins]: 600 supply segments routed, 743 remaining.
-[supply_tree_router/route_pins]: 700 supply segments routed, 643 remaining.
-[supply_tree_router/route_pins]: 800 supply segments routed, 543 remaining.
-[supply_tree_router/route_pins]: 900 supply segments routed, 443 remaining.
-[supply_tree_router/route_pins]: 1000 supply segments routed, 343 remaining.
-[supply_tree_router/route_pins]: 1100 supply segments routed, 243 remaining.
-[supply_tree_router/route_pins]: 1200 supply segments routed, 143 remaining.
-[supply_tree_router/route_pins]: 1300 supply segments routed, 43 remaining.
-*** Maze routing supplies: 660.4 seconds
-** Routing: 1318.2 seconds
-[verify.magic/run_drc]: DRC Errors sky130_sram_1kbyte_1rw1r_8x1024_8	0
+**** Converting pins: 6.3 seconds
+**** Separating adjacent pins: 12.0 seconds
+**** Enclosing pins: 14.9 seconds
+*** Finding pins and blockages: 124.9 seconds
+[supply_tree_router/route_pins]: Routing vdd with 1405 pins.
+[supply_tree_router/route_pins]: 0 supply segments routed, 1404 remaining.
+[supply_tree_router/route_pins]: 100 supply segments routed, 1304 remaining.
+[supply_tree_router/route_pins]: 200 supply segments routed, 1204 remaining.
+[supply_tree_router/route_pins]: 300 supply segments routed, 1104 remaining.
+[supply_tree_router/route_pins]: 400 supply segments routed, 1004 remaining.
+[supply_tree_router/route_pins]: 500 supply segments routed, 904 remaining.
+[supply_tree_router/route_pins]: 600 supply segments routed, 804 remaining.
+[supply_tree_router/route_pins]: 700 supply segments routed, 704 remaining.
+[supply_tree_router/route_pins]: 800 supply segments routed, 604 remaining.
+[supply_tree_router/route_pins]: 900 supply segments routed, 504 remaining.
+[supply_tree_router/route_pins]: 1000 supply segments routed, 404 remaining.
+[supply_tree_router/route_pins]: 1100 supply segments routed, 304 remaining.
+[supply_tree_router/route_pins]: 1200 supply segments routed, 204 remaining.
+[supply_tree_router/route_pins]: 1300 supply segments routed, 104 remaining.
+[supply_tree_router/route_pins]: 1400 supply segments routed, 4 remaining.
+[supply_tree_router/route_pins]: Routing gnd with 1138 pins.
+[supply_tree_router/route_pins]: 0 supply segments routed, 1137 remaining.
+[supply_tree_router/route_pins]: 100 supply segments routed, 1037 remaining.
+[supply_tree_router/route_pins]: 200 supply segments routed, 937 remaining.
+[supply_tree_router/route_pins]: 300 supply segments routed, 837 remaining.
+[supply_tree_router/route_pins]: 400 supply segments routed, 737 remaining.
+[supply_tree_router/route_pins]: 500 supply segments routed, 637 remaining.
+[supply_tree_router/route_pins]: 600 supply segments routed, 537 remaining.
+[supply_tree_router/route_pins]: 700 supply segments routed, 437 remaining.
+[supply_tree_router/route_pins]: 800 supply segments routed, 337 remaining.
+[supply_tree_router/route_pins]: 900 supply segments routed, 237 remaining.
+[supply_tree_router/route_pins]: 1000 supply segments routed, 137 remaining.
+[supply_tree_router/route_pins]: 1100 supply segments routed, 37 remaining.
+*** Maze routing supplies: 608.3 seconds
+** Routing: 1289.5 seconds
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_ext.sh (30 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_ext.sh (60 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_ext.sh (90 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_ext.sh (120 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_ext.sh (150 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_ext.sh (180 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_ext.sh (210 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_ext.sh (240 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_ext.sh (270 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_ext.sh (300 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_ext.sh (330 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_ext.sh (360 seconds)
+WARNING: file magic.py: line 239: DRC Errors sky130_sram_1kbyte_1rw1r_8x1024_8	6
+
 [run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (30 seconds)
 [run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (60 seconds)
 [run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (90 seconds)
@@ -239,7 +250,7 @@ Output files are:
 [run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (330 seconds)
 [run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (360 seconds)
 [run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (390 seconds)
-[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (421 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (420 seconds)
 [run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (451 seconds)
 [run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (481 seconds)
 [run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (511 seconds)
@@ -269,198 +280,66 @@ Output files are:
 [run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (1231 seconds)
 [run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (1261 seconds)
 [run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (1291 seconds)
-[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (1322 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (1321 seconds)
 [run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (1352 seconds)
-[verify.magic/run_lvs]: Flattening unmatched subcell pinv in circuit pdriver (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell sky130_fd_bd_sram__openram_dp_nand2_dec in circuit and2_dec (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pinv_dec in circuit and2_dec (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell sky130_fd_bd_sram__openram_dp_nand3_dec in circuit and3_dec (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pinv_dec in circuit and3_dec (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pnand2 in circuit pand2 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pdriver in circuit pand2 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pinv_dec in circuit hierarchical_predecode2x4 (1)(2 instances)
-[verify.magic/run_lvs]: Flattening unmatched subcell and2_dec in circuit hierarchical_predecode2x4 (1)(4 instances)
-[verify.magic/run_lvs]: Flattening unmatched subcell pinv_dec in circuit hierarchical_predecode3x8 (1)(3 instances)
-[verify.magic/run_lvs]: Flattening unmatched subcell and3_dec in circuit hierarchical_predecode3x8 (1)(8 instances)
-[verify.magic/run_lvs]: Flattening unmatched subcell sky130_fd_bd_sram__openram_dp_nand2_dec in circuit wordline_driver (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pinv_dec_0 in circuit wordline_driver (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pinv_0 in circuit pdriver_0 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell sky130_fd_bd_sram__openram_dp_cell in circuit bitcell_array (1)(8192 instances)
-[verify.magic/run_lvs]: Flattening unmatched subcell sky130_fd_bd_sram__openram_dp_cell_replica in circuit replica_column (1)(129 instances)
-[verify.magic/run_lvs]: Flattening unmatched subcell sky130_fd_bd_sram__openram_dp_cell_dummy in circuit replica_column (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell sky130_fd_bd_sram__openram_dp_cell_dummy in circuit replica_column_0 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell sky130_fd_bd_sram__openram_dp_cell_replica in circuit replica_column_0 (1)(129 instances)
-[verify.magic/run_lvs]: Flattening unmatched subcell sky130_fd_bd_sram__openram_dp_cell_dummy in circuit dummy_array (1)(64 instances)
-[verify.magic/run_lvs]: Flattening unmatched subcell precharge_0 in circuit precharge_array (1)(65 instances)
-[verify.magic/run_lvs]: Flattening unmatched subcell sky130_fd_bd_sram__openram_sense_amp in circuit sense_amp_array (1)(8 instances)
-[verify.magic/run_lvs]: Flattening unmatched subcell sky130_fd_bd_sram__openram_write_driver in circuit write_driver_array (1)(8 instances)
-[verify.magic/run_lvs]: Flattening unmatched subcell pand2 in circuit write_mask_and_array (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell column_mux in circuit column_mux_array (1)(64 instances)
-[verify.magic/run_lvs]: Flattening unmatched subcell precharge_1 in circuit precharge_array_0 (1)(65 instances)
-[verify.magic/run_lvs]: Flattening unmatched subcell column_mux_0 in circuit column_mux_array_0 (1)(64 instances)
-[verify.magic/run_lvs]: Flattening unmatched subcell hierarchical_predecode2x4 in circuit hierarchical_decoder (1)(2 instances)
-[verify.magic/run_lvs]: Flattening unmatched subcell hierarchical_predecode3x8 in circuit hierarchical_decoder (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell and3_dec in circuit hierarchical_decoder (1)(128 instances)
-[verify.magic/run_lvs]: Flattening unmatched subcell wordline_driver in circuit wordline_driver_array (1)(128 instances)
-[verify.magic/run_lvs]: Flattening unmatched subcell sky130_fd_bd_sram__openram_dp_nand2_dec in circuit and2_dec_0 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pinv_dec_0 in circuit and2_dec_0 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pnand3 in circuit pand3 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pdriver_0 in circuit pand3 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell sky130_fd_bd_sram__openram_dff in circuit dff_buf_0 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pinv_2 in circuit dff_buf_0 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pinv_3 in circuit dff_buf_0 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pinv_4 in circuit pdriver_1 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pinv_14 in circuit pdriver_4 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pinv_15 in circuit pdriver_5 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell bitcell_array in circuit replica_bitcell_array (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell replica_column in circuit replica_bitcell_array (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell replica_column_0 in circuit replica_bitcell_array (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell dummy_array in circuit replica_bitcell_array (1)(2 instances)
-[verify.magic/run_lvs]: Flattening unmatched subcell precharge_array in circuit port_data (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell sense_amp_array in circuit port_data (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell write_driver_array in circuit port_data (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell write_mask_and_array in circuit port_data (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell column_mux_array in circuit port_data (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell precharge_array_0 in circuit port_data_0 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell sense_amp_array in circuit port_data_0 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell column_mux_array_0 in circuit port_data_0 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell hierarchical_decoder in circuit port_address (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell wordline_driver_array in circuit port_address (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell and2_dec_0 in circuit port_address (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell hierarchical_decoder in circuit port_address_0 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell wordline_driver_array in circuit port_address_0 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell and2_dec_0 in circuit port_address_0 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pinv_1 in circuit hierarchical_predecode3x8_0 (1)(3 instances)
-[verify.magic/run_lvs]: Flattening unmatched subcell pand3 in circuit hierarchical_predecode3x8_0 (1)(8 instances)
-[verify.magic/run_lvs]: Flattening unmatched subcell dff_buf_0 in circuit dff_buf_array (1)(2 instances)
-[verify.magic/run_lvs]: Flattening unmatched subcell pinv_0 in circuit pdriver_2 (1)(3 instances)
-[verify.magic/run_lvs]: Flattening unmatched subcell pinv_7 in circuit pdriver_2 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pinv_8 in circuit pdriver_2 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pinv_9 in circuit pdriver_2 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pnand2_0 in circuit pand2_0 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pdriver_1 in circuit pand2_0 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pinv_0 in circuit pdriver_3 (1)(2 instances)
-[verify.magic/run_lvs]: Flattening unmatched subcell pinv_10 in circuit pdriver_3 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pinv_11 in circuit pdriver_3 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pinv_12 in circuit pdriver_3 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pinv_13 in circuit pdriver_3 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pnand3 in circuit pand3_0 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pdriver_4 in circuit pand3_0 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pnand3 in circuit pand3_1 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pdriver_5 in circuit pand3_1 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pinv_18 in circuit delay_chain (1)(45 instances)
-[verify.magic/run_lvs]: Flattening unmatched subcell pinv_0 in circuit pdriver_6 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pinv_10 in circuit pdriver_6 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pinv_16 in circuit pdriver_6 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pinv_17 in circuit pdriver_6 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell dff_buf_0 in circuit dff_buf_array_0 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pinv_0 in circuit pdriver_7 (1)(3 instances)
-[verify.magic/run_lvs]: Flattening unmatched subcell pinv_7 in circuit pdriver_7 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pinv_8 in circuit pdriver_7 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pinv_19 in circuit pdriver_7 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell replica_bitcell_array in circuit bank (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell port_data in circuit bank (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell port_data_0 in circuit bank (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell port_address in circuit bank (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell port_address_0 in circuit bank (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell hierarchical_predecode3x8_0 in circuit bank (1)(2 instances)
-[verify.magic/run_lvs]: Flattening unmatched subcell dff_buf_array in circuit control_logic_rw (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pdriver_2 in circuit control_logic_rw (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pinv_1 in circuit control_logic_rw (1)(2 instances)
-[verify.magic/run_lvs]: Flattening unmatched subcell pand2_0 in circuit control_logic_rw (1)(2 instances)
-[verify.magic/run_lvs]: Flattening unmatched subcell pdriver_3 in circuit control_logic_rw (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pand3_0 in circuit control_logic_rw (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pand3_1 in circuit control_logic_rw (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell delay_chain in circuit control_logic_rw (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pnand2_1 in circuit control_logic_rw (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pdriver_6 in circuit control_logic_rw (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell dff_buf_array_0 in circuit control_logic_r (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pdriver_7 in circuit control_logic_r (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pinv_1 in circuit control_logic_r (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pand2_0 in circuit control_logic_r (1)(2 instances)
-[verify.magic/run_lvs]: Flattening unmatched subcell pdriver_3 in circuit control_logic_r (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pand3_1 in circuit control_logic_r (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell delay_chain in circuit control_logic_r (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pnand2_1 in circuit control_logic_r (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell pdriver_6 in circuit control_logic_r (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell sky130_fd_bd_sram__openram_dff in circuit row_addr_dff (1)(7 instances)
-[verify.magic/run_lvs]: Flattening unmatched subcell sky130_fd_bd_sram__openram_dff in circuit col_addr_dff (1)(3 instances)
-[verify.magic/run_lvs]: Flattening unmatched subcell sky130_fd_bd_sram__openram_dff in circuit wmask_dff (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell sky130_fd_bd_sram__openram_dff in circuit data_dff (1)(8 instances)
-[verify.magic/run_lvs]: Flattening unmatched subcell bank in circuit sky130_sram_1kbyte_1rw1r_8x1024_8 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell control_logic_rw in circuit sky130_sram_1kbyte_1rw1r_8x1024_8 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell control_logic_r in circuit sky130_sram_1kbyte_1rw1r_8x1024_8 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell row_addr_dff in circuit sky130_sram_1kbyte_1rw1r_8x1024_8 (1)(2 instances)
-[verify.magic/run_lvs]: Flattening unmatched subcell col_addr_dff in circuit sky130_sram_1kbyte_1rw1r_8x1024_8 (1)(2 instances)
-[verify.magic/run_lvs]: Flattening unmatched subcell wmask_dff in circuit sky130_sram_1kbyte_1rw1r_8x1024_8 (1)(1 instance)
-[verify.magic/run_lvs]: Flattening unmatched subcell data_dff in circuit sky130_sram_1kbyte_1rw1r_8x1024_8 (1)(1 instance)
-[verify.magic/run_lvs]: Equate pins:  cell sky130_sram_1kbyte_1rw1r_8x1024_8 and/or sky130_sram_1kbyte_1rw1r_8x1024_8 has no elements.
-[verify.magic/run_lvs]: 
-[verify.magic/run_lvs]: Subcircuit pins:
-[verify.magic/run_lvs]: Circuit 1: sky130_sram_1kbyte_1rw1r_8x1024 |Circuit 2: sky130_sram_1kbyte_1rw1r_8x1024 
-[verify.magic/run_lvs]: -------------------------------------------|-------------------------------------------
-[verify.magic/run_lvs]: (no matching pin)                          |din0[0]                                    
-[verify.magic/run_lvs]: (no matching pin)                          |din0[1]                                    
-[verify.magic/run_lvs]: (no matching pin)                          |din0[2]                                    
-[verify.magic/run_lvs]: (no matching pin)                          |din0[3]                                    
-[verify.magic/run_lvs]: (no matching pin)                          |din0[4]                                    
-[verify.magic/run_lvs]: (no matching pin)                          |din0[5]                                    
-[verify.magic/run_lvs]: (no matching pin)                          |din0[6]                                    
-[verify.magic/run_lvs]: (no matching pin)                          |din0[7]                                    
-[verify.magic/run_lvs]: (no matching pin)                          |addr0[0]                                   
-[verify.magic/run_lvs]: (no matching pin)                          |addr0[1]                                   
-[verify.magic/run_lvs]: (no matching pin)                          |addr0[2]                                   
-[verify.magic/run_lvs]: (no matching pin)                          |addr0[3]                                   
-[verify.magic/run_lvs]: (no matching pin)                          |addr0[4]                                   
-[verify.magic/run_lvs]: (no matching pin)                          |addr0[5]                                   
-[verify.magic/run_lvs]: (no matching pin)                          |addr0[6]                                   
-[verify.magic/run_lvs]: (no matching pin)                          |addr0[7]                                   
-[verify.magic/run_lvs]: (no matching pin)                          |addr0[8]                                   
-[verify.magic/run_lvs]: (no matching pin)                          |addr0[9]                                   
-[verify.magic/run_lvs]: (no matching pin)                          |addr1[0]                                   
-[verify.magic/run_lvs]: (no matching pin)                          |addr1[1]                                   
-[verify.magic/run_lvs]: (no matching pin)                          |addr1[2]                                   
-[verify.magic/run_lvs]: (no matching pin)                          |addr1[3]                                   
-[verify.magic/run_lvs]: (no matching pin)                          |addr1[4]                                   
-[verify.magic/run_lvs]: (no matching pin)                          |addr1[5]                                   
-[verify.magic/run_lvs]: (no matching pin)                          |addr1[6]                                   
-[verify.magic/run_lvs]: (no matching pin)                          |addr1[7]                                   
-[verify.magic/run_lvs]: (no matching pin)                          |addr1[8]                                   
-[verify.magic/run_lvs]: (no matching pin)                          |addr1[9]                                   
-[verify.magic/run_lvs]: (no matching pin)                          |csb0                                       
-[verify.magic/run_lvs]: (no matching pin)                          |csb1                                       
-[verify.magic/run_lvs]: (no matching pin)                          |web0                                       
-[verify.magic/run_lvs]: (no matching pin)                          |clk0                                       
-[verify.magic/run_lvs]: (no matching pin)                          |clk1                                       
-[verify.magic/run_lvs]: (no matching pin)                          |wmask0[0]                                  
-[verify.magic/run_lvs]: (no matching pin)                          |dout0[0]                                   
-[verify.magic/run_lvs]: (no matching pin)                          |dout0[1]                                   
-[verify.magic/run_lvs]: (no matching pin)                          |dout0[2]                                   
-[verify.magic/run_lvs]: (no matching pin)                          |dout0[3]                                   
-[verify.magic/run_lvs]: (no matching pin)                          |dout0[4]                                   
-[verify.magic/run_lvs]: (no matching pin)                          |dout0[5]                                   
-[verify.magic/run_lvs]: (no matching pin)                          |dout0[6]                                   
-[verify.magic/run_lvs]: (no matching pin)                          |dout0[7]                                   
-[verify.magic/run_lvs]: (no matching pin)                          |dout1[0]                                   
-[verify.magic/run_lvs]: (no matching pin)                          |dout1[1]                                   
-[verify.magic/run_lvs]: (no matching pin)                          |dout1[2]                                   
-[verify.magic/run_lvs]: (no matching pin)                          |dout1[3]                                   
-[verify.magic/run_lvs]: (no matching pin)                          |dout1[4]                                   
-[verify.magic/run_lvs]: (no matching pin)                          |dout1[5]                                   
-[verify.magic/run_lvs]: (no matching pin)                          |dout1[6]                                   
-[verify.magic/run_lvs]: (no matching pin)                          |dout1[7]                                   
-[verify.magic/run_lvs]: (no matching pin)                          |vccd1                                      
-[verify.magic/run_lvs]: (no matching pin)                          |vssd1                                      
-[verify.magic/run_lvs]: ---------------------------------------------------------------------------------------
-[verify.magic/run_lvs]: Cell pin lists for sky130_sram_1kbyte_1rw1r_8x1024_8 and sky130_sram_1kbyte_1rw1r_8x1024_8 altered to match.
-[verify.magic/run_lvs]: The top level cell failed pin matching.
-ERROR: file magic.py: line 338: sky130_sram_1kbyte_1rw1r_8x1024_8	LVS mismatch (results in /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/sky130_sram_1kbyte_1rw1r_8x1024_8.lvs.report)
-
-** Verification: 1377.7 seconds
-** SRAM creation: 2702.4 seconds
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (1382 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (1412 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (1442 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (1472 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (1502 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (1532 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (1562 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (1592 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (1622 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (1652 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (1682 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (1712 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (1742 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (1772 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (1802 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (1832 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (1862 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (1892 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (1922 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (1952 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (1982 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (2012 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (2042 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (2072 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (2102 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (2132 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (2162 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (2192 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (2222 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (2252 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (2283 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (2313 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (2343 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (2373 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (2403 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (2433 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (2463 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (2493 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (2523 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (2553 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (2583 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (2613 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (2643 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (2673 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (2703 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (2733 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (2763 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (2793 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (2823 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (2853 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (2883 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (2913 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (2943 seconds)
+[run_script/run_script]: Still running /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/tmp/run_lvs.sh (2973 seconds)
+[verify.magic/run_lvs]: sky130_sram_1kbyte_1rw1r_8x1024_8	LVS matches
+** Verification: 3370.9 seconds
+** SRAM creation: 4667.1 seconds
 SP: Writing to /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/sky130_sram_1kbyte_1rw1r_8x1024_8.sp
-ERROR: file stimuli.py: line 280: Unkown spice simulator 
-
 ** Spice writing: 0.6 seconds
 GDS: Writing to /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1rw1r_8x1024_8/sky130_sram_1kbyte_1rw1r_8x1024_8.gds
 ** GDS: 1.1 seconds
@@ -498,4 +377,4 @@ Verilog: Writing to /home/mrg/data/sky130_fd_bd_sram/macros/sky130_sram_1kbyte_1
 [verify.magic/print_drc_stats]: DRC runs: 1
 [verify.magic/print_lvs_stats]: LVS runs: 1
 [verify.magic/print_pex_stats]: PEX runs: 0
-** End: 2704.8 seconds
+** End: 4669.5 seconds

@@ -4,7 +4,9 @@ echo "$(date): Starting GDS to MAG using Magic /home/mrg/data/sky130_fd_bd_sram/
 
 /home/mrg/data/sky130_fd_bd_sram/env/conda/envs/sky130_fd_bd_sram/bin/magic -dnull -noconsole << EOF
 drc off
-gds polygon subcell true
+set VDD vdd
+set GND gnd
+set SUB gnd
 gds warning default
 gds flatten true
 gds ordering true
