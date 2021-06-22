@@ -15,5 +15,8 @@ check_lvsdrc = True
 #netlist_only = True
 #analytical_delay = False
 
+# Make the substructures in the GDS have unique names
+uniquify = True
+
 output_name = "{tech_name}_sram_{human_byte_size}_{ports_human}_{word_size}x{num_words}_{write_size}".format(**locals())
 output_path = "macros/{output_name}".format(**locals())
