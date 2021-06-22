@@ -33,7 +33,9 @@ DIRS=$(basename $(SRCS))
 STAMPS=$(addsuffix .ok,$(DIRS))
 
 BROKEN := \
-	sky130_sram_1kbyte_1r1w_8x1024_8 
+	sky130_sram_1kbyte_1r1w_8x1024_8 \
+	sky130_sram_8kbyte_1rw1r_32x2048_8 \
+	sky130_sram_16kbyte_1rw1r_32x4096_8
 
 WORKING_STAMPS=$(filter-out $(addsuffix .ok,$(BROKEN)),$(STAMPS))
 
