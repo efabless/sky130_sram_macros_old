@@ -1,0 +1,365 @@
+[globals/init_openram]: Initializing OpenRAM...
+[globals/setup_paths]: Temporary files saved in /home/jcirimel/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw_64x512_8/tmp/
+[globals/read_config]: Configuration file is /home/jcirimel/sky130_fd_bd_sram/macros/configs/sky130_sram_4kbyte_1rw_64x512_8.py
+[globals/read_config]: Output saved in /home/jcirimel/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw_64x512_8/
+[globals/import_tech]: Adding technology path: /home/jcirimel/openram/technology
+[globals/import_tech]: Adding technology path: /home/jcirimel/sky130_fd_bd_sram/tools/openram/technology
+[globals/init_paths]: Creating temp directory: /home/jcirimel/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw_64x512_8/tmp/
+[globals/setup_bitcell]: Using bitcell: bitcell_1port
+[characterizer/<module>]: Initializing characterizer...
+[characterizer/<module>]: Analytical model enabled.
+[verify/<module>]: Initializing verify...
+[verify/<module>]: LVS/DRC/PEX disabled.
+[globals/setup_bitcell]: Using bitcell: bitcell_1port
+|==============================================================================|
+|=========                      OpenRAM v1.1.15                       =========|
+|=========                                                            =========|
+|=========               VLSI Design and Automation Lab               =========|
+|=========        Computer Science and Engineering Department         =========|
+|=========            University of California Santa Cruz             =========|
+|=========                                                            =========|
+|=========          Usage help: openram-user-group@ucsc.edu           =========|
+|=========        Development help: openram-dev-group@ucsc.edu        =========|
+|=========Temp dir: /home/jcirimel/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw_64x512_8/tmp/=========|
+|=========                See LICENSE for license info                =========|
+|==============================================================================|
+** Start: 07/09/2021 13:24:42
+Technology: sky130
+Total size: 32768 bits
+Word size: 64
+Words: 512
+Banks: 1
+Write size: 8
+RW ports: 1
+R-only ports: 0
+W-only ports: 0
+DRC/LVS/PEX is only run on the top-level design to save run-time (inline_lvsdrc=True to do inline checking).
+DRC/LVS/PEX is disabled (check_lvsdrc=True to enable).
+Characterization is disabled (using analytical delay models) (analytical_delay=False to simulate).
+Only generating nominal corner timing.
+[sram_config/recompute_sizes]: Recomputing with words per row: 4
+[sram_config/recompute_sizes]: Rows: 128 Cols: 256
+[sram_config/recompute_sizes]: Row addr size: 8 Col addr size: 2 Bank addr size: 10
+[sram_config/compute_sizes]: Set SRAM Words Per Row=4
+Words per row: 4
+Output files are: 
+/home/jcirimel/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw_64x512_8/sky130_sram_4kbyte_1rw_64x512_8.lvs
+/home/jcirimel/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw_64x512_8/sky130_sram_4kbyte_1rw_64x512_8.sp
+/home/jcirimel/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw_64x512_8/sky130_sram_4kbyte_1rw_64x512_8.v
+/home/jcirimel/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw_64x512_8/sky130_sram_4kbyte_1rw_64x512_8.lib
+/home/jcirimel/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw_64x512_8/sky130_sram_4kbyte_1rw_64x512_8.py
+/home/jcirimel/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw_64x512_8/sky130_sram_4kbyte_1rw_64x512_8.html
+/home/jcirimel/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw_64x512_8/sky130_sram_4kbyte_1rw_64x512_8.log
+/home/jcirimel/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw_64x512_8/sky130_sram_4kbyte_1rw_64x512_8.lef
+/home/jcirimel/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw_64x512_8/sky130_sram_4kbyte_1rw_64x512_8.gds
+[bitcell_base_array/__init__]: Creating sky130_replica_bitcell_array 129 x 257
+[sky130_bitcell_base_array/__init__]: Creating sky130_replica_bitcell_array 129 x 257
+[replica_bitcell_array/__init__]: Creating sky130_replica_bitcell_array 129 x 257 rbls: None left_rbl: None right_rbl: None
+[bitcell_base_array/__init__]: Creating sky130_bitcell_array 129 x 257
+[sky130_bitcell_base_array/__init__]: Creating sky130_bitcell_array 129 x 257
+[sky130_bitcell_array/__init__]: Creating sky130_bitcell_array 129 x 257
+[bitcell_base_array/__init__]: Creating sky130_replica_column 130 x 1
+[sky130_bitcell_base_array/__init__]: Creating sky130_replica_column 130 x 1
+[bitcell_base_array/__init__]: Creating sky130_dummy_array 1 x 257
+[sky130_bitcell_base_array/__init__]: Creating sky130_dummy_array 1 x 257
+[bitcell_base_array/__init__]: Creating sky130_col_cap_array 1 x 257
+[sky130_bitcell_base_array/__init__]: Creating sky130_col_cap_array 1 x 257
+[bitcell_base_array/__init__]: Creating sky130_col_cap_array_0 1 x 257
+[sky130_bitcell_base_array/__init__]: Creating sky130_col_cap_array_0 1 x 257
+[bitcell_base_array/__init__]: Creating sky130_row_cap_array 130 x 1
+[sky130_bitcell_base_array/__init__]: Creating sky130_row_cap_array 130 x 1
+[bitcell_base_array/__init__]: Creating sky130_row_cap_array_0 130 x 1
+[sky130_bitcell_base_array/__init__]: Creating sky130_row_cap_array_0 130 x 1
+[and2_dec/__init__]: Creating and2_dec and2_dec
+[and3_dec/__init__]: Creating and3_dec and3_dec
+[and4_dec/__init__]: Creating and4_dec and4_dec
+[wordline_driver_array/__init__]: Creating wordline_driver_array
+[wordline_driver/__init__]: Creating wordline_driver wordline_driver
+[and2_dec/__init__]: Creating and2_dec and2_dec_0
+[precharge_array/__init__]: Creating precharge_array
+[sense_amp_array/__init__]: Creating sense_amp_array
+[column_mux_array/__init__]: Creating column_mux_array
+[write_driver_array/__init__]: Creating write_driver_array
+[write_mask_and_array/__init__]: Creating write_mask_and_array
+[pand2/__init__]: Creating pand2 pand2
+[pdriver/__init__]: creating pdriver pdriver
+[pand2/__init__]: Creating pand2 pand2_0
+[pdriver/__init__]: creating pdriver pdriver_0
+[dff_array/__init__]: Creating row_addr_dff rows=8 cols=1
+[dff_array/__init__]: Creating col_addr_dff rows=1 cols=2
+[dff_array/__init__]: Creating data_dff rows=1 cols=65
+[dff_array/__init__]: Creating wmask_dff rows=1 cols=8
+[dff_array/__init__]: Creating spare_wen_dff rows=1 cols=1
+[control_logic/__init__]: Creating control_logic_rw
+[dff_buf/__init__]: Creating dff_buf
+[dff_buf_array/__init__]: Creating dff_buf_array
+[dff_buf/__init__]: Creating dff_buf_0
+[pand2/__init__]: Creating pand2 pand2_1
+[pdriver/__init__]: creating pdriver pdriver_1
+[pbuf/__init__]: creating pbuf with size of 257
+[pdriver/__init__]: creating pdriver pdriver_2
+[pdriver/__init__]: creating pdriver pdriver_3
+[pand3/__init__]: Creating pand3 pand3
+[pdriver/__init__]: creating pdriver pdriver_4
+[pand3/__init__]: Creating pand3 pand3_0
+[pdriver/__init__]: creating pdriver pdriver_5
+[pdriver/__init__]: creating pdriver pdriver_6
+[delay_chain/__init__]: creating delay chain [4, 4, 4, 4, 4, 4, 4, 4, 4]
+** Submodules: 21.1 seconds
+** Placement: 0.1 seconds
+[router_tech/__init__]: Minimum track width: 0.680
+[router_tech/__init__]: Minimum track space: 0.300
+[router_tech/__init__]: Minimum track wire width: 0.380
+[hierarchy_layout/get_bbox]: Size: 811.7550000000001 x 323.735 with perimeter big margin 0.6799999999999999 little margin 0
+[hierarchy_layout/get_bbox]: Size: 811.7550000000001 x 323.735 with perimeter big margin 8.16 little margin 1.3599999999999999
+[router_tech/__init__]: Minimum track width: 0.680
+[router_tech/__init__]: Minimum track space: 0.300
+[router_tech/__init__]: Minimum track wire width: 0.380
+[grid/__init__]: BBOX coords: ll=v[-102.74,-60.25] ur=v[725.335,279.805]
+[grid/__init__]: BBOX grids: ll=v3d[-151, -89, 0.0] ur=v3d[1067, 411, 0.0]
+**** Retrieving pins: 0.0 seconds
+**** Analyzing pins: 0.0 seconds
+[router/find_blockages]: Finding blockages.
+**** Finding blockages: 7.9 seconds
+[router/convert_blockages]: Converting blockages.
+**** Converting blockages: 0.3 seconds
+**** Converting pins: 0.6 seconds
+**** Separating adjacent pins: 0.1 seconds
+**** Enclosing pins: 0.1 seconds
+*** Finding pins and blockages: 179.8 seconds
+[signal_escape_router/route_signal]: Escape routing csb0 with scale 5
+[signal_escape_router/route_signal]: Escape routing web0 with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[64] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[0] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[1] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[2] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[3] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[4] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[5] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[6] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[7] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[8] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[9] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[10] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[11] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[12] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[13] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[14] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[15] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[16] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[17] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[18] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[19] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[20] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[21] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[22] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[23] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[24] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[25] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[26] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[27] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[28] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[29] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[30] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[31] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[32] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[33] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[34] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[35] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[36] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[37] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[38] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[39] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[40] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[41] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[42] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[43] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[44] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[45] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[46] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[47] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[48] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[49] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[50] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[51] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[52] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[53] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[54] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[55] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[56] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[57] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[58] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[59] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[60] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[61] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[62] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[63] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[64] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[0] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[1] with scale 5
+[signal_escape_router/route_signal]: Escape routing wmask0[0] with scale 5
+[signal_escape_router/route_signal]: Escape routing wmask0[1] with scale 5
+[signal_escape_router/route_signal]: Escape routing wmask0[2] with scale 5
+[signal_escape_router/route_signal]: Escape routing wmask0[3] with scale 5
+[signal_escape_router/route_signal]: Escape routing wmask0[4] with scale 5
+[signal_escape_router/route_signal]: Escape routing wmask0[5] with scale 5
+[signal_escape_router/route_signal]: Escape routing wmask0[6] with scale 5
+[signal_escape_router/route_signal]: Escape routing wmask0[7] with scale 5
+[signal_escape_router/route_signal]: Escape routing spare_wen0 with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[63] with scale 5
+[signal_escape_router/route_signal]: Escape routing clk0 with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[62] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[61] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[60] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[59] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[58] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[0] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[1] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[2] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[3] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[4] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[5] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[6] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[7] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[8] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[9] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[10] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[11] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[12] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[13] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[14] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[15] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[16] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[17] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[18] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[19] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[20] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[21] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[22] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[23] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[24] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[25] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[26] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[27] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[28] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[29] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[30] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[31] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[32] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[33] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[34] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[35] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[36] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[37] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[38] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[39] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[40] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[41] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[42] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[43] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[44] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[45] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[46] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[47] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[48] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[49] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[50] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[51] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[52] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[53] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[54] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[55] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[56] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout0[57] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[2] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[3] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[4] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[5] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[6] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[7] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[8] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[9] with scale 5
+*** Maze routing pins: 446.5 seconds
+[router_tech/__init__]: Minimum track width: 0.680
+[router_tech/__init__]: Minimum track space: 0.300
+[router_tech/__init__]: Minimum track wire width: 0.380
+[supply_tree_router/route]: Running supply router on vdd and gnd...
+[grid/__init__]: BBOX coords: ll=v[-95.26,-52.77] ur=v[717.855,272.325]
+[grid/__init__]: BBOX grids: ll=v3d[-140, -78, 0.0] ur=v3d[1056, 400, 0.0]
+**** Retrieving pins: 0.1 seconds
+**** Analyzing pins: 4.5 seconds
+[router/find_blockages]: Finding blockages.
+**** Finding blockages: 24.0 seconds
+[router/convert_blockages]: Converting blockages.
+**** Converting blockages: 0.2 seconds
+WARNING: file pin_group.py: line 656:   Expanding conversion (vdd layer=m3 ll=v[716.37,17.105] ur=v[716.86,17.595])
+
+**** Converting pins: 10.0 seconds
+**** Separating adjacent pins: 6.9 seconds
+**** Enclosing pins: 10.1 seconds
+*** Finding pins and blockages: 234.4 seconds
+[supply_tree_router/route_pins]: Routing vdd with 1320 pins.
+[supply_tree_router/route_pins]: 0 supply segments routed, 1319 remaining.
+[supply_tree_router/route_pins]: 100 supply segments routed, 1219 remaining.
+[supply_tree_router/route_pins]: 200 supply segments routed, 1119 remaining.
+[supply_tree_router/route_pins]: 300 supply segments routed, 1019 remaining.
+[supply_tree_router/route_pins]: 400 supply segments routed, 919 remaining.
+[supply_tree_router/route_pins]: 500 supply segments routed, 819 remaining.
+[supply_tree_router/route_pins]: 600 supply segments routed, 719 remaining.
+[supply_tree_router/route_pins]: 700 supply segments routed, 619 remaining.
+[supply_tree_router/route_pins]: 800 supply segments routed, 519 remaining.
+[supply_tree_router/route_pins]: 900 supply segments routed, 419 remaining.
+[supply_tree_router/route_pins]: 1000 supply segments routed, 319 remaining.
+[supply_tree_router/route_pins]: 1100 supply segments routed, 219 remaining.
+[supply_tree_router/route_pins]: 1200 supply segments routed, 119 remaining.
+[supply_tree_router/route_pins]: 1300 supply segments routed, 19 remaining.
+[supply_tree_router/route_pins]: Routing gnd with 849 pins.
+[supply_tree_router/route_pins]: 0 supply segments routed, 848 remaining.
+[supply_tree_router/route_pins]: 100 supply segments routed, 748 remaining.
+[supply_tree_router/route_pins]: 200 supply segments routed, 648 remaining.
+[supply_tree_router/route_pins]: 300 supply segments routed, 548 remaining.
+[supply_tree_router/route_pins]: 400 supply segments routed, 448 remaining.
+[supply_tree_router/route_pins]: 500 supply segments routed, 348 remaining.
+[supply_tree_router/route_pins]: 600 supply segments routed, 248 remaining.
+[supply_tree_router/route_pins]: 700 supply segments routed, 148 remaining.
+[supply_tree_router/route_pins]: 800 supply segments routed, 48 remaining.
+*** Maze routing supplies: 1008.0 seconds
+** Routing: 2714.3 seconds
+** Verification: 0.0 seconds
+** SRAM creation: 2735.7 seconds
+SP: Writing to /home/jcirimel/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw_64x512_8/sky130_sram_4kbyte_1rw_64x512_8.sp
+** Spice writing: 1.9 seconds
+GDS: Writing to /home/jcirimel/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw_64x512_8/sky130_sram_4kbyte_1rw_64x512_8.gds
+** GDS: 2.1 seconds
+LEF: Writing to /home/jcirimel/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw_64x512_8/sky130_sram_4kbyte_1rw_64x512_8.lef
+** LEF: 0.1 seconds
+LVS: Writing to /home/jcirimel/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw_64x512_8/sky130_sram_4kbyte_1rw_64x512_8.lvs.sp
+** LVS writing: 0.2 seconds
+LIB: Characterizing... 
+[characterizer.lib/prepare_tables]: Slews: [0.00125 0.005   0.04   ]
+[characterizer.lib/prepare_tables]: Loads: [ 1.7225  6.89   27.56  ]
+[characterizer.lib/prepare_tables]: self.load_slews : [(1.7225, 0.00125), (6.89, 0.00125), (27.56, 0.00125), (1.7225, 0.005), (6.89, 0.005), (27.56, 0.005), (1.7225, 0.04), (6.89, 0.04), (27.56, 0.04)]
+[characterizer.lib/characterize_corners]: Characterizing corners: [('TT', 1.8, 25)]
+[characterizer.lib/characterize_corners]: Corner: ('TT', 1.8, 25)
+[characterizer.lib/characterize_corners]: Writing to /home/jcirimel/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw_64x512_8/sky130_sram_4kbyte_1rw_64x512_8_TT_1p8V_25C.lib
+[characterizer.elmore/analytical_power]: Dynamic Power: 13.642178618865618 mW
+[characterizer.elmore/analytical_power]: Leakage Power: 0.033911 mW
+[characterizer.elmore/get_lib_values]: Slew, Load, Delay(ns), Slew(ns)
+[characterizer.elmore/get_lib_values]: 0.00125, 1.7225, 0.4593104696289357, 0.00167765625
+[characterizer.elmore/get_lib_values]: 0.00125, 6.89, 0.48837765712893566, 0.004584374999999999
+[characterizer.elmore/get_lib_values]: 0.00125, 27.56, 0.6046464071289356, 0.016211249999999996
+[characterizer.elmore/get_lib_values]: 0.005, 1.7225, 0.4593104696289357, 0.00167765625
+[characterizer.elmore/get_lib_values]: 0.005, 6.89, 0.48837765712893566, 0.004584374999999999
+[characterizer.elmore/get_lib_values]: 0.005, 27.56, 0.6046464071289356, 0.016211249999999996
+[characterizer.elmore/get_lib_values]: 0.04, 1.7225, 0.4593104696289357, 0.00167765625
+[characterizer.elmore/get_lib_values]: 0.04, 6.89, 0.48837765712893566, 0.004584374999999999
+[characterizer.elmore/get_lib_values]: 0.04, 27.56, 0.6046464071289356, 0.016211249999999996
+** Characterization: 2.0 seconds
+Config: Writing to /home/jcirimel/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw_64x512_8/sky130_sram_4kbyte_1rw_64x512_8.py
+** Config: 0.0 seconds
+Datasheet: Writing to /home/jcirimel/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw_64x512_8/sky130_sram_4kbyte_1rw_64x512_8.html
+** Datasheet: 0.0 seconds
+Verilog: Writing to /home/jcirimel/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw_64x512_8/sky130_sram_4kbyte_1rw_64x512_8.v
+** Verilog: 0.0 seconds
+[globals/cleanup_paths]: Preserving temp directory: /home/jcirimel/sky130_fd_bd_sram/macros/sky130_sram_4kbyte_1rw_64x512_8/tmp/
+** End: 2741.9 seconds
