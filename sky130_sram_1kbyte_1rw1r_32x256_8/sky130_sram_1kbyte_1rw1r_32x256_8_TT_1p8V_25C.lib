@@ -59,24 +59,24 @@ library (sky130_sram_1kbyte_1rw1r_32x256_8_TT_1p8V_25C_lib){
     base_type : array;
     data_type : bit;
     bit_width : 32;
-    bit_from : 0;
-    bit_to : 31;
+    bit_from : 31;
+    bit_to : 0;
     }
 
     type (addr){
     base_type : array;
     data_type : bit;
     bit_width : 8;
-    bit_from : 0;
-    bit_to : 7;
+    bit_from : 7;
+    bit_to : 0;
     }
 
     type (wmask){
     base_type : array;
     data_type : bit;
     bit_width : 4;
-    bit_from : 0;
-    bit_to : 3;
+    bit_from : 3;
+    bit_to : 0;
     }
 
 cell (sky130_sram_1kbyte_1rw1r_32x256_8){
